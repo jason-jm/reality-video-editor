@@ -1,0 +1,10 @@
+<!-- Adapted from PICO ICON 7.0 ic_undo by mirroring its shape. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M14.29297 5.70703L17.58594 9H11C7.134 9 4 12.134 4 16V19H6V16C6 13.2386 8.2386 11 11 11H17.58594L14.29297 14.293L15.70703 15.707L21.41406 10L15.70703 4.29297L14.29297 5.70703Z"/>
+</vector>

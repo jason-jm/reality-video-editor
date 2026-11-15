@@ -1,0 +1,2813 @@
+# Reality Video Editor — en translations of the Chinese source (devtools/i18n/msgids.tsv). source<TAB>translation
+ {0} 个片段	 {0} clips
+ {0} 个素材的	 {0} media items'
+ {0} 声道	 {0} channels
+ · {0} 个复合片段	 · {0} compound clips
+ · 动态	 · animated
+ · 无音频	 · no audio
+ · 真峰值 {0} dBTP，可能削波	 · true peak {0} dBTP, may clip
+ · 离开斜率 {0}	 · outgoing slope {0}
+ · 进入斜率 {0}	 · incoming slope {0}
+ 半音	 semitones
+ 单声道	 mono
+ 秒	 s
+ 立体声	 stereo
+ 等	 and more
+ ～ 	 – 
+* 未包含：{0}	* Not included: {0}
++1 档	+1 stop
++{0} 秒	+{0} s
+0.00 秒	0.00 s
+1 低切	1 Low cut
+1.10：多轨、转场、标题、变速与标记，保存到“下载”	1.10: multiple tracks, transitions, titles, speed and markers, saved to Downloads
+1080p 方形	1080p square
+1080p 横屏	1080p landscape
+1080p 竖屏	1080p portrait
+1D LUT 过大：最多 {0} 个点	1D LUT too large: at most {0} points
+2 低频	2 Low
+2 秒	2 s
+2 秒 · 字幕轨	2 s · subtitle track
+24 位按 16 位的混音精度封装（样本 ×256），用于要求 24 位的交付。	24-bit wraps the 16-bit mix precision (samples ×256), for deliveries that require 24 bits.
+3 中频	3 Mid
+3 秒 · {0} px	3 s · {0} px
+4 高频	4 High
+4K 横屏	4K landscape
+6 秒	6 s
+AAC 48 kHz 立体声	AAC 48 kHz stereo
+B站	Bilibili
+B站 1080p	Bilibili 1080p
+CMX 3600：V1、A1、A2，保存到“下载”	CMX 3600: V1, A1, A2, saved to Downloads
+DOMAIN_MAX 必须大于 DOMAIN_MIN	DOMAIN_MAX must be greater than DOMAIN_MIN
+EDL 里没有能在媒体池中找到的素材：{0}	No media in the EDL could be found in the media pool: {0}
+EQ 不计入响度读数	EQ is not counted in the loudness reading
+FCPXML 的时间线是空的	The FCPXML timeline is empty
+FCPXML 里没有时间线（sequence）	The FCPXML has no timeline (sequence)
+FCPXML 里没有能在媒体池中找到的素材	No media in the FCPXML could be found in the media pool
+Final Cut、Resolve 或本应用导出的文件，按文件名匹配媒体池	Files exported by Final Cut, Resolve or this app, matched to the media pool by file name
+LUT 尺寸无效	Invalid LUT size
+LUT 已在库中：{0}{1}	LUT already in the library: {0}{1}
+LUT 库里已有同样的 LUT：{0}{1}{2}	The library already has this LUT: {0}{1}{2}
+LUT 强度	LUT strength
+LUT 数据不完整：应为 {0} 行，只有 {1} 行	Incomplete LUT data: {0} rows expected, only {1}
+LUT 没有数据	The LUT has no data
+LUT 缺失：{0} · 重新导入同一个 .cube 文件即可恢复	LUT missing: {0} · import the same .cube file again to restore it
+LUT 过大：最多支持 {0}³，这个是 {1}³	LUT too large: up to {0}³ supported, this one is {1}³
+LUT 风格	LUT looks
+LUT 风格 {0}	LUT look {0}
+LUT 风格：{0}	LUT look: {0}
+LUT：{0}	LUT: {0}
+PCM 48 kHz 16 位单声道	PCM 48 kHz 16-bit mono
+PICO 上的视频剪辑、调色与后期软件	Video editing, color and post-production on PICO
+PICO 开发者协议	PICO developer agreement
+PQ 峰值	PQ peak
+PQ 峰值 {0} nits	PQ peak {0} nits
+RGB 分量	RGB Parade
+RGB 混合器：{0}	RGB Mixer: {0}
+RGB 混合器：{0} {1}	RGB Mixer: {0} {1}
+RGB 混合器：不保持亮度	RGB Mixer: luminance not preserved
+RGB 混合器：保持亮度	RGB Mixer: preserve luminance
+RGB 混合器：单色	RGB Mixer: monochrome
+RGB 混合器：彩色	RGB Mixer: color
+Rec.2100 HLG · {0} 位	Rec.2100 HLG · {0}-bit
+Rec.2100 PQ（HDR10）· {0} 位	Rec.2100 PQ (HDR10) · {0}-bit
+Rec.709 Gamma 2.4（SDR）	Rec.709 Gamma 2.4 (SDR)
+SMPTE 彩条	SMPTE color bars
+V1 以外的 {0} 个转场	{0} transitions outside V1
+WAV {0} {1} 位	WAV {0} {1}-bit
+WAV 只有一条声音轨	WAV holds only one sound track
+WAV 只能写入 PCM 声音	WAV can hold only PCM sound
+\n* 片段有变速点：EDL 只能记一个速度，这里是第一段的	\n* The clip has speed points: an EDL holds one speed, this is the first section's
+compact|上限	Ceiling
+compact|删除关键帧	Delete key
+compact|压缩器	Comp
+compact|添加关键帧	Add key
+compact|补偿	Makeup
+compact|衰减	GR
+compact|起音	Attack
+compact|释放	Release
+compact|门限	Gate
+compact|阈值	Thresh
+compact|限制器	Limit
+tab|媒体	Media
+tab|标题	Titles
+tab|特效	Effects
+tab|生成	Generators
+tab|索引	Index
+tab|转场	Transitions
+{0} / {1} 个片段	{0} / {1} clips
+{0} / {1} 个视频有代理；在媒体页为素材生成代理	{0} / {1} videos have proxies; make proxies for media on the Media page
+{0} LUFS · 真峰值 {1} dBTP	{0} LUFS · true peak {1} dBTP
+{0} {1} 段	{0} {1} sections
+{0} {1} 秒	{0} {1} s
+{0} {1}，{2} 个关键帧	{0} {1}, {2} keyframes
+{0} {1}，{2}{3}	{0} {1}, {2}{3}
+{0} {1}，{2}，{3}，{4}	{0} {1}, {2}, {3}, {4}
+{0} · {1} · {2} 个片段	{0} · {1} · {2} clips
+{0} · {1} 个片段 · {2} · {3}	{0} · {1} clips · {2} · {3}
+{0} · {1} 个素材	{0} · {1} media items
+{0} · {1} 个素材 · {2}	{0} · {1} media items · {2}
+{0} · {1} 位	{0} · {1}-bit
+{0} · {1} 秒 · 湿声 {2} %	{0} · {1} s · wet {2} %
+{0} · {1}，输入时间码（时:分:秒:帧）或秒数	{0} · {1}, enter a timecode (h:m:s:f) or seconds
+{0} · 到 {1}	{0} · to {1}
+{0} 上 {1} 个片段（CMX 3600 只有一条画面轨和两条声音轨）	{1} clips on {0} (CMX 3600 has one picture track and two sound tracks)
+{0} 个	{0}
+{0} 个{1}	{0} {1}
+{0} 个交叉叠化	{0} cross dissolves
+{0} 个交叉淡化	{0} cross fades
+{0} 个任务失败，请查看渲染队列	Failed tasks ({0}). See the render queue.
+{0} 个停用的片段	{0} disabled clips
+{0} 个关键帧	{0,plural,one{# keyframe}other{# keyframes}}
+{0} 个关键帧 · 拖动或调整会记在播放头处	{0} keyframes · drags and changes are recorded at the playhead
+{0} 个关键帧 · 播放头不在片段内，移进片段再调整强度	{0} keyframes · the playhead is outside the clip: move it into the clip to change the amount
+{0} 个关键帧 · 调整会记录在此关键帧	{0} keyframes · changes are recorded in this keyframe
+{0} 个关键帧 · 调整强度会在播放头处添加关键帧	{0} keyframes · changing the amount adds a keyframe at the playhead
+{0} 个半音	{0} semitones
+{0} 个复合或多机位片段	{0} compound or multicam clips
+{0} 个字幕文件保存失败，请检查存储空间	Subtitle files that could not be saved ({0}). Check available storage.
+{0} 个找不到素材的片段	{0} clips whose media cannot be found
+{0} 个机位 · {1}	{0} angles · {1}
+{0} 个机位：按轨道从下往上依次为机位 1、2…，保持现在的对齐	{0} angles: tracks from bottom to top become angles 1, 2… keeping their current alignment
+{0} 个标记 · Shift+↑ / ↓ 跳转	{0} markers · Shift+↑ / ↓ to jump
+{0} 个标题（没有源文件）	{0} titles (no source file)
+{0} 个片段	{0,plural,one{# clip}other{# clips}}
+{0} 个片段 · {1}	{0,plural,one{# clip}other{# clips}} · {1}
+{0} 个片段的效果与变换	Effects and transform of {0} clips
+{0} 个片段的画面变换与效果	Picture transform and effects of {0} clips
+{0} 个片段的素材离线（{1}），渲染时{2}：先到媒体页重新链接	{0,plural,one{# clip has}other{# clips have}} offline media ({1}): {2} in the render. Relink on the Media page first
+{0} 个片段的调色	Grade of {0} clips
+{0} 个片段的音量关键帧	Volume keyframes of {0} clips
+{0} 个片段（重叠处每类最多 {1} 条轨道）	{0} clips (at most {1} tracks of each kind where they overlap)
+{0} 个画面片段按项目设置缩放	{0} picture clips scale by the project setting
+{0} 个素材	{0,plural,one{# media item}other{# media items}}
+{0} 个素材 · 共 {1}	{0} media items · {1} in all
+{0} 个素材不在媒体池里（{1}{2}）	{0} media items are not in the media pool ({1}{2})
+{0} 个素材无法读取，请检查读取权限或在媒体页重新链接。	Cannot read {0,plural,one{# media file}other{# media files}}. Check read access or relink on the Media page.
+{0} 个素材离线：原文件已被移动、改名或删除	{0} media items offline: the original files were moved, renamed or deleted
+{0} 个素材离线：原文件已被移动或删除	{0} media items offline: the original files were moved or deleted
+{0} 个组件 · {1}	{0,plural,one{# component}other{# components}} · {1}
+{0} 个转场按交叉溶解写出	{0} transitions written as cross dissolves
+{0} 个项目 · 按最近修改排序	{0,plural,one{# project}other{# projects}} · most recently modified first
+{0} 亮度	{0} brightness
+{0} 以上	above {0}
+{0} 以上 · 强度 {1}	above {0} · strength {1}
+{0} 以上的频段超过 {1} dBFS 时按 4:1 压低，最多 {2} dB；在均衡器之后、动态之前	Bands above {0} are pressed down 4:1 when over {1} dBFS, by at most {2} dB; after the EQ, before the dynamics
+{0} 份成片缺少素材，请查看渲染队列	Exports with missing media ({0}). See the render queue.
+{0} 位	{0}-bit
+{0} 使用了下列 {1} 个组件，它们按各自的许可证分发	{0} uses the {1,plural,one{# component}other{# components}} below, each distributed under its own license
+{0} 全文	{0} full text
+{0} 分 {1} 秒	{0} min {1} s
+{0} 分钟前	{0} min ago
+{0} 副本	{0} copy
+{0} 副本 {1}	{0} copy {1}
+{0} 可以逐个手动选择文件。	{0} You can pick the files one by one.
+{0} 在所选片段之间还有没选中的片段：一起选中，或先移开	{0} There are unselected clips between the selected ones: select them too, or move them away first
+{0} 在机位之间还有没选中的片段：一起选中，或先移开	{0} There are unselected clips between the angles: select them too, or move them away first
+{0} 在用	{0} in use
+{0} 在这段时间里还有其他片段，无法分解“{1}”	{0} has other clips in this stretch, so “{1}” cannot be decomposed
+{0} 增益	{0} gain
+{0} 处声音交叉淡化	Sound cross-fades at {0}
+{0} 天前	{0} days ago
+{0} 字幕语言：{1}，点按更换	{0} subtitle language: {1}, tap to change
+{0} 小时前	{0} h ago
+{0} 已经是{1}字幕	{0} is already a {1} subtitle
+{0} 已经输出到{1}	{0} already goes to {1}
+{0} 已锁定，无法分解“{1}”	{0} is locked, so “{1}” cannot be decomposed
+{0} 帧	{0} frames
+{0} 张静帧	{0} stills
+{0} 按原尺寸居中：上下留黑边，裁去左右各 {1}%	{0} centred at original size: black bars above and below, {1}% cut off each side
+{0} 按原尺寸居中：左右留黑边，裁去上下各 {1}%	{0} centred at original size: black bars left and right, {1}% cut off top and bottom
+{0} 是基础轨道，不能删除	{0} is the base track and cannot be deleted
+{0} 暂不链接	{0} not linked yet
+{0} 有声音时压低 {1} dB	Lowered {1} dB while {0} has sound
+{0} 条时间线{1} · 当前打开“{2}”	{0} timelines{1} · “{2}” is open
+{0} 条视频轨	{0} video tracks
+{0} 条音频轨	{0} audio tracks
+{0} 次 · 	{0,plural,one{Once}other{# times}} · 
+{0} 段：	{0} sections: 
+{0} 比画面大：按原尺寸居中，裁去	{0} is larger than the frame: centred at original size, cutting off
+{0} 比画面小：按原尺寸居中，{1}	{0} is smaller than the frame: centred at original size, {1}
+{0} 毫秒	{0} ms
+{0} 电平	{0} level
+{0} 的声音逐采样原样写入，其他采样率的声音转换一次。	Sound at {0} is written sample for sample; other sample rates are converted once.
+{0} 的轨道：{1}	Tracks of {0}: {1}
+{0} 的输入色彩空间：	Input color space of {0}:
+{0} 秒	{0} s
+{0} 秒前	{0} s ago
+{0} 调色	{0} grade
+{0} 输出到{1}	{0} goes to {1}
+{0} 输出到{1}，点按更改	{0} goes to {1}, tap to change
+{0} 需要“照片和视频”权限才能列出设备中的素材。	{0} needs the Photos and videos permission to list the media on this device.
+{0} 高于阈值时压低这条轨道，在推子之前	Lowers this track while {0} is above the threshold, before the fader
+{0}\n导出时整体 {1} dB → {2} LUFS{3}	{0}\nOverall {1} dB on export → {2} LUFS{3}
+{0}{1}{2} · 频率 ×{3} · 长度和速度不变	{0}{1}{2} · frequency ×{3} · length and speed unchanged
+{0}×{1} · {2} · {3} 个片段	{0}×{1} · {2} · {3} clips
+{0}。{1}按「{2}」色调映射到 Rec.709	{0}. {1}, tone mapped to Rec.709 by “{2}”
+{0}。{1}按「{2}」色调映射到 Rec.709，母版峰值按 {3} nits	{0}. {1}, tone mapped to Rec.709 by “{2}”, the master's peak taken as {3} nits
+{0}。导出时按「{1}」色调映射到 Rec.709	{0}. Tone-mapped to Rec.709 by “{1}” on export
+{0}。导出时按「{1}」色调映射到 Rec.709，母版峰值按 {2} nits	{0}. Tone-mapped to Rec.709 by “{1}” on export, mastered for a {2}-nit peak
+{0}。直接进入 {1} 时间线	{0}. Goes straight into the {1} timeline
+{0}关键帧	{0} keyframe
+{0}关键帧曲线：拖动关键帧改时间和数值，拖动控制点改快慢，点按空白处移动播放头	{0} keyframe curve: drag a keyframe to change its time and value, drag a handle to change its pace, tap empty space to move the playhead
+{0}到时间线	{0} to the timeline
+{0}到时间线播放头（{1}）	{0} to the timeline playhead ({1})
+{0}名称不能为空	The {0} name cannot be empty
+{0}名称最多 {1} 个字	The {0} name has at most {1} characters
+{0}年{1}月{2}日	{0}-{1}-{2}
+{0}斜率 {1}	{0} slope {1}
+{0}无法写进 LUT；当前片段没有其他调色	{0} cannot be written into a LUT; the clip has no other grade
+{0}时间线	{0} timeline
+{0}曲线 {1}	{0} curve {1}
+{0}月{1}日	{0}/{1}
+{0}月{1}日 {2}	{0}/{1} {2}
+{0}没有关键帧：把播放头移到片段内，点「添加关键帧」	{0} has no keyframes: move the playhead into the clip and tap “Add keyframe”
+{0}没有可以交换的片段	{0} has no clips to swap
+{0}的被抹平，更大的边缘和细节保留（8 位色阶）；	{0} are smoothed away, larger edges and detail are kept (8-bit levels);
+{0}色	{0}
+{0}色旗标	{0} flag
+{0}色旗标片段	{0}-flagged clips
+{0}色片段	{0} clips
+{0}超时：这台设备的编解码器没有响应	{0} timed out: this device's codec did not respond
+{0}轨道已满，无法分解“{1}”	The {0} tracks are full, so “{1}” cannot be decomposed
+{0}（{1}）	{0} ({1})
+{0}（备份 {1}）	{0} (backup {1})
+{0}（已删除）	{0} (deleted)
+{0}，{1}	{0}, {1}
+{0}，{1}{2}	{0}, {1}{2}
+{0}，{1}，{2}	{0}, {1}, {2}
+{0}，{1}，{2}{3}{4}	{0}, {1}, {2}{3}{4}
+{0}，从{1}平移到{2}	{0}, panning from {1} to {2}
+{0}，其中 {1} 个与画面尺寸不同	{0}, {1} of them a different size from the frame
+{0}，其中 {1} 个与画面比例不同	{0}, {1} of them a different shape from the frame
+{0}，再除以三者之和（{1}），灰色保持原来的亮度	{0}, then divided by the sum of the three ({1}): grey keeps its brightness
+{0}，播放头 {1}	{0}, playhead {1}
+{0}，放大 {1}% 遮住边缘	{0}, zoomed in {1}% to hide the edges
+{0}，水平和垂直都在中间时画面不移动	{0}: with horizontal and vertical both centred the picture does not move
+{0}，边缘会露出	{0}, the edges will show
+{0}，都与画面尺寸相同	{0}, all the same size as the frame
+{0}，都与画面比例相同	{0}, all the same shape as the frame
+{0}：{1}	{0}: {1}
+{0}：声音目标轨道，再点恢复自动	{0}: sound target track, tap again for automatic
+{0}：画面目标轨道	{0}: picture target track
+{0}；未保持亮度：三者之和不是 1 时画面变亮或变暗	{0}; luminance not preserved: when the three do not add up to 1 the picture gets brighter or darker
+“{0}”不在媒体夹里	“{0}” is not in the bin
+“{0}”不是复合片段	“{0}” is not a compound clip
+“{0}”不是多机位片段	“{0}” is not a multicam clip
+“{0}”之后没有素材了，只能直接切换	There is no media after “{0}”: only a cut is possible
+“{0}”之后的素材只够 {1}，交叉淡化按此长度进行	The media after “{0}” only lasts {1}: the cross fade takes that length
+“{0}”从源入点起只有 {1}，	“{0}” lasts only {1} from the source In point,
+“{0}”在源播放头之前少了 {1}素材，填不满片段开头：把源播放头往后移	“{0}” lacks {1} of media before the source playhead to fill the start of the clip: move the source playhead later
+“{0}”在源播放头之后少了 {1}素材，填不满片段结尾：把源播放头往前移	“{0}” lacks {1} of media after the source playhead to fill the end of the clip: move the source playhead earlier
+“{0}”已在“{1}”里	“{0}” is already in “{1}”
+“{0}”已经打开	“{0}” is already open
+“{0}”没有代理	“{0}” has no proxy
+“{0}”的时长	Duration of “{0}”
+“{0}”的时长改为 {1}{2}	Duration of “{0}” changed to {1}{2}
+“{0}”被复合片段使用，不能删除	“{0}” is used by a compound clip and cannot be deleted
+“{0}”里没有画面或声音	“{0}” has no picture or sound
+“{0}”里面用到了当前时间线，不能放进来	“{0}” uses the current timeline, so it cannot go in here
+−1 档	−1 stop
+−{0} 秒	−{0} s
+。注意：{0} 个片段的素材离线，渲染时画面是黑场或没有声音	. Note: {0,plural,one{# clip has}other{# clips have}} offline media: black picture or no sound in the render
+「{0}」{1} {2} 秒	“{0}” {1} {2} s
+「{0}」倒放，无法按声音对齐	“{0}” is reversed and cannot be aligned by sound
+「{0}」变速了，无法按声音对齐	“{0}” has a speed change and cannot be aligned by sound
+「{0}」找不到与参照相同的声音	“{0}” has no sound matching the reference
+「{0}」改回使用自带的声音	“{0}” uses its own sound again
+「{0}」没有声音	“{0}” has no sound
+一个片段最多 {0} 个调色版本	A clip has at most {0} grade versions
+一次只能交换一个片段	Only one clip can be swapped at a time
+一点	A little
+一级校色	Primaries
+一级校色、曲线、LUT、窗口与限定器	Primaries, curves, LUT, windows and qualifier
+三全音	Tritone
+上	Up
+上一个{0}关键帧	Previous {0} keyframe
+上一个关键帧	Previous keyframe
+上一个片段	Previous clip
+上一个窗口关键帧	Previous window keyframe
+上一级时间线已不存在	The parent timeline no longer exists
+上一编辑点	Previous edit point
+上下	Top and bottom
+上下各 {0}%	{0}% top and bottom
+上下留黑边	Black bars above and below
+上弯 {0}%	Bent up {0}%
+上弯：淡入更快到位，淡出保持更久再落下；下弯相反。也可以拖时间线上淡化中间的圆点。	Bent up: a fade in arrives sooner and a fade out holds longer before it drops; bent down, the opposite. You can also drag the dot in the middle of a fade on the timeline.
+上方	Above
+上浮	Float up
+上移	Move up
+上限	Ceiling
+上面的速度只改第 {0} 段（播放头所在），其余各段不变	The speed above changes only section {0} (under the playhead); the others stay
+下	Down
+下一个{0}关键帧	Next {0} keyframe
+下一个关键帧	Next keyframe
+下一个片段	Next clip
+下一个窗口关键帧	Next window keyframe
+下一条字幕	Next subtitle
+下一编辑点	Next edit point
+下三分之一	Lower third
+下弯 {0}%	Bent down {0}%
+下方	Below
+下移	Move down
+下限	Floor
+不导出音频	No audio export
+不放入媒体夹	Not in a bin
+不放大	No zoom
+不映射	No mapping
+不是 FCPXML 文件	Not an FCPXML file
+不是有效的 .cube LUT：缺少 LUT_3D_SIZE 或 LUT_1D_SIZE	Not a valid .cube LUT: LUT_3D_SIZE or LUT_1D_SIZE is missing
+不能把时间线放进它自己里面	A timeline cannot go inside itself
+不能移动到该轨道	Cannot move to that track
+不调整	Off
+不透明度	Opacity
+不限	Any
+不限（场记里的关键词）	Any (keywords in the metadata)
+与“{0}”之间直接切换；拖动可交叉淡化（等功率）	Cuts straight to “{0}”; drag to cross-fade (equal power)
+与下方轨道的画面混合	Blends with the picture on the tracks below
+与右侧片段交换	Swap with the clip on the right
+与左侧片段交换	Swap with the clip on the left
+两侧余量都不够，转场缩短为 {0} 秒（{1}）。	Not enough handle on either side: the transition is shortened to {0} s ({1}).
+中	Mid
+中圈	Middle ring
+中心	Centre
+中文	Chinese
+中灰纯色	Mid grey solid
+中间调 Gamma	Midtones Gamma
+中间调更柔和：皮肤、天空更平滑	Softer midtones: smoother skin and sky
+中间调的纹理更突出（降噪之后）	Midtone texture brought out (after noise reduction)
+中间调细节	Midtone detail
+中频	Mid
+中频 {0} @ {1} Hz	Mid {0} @ {1} Hz
+为 {0} 手动选择文件	Pick files for {0} by hand
+为全部视频生成代理	Make proxies for all videos
+主校色	Primary
+主输出	Main output
+主输出推子	Main output fader
+主输出电平	Main output level
+之后放到时间线的片段使用视频自带的声音	Clips put on the timeline from now on use the video's own sound
+事件 {0}：{1} 通道没有对应的轨道	Event {0}: no track for channel {1}
+事件 {0}：与前面的片段重叠	Event {0}: overlaps the clip before it
+事件 {0}：媒体池里没有“{1}”	Event {0}: “{1}” is not in the media pool
+互换	Swap
+交付	Deliver
+交付时间线，{0}	Delivered timeline, {0}
+交叉淡化	Cross fade
+交叉溶解	Cross dissolve
+交换{0}和{1}	Swapped {0} and {1}
+交换后链接的片段会和其他片段重叠	After the swap the linked clips would overlap other clips
+亮度	Luminance
+亮度·饱和	Lum · Sat
+亮度对饱和度	Lum vs Sat
+亮度映射	Luminance mapping
+亮度起伏约 {0} 级以内	Brightness ripples within about {0} levels
+亮度阈值	Luma threshold
+亮度阈值：明暗起伏多大以内算噪点；色度阈值：色彩斑点多大以内算噪点。半径越大越平滑，也越慢	Luma threshold: how large a ripple in brightness counts as noise; chroma threshold: how large a speck of color counts as noise. A larger radius is smoother and slower
+亮部 Gain	Highlights Gain
+人声压缩	Voice compression
+人声清晰	Voice clarity
+人物 · 地点	Name · Place
+仅右	Right only
+仅声音	Sound only
+仅好条	Good takes only
+仅好条：只收集场记里标为好条的素材	Good takes only: collects only media marked as good takes in the metadata
+仅左	Left only
+仅画面	Picture only
+仅音频 · {0}	Audio only · {0}
+今天 {0}	Today {0}
+从 LUT 库移除“{0}”？	Remove “{0}” from the LUT library?
+从 LUT 库移除…	Remove from the LUT library…
+从{0} {1}°	From {0} {1}°
+从{0}（{1}）拉远到全画面	Pull back from {0} ({1}) to the full frame
+从“{0}”交叉淡化 {1}（等功率，前一段在切点后延续）	Cross-fades {1} from “{0}” (equal power, the earlier clip runs on past the cut)
+从“{0}”粘贴到“{1}”：关键帧保持各自的时间。	Pasted from “{0}” to “{1}”: keyframes keep their own times.
+从两侧合拢	Close in from both sides
+从中心展开	Open out from the centre
+从中间打开	Open from the middle
+从全画面推近到{0}，{1}	Push in from the full frame to {0}, {1}
+从右推入	Push in from the right
+从媒体池或素材库添加素材到时间线	Add media to the timeline from the media pool or the library
+从左推入	Push in from the left
+从播放头 {0} 开始，录音时节目从这里播放	Starts at the playhead {0}; the program plays from here while recording
+从播放头向前、向后跟随窗口里的画面，沿途添加关键帧	Follows the picture in the window from the playhead backward and forward, adding keyframes along the way
+从播放头向前、向后跟随遮罩里的画面，沿途添加关键帧	Follows the picture in the mask from the playhead backward and forward, adding keyframes along the way
+从片段第一帧到最后一帧平滑推近、拉远或平移，适合照片	Pushes in, pulls back or pans smoothly from the first frame of the clip to the last; good for photos
+从设备导入	Import from device
+代理	Proxy
+代理 {0}×{1} · {2}	Proxy {0}×{1} · {2}
+代理：{0}，点按生成或删除代理	Proxy: {0}, tap to make or delete the proxy
+以最后点选的「{0}」为参照，按声音把其余片段移到同步的位置	With “{0}” (picked last) as the reference, moves the other clips into sync by their sound
+任意旗标	Any flag
+位深	Bit depth
+位置	Position
+位置 X	Position X
+位置 Y	Position Y
+位置、裁切、窗口和标题按画面的比例保存：换成竖屏或方形，版面跟着新画面走	Position, crop, windows and titles are stored relative to the frame: switch to portrait or square and the layout follows
+低于时间线（{0} fps）：每秒渲染 {1} 帧，按时刻取画面，舍去其余 {2} 帧	Below the timeline ({0} fps): renders {1} frames a second, picking frames by time and dropping the other {2}
+低切	Low cut
+低切 {0} Hz	Low cut {0} Hz
+低频	Low
+低频 {0}	Low {0}
+作用于输出到这条总线的所有轨道，在各轨道的处理之后	Applies to every track going to this bus, after each track's own processing
+作用于这条轨道上的全部字幕	Applies to every subtitle on this track
+作用于这条轨道的所有片段	Applies to every clip on this track
+作用于这条轨道的所有片段，在均衡器之前	Applies to every clip on this track, before the EQ
+作用于这条轨道的所有片段，在均衡器之后、推子之前	Applies to every clip on this track, after the EQ and before the fader
+作用于这条轨道的所有片段，在推子之前	Applies to every clip on this track, before the fader
+使用	Use
+使用 {0} 次	used {0,plural,one{# time}other{# times}}
+使用代理播放	Play proxies
+使用次数	Times used
+侧链	Sidechain
+侧链 {0}	Sidechain {0}
+侧链无声	Sidechain silent
+侧链轨道 {0}	Sidechain track {0}
+保存	Save
+保存到相册失败：{0}	Could not save to the gallery: {0}
+保存失败 · 检查存储后可再次返回重试	Save failed · check storage, then press Back to retry
+保存静帧失败：{0}	Could not save the still: {0}
+保持	Hold
+保持亮度	Preserve luminance
+保持亮度：混合只改变颜色，不改变亮度	Preserve luminance: mixing changes only the color, not the brightness
+保持色相	Preserve hue
+保留整个画面，{0}留黑边	Keep the whole picture, black bars {0}
+修剪	Trim
+修剪开头到播放头	Trim start to playhead
+修剪片段	Trim clip
+修剪结尾到播放头	Trim end to playhead
+修改字号	Change font size
+修改时间	Modified
+修改标题文字	Change title text
+倒放	Reverse
+倒放失败	Reverse failed
+倒放生成中	Making reverse
+倒放的片段不能检测场景剪切	Scene cuts cannot be detected in a reversed clip
+倒放的片段不能添加变速点	A reversed clip cannot take speed points
+倒放的片段不能添加变速点：先关闭倒放	A reversed clip cannot take speed points: turn reverse off first
+倒放的片段不能稳定	A reversed clip cannot be stabilized
+倒放的片段不能跟踪窗口	A window cannot be tracked on a reversed clip
+倒放的片段不能跟踪遮罩	Reversed clips cannot track a mask
+倒放素材已生成：{0}	Reversed media ready: {0}
+倒放素材生成失败：{0}。关闭再打开倒放可重试。	Reversed media failed: {0}. Turn reverse off and on again to retry.
+倒放素材生成失败：{0}（{1}）	Reversed media failed: {0} ({1})
+停在出点	Stop at Out
+停止并保存	Stop and save
+停用 {0} 个片段	Disable {0} clips
+停用全部	Disable all
+停用片段	Disable clip
+停用节点	Disable node
+停用节点 {0}	Disable node {0}
+停用节点 {0}（Ctrl+D）	Disable node {0} (Ctrl+D)
+先为片段选择遮罩形状	Pick a mask shape for the clip first
+先吸取颜色建立限定器	Pick a color first to make a qualifier
+先吸取颜色建立限定器，再精修它的选区。	Pick a color first to make a qualifier, then refine its selection.
+先在左侧媒体池中选择素材	Pick media in the media pool on the left first
+先在时间线上标记入点和出点	Mark an In and Out point on the timeline first
+先在时间线上选择一个声音片段	Select a sound clip on the timeline first
+先在时间线上选择一个多机位片段	Select a multicam clip on the timeline first
+先在时间线上选择要修剪的片段	Select the clip to trim on the timeline first
+先在曲线上点选一个关键帧	Tap a keyframe on the curve first
+先在画廊中选择一张静帧	Select a still in the gallery first
+先在画廊里选一张静帧	Pick a still in the gallery first
+先开启动态缩放	Turn on Dynamic Zoom first
+先开启抠像	Turn on the keyer first
+先开启稳定	Turn on stabilization first
+先抓取或选择一张静帧	Grab or select a still first
+先按 I / O 标记	Mark with I / O first
+先标记入点和出点	Mark an In and Out point first
+先标记时间线入点和出点（I / O）	Mark a timeline In and Out point first (I / O)
+先画一个窗口，再跟踪	Draw a window first, then track it
+先选择{0}形状，再添加关键帧	Pick a {0} shape first, then add keyframes
+先选择一个片段	Select a clip first
+先选择一个画面片段	Select a picture clip first
+光流	Optical flow
+入出点：用标记范围	In/Out: use the marker range
+入场转场	Opening transition
+入点 	In 
+入点 {0}	In {0}
+入点 {0} · 出点 {1} · 	In {0} · Out {1} · 
+入点 {0} → 出点 {1}（{2}）	In {0} → Out {1} ({2})
+入点 {0} 至出点 {1}	In {0} to Out {1}
+入点到出点	In to Out
+入点到出点之间没有画面	No picture between In and Out
+入点处已有另一个标记	Another marker is already at the In point
+入点必须早于出点	The In point must come before the Out point
+入点至出点	In to Out
+入点至出点之间和之后都没有片段	No clips between In and Out or after it
+入点至出点之间没有片段	No clips between In and Out
+全屏	Full screen
+全画面	Full frame
+全画面不需要跟踪：先选择圆形、矩形或渐变	A full-frame window needs no tracking: pick a circle, rectangle or gradient first
+全部	All
+全部时间线加入	Add all timelines
+全部时间线加入渲染队列	Add all timelines to the render queue
+全部添加	Add all
+全部渲染	Render all
+全部片段	All clips
+全部素材	All media
+全部重置	Reset all
+八度	Octave
+关	Off
+关于 {0}	About {0}
+关联的音频片段会与其他片段重叠	The linked audio clip would overlap other clips
+关键帧	Keyframes
+关键帧 {0}/{1} · {2} · {3}	Keyframe {0}/{1} · {2} · {3}
+关键帧已不存在	The keyframe no longer exists
+关键帧斜率	Keyframe slope
+关键帧曲线编辑器	Keyframe curve editor
+关键帧移到第 {0} 帧	Keyframe moved to frame {0}
+关键帧移到第 {0} 帧 · {1}	Keyframe moved to frame {0} · {1}
+关键帧缓动	Keyframe easing
+关键帧缓动：{0}	Keyframe easing: {0}
+关键词	Keywords
+关键词“{0}”	Keyword “{0}”
+关键词包含	Keywords contain
+关键词条件最多 {0} 个字	A keyword condition has at most {0} characters
+关键词用逗号或顿号隔开；媒体池搜索和智能媒体夹都会用到这些信息	Separate keywords with commas; media pool search and smart bins both use them
+关闭	Close
+关闭低切	Turn low cut off
+关闭动态缩放	Turn Dynamic Zoom off
+关闭抠像	Turn the keyer off
+关闭稳定	Turn stabilization off
+关：把亮度或色度阈值调高即开启	Off: raise the luma or chroma threshold to turn it on
+关：调高后，静止处的噪点按前后帧平均掉	Off: raised, noise in still areas is averaged out across neighbouring frames
+其中 {0} 个素材回到媒体池	{0} media items return to the media pool
+其他轨道在这段空隙里有内容，删除它会让“{0}”和链接的片段错位	Other tracks have content in this gap: deleting it would put “{0}” and its linked clips out of step
+内圈	Inner ring
+再高 {0} dB 以上的声音不受影响	Sound more than {0} dB louder than that is not affected
+写入视频文件时出错：请确认设备还有空间后重试（{0}）。	Writing the video file failed: make sure the device has free space and try again ({0}).
+净化白场	Clean white
+净化黑场	Clean black
+净化黑场去掉零星的弱选区，净化白场补满选区里的空洞，模糊半径柔化选区边缘。打开“显示选区”查看效果。	Clean black removes stray weak selections, clean white fills holes in the selection, and blur radius softens its edges. Turn on Highlight to see the result.
+减弱嘶声	Reduce hiss
+减选	Subtract
+减选：点击画面中的颜色移出选区	Subtract: tap a color in the picture to take it out of the selection
+出点 {0}	Out {0}
+出点不能在时间线开头	The Out point cannot be at the start of the timeline
+分割片段	Split clip
+分析失败：{0}	Analysis failed: {0}
+分析摄像机的抖动，逐帧反向移动画面去掉它	Analyses the camera's shake and moves the picture against it frame by frame
+分解	Decompose
+分解复合片段	Decompose compound clip
+分解复合片段 {0}	Decompose compound clip {0}
+分辨率	Resolution
+切换到此版本	Switch to this version
+切换到此版本（Shift+Alt+[ ]）	Switch to this version (Shift+Alt+[ ])
+切换时间线	Switch timeline
+切换机位	Switch angle
+切换特效	Toggle effect
+切换调色版本	Switch grade version
+划像	Wipe
+划像对比	Wipe compare
+列表	List
+刚刚	Just now
+创建	Create
+创建 {0} 个副本	Create {0} copies
+创建副本	Create copy
+创建项目	Create project
+删除	Delete
+删除 {0}	Delete {0}
+删除 {0} 个片段	Delete {0} clips
+删除{0}	Delete {0}
+删除{0}关键帧	Delete {0} keyframe
+删除代理	Delete proxy
+删除入点至出点	Delete In to Out
+删除关键帧	Delete keyframe
+删除区间	Delete range
+删除变速点	Delete speed point
+删除媒体夹	Delete bin
+删除当前时间线	Delete current timeline
+删除当前版本	Delete current version
+删除当前调色版本	Delete current grade version
+删除总线	Delete bus
+删除所有空隙	Delete all gaps
+删除控制点	Delete control point
+删除时间线	Delete timeline
+删除智能媒体夹	Delete smart bin
+删除曲线控制点	Delete curve point
+删除最近的	Delete the nearest
+删除标记	Delete marker
+删除片段	Delete clip
+删除空隙	Delete gap
+删除空隙（{0}）	Delete gap ({0})
+删除节点	Delete node
+删除节点 {0}	Delete node {0}
+删除调色版本	Delete grade version
+删除轨道	Delete track
+删除轨道 {0}	Delete track {0}
+删除这个项目？	Delete this project?
+删除静帧	Delete still
+到播放头	To playhead
+前一个片段	Previous clip
+前一片段出点后余量不够，转场移向剪辑点前（{0}）。	Not enough handle after the previous clip's Out point: the transition moves before the cut ({0}).
+前一片段出点后只剩 {0} 秒素材，转场缩短为 {1} 秒。	Only {0} s of media left after the previous clip's Out point: the transition is shortened to {1} s.
+前一片段出点后和本片段入点前都没有余量素材，按硬切播放。	No handle after the previous clip's Out point nor before this clip's In point: plays as a cut.
+前一片段出点后没有余量素材，转场无法显现它，按硬切播放。	No handle after the previous clip's Out point: the transition cannot reveal it and plays as a cut.
+前一片段太短，无法过渡，按硬切播放。	The previous clip is too short for a transition: plays as a cut.
+前一片段太短，转场缩短为 {0} 秒（{1}）。	The previous clip is too short: the transition is shortened to {0} s ({1}).
+前移	Move earlier
+前第 {0} 个片段	{0} clips back
+前进	Forward
+前面没有片段	No clip before it
+前面没有相邻片段，转场从下层画面（或黑场）显现。	No adjacent clip before it: the transition reveals the picture below (or black).
+前面没有相邻片段：转场从剪辑点开始，从下层画面（或黑场）显现。	No adjacent clip before it: the transition starts at the cut and reveals the picture below (or black).
+前面没有第 {0} 个片段	No clip {0} back
+前面没有紧挨着的声音片段，无法交叉淡化	No sound clip right before it to cross-fade with
+剪切	Cut
+剪切片段	Cut clip
+剪贴板是空的	The clipboard is empty
+剪贴板是空的：先复制一个片段	The clipboard is empty: copy a clip first
+剪辑	Edit
+剪辑点 	Cut point 
+剪辑点不能再往前了	The cut cannot move any earlier
+剪辑点不能再往后了	The cut cannot move any later
+剪辑点前	Before the cut
+剪辑点前 {0} 秒、后 {1} 秒	{0} s before the cut, {1} s after
+剪辑点后	After the cut
+剪辑点所在的轨道已锁定	The track at the cut is locked
+加入渲染队列	Add to render queue
+加选	Add
+加选：点击画面中的颜色加入选区	Add: tap a color in the picture to add it to the selection
+动态 {0}	Dynamics {0}
+动态 · {0}	Dynamics · {0}
+动态传输曲线	Dynamic transfer curve
+动态缩放	Dynamic Zoom
+动态缩放幅度	Dynamic Zoom amount
+动态缩放方向	Dynamic Zoom direction
+动态缩放焦点	Dynamic Zoom focus
+动态缩放缓动	Dynamic Zoom ease
+动态缩放起止画面：	Dynamic Zoom start and end frames:
+动态预设	Dynamics presets
+动态预设：{0}	Dynamics preset: {0}
+动态：{0}{1}	Dynamics: {0}{1}
+动态：关闭压缩器	Dynamics: compressor off
+动态：关闭门限	Dynamics: gate off
+动态：关闭限制器	Dynamics: limiter off
+动态：启用	Dynamics: on
+动态：开启压缩器	Dynamics: compressor on
+动态：开启门限	Dynamics: gate on
+动态：开启限制器	Dynamics: limiter on
+动态：旁通	Dynamics: bypassed
+动画	Animation
+匹配帧	Match frame
+匹配帧：{0} {1}	Match frame: {0} {1}
+匹配静帧	Match still
+匹配静帧：按静帧的暗部、中间调和亮部调整当前片段	Match still: adjusts the clip's shadows, midtones and highlights to the still
+升序 ↑	Ascending ↑
+升高	Raise
+半径	Radius
+半径 {0}：周围 {1} 像素	Radius {0}: {1} pixels around
+单个文件	Single file
+单声道	Mono
+单声道素材：左右两边本来就相同	Mono media: left and right are the same already
+单独片段	Individual clips
+单独的声音片段不能做成机位：先把它链接到一个画面	A sound clip on its own cannot be an angle: link it to a picture first
+单色	Monochrome
+单色：按灰度的混合输出黑白画面	Monochrome: outputs black and white from the grey mix
+历史记录	History
+压低 {0}	Lower by {0}
+压低量为 0：声音不变	The reduction is 0: the sound is unchanged
+压缩亮度后，超出的颜色降低饱和度：保持亮度和色相	After compressing the brightness, colors that still fall outside lose saturation: brightness and hue are kept
+压缩器	Compressor
+原位置：{0} · {1}	Original position: {0} · {1}
+原位置：{0}{1}	Original position: {0}{1}
+原尺寸	Original size
+原文件已被移动或删除	The original file was moved or deleted
+原调：拖动以升高或降低音调，长度和速度不变	Original pitch: drag to raise or lower the pitch; length and speed unchanged
+去低频噪声	Remove rumble
+去掉绿幕或蓝幕，露出下方轨道的画面	Removes a green or blue screen so the picture on the tracks below shows
+去白	Remove white
+去设置	Settings
+去黑	Remove black
+参照片段「{0}」没有声音	The reference clip “{0}” has no sound
+参考白（203 nits）对齐 SDR 白，更亮的部分直接裁切	Reference white (203 nits) meets SDR white; brighter parts are clipped
+及链接的片段	and its linked clips
+反转	Invert
+反转窗口：调整窗口外	Invert window: adjust outside the window
+反转遮罩	Invert mask
+反转遮罩：显示形状之外的画面	Invert mask: show the picture outside the shape
+反转限定器：调整未选中的颜色	Invert qualifier: adjust the colors not selected
+发光	Glow
+取消	Cancel
+取消同步	Unsync
+取消同步音频	Unsync audio
+取消总线独奏	Unsolo bus
+取消总线静音	Unmute bus
+取消独奏	Unsolo
+取消跟踪	Cancel tracking
+取消选择	Deselect
+取消链接	Unlink
+取消静音	Unmute
+变亮	Lighten
+变暗	Darken
+变速	Speed
+变速 	Speed 
+变速 {0}	Speed {0}
+变速后片段时长自动调整，后面的片段随之移动。	After a speed change the clip's length adjusts and the clips after it move along.
+变速处理	Retime process
+变速处理：{0}	Retime process: {0}
+变速点	Speed points
+叠加	Overlay
+只作用于这个片段，在轨道的均衡器之前	Applies only to this clip, before the track's EQ
+只压缩亮度、保持比例：颜色更饱满，过亮的颜色会被裁切	Compresses brightness only, keeping proportions: richer color, over-bright colors are clipped
+只导出声音：AAC {0} kbps 立体声 .m4a，保存到“音乐/{1}”。	Exports sound only: AAC {0} kbps stereo .m4a, saved to Music/{1}.
+只导出音频时不能关闭声音	Sound cannot be turned off when exporting audio only
+只有一个关键帧，没有变化可以缓动	There is only one keyframe: no motion to ease
+只有声音片段可以交叉淡化	Only sound clips can cross-fade
+只有声音片段可以变调	Only sound clips can change pitch
+只有声音片段可以设置声道	Only sound clips have channel settings
+只有声音片段有均衡器	Only sound clips have an EQ
+只有声音片段有声像	Only sound clips have a pan
+只有字幕轨有语言	Only subtitle tracks have a language
+只有画面片段可以加遮罩	Only picture clips can take a mask
+只有画面片段可以抠像	Only picture clips can be keyed
+只有画面片段可以设置动态缩放	Only picture clips can take Dynamic Zoom
+只有画面片段可以设置变速处理	Only picture clips have a retime process
+只有画面片段可以设置合成模式	Only picture clips have a composite mode
+只有画面片段可以设置画面布局	Only picture clips have a picture layout
+只有画面片段可以设置缩放方式	Only picture clips have a scaling mode
+只有画面片段可以调色	Only picture clips can be graded
+只有画面片段有调色版本	Only picture clips have grade versions
+只有视频片段可以检测场景剪切	Only video clips can be scanned for scene cuts
+只有视频片段可以稳定	Only video clips can be stabilized
+只有视频片段可以跟踪窗口	Windows can be tracked on video clips only
+只有视频片段可以跟踪遮罩	Only video clips can track a mask
+只有视频素材可以同步音频	Only video media can sync audio
+只有音频片段有音量线	Only audio clips have a volume line
+只用右声道，两边都听到它（适合只录在右声道的领夹麦）	Uses only the right channel, heard on both sides (for a lavalier recorded on the right only)
+只用左声道，两边都听到它（适合只录在左声道的领夹麦）	Uses only the left channel, heard on both sides (for a lavalier recorded on the left only)
+只能为视频片段定格	Only video clips can freeze a frame
+只能把调色应用到画面片段	Grades can be applied to picture clips only
+只能选择视频轨道作为画面目标	Only a video track can be the picture target
+只能选择音频轨道作为声音目标	Only an audio track can be the sound target
+可用入出点设范围	Set a range with In and Out
+右	Right
+右 {0}	R {0}
+右上	Top right
+右下	Bottom right
+右侧	Right side
+右移	Move right
+合成模式	Composite mode
+合成模式：{0}	Composite mode: {0}
+同名，但时长或大小不同	Same name, but a different length or size
+同名，大小和时长一致	Same name, size and length
+同名，时长一致	Same name and length
+同时跟随	Also follow
+同步	Sync
+同步的音频已不在媒体池中	The synced audio is no longer in the media pool
+同步音频	Sync audio
+同步音频：{0}，点按选择录音文件	Sync audio: {0}, tap to pick the recording
+名称	Name
+名称不能为空	The name cannot be empty
+名称包含	Name contains
+名称含“{0}”	Name contains “{0}”
+名称最多 {0} 个字	The name has at most {0} characters
+名称条件最多 {0} 个字	A name condition has at most {0} characters
+名称没有变化	The name did not change
+后移	Move later
+后退	Back
+后面的片段不动：加长到下一个片段为止，缩短留下空隙	The clips after it stay: lengthens up to the next clip, shortening leaves a gap
+后面的片段跟着移动，不覆盖也不留空隙	The clips after it move along: nothing is overwritten and no gap is left
+向中心收拢	Close in to the centre
+含 HDR 素材（{0}）：时间线为 {1}，导出时按「{2}」色调映射	Has HDR media ({0}): the timeline is {1}, tone-mapped by “{2}” on export
+启用	Enable
+启用 {0} 个片段	Enable {0} clips
+启用全部	Enable all
+启用动态：关闭即旁通	Enable dynamics: off bypasses them
+启用均衡器：关闭即旁通	Enable EQ: off bypasses it
+启用效果	Enable effect
+启用混响	Enable reverb
+启用片段	Enable clip
+启用节点	Enable node
+启用节点 {0}	Enable node {0}
+启用节点 {0}（Ctrl+D）	Enable node {0} (Ctrl+D)
+启用闪避：关闭即旁通	Enable ducking: off bypasses it
+启用降噪	Enable noise reduction
+启用齿音消除	Enable de-esser
+吸取	Pick
+吸取幕布颜色	Pick the screen color
+吸取颜色	Pick color
+吸取：点击画面中幕布的颜色	Picker: tap the screen's color in the picture
+吸管：点击画面中的颜色	Eyedropper: tap a color in the picture
+吸附	Snapping
+吸附已关闭	Snapping off
+吸附已开启	Snapping on
+和	and
+品红	Magenta
+响度	Loudness
+响度已是 {0} LUFS	Loudness is already {0} LUFS
+响度标准化	Normalize loudness
+响度范围 {0}	Loudness range {0}
+响度范围 {0}，真峰值 {1}	Loudness range {0}, true peak {1}
+响度还在测量中	Loudness is still being measured
+噪声底来自“{0}”（{1}）：每个文件各自测量，压低的是接近它的声音	Noise floor from “{0}” ({1}): each file is measured on its own, and sound near it is lowered
+噪声谱：噪声底和阈值线	Noise spectrum: noise floor and threshold line
+噪声谱：还没有测量	Noise spectrum: not measured yet
+四周留黑边	Black bars all around
+图片	Image
+图片 · 5 秒	Image · 5 s
+图片和标题没有可以变速的画面	Images and titles have no picture to change the speed of
+图片无需代理	Images need no proxy
+图片本身就是静帧，无需定格	An image is a still already: no freeze needed
+图片没有可以变速的画面	Images have no picture to change the speed of
+图片没有可以补出的中间帧	Images have no in-between frames to make
+图片素材固定为 5 秒，无需标记入出点	Images are fixed at 5 s: no In and Out needed
+圆形	Circle
+圆形划像	Circle wipe
+在 {0} 	At {0} 
+在 {0} 把{1}切到{2}（{3}）	Switched {1} to {2} at {0} ({3})
+在剪辑页把视频加到时间线后，可以在这里逐个调色。	Once videos are on the timeline on the Edit page, you can grade them one by one here.
+在右侧“媒体夹”中把选中的素材放进来。	Put the selected media in with Bins on the right.
+在左侧“特效”库选择效果，然后点“应用到所选片段”。	Pick an effect in the Effects library on the left, then tap “Apply to selected clips”.
+在推子和声像之后；片段后面有空隙时，尾音延续进去（最长 {0} 秒，素材要有余量）	After the fader and pan; with a gap after a clip the tail rings into it (up to {0} s, the media needs handle)
+在播放头处分割	Split at playhead
+在播放头处定格 2 秒	Freeze 2 s at the playhead
+在播放头处添加	Add at playhead
+在播放头处添加变速点，把片段分成几段，各段可以设置自己的速度	Add a speed point at the playhead to split the clip into sections, each with its own speed
+在播放头标记入点（I）	Mark In at the playhead (I)
+在播放头标记出点（O）	Mark Out at the playhead (O)
+在播放头添加标记	Add a marker at the playhead
+在时间线上选择一个片段以调整属性；长按片段可剪切、复制、粘贴；按住 Ctrl / Cmd 点按或开启「多选」可选择多个片段。	Select a clip on the timeline to adjust it; long-press a clip to cut, copy or paste; Ctrl / Cmd-tap or turn on Multi-select to select several clips.
+在时间线上选择一个片段，这里显示它的关键帧曲线：缩放、位置、旋转、不透明度、裁切、特效强度或音量随时间的变化	Select a clip on the timeline to see its keyframe curves here: zoom, position, rotation, opacity, crop, effect amounts or volume over time
+在此输入字幕	Type the subtitle here
+在监视器上拖动可移动遮罩 · 点菱形按钮添加关键帧，让遮罩随时间移动	Drag on the viewer to move the mask · tap the diamond to add keyframes so the mask moves over time
+在相册中查看	View in Gallery
+在素材库中选择一个媒体，或在时间线上选择片段	Pick media in the library, or select a clip on the timeline
+场 {0}	Scene {0}
+场次	Scene
+场次、镜头、条次各最多 {0} 个字	Scene, shot and take have at most {0} characters each
+场记	Metadata
+场记 · {0}	Metadata · {0}
+场记没有变化	The metadata did not change
+场记：{0}，点按编辑场次、镜头、条次、关键词和备注	Metadata: {0}, tap to edit scene, shot, take, keywords and notes
+均衡器	EQ
+均衡器 {0}	EQ {0}
+均衡器 · {0}	EQ · {0}
+均衡器曲线：拖动编号点调整频段	EQ curve: drag the numbered points to adjust the bands
+均衡器预设	EQ presets
+均衡器预设：{0}	EQ preset: {0}
+均衡器：{0}	EQ: {0}
+均衡器：{0}{1}	EQ: {0}{1}
+均衡器：关闭低切	EQ: low cut off
+均衡器：启用	EQ: on
+均衡器：开启低切	EQ: low cut on
+均衡器：旁通	EQ: bypassed
+垂直	Vertical
+垂直位置	Tilt
+填不满时间线入出点（{0}）	Does not fill the timeline In to Out ({0})
+填充	Fill
+增益	Gain
+增益已到极限：{0} LUFS（目标 {1}）	Gain at its limit: {0} LUFS (target {1})
+增益衰减	Gain reduction
+声像	Pan
+声像 {0}	Pan {0}
+声像关键帧	Pan keyframe
+声道	Channels
+声道：{0}	Channels: {0}
+声音	Sound
+声音 {0}	Sound {0}
+声音将落在 {0}	Sound will land on {0}
+声音目标改为自动：视频的原声到 A1，纯音频到音乐轨 A2	Sound target set to automatic: a video's own sound to A1, audio-only media to the music track A2
+声音落在的音频轨道（自动：原声到 A1，音乐到 A2）	The audio track the sound lands on (automatic: own sound to A1, music to A2)
+声音：机位 {0}	Sound: angle {0}
+处理声音时出错：请重试；如果反复出现，试着关掉部分音频效果（{0}）。	Processing the sound failed: try again; if it keeps failing, turn off some audio effects ({0}).
+处理画面时出错：请重试；如果反复出现，试着关掉部分特效或降低分辨率（{0}）。	Processing the picture failed: try again; if it keeps failing, turn off some effects or lower the resolution ({0}).
+备份失败：存储空间不足或不可写	Backup failed: storage full or not writable
+备注	Notes
+备注最多 {0} 个字	Notes have at most {0} characters
+备注（可选）	Notes (optional)
+复制	Copy
+复制当前时间线	Duplicate current timeline
+复制当前版本的调色，另试一种（Ctrl+Shift+N）	Copy the current version's grade to try another (Ctrl+Shift+N)
+复制时间线	Duplicate timeline
+复制的片段不能把这项给到这个片段	The copied clip cannot give this to that clip
+复制的片段没有可以粘贴到所选片段的属性	The copied clip has no attributes that can be pasted onto the selected clips
+复制调色	Copy grade
+复合片段	Compound clip
+复合片段 {0}	Compound clip {0}
+复合片段 · 	Compound clip · 
+复合片段 · {0}	Compound clip · {0}
+复合片段不能倒放：打开后为里面的片段倒放	A compound clip cannot be reversed: open it and reverse the clips inside
+复合片段不能变速：打开后为里面的片段变速	A compound clip cannot change speed: open it and change the clips inside
+复合片段和多机位片段不能做成机位	Compound and multicam clips cannot be angles
+复合片段的时间线不能在这里删除：回到上一级后删除复合片段	A compound clip's timeline cannot be deleted here: go back up and delete the compound clip
+复合片段的时间线不能复制：回到上一级后复制复合片段	A compound clip's timeline cannot be duplicated: go back up and duplicate the compound clip
+外圈	Outer ring
+多层画面需要约 {0} GB 临时空间来逐层合成，设备只剩 {1} GB。请清理空间，或缩短渲染范围后重试。	Layered pictures need about {0} GB of temporary space to composite layer by layer, and the device has only {1} GB left. Free up space or render a shorter range and try again.
+多机位	Multicam
+多机位 {0}	Multicam {0}
+多机位 · {0}	Multicam · {0}
+多机位 · 机位 {0}	Multicam · angle {0}
+多机位片段	Multicam clip
+多选	Multi-select
+多选已关闭	Multi-select off
+多选已开启：点按片段加入或移出选择，在空白处拖动可框选	Multi-select on: tap clips to add them to or take them out of the selection, drag in empty space to marquee-select
+多选：点按片段加入或移出选择，在空白处拖动可框选	Multi-select: tap clips to add them to or take them out of the selection, drag in empty space to marquee-select
+夜景，跑步	Night, running
+夜空渐变	Night sky gradient
+大	Large
+大七度	Major 7th
+大三度	Major 3rd
+大二度	Major 2nd
+大六度	Major 6th
+大厅	Hall
+大小	Size
+失败	Failed
+失败：{0}	Failed: {0}
+好条	Good take
+好条：标记为可用的一条	Good take: marked as a usable take
+如 1:00、+15、-1:00:00	e.g. 1:00, +15, -1:00:00
+如 2A	e.g. 2A
+如 3	e.g. 3
+如 4	e.g. 4
+媒体	Media
+媒体夹	Bins
+媒体夹 {0}	Bin {0}
+媒体夹 {0}，{1} 个素材，长按重命名或删除	Bin {0}, {1} media items, long-press to rename or delete
+媒体夹不存在	The bin does not exist
+媒体夹是空的	The bin is empty
+媒体夹里的素材仍在媒体池中；删除媒体夹不会删除素材	The bin's media stays in the media pool: deleting the bin does not delete media
+媒体夹：{0}，点按放入其他媒体夹	Bins: {0}, tap to put it in other bins
+媒体已保存，字幕文件未保存：{0}	Media saved. Subtitle files could not be saved: {0}
+媒体池	Media pool
+媒体池是空的	The media pool is empty
+媒体池视图	Media pool view
+媒体池里没有音频文件：先导入录音	The media pool has no audio files: import the recording first
+媒体池里的视频都已有代理	Every video in the media pool has a proxy already
+媒体池里还没有素材	No media in the media pool yet
+字号	Font size
+字幕	Subtitle
+字幕{0}	Subtitle {0}
+字幕文件	Subtitle file
+字幕文字	Subtitle text
+字幕显示在画面底部；导出时会烧录进画面，也可另存 SRT。	Subtitles show at the bottom of the picture; they are burned in on export and can also be saved as SRT.
+字幕样式：{0}	Subtitle style: {0}
+字幕样式：颜色	Subtitle style: color
+字幕的样式在轨道样式里调整	Subtitle styles are set in the track style
+字幕语言：{0}	Subtitle language: {0}
+字幕轨上的 {0} 条字幕（可用“导出字幕”）	{0} subtitles on subtitle tracks (use Export subtitles)
+字幕轨上的字幕不能放进复合片段	Subtitles on a subtitle track cannot go into a compound clip
+字幕轨道不存在	The subtitle track does not exist
+字幕轨道不能作为编辑目标	A subtitle track cannot be an edit target
+字幕随对白出现和消失，没有淡入淡出	Subtitles come and go with the dialogue, without fades
+字幕颜色 {0}	Subtitle color {0}
+字幕：{0}	Subtitle: {0}
+字重	Weight
+定格 · {0}	Freeze · {0}
+定格 · {0} · {1}	Freeze · {0} · {1}
+定格帧	Freeze frame
+实线：中低频 {0} 秒衰减 60 dB · 虚线：8 kHz {1} 秒	Solid: lows and mids decay 60 dB in {0} s · dashed: 8 kHz in {1} s
+宽	Width
+宽高比	Aspect
+对开门	Barn door
+对比度	Contrast
+对白	Dialogue
+对白字幕	Dialogue subtitles
+对白门限	Dialogue gate
+对齐	Align
+对齐后「{0}」会与「{1}」重叠：先挪开它	After aligning, “{0}” would overlap “{1}”: move it out of the way first
+对齐后「{0}」会完全移出时间线开头	After aligning, “{0}” would move entirely before the start of the timeline
+导入	Import
+导入 EDL	Import EDL
+导入 EDL…	Import EDL…
+导入 FCPXML	Import FCPXML
+导入 FCPXML…	Import FCPXML…
+导入 LUT…	Import LUT…
+导入 LUT（.cube 文件）	Import LUT (.cube file)
+导入 {0} 个素材	Import {0} media items
+导入失败：无法读取所选文件	Import failed: the selected file cannot be read
+导入媒体	Import media
+导入字幕	Import subtitles
+导入的 EDL	Imported EDL
+导入的 FCPXML	Imported FCPXML
+导入的 LUT {0}（{1}）	Imported LUT {0} ({1})
+导入设备里的视频、音频和图片，它们会出现在这里。	Import videos, audio and images from the device and they appear here.
+导入顺序	Import order
+导出 EDL…	Export EDL…
+导出 FCPXML…	Export FCPXML…
+导出字幕文件	Export subtitle file
+导出当前帧	Export current frame
+导出时	On export
+导出画面	Export picture
+导出音频	Export audio
+导演	Director
+导演 · 剪辑	Director · Editor
+将永久删除“{0}”的时间线、调色、混音设置和全部项目备份。设备上的原始素材会保留。	This permanently deletes the timelines, grades, mix settings and all backups for “{0}”. Original media stays on your device.
+将链接到 {0}{1} · {2}	Will link to {0}{1} · {2}
+小	Small
+小七度	Minor 7th
+小三度	Minor 3rd
+小二度	Minor 2nd
+小六度	Minor 6th
+小房间	Small room
+尚未保存	Not saved yet
+居中	Centre
+居中大标题	Centred title
+展平	Flatten
+展平多机位片段	Flatten multicam clip
+展平多机位片段 {0}	Flatten multicam clip {0}
+峰值限制	Peak limit
+嵌套时间线	Nested timeline
+嵌套时间线 · 	Nested timeline · 
+左	Left
+左 {0}	L {0}
+左上	Top left
+左下	Bottom left
+左侧	Left side
+左右	Left and right
+左右互换：左声道放到右边，右声道放到左边	Swap left and right: the left channel goes right and the right channel left
+左右各 {0}%	{0}% left and right
+左右声道保持原样	Left and right channels as they are
+左右声道混合为一路，两边相同，各为原来的一半	Left and right mixed into one, the same on both sides, each half as loud
+左右留黑边	Black bars left and right
+左移	Move left
+差值	Difference
+已	Done
+已{0}添加 {1}	{0} added {1}
+已为 {0} 个素材加上{1}色旗标	Gave {0} media items a {1} flag
+已为{0}添加关键帧 · 共 {1} 个	Added a {0} keyframe · {1} in all
+已为“{0}”应用转场：{1}	Applied a transition to “{0}”: {1}
+已为素材加上{0}色旗标	Gave the media a {0} flag
+已从 EDL 导入 {0} 个片段，{1}{2}	Imported {0} clips from the EDL, {1}{2}
+已从 FCPXML 导入 {0} 个片段，{1}{2}	Imported {0} clips from the FCPXML, {1}{2}
+已从 LUT 库移除“{0}”	Removed “{0}” from the LUT library
+已使用	Used
+已保存 {0} 个字幕文件到 Download/{1}	Subtitles saved to Download/{1} ({0})
+已保存 {0} 个视频到 Movies/{1}	Videos saved to Movies/{1} ({0})
+已保存 {0} 个音频文件到 Music/{1}	Audio files saved to Music/{1} ({0})
+已修剪“{0}”，时长 {1}	Trimmed “{0}”, duration {1}
+已停用	Disabled
+已停用 {0} 个片段：不播放、不渲染	Disabled {0} clips: they neither play nor render
+已停用 · 画面跳过	Disabled · picture skips it
+已停用“{0}”{1}：不播放、不渲染	Disabled “{0}”{1}: it neither plays nor renders
+已停用节点 {0}：画面跳过这个节点，设置保留	Disabled node {0}: the picture skips it, its settings are kept
+已停用：画面跳过这个节点，设置保留	Disabled: the picture skips this node, its settings are kept
+已关闭缓入	Ease in off
+已关闭缓出	Ease out off
+已减选：选区不再包含这个颜色	Subtracted: the selection no longer includes this color
+已分解“{0}”：放回 {1} 个片段	Decomposed “{0}”: {1} clips put back
+已切换到{0}	Switched to {0}
+已切换到“{0}”	Switched to “{0}”
+已创建 {0} 个片段的副本（{1}）	Copied {0} clips ({1})
+已创建副本：{0}	Copy created: {0}
+已创建副本：“{0}”（{1}）	Copy created: “{0}” ({1})
+已删除 {0} 个片段，保留空隙	Deleted {0} clips, leaving gaps
+已删除 {0} 处空隙，共 {1} 秒	Deleted {0} gaps, {1} s in all
+已删除 {0} 的内容，留下空隙	Deleted the content of {0}, leaving a gap
+已删除 {0} 秒空隙，后面的片段前移{1}	Deleted a {0} s gap; the clips after it moved earlier{1}
+已删除{0}	Deleted {0}
+已删除{0}{1}	Deleted {0}{1}
+已删除{0}关键帧 · 还剩 {1} 个	Deleted the {0} keyframe · {1} left
+已删除{0}关键帧，{1}不再移动	Deleted the {0} keyframe; {1} no longer moves
+已删除{0}的关键帧 · 还剩 {1} 个	Deleted the {0} keyframe · {1} left
+已删除{0}的关键帧，{1}不再变化	Deleted the {0} keyframe; {1} no longer changes
+已删除{0}的关键帧，强度不再变化	Deleted the {0} keyframe; the amount no longer changes
+已删除{0}，显示{1}	Deleted {0}; showing {1}
+已删除“{0}”	Deleted “{0}”
+已删除“{0}”及链接的片段，保留空隙	Deleted “{0}” and its linked clips, leaving a gap
+已删除“{0}”的代理	Deleted the proxy of “{0}”
+已删除“{0}”，保留空隙	Deleted “{0}”, leaving a gap
+已删除“{0}”，打开“{1}”	Deleted “{0}”; opened “{1}”
+已删除“{0}”，部分备份未能清理	Deleted “{0}”. Some backups could not be removed.
+已删除关键帧 · 还剩 {0} 个	Deleted the keyframe · {0} left
+已删除关键帧，{0}不再变化	Deleted the keyframe; {0} no longer changes
+已删除关键帧，片段不再有动画	Deleted the keyframe; the clip is no longer animated
+已删除变速点 · 还剩 {0} 个	Deleted the speed point · {0} left
+已删除变速点，片段恢复匀速	Deleted the speed point; the clip plays at one speed again
+已删除声像关键帧 · 还剩 {0} 个	Deleted a pan keyframe · {0} left
+已删除声像关键帧，声像不再变化	Deleted the pan keyframe; the pan no longer changes
+已删除媒体夹“{0}”{1}	Deleted bin “{0}”{1}
+已删除智能媒体夹“{0}”，素材仍在媒体池中	Deleted smart bin “{0}”; the media stays in the media pool
+已删除节点 {0}	Deleted node {0}
+已删除调色关键帧 · 还剩 {0} 个	Deleted the grade keyframe · {0} left
+已删除调色关键帧，调色不再变化	Deleted the grade keyframe; the grade no longer changes
+已删除轨道 {0}	Deleted track {0}
+已删除轨道 {0} 及其中 {1} 个片段	Deleted track {0} and its {1} clips
+已删除音量关键帧 · 还剩 {0} 个	Deleted the volume keyframe · {0} left
+已删除音量关键帧，音量不再变化	Deleted the volume keyframe; the volume no longer changes
+已剪切 {0} 个片段	Cut {0} clips
+已剪切“{0}”	Cut “{0}”
+已加入渲染队列：{0}	Added to the render queue: {0}
+已加入渲染队列：{0}{1}	Added to the render queue: {0}{1}
+已加选：选区扩大到包含这个颜色	Added: the selection grows to include this color
+已匹配到静帧：暗部、中间调、亮部按通道对齐	Matched to the still: shadows, midtones and highlights aligned per channel
+已反转遮罩：显示形状之外的画面	Mask inverted: shows the picture outside the shape
+已取消	Cancelled
+已取消 {0} 组链接	Unlinked {0} groups
+已取消录音	Recording cancelled
+已取消链接：画面和声音可以分别移动和修剪	Unlinked: picture and sound can be moved and trimmed separately
+已叠加“{0}”到 {1} · {2}（{3}）	Overlaid “{0}” on {1} · {2} ({3})
+已同步「{0}」：两者同时开始	Synced “{0}”: both start together
+已同步「{0}」：录音比画面早开始 {1} 秒	Synced “{0}”: the recording starts {1} s before the picture
+已同步「{0}」：录音比画面晚开始 {1} 秒	Synced “{0}”: the recording starts {1} s after the picture
+已启用 {0} 个片段	Enabled {0} clips
+已启用“{0}”{1}	Enabled “{0}”{1}
+已启用节点 {0}	Enabled node {0}
+已在 {0} {1}“{2}”（{3}）	{1} “{2}” at {0} ({3})
+已在 {0} 分割 {1} 个片段	Split {1} clips at {0}
+已在 {0} 定格 {1}，后面的片段顺延	Froze {1} at {0}; the clips after it move later
+已在 {0} 波纹覆盖“{1}”（{2}，原为 {3}）	Ripple-overwrote “{1}” at {0} ({2}, was {3})
+已在 {0} 添加{1}	Added {1} at {0}
+已在 {0} 添加下一条字幕	Added the next subtitle at {0}
+已在媒体池	already in the media pool
+已在第 {0} 帧添加关键帧 · 共 {1} 个	Added a keyframe at frame {0} · {1} in all
+已备份“{0}”	Backed up “{0}”
+已复制 {0} 个片段	Copied {0} clips
+已复制“{0}”	Copied “{0}”
+已复制“{0}”及链接的片段	Copied “{0}” and its linked clips
+已复制“{0}”的调色	Copied the grade of “{0}”
+已复制为“{0}”	Duplicated as “{0}”
+已完成	Done
+已导入	Imported
+已导入 LUT：{0}（{1}）{2}	LUT imported: {0} ({1}){2}
+已导入 {0} 个素材	Imported {0} media items
+已导入 {0} 个素材，{1} 个无法读取	Imported {0} media items, {1} could not be read
+已导入 {0} 条{1}字幕（{2}）	Imported {0} {1} subtitles ({2})
+已导出 EDL（{0} 个事件）到 {1}{2}	Exported an EDL ({0} events) to {1}{2}
+已导出 FCPXML（{0} 个片段）到 {1}{2}	Exported an FCPXML ({0} clips) to {1}{2}
+已导出当前帧：{0}.png，保存在“图片/{1}”	Exported the current frame: {0}.png, saved in Pictures/{1}
+已将 {0} 个片段{1} {2} 条轨道{3}	Moved {0} clips {1} {2} tracks{3}
+已将 {0} 个片段标为{1}色	Marked {0} clips {1}
+已将 {0} 个片段的{1}修剪到播放头	Trimmed the {1} of {0} clips to the playhead
+已将 {0} 个片段的{1}波纹修剪到播放头，后面的片段前移 {2}	Ripple-trimmed the {1} of {0} clips to the playhead; the clips after them moved earlier by {2}
+已将“{0}”与{1}的“{2}”交换	Swapped “{0}” with “{2}” on the {1}
+已将“{0}”放入“{1}”	Put “{0}” in “{1}”
+已将“{0}”的{1}粘贴到 {2} 个片段	Pasted the {1} of “{0}” onto {2} clips
+已将“{0}”的{1}粘贴到“{2}”	Pasted the {1} of “{0}” onto “{2}”
+已将“{0}”的转场换成：{1}	Changed the transition of “{0}” to: {1}
+已将“{0}”移出媒体夹	Took “{0}” out of the bin
+已将“{0}”移到 {1}	Moved “{0}” to {1}
+已将“{0}”重命名为“{1}”	Renamed “{0}” to “{1}”
+已将片段标为{0}色	Marked the clip {0}
+已展平“{0}”：换成所选机位的 {1} 个片段	Flattened “{0}”: replaced by {1} clips of the chosen angles
+已应用{0}“{1}”的调色	Applied the grade of {0} “{1}”
+已应用特效：{0}	Effect applied: {0}
+已开启代理播放：{0} 个视频用代理，渲染仍用原片	Proxy playback on: {0} videos use proxies, renders still use the originals
+已开启代理播放：还没有代理，在媒体页为素材生成	Proxy playback on: no proxies yet, make them for media on the Media page
+已开启缓入 · 到达此关键帧时逐渐减速	Ease in on · slows down arriving at this keyframe
+已开启缓出 · 离开此关键帧时逐渐加速	Ease out on · speeds up leaving this keyframe
+已开：{0} / {1} 个视频用代理播放，渲染始终用原片	On: {0} / {1} videos play proxies, renders always use the originals
+已开：播完从头再放	On: plays again from the start when it ends
+已录制“{0}”（{1}），放在 {2} 的 {3}	Recorded “{0}” ({1}), placed on {2} at {3}
+已恢复为新项目：{0}	Restored as a new project: {0}
+已恢复标准布局	Standard layout restored
+已手动设为 {0}（文件标记：{1}）	Set by hand to {0} (file tag: {1})
+已打开	Opened
+已打开{0}“{1}”{2}	Opened {0} “{1}”{2}
+已把 {0} 个片段加入渲染队列，每个片段一个文件	Queued {0,plural,one{# clip}other{# clips}}, one file each
+已把 {0} 个片段加入渲染队列，每个片段一个文件{1}	Added {0,plural,one{# clip}other{# clips}} to the render queue, one file each{1}
+已把 {0} 个片段收进复合片段“{1}”	Put {0} clips into compound clip “{1}”
+已把 {0} 条时间线加入渲染队列	Added {0} timelines to the render queue
+已把{0}{1}到 {2}	{1} {0} to {2}
+已把{0}的调色应用到“{1}”	Applied the grade of {0} to “{1}”
+已把“{0}”（{1}）以 {2} 	Put “{0}” ({1}) with {2} 
+已抓取{0}：{1} · {2}	Grabbed {0}: {1} · {2}
+已按{0}建立限定器：节点 2 的调色只作用于这些颜色	Made a qualifier from {0}: node 2's grade applies only to these colors
+已按“{0}”标记入出点 {1} → {2}	Marked In and Out from “{0}”: {1} → {2}
+已按吸取的颜色 {0} 抠像	Keyed with the picked color {0}
+已按波形对齐：{0}	Aligned by waveform: {0}
+已插入粘贴 {0} 个片段到 {1}，后面的片段后移 {2}	Insert-pasted {0} clips at {1}; the clips after them moved later by {2}
+已撤销 {0} 步，回到“{1}”之前	Undid {0} steps, back before “{1}”
+已撤销：{0}	Undid: {0}
+已改回原始素材播放	Back to playing the original media
+已新建{0}	Created {0}
+已新建{0}（复制自{1}）	Created {0} (copied from {1})
+已新建“{0}”	Created “{0}”
+已新建并打开“{0}”	Created and opened “{0}”
+已新建智能媒体夹“{0}”（{1} 个素材）	Created smart bin “{0}” ({1} media items)
+已旁通	Bypassed
+已是片段条中的最后一个片段	Already the last clip in the strip
+已是片段条中的第一个片段	Already the first clip in the strip
+已更新“{0}”的场记	Updated the metadata of “{0}”
+已更新智能媒体夹“{0}”（{1} 个素材）	Updated smart bin “{0}” ({1} media items)
+已有{0}字幕轨	There is already a {0} subtitle track
+已有同名的媒体夹	A bin with this name already exists
+已有同名的智能媒体夹	A smart bin with this name already exists
+已有名为“{0}”的轨道	A track named “{0}” already exists
+已柔化减选：这个颜色移出了选区的柔和边缘	Soft-subtracted: this color left the soft edge of the selection
+已柔化加选：这个颜色约一半被选中，选区边缘更柔和	Soft-added: about half of this color is selected, softening the edge
+已标准化到 {0} LUFS · 增益 {1} dB	Normalized to {0} LUFS · gain {1} dB
+已标旗标片段	Flagged clips
+已标记入点 {0}	Marked In {0}
+已标记出点 {0}	Marked Out {0}
+已标记时间线入点 {0}	Marked timeline In {0}
+已标记时间线出点 {0}	Marked timeline Out {0}
+已标记源入点 {0}	Marked source In {0}
+已标记源出点 {0}	Marked source Out {0}
+已框选 {0} 个片段	Marquee-selected {0} clips
+已波纹删除 {0} 个片段，后续片段最多前移 {1}	Ripple-deleted {0} clips; the clips after them moved earlier by up to {1}
+已波纹删除 {0}，后面的片段前移 {1}	Ripple-deleted {0}; the clips after it moved earlier by {1}
+已波纹删除“{0}”，后续片段前移 {1}	Ripple-deleted “{0}”; the clips after it moved earlier by {1}
+已波纹剪切{0}，后面的片段前移	Ripple-cut {0}; the clips after it moved earlier
+已添加{0}关键帧 · 共 {1} 个	Added a {0} keyframe · {1} in all
+已添加{0}窗口：节点 2 的调色只作用于窗口内	Added a {0} window: node 2's grade applies only inside it
+已添加{0}遮罩：形状之外露出下层轨道	Added a {0} mask: the tracks below show outside the shape
+已添加{0}，{1} 输出到它	Added {0}; {1} goes to it
+已添加{0}：{1}	Added {0}: {1}
+已添加{0}：在轨道的名称上选择输出到它	Added {0}: pick it as the output in a track's name
+已添加关键帧 · 共 {0} 个	Added a keyframe · {0} in all
+已添加到时间线：{0}（{1}）	Added to the timeline: {0} ({1})
+已添加变速点 · 片段分为 {0} 段	Added a speed point · the clip has {0} sections
+已添加声像关键帧 · 共 {0} 个	Added a pan keyframe · {0} in all
+已添加字幕轨 {0}（{1}），显示在画面上	Added subtitle track {0} ({1}), shown on the picture
+已添加节点 {0}：调整整个画面，在前面的节点之后	Added node {0}: adjusts the whole picture, after the nodes before it
+已添加调色关键帧 · 共 {0} 个	Added a grade keyframe · {0} in all
+已添加调色关键帧：再到别处调整，调色会随时间变化	Added a grade keyframe: change the grade elsewhere and it changes over time
+已添加轨道 {0}	Added track {0}
+已添加音量关键帧 · 共 {0} 个	Added a volume keyframe · {0} in all
+已清除 {0} 个片段的颜色	Cleared the color of {0} clips
+已清除 {0} 个素材的旗标	Cleared the flags of {0} media items
+已清除 {0} 条渲染记录，已导出的文件保留在原位置	Cleared render entries ({0}). Exported files remain in their original folders.
+已清除“{0}”的场记	Cleared the metadata of “{0}”
+已清除变速点，片段恢复 1×，时长 {0}	Cleared the speed points: the clip is back to 1×, duration {0}
+已清除旗标	Flags cleared
+已清除时间线入出点	Timeline In and Out cleared
+已清除源片段入出点	Source In and Out cleared
+已清除片段颜色	Clip color cleared
+已生成 LUT“{0}”（{1}）：已加入 LUT 库{2}{3}	Made LUT “{0}” ({1}): added to the LUT library{2}{3}
+已用 {0} 个机位新建多机位片段“{1}”：在检查器里点按机位即可切换	Made multicam clip “{1}” from {0} angles: tap an angle in the inspector to switch
+已用“{0}”替换 {1} 上的“{2}”（{3}）	Replaced “{2}” on {1} with “{0}” ({3})
+已移动 {0} 个片段 {1}{2}	Moved {0} clips {1}{2}
+已移动“{0}”到 {1}	Moved “{0}” to {1}
+已移除{0}{1}色旗标	Removed {0} {1} flag
+已移除特效：{0}	Effect removed: {0}
+已移除窗口	Window removed
+已移除窗口，限定器保留在全画面	Window removed; the qualifier stays on the full frame
+已移除转场：{0}	Transition removed: {0}
+已移除遮罩	Mask removed
+已移除限定器	Qualifier removed
+已粘贴 {0} 个片段到 {1}	Pasted {0} clips at {1}
+已经在最上面的轨道	Already on the top track
+已经在最下面的轨道	Already on the bottom track
+已经是{0}	Already {0}
+已经是最后一个调色版本	Already the last grade version
+已经是第一个调色版本	Already the first grade version
+已自动保存 · {0}	Saved automatically · {0}
+已自动调色：黑位 {0} → 0，白位 {1} → 100	Auto color done: black point {0} → 0, white point {1} → 100
+已设为倒放	Set to reverse
+已设为倒放：正在后台生成倒放素材，完成后预览自动更新	Set to reverse: making reversed media in the background; the preview updates when it is ready
+已调色	graded
+已调色片段	Graded clips
+已跟踪窗口：{0} 个关键帧，最多移动画面的 {1}%	Window tracked: {0} keyframes, moving at most {1}% of the picture
+已跟踪窗口：{0} 个关键帧，最多移动画面的 {1}%{2}	Tracked the window: {0,plural,one{# keyframe}other{# keyframes}}, moving up to {1}% of the picture{2}
+已跟踪遮罩：{0} 个关键帧，最多移动画面的 {1}%	Tracked the mask: {0,plural,one{# keyframe}other{# keyframes}}, moving up to {1}% of the picture
+已跟踪遮罩：{0} 个关键帧，最多移动画面的 {1}%{2}	Tracked the mask: {0,plural,one{# keyframe}other{# keyframes}}, moving up to {1}% of the picture{2}
+已返回“{0}”	Back to “{0}”
+已选择 {0} 个{1}色片段	Selected {0} {1} clips
+已选择 {0} 个片段	Selected {0} clips
+已选择 {0} 项 · {1}	{0} selected · {1}
+已重做 {0} 步，到“{1}”之后	Redid {0} steps, to after “{1}”
+已重做：{0}	Redid: {0}
+已重新加入队列	Queued again
+已重新链接 {0} 个素材	Relinked {0} media items
+已重新链接“{0}”（{1}）	Relinked “{0}” ({1})
+已链接片段：画面和声音一起移动和修剪	Clips linked: picture and sound move and trim together
+帧混合	Frame blend
+帧率	Frame rate
+常规	General
+幅度	Amount
+幕布	Screen
+干湿比	Dry/wet
+干湿比为 0：声音不变	Dry/wet is 0: the sound is unchanged
+干湿比为 0：声音不变；调高后听到房间的回响	Dry/wet is 0: the sound is unchanged; raise it to hear the room
+平滑	Smooth
+平滑变速	Smooth speed
+平滑过渡	Smooth transition
+平直	Flat
+平直：不改变声音	Flat: the sound is unchanged
+平移	Pan
+广播	Broadcast
+应用	Apply
+应用{0}的调色	Apply the grade of {0}
+应用到所选片段	Apply to selected clips
+应用前一片段的调色	Apply the previous clip's grade
+应用前一片段的调色（=）	Apply the previous clip's grade (=)
+应用前两个片段的调色	Apply the grade from two clips back
+应用前两个片段的调色（−）	Apply the grade from two clips back (−)
+应用特效	Apply effect
+应用调色	Apply grade
+应用转场	Apply transition
+应用转场到所选片段	Apply the transition to selected clips
+底噪压低 {0} dB	Noise floor lowered {0} dB
+底部	Bottom
+开	On
+开启低切	Turn low cut on
+开启动态缩放	Turn Dynamic Zoom on
+开启抠像	Turn the keyer on
+开启稳定	Turn stabilization on
+开启闪避后显示侧链电平与压低曲线	Turn ducking on to see the sidechain level and the reduction curve
+开头	Start
+开头 {0} 秒渐显{1}	Fades in over the first {0} s{1}
+开头 {0} 秒由小放大{1}	Grows from small over the first {0} s{1}
+开头 {0} 秒自下而上浮现{1}	Rises from below over the first {0} s{1}
+开始为 {0} 个视频生成代理，一次生成一个	Making proxies for {0} videos, one at a time
+开始为“{0}”生成代理（{1}）	Making a proxy for “{0}” ({1})
+开始录音	Start recording
+开源软件许可	Open-source licenses
+强光	Hard light
+强力压缩	Heavy compression
+强度	Strength
+强度 50%	Strength 50%
+强度为 0：声音不变	Strength is 0: the sound is unchanged
+归零	Reset to zero
+当前 {0}	Current {0}
+当前片段没有调色，无需生成 LUT	The clip has no grade: no LUT to make
+当前环境无法生成倒放素材	Reversed media cannot be made here
+当前画面	Current picture
+当前语言	Current language
+录制旁白	Record voice-over
+录制旁白：对着播放的节目录一段解说	Record voice-over: record a narration over the playing program
+录成不压缩的 WAV 文件（48 kHz · 16 位 · 单声道），和画面逐帧对齐	Records an uncompressed WAV file (48 kHz · 16-bit · mono), frame-aligned with the picture
+录音 · {0}	Recording · {0}
+录音太短，没有保存	The recording is too short and was not saved
+录音太短，没有可以放上时间线的声音	The recording is too short: no sound to put on the timeline
+录音时播放节目声音	Play the program's sound while recording
+形状之外变为透明，露出下层轨道；遮罩随画面移动和缩放	Transparent outside the shape, showing the tracks below; the mask moves and scales with the picture
+循环	Loop
+循环播放	Loop playback
+循环播放（Ctrl+/）	Loop playback (Ctrl+/)
+循环播放：关	Loop playback: off
+循环播放：开	Loop playback: on
+循环播放：开（Ctrl+/）	Loop playback: on (Ctrl+/)
+微移片段	Nudge clip
+总线	Bus
+总线 {0}	Bus {0}
+总线推子	Bus fader
+总线独奏	Bus solo
+总线静音	Bus mute
+恒定 {0} fps，与时间线相同；慢放和低帧率素材重复前一帧补齐	A constant {0} fps, the same as the timeline; slow motion and low-frame-rate media repeat the previous frame to fill in
+恢复为新项目	Restore as a new project
+恢复会创建一个新项目，原文件会保留。	Restoring creates a new project and keeps the original file.
+恢复标准布局	Restore standard layout
+慢放和低帧率素材缺的帧由前后两帧按时间混合，动作更连贯	Frames missing from slow motion and low-frame-rate media are blended from the frames either side by time: smoother motion
+慢放和低帧率素材缺的帧重复前一帧	Frames missing from slow motion and low-frame-rate media repeat the previous frame
+成片缺少素材：{0}	Missing media in this export: {0}
+我的媒体夹	My bins
+戴耳机时再打开：外放的声音会被麦克风录进去	Turn on with headphones: the speaker's sound would be picked up by the microphone
+房间	Room
+所有轨道都已锁定	All tracks are locked
+所有项目里用到它的调色都会显示 LUT 缺失，画面不再套用它；重新导入同一个 .cube 文件即可恢复。	Grades in every project that use it will show the LUT as missing and no longer apply it; import the same .cube file again to restore it.
+所选 {0} 个片段{1} {2}	{1} the {0} selected clips {2}
+所选位置	Selected position
+所选文件：{0}{1} · {2}	Selected file: {0}{1} · {2}
+所选片段不是标题	The selected clip is not a title
+所选片段后面没有紧邻的片段，无法滚动剪辑点	No clip right after the selected one: the cut cannot roll
+所选片段在已锁定的轨道上	The selected clip is on a locked track
+所选片段没有素材，无法标记旗标	The selected clip has no media to flag
+所选片段没有转场	The selected clip has no transition
+所选片段没有音频	The selected clip has no audio
+所选片段没有音频。	The selected clip has no audio.
+所选片段的两端没有紧挨着的片段，无法添加转场	No clip right next to either end of the selected clip: no transition can be added
+所选片段都不能接受这些属性	None of the selected clips can take these attributes
+所选的灰色	The selected grey
+所选素材已在媒体池中	The selected media is already in the pool
+所选素材没有旗标	The selected media has no flag
+所选音频轨已锁定，先解锁再录音	The selected audio track is locked: unlock it before recording
+所选颜色（色相 {0}°）	Selected color (hue {0}°)
+打不开这个文件：它可能已被移动或删除，或是之前安装的 {0} 渲染的	Can't open this file: it may have been moved or deleted, or rendered by an earlier install of {0}
+打开	Open
+打开后可以剪辑里面的片段、调色和调整声音，改动会用到每个使用它的片段；分解把里面的片段放回时间线，替换它。	Opened, you can edit the clips inside, grade them and adjust their sound, and the changes apply to every clip using it; decomposing puts the clips inside back on the timeline in its place.
+打开复合片段	Open compound clip
+打开复合片段 {0}	Open compound clip {0}
+打开多机位片段	Open multicam clip
+打开多机位片段 {0}：调整机位对齐	Open multicam clip {0}: adjust the angle alignment
+打开项目	Open project
+扩展器 / 门限	Expander / gate
+扭曲器	Warper
+找不到「{0}」与「{1}」相同的声音：确认它们是同一条录制	No sound in “{0}” matches “{1}”: check they are the same recording
+找不到复合片段“{0}”的内容	The content of compound clip “{0}” cannot be found
+找不到片段的素材	The clip's media cannot be found
+找不到这个片段的素材	This clip's media cannot be found
+找不到这条时间线	This timeline cannot be found
+找不到这条轨道	This track cannot be found
+找不到这条音频轨	This audio track cannot be found
+找到 {0} / {1} 个素材的文件。素材在时间线上的片段、旗标、媒体夹和场记都会保留。	Found the files of {0} / {1} media items. The media's clips on the timeline, flags, bins and metadata are all kept.
+找到 {0} 个项目 · 共 {1} 个	{0} of {1} projects found
+找到同名文件，但时长或大小不同：请确认后从候选中选择	A file with the same name was found, but its length or size differs: check it and pick from the candidates
+把 {0} 设为声音目标轨道	Make {0} the sound target track
+把 {0} 设为画面目标轨道	Make {0} the picture target track
+把所选片段新建为复合片段	New compound clip from the selected clips
+把所选片段新建为多机位片段	New multicam clip from the selected clips
+把所选的 {0} 组片段收进一个复合片段，放在原来的位置	Puts the {0} selected groups of clips into one compound clip in their place
+把播放头移到关键帧上，再设置缓入缓出	Move the playhead onto a keyframe first, then set the easing
+把播放头移到所选片段上，再在画面上吸取幕布颜色	Move the playhead onto the selected clip first, then pick the screen color in the picture
+把播放头移到片段内（不在首尾），再添加变速点	Move the playhead into the clip (not at its ends) first, then add a speed point
+把播放头移到片段内，再添加{0}关键帧	Move the playhead into the clip first, then add a {0} keyframe
+把播放头移到片段内，再添加关键帧	Move the playhead into the clip first, then add a keyframe
+把播放头移到片段内，再添加声像关键帧	Move the playhead into the clip, then add a pan keyframe
+把播放头移到片段内，再添加特效关键帧	Move the playhead into the clip first, then add an effect keyframe
+把播放头移到片段内，再添加调色关键帧	Move the playhead into the clip first, then add a grade keyframe
+把播放头移到片段内，再添加音量关键帧	Move the playhead into the clip first, then add a volume keyframe
+把播放头移到片段内，再调整关键帧	Move the playhead into the clip first, then adjust the keyframes
+把播放头移到片段内，再调整声像关键帧	Move the playhead into the clip, then adjust the pan keyframe
+把播放头移到片段内，再调整特效关键帧	Move the playhead into the clip first, then adjust the effect keyframes
+把播放头移到片段内，再调整音量关键帧	Move the playhead into the clip first, then adjust the volume keyframes
+把播放头移到窗口关键帧上，再设置缓入缓出	Move the playhead onto a window keyframe first, then set the easing
+把播放头移到调色关键帧上，再设置缓入缓出	Move the playhead onto a grade keyframe first, then set the easing
+把播放头移到音量关键帧上，再设置缓入缓出	Move the playhead onto a volume keyframe first, then set the easing
+抓取静帧	Grab still
+抓取静帧：播放头处的画面和调色	Grab still: the picture and grade at the playhead
+抖音	Douyin
+抖音竖屏	Douyin portrait
+抠像	Keyer
+抠像颜色 {0}	Key color {0}
+抠像：{0}	Keyer: {0}
+抠像：吸取颜色	Keyer: pick color
+拉伸	Stretch
+拉远	Pull back
+拖动其中任一片段可一起移动或换轨道，, 和 . 键一起微移，Ctrl+↑ / ↓ 一起上下换轨；按住 Ctrl / Cmd 点按片段，或开启时间线的「多选」，可加入或移出选择；多选时在空白处拖动可框选。	Drag any of them to move them together or change track; , and . nudge them together; Ctrl+↑ / ↓ moves them up or down a track together. Ctrl / Cmd-tap a clip, or turn on Multi-select on the timeline, to add it to or take it out of the selection; with Multi-select on, drag in empty space to marquee-select.
+拖动网格上的点：沿圆周改变附近颜色的色相，向内外改变饱和度；亮度不变，灰色不受影响。	Drag the points on the grid: around the circle changes the hue of nearby colors, in and out changes their saturation; brightness stays and grey is unaffected.
+按 1920×1080 画面的像素裁去各边，被裁去的部分露出下层轨道	Cuts back each edge in pixels of the 1920×1080 frame; what is cut away shows the tracks below
+按{0} {1}	By {0} {1}
+按{0}排序	Sort by {0}
+按亮度	By luminance
+按前后两帧之间的运动补出中间帧：运动的物体清晰不重影；遮挡处改为混合	Makes in-between frames from the motion between neighbouring frames: moving objects stay sharp without ghosting; occlusions blend instead
+按播放头处的调色	By the grade at the playhead
+按文件标记（{0}）	By file tag ({0})
+按文件标记：{0}	By file tag: {0}
+按条件自动收集：{0}	Collects automatically by: {0}
+按波形对齐	Align by waveform
+按波形对齐后使用它的声音	Use its sound after aligning by waveform
+按波形自动对齐所选片段	Align the selected clips by waveform
+按源文件名匹配媒体池，生成一条新时间线	Matches the media pool by source file name and makes a new timeline
+按片段标记入出点	Mark In and Out at the clip
+按项目	By project
+按项目设置（{0}）：{1}	By project setting ({0}): {1}
+换个关键词或分类试试。	Try another keyword or category.
+换个关键词试试，或清空搜索查看全部项目。	Try another keyword, or clear the search to see all projects.
+换成其他转场，时长和样式不变	Change to another transition, keeping the length and style
+授予权限	Grant permission
+排序	Sort
+排序：{0}，点按更改	Sort: {0}, tap to change
+排队中	Queued
+排队时的导出范围超出当前时间线，请重新标记范围并加入队列	The queued range extends beyond the current timeline. Set new In and Out points and add a new job.
+排除	Exclusion
+推入	Push
+推子	Fader
+推子 {0}	Fader {0}
+推近	Push in
+描边	Outline
+描边色	Outline color
+描边颜色	Outline color
+插入	Insert
+插入 / 覆盖 / 叠加到时间线入点 {0}，替换在播放头	Insert / overwrite / place on top at the timeline In {0}, replace at the playhead
+插入 / 覆盖 / 叠加到时间线出点 {0} 之前，替换在播放头	Insert / overwrite / place on top before the timeline Out {0}, replace at the playhead
+插入 / 覆盖 / 波纹覆盖 / 替换 / 叠加到时间线播放头 {0}	Insert / overwrite / ripple overwrite / replace / place on top at the timeline playhead {0}
+插入 / 覆盖 / 波纹覆盖 / 适配填充 / 叠加到时间线入点 {0} → 出点 {1}（{2}），替换在播放头	Insert / overwrite / ripple overwrite / fit to fill / place on top at the timeline In {0} → Out {1} ({2}), replace at the playhead
+插入粘贴	Paste insert
+搜索素材	Search media
+搜索项目	Search projects
+撤销	Undo
+撤销 {0} 步	Undo {0} steps
+撤销：{0}	Undo: {0}
+播完从头再放（入点到出点或整条时间线）	Plays again from the start when it ends (In to Out, or the whole timeline)
+播客人声	Podcast voice
+播客垫乐	Podcast bed
+播放	Play
+播放{0}	Play {0}
+播放头	Playhead
+播放头{0} {1}，到 {2}	Playhead {0} {1}, to {2}
+播放头下没有可分割的片段	No clip under the playhead to split
+播放头下没有片段	No clip under the playhead
+播放头下的片段都在已锁定的轨道上	The clips under the playhead are all on locked tracks
+播放头不在任何片段上	The playhead is not on a clip
+播放头不在片段内：移进片段再调整{0}	The playhead is outside the clip: move it into the clip to adjust {0}
+播放头不在片段内：移进片段再调整动画	The playhead is outside the clip: move it into the clip to adjust the animation
+播放头不在片段内：移进片段再调整声像	The playhead is outside the clip: move it in to adjust the pan
+播放头不在片段内：移进片段再调整窗口	The playhead is outside the clip: move it into the clip to adjust the window
+播放头不在片段内：移进片段再调整遮罩	The playhead is outside the clip: move it into the clip to adjust the mask
+播放头不在片段内：移进片段再调整音量	The playhead is outside the clip: move it into the clip to adjust the volume
+播放头不在片段内：移进片段再调色	The playhead is outside the clip: move it into the clip to grade
+播放头不在片段内：移进片段，速度改的是播放头所在的一段	The playhead is outside the clip: move it into the clip; the speed changes the section under the playhead
+播放头不在这个多机位片段上：点按机位会切换整段（{0}）	The playhead is not on this multicam clip: tapping an angle switches the whole clip ({0})
+播放头之后没有片段	No clip after the playhead
+播放头前后 2 秒	2 s around the playhead
+播放头前后 {0} 秒	{0} s around the playhead
+播放头处没有可以匹配的片段	No clip at the playhead to match
+播放头处的 {0} 上没有片段可替换	No clip on {0} at the playhead to replace
+播放头处的 {0} 上没有片段可波纹覆盖	No clip on {0} at the playhead to ripple-overwrite
+播放头所在的片段	The clip under the playhead
+播放头跳到 {0}	Playhead jumped to {0}
+播放或拖动播放头查看响度	Play or drag the playhead to see the loudness
+播放控制	Transport
+播放选项	Playback options
+播放速度	Playback speed
+播放速度 {0}，片段时长 {1}	Playback speed {0}, clip duration {1}
+播放速度、倒放和变速处理；素材范围不变，时长随之变化，后面的片段跟着移动	Playback speed, reverse and retime process; the media range stays, the length changes and the clips after it move along
+播放音频	Play audio
+支点	Pivot
+改过名，大小和时长一致	Renamed, same size and length
+放入媒体夹	Put in bin
+放到	Put on
+放在 {0} 上：录音覆盖这条轨在这段时间里原有的声音	On {0}: the recording replaces the sound already on this track during this time
+放在新建的音频轨上，不影响已有的声音	On a new audio track, leaving the sound already there
+放大	Zoom in
+放大 {0}%	Zoom {0}%
+放弃这段	Discard this take
+效果	Effects
+效果 {0}	Effects {0}
+效果 {0}：{1} 个在起作用	Effects {0}: {1} active
+效果强度	Effect amount
+教堂	Church
+数字从右往左按帧、秒、分、时填，如 15、1:00、+15、-1:00:00	Digits fill frames, seconds, minutes, hours from the right, e.g. 15, 1:00, +15, -1:00:00
+数据行数过多：应为 {0} 行	Too many data rows: {0} expected
+整个画面	Whole picture
+整个画面 · 动态	Whole picture · animated
+整体 I	Global I
+整体 Offset	Global Offset
+整体 {0} LUFS	Integrated {0} LUFS
+整条时间线	Whole timeline
+整段{0}切到{1}（{2}）	Switched the whole {0} to {1} ({2})
+整段切换	Switch whole clip
+整段切换：不剪切，播放头所在的整段换机位	Switch whole clip: no cut, the whole section under the playhead changes angle
+文件	File
+文件名	File name
+文件过大：{0}	File too large: {0}
+文件里没有可以识别的 EDL 事件	The file has no EDL events that can be read
+文件里没有可倒放的画面或声音	The file has no picture or sound to reverse
+文件里没有可识别的字幕	The file has no subtitles that can be read
+新建一个项目，导入设备里的视频，开始第一次剪辑。	Create a project, import videos from the device and start your first edit.
+新建复合片段	New compound clip
+新建多机位片段	New multicam clip
+新建媒体夹	New bin
+新建字幕轨（另一种语言）	New subtitle track (another language)
+新建总线并输出到它	New bus and output to it
+新建时间线	New timeline
+新建智能媒体夹	New smart bin
+新建版本	New version
+新建调色版本	New grade version
+新建调色版本（Ctrl+Shift+N）	New grade version (Ctrl+Shift+N)
+新建音轨	New audio track
+新建项目	New project
+方向	Direction
+方形	Square
+旁白	Voice-over
+旁白 {0}	Voice-over {0}
+旁白 {0}.wav	Voice-over {0}.wav
+旁白已保存到素材库：{0}	Voice-over saved to the media pool. {0}
+旁白放到哪条音轨	Which audio track the voice-over goes on
+旁通	Bypass
+旋转	Rotation
+旗标	Flags
+旗标、使用情况变了或导入新素材后，这里会自动更新。	Updates by itself when flags or usage change or new media is imported.
+旗标条件：{0}，点按更改	Flag condition: {0}, tap to change
+旗标：	Flags:
+无	None
+无代理	No proxy
+无场次	No scene
+无损 PCM 立体声 .wav，每分钟约 {0} MB，保存到“音乐/{1}”。	Lossless PCM stereo .wav, about {0} MB a minute, saved to Music/{1}.
+无旗标	No flag
+无法以 {0}×{1} 编码倒放画面（{2}）	The reversed picture cannot be encoded at {0}×{1} ({2})
+无法使用麦克风：请检查麦克风权限，或麦克风是否被占用	The microphone is unavailable: check the microphone permission, or whether it is in use
+无法保存 LUT：存储空间不足或不可写	Could not save the LUT: storage full or not writable
+无法保存代理文件	Could not save the proxy file
+无法保存倒放素材	Could not save the reversed media
+无法保存场记	Could not save the metadata
+无法保存录音，请检查设备存储空间后重试。	Could not save the recording. Check available device storage and try again.
+无法保存静帧：存储空间不足或不可写	Could not save the still: storage full or not writable
+无法修剪	Cannot trim
+无法修改	Cannot change
+无法修改关键帧	Cannot change the keyframe
+无法修改均衡器	Cannot change the EQ
+无法修改总线	Cannot change the bus
+无法修改时间线设置	Cannot change the timeline settings
+无法修改标记	Cannot change the marker
+无法修改淡化	Cannot change the fade
+无法修改轨道	Cannot change the track
+无法修改遮罩	Cannot change the mask
+无法写入图片库，请检查存储空间。	Could not write to the image library: check the storage space.
+无法写入相册，请检查存储空间。	Could not write to the gallery: check the storage space.
+无法分解复合片段	Cannot decompose the compound clip
+无法切换时间线	Cannot switch timelines
+无法切换机位	Cannot switch angles
+无法创建副本，请检查存储空间后重试	Could not create the copy: check the storage space and try again
+无法创建项目，请检查存储空间后重试	Could not create the project: check the storage space and try again
+无法删除“{0}”，项目和备份均已保留	Could not delete “{0}”. Your project and backups have been kept.
+无法删除标记	Cannot delete the marker
+无法取消同步	Cannot unsync
+无法变速	Cannot change the speed
+无法同步	Cannot sync
+无法复制	Cannot copy
+无法完成	Cannot finish
+无法完成编辑	Cannot finish the edit
+无法定格	Cannot freeze
+无法对齐	Cannot align
+无法导入 EDL	Cannot import the EDL
+无法导入 FCPXML	Cannot import the FCPXML
+无法导入 LUT：{0}	Cannot import the LUT: {0}
+无法导出当前帧	Cannot export the current frame
+无法平滑变速	Cannot smooth the speed
+无法恢复备份，请检查存储空间后重试	Could not restore the backup: check the storage space and try again
+无法打开时间线	Cannot open the timeline
+无法打开项目：文件已损坏或不存在	Cannot open the project: the file is damaged or missing
+无法播放	Cannot play
+无法放上时间线	Cannot put it on the timeline
+无法放入这条时间线	Cannot put it in this timeline
+无法新建复合片段	Cannot make a compound clip
+无法新建多机位片段	Cannot make a multicam clip
+无法更换语言	Cannot change the language
+无法标准化	Cannot normalize
+无法标记入出点	Cannot mark In and Out
+无法标记旗标	Cannot flag
+无法检测场景剪切：读取画面时出错	Cannot detect scene cuts: an error reading the picture
+无法添加到时间线	Cannot add to the timeline
+无法添加生成器	Cannot add the generator
+无法生成{0}	Cannot make {0}
+无法生成倒放素材：{0}	Cannot make reversed media: {0}
+无法移动	Cannot move
+无法移动标记	Cannot move the marker
+无法粘贴属性	Cannot paste attributes
+无法编码倒放的声音	Cannot encode the reversed sound
+无法解码这段声音	Cannot decode this sound
+无法设置编辑目标	Cannot set the edit target
+无法读取 FCPXML：文件不是有效的 XML	Cannot read the FCPXML: the file is not valid XML
+无法读取所选文件	Cannot read the selected file
+无法读取所选文件：请选择视频、音频或图片	Cannot read the selected file: pick a video, audio or image
+无法读取文件	Cannot read the file
+无法读取文件：{0}	Cannot read the file: {0}
+无法读取渲染出的画面。	Cannot read the rendered picture.
+无法读取画面	Cannot read the picture
+无法读取设备媒体	Cannot read the device's media
+无法读取这一帧	Cannot read this frame
+无法读取这一帧的画面	Cannot read this frame's picture
+无法读取这一帧的颜色	Cannot read this frame's colors
+无法读取这个视频的画面	Cannot read this video's picture
+无法读取音频	Cannot read the audio
+无法读取项目备份	Could not read project backups
+无法读取项目库	Could not read the project library
+无法读取项目，副本未创建	Cannot read the project: no copy made
+无法读取项目，未备份	Cannot read the project: not backed up
+无法调整淡化	Cannot adjust the fade
+无法调整淡化曲线	Cannot adjust the fade curve
+无法调整转场	Cannot adjust the transition
+无法调整音量	Cannot adjust the volume
+无法跟踪：读取画面时出错	Cannot track: an error reading the picture
+无法重新链接	Cannot relink
+无画面	No picture
+无音频	No audio
+无（字幕轨都已隐藏）	None (all subtitle tracks hidden)
+日	JA
+日本語	日本語
+时域降噪	Temporal NR
+时钟划像	Clock wipe
+时长	Duration
+时长 0.5 秒	Duration 0.5 s
+时长没有变化	The duration did not change
+时间码	Timecode
+时间码 {0}，点按输入	Timecode {0}, tap to enter
+时间线	Timeline
+时间线 1	Timeline 1
+时间线 {0}	Timeline {0}
+时间线“{0}”已删除	Timeline “{0}” deleted
+时间线上没有{0}色的片段	No {0} clips on the timeline
+时间线上没有入出点	No In or Out on the timeline
+时间线上没有入出点，将渲染整条时间线：在剪辑页按 I / O 或用飞梭台的入点、出点键标记	No In or Out on the timeline: the whole timeline will render. Mark them with I / O on the Edit page or the jog deck's In and Out keys
+时间线上没有剪辑点，无法添加转场	No cuts on the timeline: no transition can be added
+时间线上没有可以写进 FCPXML 的片段	No clips on the timeline can be written into an FCPXML
+时间线上没有可以删除的空隙	No gaps on the timeline to delete
+时间线上没有声音	No sound on the timeline
+时间线上还没有片段	No clips on the timeline yet
+时间线上还没有画面片段	No picture clips on the timeline yet
+时间线上还没有音频片段	No audio clips on the timeline yet
+时间线为空	The timeline is empty
+时间线为空，无法加入渲染队列	The timeline is empty: nothing to add to the render queue
+时间线为空，暂无可渲染内容	The timeline is empty: nothing to render yet
+时间线为空，没有可导出的画面	The timeline is empty: no picture to export
+时间线为空，没有可渲染的内容。	The timeline is empty: nothing to render.
+时间线出点之前放不下“{0}”（需要 {1}）	“{0}” does not fit before the timeline Out point (needs {1})
+时间线可以插入、覆盖或追加到时间线上	Timelines can be inserted, overwritten or appended to the timeline
+时间线名称	Timeline name
+时间线名称不能为空	The timeline name cannot be empty
+时间线改为 {0}×{1} {2}	Timeline changed to {0}×{1} {2}
+时间线改名为“{0}”	Timeline renamed to “{0}”
+时间线是空的	The timeline is empty
+时间线格式	Timeline format
+时间线画面	Timeline picture
+时间线的 V1、A1、A2 上没有可以写进 EDL 的片段	No clips on the timeline's V1, A1 or A2 can be written into an EDL
+时间线缩放	Timeline zoom
+时间线设置	Timeline settings
+时间线设置没有变化	The timeline settings did not change
+时间线都是空的，没有可渲染的内容	The timelines are all empty: nothing to render
+时间线：{0}，点按切换、新建或复制	Timeline: {0}, tap to switch, create or duplicate
+明亮	Bright
+明度	Luminosity
+昨天 {0}	Yesterday {0}
+显示形状之外的画面	Show the picture outside the shape
+显示轨道	Show track
+显示选区	Highlight
+显示选区：选中部分保留颜色，其余显示为灰色	Highlight: the selection keeps its color, the rest turns grey
+智能媒体夹	Smart bins
+智能媒体夹 {0}	Smart bin {0}
+智能媒体夹 {0}，{1}，{2} 个素材，长按编辑条件或删除	Smart bin {0}, {1}, {2} media items, long-press to edit the rules or delete
+智能媒体夹不存在	The smart bin does not exist
+智能媒体夹名称	Smart bin name
+暂不支持同时含 1D 和 3D 表的 LUT	LUTs with both 1D and 3D tables are not supported yet
+暂不支持这种声音格式的倒放	Reversing this sound format is not supported yet
+暂不支持这种视频格式的倒放（例如 10 位 HDR）	Reversing this video format is not supported yet (e.g. 10-bit HDR)
+暂不链接	Not now
+暂停	Pause
+暂无画面	No picture yet
+暖色褪色	Warm fade
+暖阳渐变	Warm sun gradient
+暗角	Vignette
+暗部 Lift	Shadows Lift
+曝光	Exposure
+曲线	Curves
+曲线：{0}	Curves: {0}
+更改时长…	Change duration…
+更改片段时长	Change clip duration
+更改选择	Change selection
+替换	Replace
+替换四项设置，保留侧链；未开启时一并开启	Replaces the four settings and keeps the sidechain; turns it on if it is off
+替换时间线播放头处的片段（{0}）：源播放头对齐时间线播放头，片段长度不变	Replace the clip at the timeline playhead ({0}): the source playhead lines up with the timeline playhead, the clip keeps its length
+替换片段	Replace clip
+最上面的轨道上已有选中的片段	Selected clips are already on the top track
+最下面的轨道上已有选中的片段	Selected clips are already on the bottom track
+最佳	Best
+最后一个关键帧之后没有变化，无需缓出	No motion after the last keyframe: no ease out needed
+最后点选的「{0}」没有声音：最后点选一个有声音的片段作参照	“{0}”, picked last, has no sound: pick a clip with sound last as the reference
+最多 {0} 个关键词	At most {0} keywords
+最多 {0} 个媒体夹	At most {0} bins
+最多 {0} 个字，不能与其他媒体夹同名	At most {0} characters, not the same as another bin
+最多 {0} 个字，不能与其他轨道同名	At most {0} characters, not the same as another track
+最多 {0} 个字，时间线上的片段标签显示这个名称	At most {0} characters; the clip labels on the timeline show this name
+最多 {0} 个智能媒体夹	At most {0} smart bins
+最多 {0} 个机位	At most {0} angles
+最多 {0} 个节点：节点 01、02 和串行节点 03–0{1}	At most {0} nodes: nodes 01, 02 and serial nodes 03–0{1}
+最多 {0} 条{1}轨道	At most {0} {1} tracks
+最多 {0} 条字幕轨（每种语言一条）	At most {0} subtitle tracks (one per language)
+最多 {0} 条总线	At most {0} buses
+最短	Shortest
+最近 30 秒的短期响度	Short-term loudness over the last 30 s
+最近帧	Nearest
+最近的第 {0} 个变速点两侧速度相同（{1}），不需要平滑过渡	Speed point {0} nearest ({1}) has the same speed on both sides: no smoothing needed
+最近的第 {0} 个变速点（{1}）立即变速；拖动滑块，让速度在一段时间内平滑过渡	Speed point {0} nearest ({1}) changes speed at once; drag the slider to ramp the speed over a stretch of time
+有关键帧的数值调整后记在播放头处，其余数值整段改变	Changes to keyframed values are recorded at the playhead; other values change for the whole clip
+有关键帧的数值调整后记在此处 · 可设缓入缓出	Changes to keyframed values are recorded here · easing can be set
+有变速点的片段不能倒放：先清除变速点	A clip with speed points cannot be reversed: clear the speed points first
+有变速点的片段不能检测场景剪切	Scene cuts cannot be detected in a clip with speed points
+有素材无法读取，请检查原文件是否仍在设备上。	Some media cannot be read: check the original files are still on the device.
+有素材的编码格式无法解码，请替换该素材后重试。	Some media uses a codec that cannot be decoded: replace it and try again.
+未使用	Unused
+未压低	No reduction
+未同步：使用视频自带的声音	Not synced: uses the video's own sound
+未启用：只压低齿音频段	Off: lowers only the sibilant band
+未启用：打开后只压低齿音频段，人声主体不受影响	Off: on, it lowers only the sibilant band, leaving the voice itself
+未启用：打开后声音带上房间的回响，片段后面有空隙时尾音延续到空隙里	Off: on, the sound takes on the room's reverb, and with a gap after a clip the tail rings into the gap
+未启用：给声音加上房间的回响	Off: adds a room's reverb to the sound
+未命名	Untitled
+未命名项目	Untitled project
+未填写	Not filled in
+未开启：另一条轨道有声音时自动压低本轨	Off: lowers this track automatically while another track has sound
+未开启：打开后按每个文件自己的噪声底压低噪声	Off: on, it lowers noise by each file's own noise floor
+未开启：打开后，侧链轨道发声时这条轨道自动压低	Off: on, this track lowers automatically while the sidechain track sounds
+未开启：打开门限、压缩器或限制器	Off: turn on the gate, compressor or limiter
+未开启：按测得的底噪逐频段压低噪声	Off: lowers noise band by band by the measured floor
+未放入媒体夹	Not in a bin
+未标记入出点：编辑时使用整段素材。按 I / O 标记源片段	No In or Out marked: edits use the whole media. Mark the source with I / O
+未标记（按 Rec.709）	Untagged (Rec.709 assumed)
+未知错误	Unknown error
+未能保存 EDL 到“下载”文件夹	Could not save the EDL to the Downloads folder
+未能保存 FCPXML 到“下载”文件夹	Could not save the FCPXML to the Downloads folder
+未调色片段	Ungraded clips
+未选择	Not selected
+未选择素材	No media selected
+本片段入点前余量不够，转场移向剪辑点后（{0}）。	Not enough handle before this clip's In point: the transition moves after the cut ({0}).
+本片段入点前只剩 {0} 秒可用，转场缩短为 {1} 秒。	Only {0} s left before this clip's In point: the transition is shortened to {1} s.
+本片段入点前没有余量素材，转场无法提前开始，按硬切播放。	No handle before this clip's In point: the transition cannot start early and plays as a cut.
+机位 {0}	Angle {0}
+机位切换内容	Angle switching
+条 {0}	Take {0}
+条件没有变化	The rules did not change
+条次	Take
+板式	Plate
+柔光	Soft light
+柔化	Softness
+柔化：加选、减选改为调整选区的柔和边缘	Soft: add and subtract adjust the soft edge of the selection instead
+柔和压缩	Gentle compression
+查看备份	View backups
+查看抠像遮罩	View key matte
+查看遮罩	View matte
+标准	Standard
+标准化	Normalize
+标记	Markers
+标记 	Marker 
+标记 {0}	Marker {0}
+标记为可用的一条	Marked as a usable take
+标记为可用的一条（Resolve 的 Good Take）	Marked as a usable take (Resolve's Good Take)
+标记入点	Mark In
+标记出点	Mark Out
+标记名称	Marker name
+标记名称不能为空	The marker name cannot be empty
+标记备注	Marker note
+标记已删除	Marker deleted
+标记时长	Marker duration
+标记时长 {0} 秒	Marker duration {0} s
+标记时间线入点（I）	Mark timeline In (I)
+标记时间线出点（O）	Mark timeline Out (O)
+标记范围：用入出点	Marker range: use In and Out
+标记颜色	Marker color
+标记颜色：{0}	Marker color: {0}
+标题	Title
+标题{0}	Title {0}
+标题和字幕不能做成机位	Titles and subtitles cannot be angles
+标题文字	Title text
+标题样式	Title style
+标题样式：{0}	Title style: {0}
+标题样式：动画	Title style: animation
+标题样式：字重	Title style: weight
+标题样式：背景	Title style: background
+标题样式：颜色	Title style: color
+标题没有可滑移的素材	A title has no media to slip
+标题没有源素材	A title has no source media
+标题片段不能倒放	Title clips cannot be reversed
+标题片段不能变速	Title clips cannot change speed
+标题片段不能替换为素材	Title clips cannot be replaced with media
+标题颜色：{0}	Title color: {0}
+校色	Corrector
+框内没有可加入的片段	No clips in the box to add
+检测到 {0} 处场景剪切，已切成 {1} 段	Found {0} scene cuts, split into {1} sections
+检测场景剪切	Detect scene cuts
+棕	Brown
+模糊、锐化、暗角等片段特效，以及抠像	Clip effects such as blur, sharpen and vignette, and the keyer
+模糊半径	Blur radius
+模糊溶解	Blur dissolve
+横向拉宽	Stretch wide
+横屏	Landscape
+橙	Orange
+正值让纹理更突出，负值让中间调更柔和	Positive brings out texture, negative softens midtones
+正在使用 · 点按重新比较	In use · tap to compare again
+正在保存…	Saving…
+正在分析 {0} 的响度…	Analysing the loudness of {0}…
+正在分析摄像机运动 {0}%	Analysing camera motion {0}%
+正在匹配…	Matching…
+正在对齐…	Aligning…
+正在导入 LUT	Importing the LUT
+正在导入…	Importing…
+正在导出…	Exporting…
+正在导出当前帧，完成后再渲染队列	Exporting a still. Start the queue when the still is ready.
+正在抓取…	Grabbing…
+正在播放{0}	playing {0}
+正在显示	Showing
+正在查找…	Searching…
+正在检测「{0}」的场景剪切…	Detecting scene cuts in “{0}”…
+正在比较声音…	Comparing sound…
+正在测量“{0}”的噪声底…	Measuring the noise floor of “{0}”…
+正在测量响度…	Measuring loudness…
+正在测量节目响度…	Measuring program loudness…
+正在渲染，完成后再导出当前帧	Rendering: export the current frame when it is done
+正在渲染，新加入的任务会接着渲染	Rendering — jobs you add follow on
+正在生成…	Making…
+正在生成倒放素材… {0}%	Making reversed media… {0}%
+正在生成定格帧…	Making the freeze frame…
+正在设备中按文件名查找…	Searching the device by file name…
+正在读取声音并比较…	Reading and comparing sound…
+正在读取画面 0%	Reading the picture 0%
+正在读取画面 {0}%	Reading the picture {0}%
+正在跟踪 {0}%	Tracking {0}%
+正常	Normal
+正片叠底	Multiply
+此项目没有可用备份	No backups are available for this project
+母版	Master
+母版 H.265	Master H.265
+每个关键词最多 {0} 个字	Each keyword has at most {0} characters
+每个机位最多带一条声音	Each angle carries at most one sound
+每项数值的关键帧各自独立：移动时间或改缓动只影响这条曲线	Each value's keyframes are independent: moving them or changing the easing affects only this curve
+比例不同的素材	Media of a different shape
+比例不同的素材{0}	Media of a different shape{0}
+比噪声底高 {0} dB 以内的声音压低 {1} dB，	Sound within {0} dB above the noise floor is lowered {1} dB,
+比率	Ratio
+比较声音中…	Comparing sound…
+水平	Horizontal
+水平位置	Pan
+没有{0}片段	No {0} clips
+没有{0}，可在筛选中改回全部片段	No {0}; you can switch the filter back to all clips
+没有匹配的素材	No matching media
+没有匹配的项目	No matching projects
+没有可以对齐的片段	No clips to align
+没有可以粘贴到这个片段的属性	No attributes can be pasted onto this clip
+没有可以返回的上一级时间线	No parent timeline to go back to
+没有可播放视频的应用，可在系统文件管理器的 Movies 目录查找	No app can play videos. Look in Movies in the system file manager.
+没有可播放音频的应用，可在系统文件管理器的 Music 目录查找	No app can play audio. Look in Music in the system file manager.
+没有可替换的轨道	No track to replace on
+没有可波纹覆盖的轨道	No track to ripple-overwrite on
+没有声音	no sound
+没有找到可以重新链接的文件	No files found to relink
+没有找到场景剪切	No scene cuts found
+没有找到场景剪切：片段是一个连续的镜头	No scene cuts found: the clip is one continuous shot
+没有按项目设置缩放的片段：检查器的缩放方式选“按项目”的片段才会按这里显示	No clips scale by the project setting: only clips whose inspector scaling is “By project” follow this
+没有机位 {0}	No angle {0}
+没有离线素材	No offline media
+没有空闲的视频轨道可以叠加	No free video track to place on top
+没有空闲的音频轨道可以叠加	No free audio track to place on top
+没有符合条件的素材	No media matches the rules
+没有获得访问{0}的权限，这里不会列出它们	Not allowed to read {0}, so they are not listed here
+没有解码出任何画面或声音	No picture or sound was decoded
+没有轨道	No tracks
+没有这个调色版本	No such grade version
+没有这种颜色的片段	No clips of this color
+没有需要去掉的抖动	No shake to remove
+波形	Waveform
+波纹	Ripple
+波纹修剪	Ripple trim
+波纹删除	Ripple delete
+波纹删除入点至出点	Ripple delete In to Out
+波纹删除区间	Ripple delete range
+波纹剪切	Ripple cut
+波纹覆盖	Ripple overwrite
+波纹覆盖要用时间线的入点和出点：再标记一个点，或清除标记后替换播放头处的片段	Ripple overwrite uses the timeline In and Out: mark one more point, or clear the marks and replace the clip at the playhead
+波纹覆盖（{0}）：源片段的入点到出点替换时间线播放头处的片段（或时间线入点到出点），后面的片段随长度变化前后移动	Ripple overwrite ({0}): the source In to Out replaces the clip at the timeline playhead (or the timeline In to Out), and the clips after it move with the change in length
+测试图 · 75% 彩条	Test pattern · 75% bars
+淡入	Fade in
+淡入曲线	Fade in curve
+淡入淡出	Fade in and out
+淡出	Fade out
+淡出曲线	Fade out curve
+深度	Depth
+深度为 0：声音不变	Depth is 0: the sound is unchanged
+深度压低	Deep reduction
+混合器	Mixer
+混响	Reverb
+混响 · {0}	Reverb · {0}
+混响房间：{0}	Reverb room: {0}
+混响时间	Reverb time
+混响衰减曲线：{0} 秒衰减 60 dB	Reverb decay curve: decays 60 dB in {0} s
+混响：{0}	Reverb: {0}
+混响：关闭	Reverb: off
+混响：干湿比	Reverb: dry/wet
+混响：开启	Reverb: on
+混响：混响时间	Reverb: reverb time
+混响：预延迟	Reverb: pre-delay
+混响：高频衰减	Reverb: high damping
+添加{0}	Add {0}
+添加{0}关键帧	Add {0} keyframe
+添加串行节点：调整整个画面，在最后一个节点之后	Add serial node: adjusts the whole picture, after the last node
+添加关键帧	Add keyframe
+添加关键帧后，窗口可以随时间移动，跟住移动的主体	With keyframes, the window can move over time to follow a moving subject
+添加关键帧后，调色可以随时间变化，跟上光线	With keyframes, the grade can change over time to follow the light
+添加关键帧后，音量可以随时间变化	With keyframes, the volume can change over time
+添加到播放头处	Add at the playhead
+添加到时间线	Add to timeline
+添加变速点	Add speed point
+添加字幕	Add subtitle
+添加总线	Add bus
+添加控制点	Add control point
+添加曲线控制点	Add curve point
+添加标记	Add marker
+添加标题	Add title
+添加标题到时间线	Add title to timeline
+添加生成器	Add generator
+添加窗口	Add window
+添加节点 {0}	Add node {0}
+添加视频轨	Add video track
+添加轨道	Add track
+添加转场	Add transition
+添加音频轨	Add audio track
+清空搜索	Clear search
+清除	Clear
+清除入出点	Clear In and Out
+清除变速点	Clear speed points
+清除已完成	Clear finished
+清除旗标	Clear flags
+清除片段颜色	Clear clip color
+渐变	Gradient
+渐变 · 橙到紫	Gradient · orange to purple
+渐变 · 深蓝到黑	Gradient · navy to black
+渐显	Fade up
+温暖	Warm
+渲染 {0} → {1}（{2}，{3}）	Render {0} → {1} ({2}, {3})
+渲染中	Rendering
+渲染中 {0}%	Rendering {0}%
+渲染大约需要 {0} GB 空间（临时文件和存进相册的文件各一份），设备只剩 {1} GB。请清理空间，或缩短渲染范围后重试。	The render needs about {0} GB (a temporary file plus the copy in the gallery), but the device has only {1} GB left. Free up space or shorten the render range and try again.
+渲染失败（{0}），请重试。	Render failed ({0}): please try again.
+渲染失败，请重试（{0}）。	The render failed, try again ({0}).
+渲染方式	Render
+渲染范围	Render range
+渲染范围内没有声音，无法只导出音频。	No sound in the render range: audio alone cannot be exported.
+渲染范围里没有{0}片段	No {0} clips in the render range
+渲染范围里没有片段	No clips in the render range
+渲染进度 {0}%	Render progress {0}%
+渲染队列	Render queue
+渲染预设	Render presets
+源 	Source 
+源片段	Source
+源片段刮擦条	Source scrub bar
+溢色抑制	Spill suppression
+滑动	Slide
+滑动 {0} 帧	Slide {0} frames
+滑动片段	Slide clip
+滑移	Slip
+滑移 {0} 帧	Slip {0} frames
+滚动	Roll
+滚动剪辑点	Roll cut
+滚动剪辑点 {0} 帧	Roll cut {0} frames
+滚动字幕	Scrolling credits
+滤色	Screen
+漂白旁路	Bleach bypass
+灰度	Grey
+灰度 = {0}·R + {1}·G + {2}·B	Grey = {0}·R + {1}·G + {2}·B
+灰色没有色相可以柔化，请用加选	Grey has no hue to soften: use Add
+点“吸取颜色”，再点画面里要调整的颜色：节点 2 的调色将只作用于相近的颜色。	Tap “Pick color”, then tap the color in the picture to adjust: node 2's grade will apply only to similar colors.
+点击柔和边缘里的颜色，把它移出边缘	Tap a color in the soft edge to take it out of the edge
+点击画面中的颜色，让它落在选区的柔和边缘里	Tap a color in the picture to put it in the soft edge of the selection
+点击画面中要加入选区的颜色	Tap a color in the picture to add to the selection
+点击画面中要移出选区的颜色	Tap a color in the picture to take out of the selection
+点击画面中要调整的颜色	Tap the color in the picture to adjust
+点按加点，两侧自动加锚点 · 双击删除	Tap to add a point, anchors are added either side · double-tap to delete
+点按机位：在播放头处剪切，之后切到该机位（{0}）；播放时也可以点按	Tap an angle: cuts at the playhead and switches to that angle after it ({0}); also works while playing
+点按机位：播放头所在的整段切到该机位（{0}）	Tap an angle: the whole section under the playhead switches to it ({0})
+点按添加窗口	Tap to add a window
+点按生成或删除代理	tap to make or delete the proxy
+点按编辑场次、镜头、条次、关键词和备注	tap to edit scene, shot, take, keywords and notes
+点按选择录音文件	tap to pick the recording
+点数值右侧的关键帧按钮，让这一项随时间变化；全部添加则一次记下所有数值	Tap the keyframe button beside a value to animate it; Add all records every value at once
+点曲线上的关键帧选中它：拖动改时间和数值，拖动两侧的控制点改快慢	Tap a keyframe on the curve to select it: drag to change its time and value, drag the handles either side to change its pace
+然后回到播放头	Then back to the playhead
+照片	photos
+照片和视频的访问范围受限。	Access to photos and videos is limited.
+片尾字幕	End credits
+片段	Clip
+片段 {0} {1}	Clip {0} {1}
+片段 · {0}	Clip · {0}
+片段不能再往前滑了	The clip cannot slide any earlier
+片段不能再往后滑了	The clip cannot slide any later
+片段几乎无声	The clip is almost silent
+片段几乎无声，无法标准化	The clip is almost silent and cannot be normalized
+片段只有一个调色版本	The clip has only one grade version
+片段均衡器	Clip EQ
+片段均衡器：{0}	Clip EQ: {0}
+片段增益	Clip gain
+片段太短，无法测量响度（至少 0.4 秒）	The clip is too short to measure loudness (at least 0.4 s)
+片段太短，无法测量（至少 0.4 秒）	The clip is too short to measure (at least 0.4 s)
+片段太长：先切短再检测	The clip is too long: cut it shorter before detecting
+片段太长：先切短再跟踪	The clip is too long: cut it shorter before tracking
+片段已不在时间线上	The clip is no longer on the timeline
+片段已停用：不播放、不渲染（按 D 切换）	Clip disabled: neither plays nor renders (D to toggle)
+片段已经无法再修剪	The clip cannot be trimmed any further
+片段已重命名为“{0}”	Clip renamed to “{0}”
+片段或所在轨道已停用，启用后可重试	The clip or its track is disabled. Enable it and retry.
+片段按帧排在时间线上，帧率在新建项目时确定	Clips sit on the timeline frame by frame; the frame rate is set when the project is created
+片段无法再加长：素材或后面的片段挡住了	The clip cannot get longer: the media or the clip after it is in the way
+片段无法再缩短	The clip cannot get shorter
+片段时长	Clip duration
+片段条中没有片段	No clips in the strip
+片段没有变速点	The clip has no speed points
+片段没有可测量的音频	The clip has no audio to measure
+片段的变调（半音），长度不变	The clip's pitch shift (semitones); length unchanged
+片段筛选：{0}	Clip filter: {0}
+片段自己的均衡器	The clip's own EQ
+片段至少 {0} 帧	A clip has at least {0} frames
+片段音量和声像，含关键帧	The clip's volume and pan, keyframes included
+片段音量，含音量关键帧	Clip volume, including volume keyframes
+片段颜色	Clip color
+片段颜色：{0}	Clip color: {0}
+版本	Version
+版本 1	Version 1
+版本 {0}	Version {0}
+特效	Effects
+特效不存在	The effect does not exist
+特效关键帧	Effect keyframes
+特效只能应用到画面片段	Effects can be applied to picture clips only
+特效强度	Effect amount
+特粗	Heavy
+独奏	Solo
+独奏 {0}	Solo {0}
+琥珀	Amber
+生成	Generate
+生成 LUT	Generate LUT
+生成中 {0}%	Making {0}%
+生成代理	Make proxy
+生成器的尺寸与时间线不符	The generator's size does not match the timeline
+生成失败	Failed to make
+用入出点	Use In and Out
+用当前片段的调色生成 LUT（33³）	Make a LUT from the clip's grade (33³)
+电平表	Meters
+电话音	Telephone
+画廊	Gallery
+画质	Quality
+画面	Picture
+画面 {0}	Picture {0}
+画面+声音	Picture + sound
+画面变换	Picture transform
+画面和声音	Picture and sound
+画面和声音的淡入、淡出时长	Fade in and fade out lengths of picture and sound
+画面太平或几乎是单色，无法匹配	The picture is too flat or nearly one color to match
+画面太平或几乎是单色，无法自动调色	The picture is too flat or nearly one color for auto color
+画面将落在 {0}	Picture will land on {0}
+画面布局	Picture layout
+画面布局：{0}	Picture layout: {0}
+画面是黑场	black picture
+画面是黑场、没有声音	black picture, no sound
+画面最多移动 {0}	The picture moves at most {0}
+画面比例与时间线不同时：适应留黑边，填充裁去多出的部分，拉伸会变形，原尺寸不缩放	When the picture's shape differs from the timeline: Fit leaves black bars, Fill crops the excess, Stretch distorts, Original size does not scale
+画面淡入	Picture fade in
+画面淡入曲线	Picture fade in curve
+画面淡出	Picture fade out
+画面淡出曲线	Picture fade out curve
+画面烧录：	Burned into the picture:
+画面落在的视频轨道	The video track the picture lands on
+画面静止处平均前后几帧的噪点，运动处保持原样	Averages noise over neighbouring frames where the picture is still; moving areas stay as they are
+画面：机位 {0}	Picture: angle {0}
+界面语言	Interface language
+界面语言：{0}	Interface language: {0}
+白	White
+白场闪白	Flash to white
+白色保留，黑色被抠掉	White stays, black is keyed out
+白色纯色	White solid
+监视器和导出都	In the monitors and on export
+目标	Target
+目标 {0}	Target {0}
+目标位置已被占用	The destination is taken
+目标响度	Target loudness
+目标轨道已锁定	The target track is locked
+直接出现，直接消失	Appears and disappears directly
+直方图	Histogram
+相似度	Similarity
+相加	Add
+真峰值 {0}	True peak {0}
+瞬时 M	Momentary M
+瞬时 {0}	Momentary {0}
+矢量示波器	Vectorscope
+矩形	Rectangle
+短期 S	Short-term S
+短期 {0}	Short-term {0}
+短边 540 像素，只含画面；渲染始终用原片	540 pixels on the short side, picture only; renders always use the originals
+确定	OK
+示波器：{0}	Scopes: {0}
+离开	Leaving
+离开音频页或关闭窗口时，会保存已录的旁白。	Leaving the Audio page or closing this window saves your recording.
+离线	Offline
+秒	s
+移到 {0}	Move to {0}
+移动	Move
+移动关键帧	Move keyframe
+移动到其他轨道	Move to another track
+移动或调整窗口，会在播放头处添加关键帧	Moving or adjusting the window adds a keyframe at the playhead
+移动标记	Move marker
+移动片段	Move clip
+移动窗口	Move window
+移动遮罩	Move mask
+移除	Remove
+移除效果	Remove effect
+移除特效	Remove effect
+移除窗口	Remove window
+移除转场	Remove transition
+移除遮罩	Remove mask
+移除限定器	Remove qualifier
+稳定	Stabilization
+稳定平滑度	Stabilization smoothness
+稳定强度	Stabilization strength
+稳定时放大遮住边缘	Zoom in to hide the edges when stabilizing
+稳定路径：	Stabilized path:
+稳定：不放大	Stabilization: no zoom
+稳定：放大遮边	Stabilization: zoom to hide the edges
+空间降噪	Spatial NR
+窄	Narrow
+窗口	Window
+窗口 · {0}	Window · {0}
+窗口 · 限定器	Window · Qualifier
+窗口关键帧	Window keyframes
+窗口关键帧：缓入	Window keyframe: ease in
+窗口关键帧：缓出	Window keyframe: ease out
+窗口内	Inside the window
+窗口只作用于画面的一部分，未写入	The window covers only part of the picture: not written
+窗口外	Outside the window
+窗口形状：{0}	Window shape: {0}
+窗口跟踪	Window tracking
+窗口：{0}	Window: {0}
+窗口：反转	Window: invert
+窗口：取消反转	Window: uninvert
+窗口：拖动以移动	Window: drag to move
+立体声	Stereo
+立即	Immediate
+立即备份	Back up now
+竖屏	Portrait
+符合条件：{0} 个素材	Matching: {0} media items
+第 {0} 个变速点两侧速度相同，不需要平滑过渡	Speed point {0} has the same speed on both sides: no smoothing needed
+第 {0} 个变速点在 {1} 秒内平滑过渡	Speed point {0} ramps smoothly over {1} s
+第 {0} 个变速点改为立即变速	Speed point {0} changes speed at once
+第 {0} 个变速点（{1}）的过渡有一部分在片段之外，剪短前的画面不变	Part of the ramp of speed point {0} ({1}) lies outside the clip; the picture before it was cut stays the same
+第 {0} 个变速点（{1}）：速度在 {2} 秒内平滑过渡，变速点在过渡中间，片段时长不变	Speed point {0} ({1}): the speed ramps smoothly over {2} s with the point in the middle of the ramp; the clip keeps its length
+第 {0} 段速度 {1}，片段时长 {2}	Section {0} speed {1}, clip duration {2}
+第 {0} 行不是三个数值：{1}	Line {0} is not three values: {1}
+第 {0} 行应有 {1} 个数值	Line {0} should have {1} values
+第 {0} 行：LUT_1D_SIZE 不是整数	Line {0}: LUT_1D_SIZE is not an integer
+第 {0} 行：LUT_3D_SIZE 不是整数	Line {0}: LUT_3D_SIZE is not an integer
+第 {0} 行：数据之后不能再有设置项	Line {0}: no settings may follow the data
+第一个关键帧之前没有变化，无需缓入	No motion before the first keyframe: no ease in needed
+简中	CHS
+简体	Simplified
+简体中文	简体中文
+简单	Simple
+类型	Type
+类型不同：“{0}”是{1}，所选文件是{2}	Different kind: “{0}” is {1}, the selected file is {2}
+类型不同：原素材是{0}，所选文件是{1}	Different kind: the original media is {0}, the selected file is {1}
+粉	Pink
+粉色旗标	Pink flag
+粗	Bold
+粗体	Bold
+粘贴	Paste
+粘贴{0}	Paste {0}
+粘贴属性	Paste attributes
+粘贴属性…	Paste attributes…
+粘贴片段	Paste clip
+粘贴调色	Paste grade
+精修	Refine
+素材 {0}×{1}	Media {0}×{1}
+素材 {0}×{1} 比画面{2}：	Media {0}×{1} is {2} than the frame:
+素材与时间线同为 {0}×{1}，原尺寸正好铺满画面	Media and timeline are both {0}×{1}: original size fills the frame exactly
+素材与时间线的画面比例相同，适应、填充、拉伸看起来一样	Media and timeline have the same shape: Fit, Fill and Stretch look the same
+素材仍在媒体池中	The media stays in the media pool
+素材前面没有更多内容	No more media before it
+素材后面没有更多内容	No more media after it
+素材已不在媒体池中	The media is no longer in the media pool
+素材已不存在	The media no longer exists
+素材或后面的片段只够	The media or the clip after it only lasts
+素材离线	Media offline
+素材离线，无法匹配	Media offline: cannot match
+素材离线，无法匹配帧	Media offline: cannot match frame
+素材离线，无法同步	Media offline: cannot sync
+素材离线，无法吸取颜色	Media offline: cannot pick a color
+素材离线，无法定格	Media offline: cannot freeze
+素材离线，无法抓取静帧	Media offline: cannot grab a still
+素材离线，无法测量	Media offline: cannot measure
+素材离线，无法添加：{0}	Media offline, cannot add: {0}
+素材离线，无法自动调色	Media offline: cannot auto color
+素材离线：原文件已被移动或删除	Media offline: the original file was moved or deleted
+索引	Index
+紫	Purple
+紫色旗标	Purple flag
+繁中	CHT
+繁体	Traditional
+繁體	Traditional
+繁體中文	繁體中文
+红	Red
+红 ⇄ 绿	Red ⇄ Green
+红 ⇄ 蓝	Red ⇄ Blue
+红绿蓝各自压缩高光：最稳妥，很亮的颜色会自然褪白	Red, green and blue compress their highlights each: the safest, very bright colors fade naturally to white
+红色旗标	Red flag
+红色输出	Red output
+纯五度	Perfect 5th
+纯四度	Perfect 4th
+纯色 · 18% 灰	Solid · 18% grey
+纯色 · 抠像测试	Solid · keying test
+纯色 · 文字背景	Solid · text background
+纯色 · 白场、闪白	Solid · white, flash
+纯色 · 黑场、垫底	Solid · black, underlay
+纵向拉高	Stretch tall
+线性	Linear
+细	Thin
+细线是摄像机的路径，粗线是稳定后画面走的路径；上为水平，下为垂直	The thin line is the camera's path, the thick one the stabilized picture's; horizontal above, vertical below
+细节	Detail
+结尾	End
+绿	Green
+绿 ⇄ 蓝	Green ⇄ Blue
+绿幕	Green screen
+绿框是第一帧的画面，红框是最后一帧的	The green box is the first frame's picture, the red box the last's
+绿色旗标	Green flag
+绿色纯色	Green solid
+绿色输出	Green output
+缓入	Ease in
+缓入缓出	Ease in and out
+缓出	Ease out
+缓动	Easing
+编码	Encoding
+编码器不支持 {0} {1} {2} fps，请降低分辨率或帧率后重试。	The encoder does not support {0} {1} {2} fps: lower the resolution or frame rate and try again.
+编码器不支持 {0}，请降低分辨率或帧率后重试。	The encoder does not support {0}: lower the resolution or frame rate and try again.
+编码器没有给出画面格式	The encoder gave no picture format
+编码视频时出错：请重试；如果反复出现，试着降低分辨率或换用 H.264（{0}）。	Encoding the video failed: try again; if it keeps failing, lower the resolution or use H.264 ({0}).
+编辑	Edit
+编辑场记	Edit metadata
+编辑时每 10 分钟自动备份一次；保留最近 1 小时的全部备份、24 小时内每小时一份、7 天内每天一份	Backs up automatically every 10 minutes while editing; keeps every backup from the last hour, one an hour for 24 hours and one a day for 7 days
+编辑智能媒体夹	Edit smart bin
+编辑条件	Edit rules
+编辑条件…	Edit rules…
+编辑片段均衡器	Edit clip EQ
+缩放	Zoom
+缩放方式	Scaling
+缩放方式、缩放、位置、旋转、不透明度、合成模式、裁切、动态缩放，含关键帧	Scaling, zoom, position, rotation, opacity, composite mode, crop, Dynamic Zoom, with keyframes
+缩放方式：{0}	Scaling: {0}
+缩放模糊	Zoom blur
+缩略图	Thumbnails
+背景	Background
+背景框	Background box
+胶片 2383	Film 2383
+胶片颗粒	Film grain
+自动	Auto
+自动对齐	Auto align
+自动调色	Auto color
+自动调色（Shift+Alt+C）：按画面的黑位、白位设定暗部与亮部，并校正偏色	Auto color (Shift+Alt+C): sets shadows and highlights from the picture's black and white points and corrects color casts
+自定义	Custom
+自带声音	Own sound
+色差	Chromatic aberration
+色度阈值	Chroma threshold
+色彩	Color
+色彩增强	Color boost
+色彩扭曲器网格：拖动点改变色相和饱和度	Color warper grid: drag the points to change hue and saturation
+色彩扭曲器：{0}	Color warper: {0}
+色彩扭曲器：重置{0}	Color warper: reset {0}
+色彩斑点约 {0} 级以内	Color specks within about {0} levels
+色温	Temperature
+色相	Hue
+色相 {0}°	Hue {0}°
+色相·亮度	Hue · Lum
+色相·色相	Hue · Hue
+色相·饱和	Hue · Sat
+色相对亮度	Hue vs Lum
+色相对色相	Hue vs Hue
+色相对饱和度	Hue vs Sat
+色相范围	Hue range
+色调	Tint
+色调映射	Tone mapping
+色调映射：{0}	Tone mapping: {0}
+节点	Nodes
+节点 01 之前 · 对比视图左侧是降噪前	Before node 01 · the compare view's left side is before noise reduction
+节点 01 关键帧 · 调色	Node 01 keyframes · grade
+节点 01、02 不能停用：可以重置它们的调色	Nodes 01 and 02 cannot be disabled: you can reset their grades
+节点 02 关键帧 · 窗口位置	Node 02 keyframes · window position
+节点 02 的窗口只作用于画面的一部分，无法写进 LUT；节点 01 没有调色	Node 02's window covers only part of the picture and cannot be written into a LUT; node 01 has no grade
+节点 {0} {1}	Node {0} {1}
+节点 {0} {1}，{2}{3}	Node {0} {1}, {2}{3}
+节点 {0} · {1}	Node {0} · {1}
+节点关键帧：{0}	Node keyframes: {0}
+节目几乎无声	The program is almost silent
+节目响度	Program loudness
+节目响度 {0} LUFS · 真峰值 ≤ {1} dBTP	Program loudness {0} LUFS · true peak ≤ {1} dBTP
+节目响度 · LUFS	Program loudness · LUFS
+节目响度：瞬时 {0}，短期 {1}，整体 {2} LUFS，	Program loudness: momentary {0}, short-term {1}, integrated {2} LUFS,
+范围	Range
+范围内的 {0} 个片段各存一个文件（共 {1}）：只含片段本身和链接的声音，文件名后加片段名	{0,plural,one{# clip}other{# clips}} in the range, one file each ({1} in all): just the clip and its linked sound, its name added to the file name
+范围：{0} → {1}（时间线入点到出点）	Range: {0} → {1} (timeline In to Out)
+蓝	Blue
+蓝幕	Blue screen
+蓝色旗标	Blue flag
+蓝色纯色	Blue solid
+蓝色输出	Blue output
+藏青	Navy
+补偿	Makeup
+衰减	Reduction
+裁切	Crop
+裁切 上	Crop top
+裁切 下	Crop bottom
+裁切 右	Crop right
+裁切 左	Crop left
+裁切{0}	Crop {0}
+裁切柔化	Crop softness
+要以 {0} 播放才能填满入出点，超出 {1}–{2} 的范围	Filling In to Out would need {0}, outside the range {1}–{2}
+覆盖	Overwrite
+视频	Video
+视频 · {0}	Video · {0}
+视频尺寸无效	Invalid video size
+视频转场	Video transitions
+视频里没有可解码的关键帧	The video has no keyframes that can be decoded
+角	Corner
+角度	Angle
+解码	Decoding
+解码或编码出错	A decoding or encoding error
+解码素材时出错：请重试；如果反复出现，试着替换出错的素材（{0}）。	Decoding the media failed: try again; if it keeps failing, replace the media that fails ({0}).
+解锁轨道	Unlock track
+设为入出点	Set as In and Out
+设备上还没有视频、音频或图片。	No videos, audio or images on the device yet.
+设备中没有找到这个文件，可以手动选择	The file was not found on the device: you can pick it by hand
+设备处理过慢，渲染中断。请关闭其他应用，或降低分辨率后重试。	The device is too slow and the render stopped. Close other apps or lower the resolution and try again.
+该位置已有标记	A marker is already here
+请先在时间线上选择标题	Select a title on the timeline first
+请先在时间线上选择片段	Select a clip on the timeline first
+请先在时间线上选择片段，或标记入点和出点	Select a clip on the timeline first, or mark an In and Out point
+请先在时间线上选择要粘贴到的片段	Select the clip to paste onto on the timeline first
+请先在时间线上选择视频片段	Select a video clip on the timeline first
+请先填写文件名	Enter a file name first
+请先点选时间线上的空隙	Tap a gap on the timeline first
+请先选择一个画面片段	Select a picture clip first
+请先选择一条字幕	Select a subtitle first
+请先选择多机位片段	Select a multicam clip first
+请先选择片段	Select a clip first
+请先选择素材	Select media first
+请先选择视频	Select a video first
+请先选择音频片段	Select an audio clip first
+请在系统设置的应用权限里允许 {0} 访问	Allow {0} access in the app permissions of the system settings
+请恢复读取权限或在媒体页重新链接后重试。	Restore read access or relink on the Media page, then retry.
+请把播放头移到所选片段上	Move the playhead onto the selected clip
+请检查设备存储后重试。	Check your device storage and try again.
+请点在画面上	Tap on the picture
+请至少设置一个条件	Set at least one rule
+读不出参照片段的声音	The reference clip's sound cannot be read
+读取素材或写入文件时出错：请确认素材仍在设备上、设备还有空间，然后重试（{0}）。	Reading the media or writing the file failed: make sure the media is still on the device and there is free space, then try again ({0}).
+读取设备媒体时出错：{0}	Error reading the device's media: {0}
+调整会记录在此关键帧 · 可设缓入缓出	Changes are recorded in this keyframe · easing can be set
+调整整个画面，接在前一个节点之后 · 不设关键帧	Adjusts the whole picture after the node before it · no keyframes
+调整曲线	Adjust curve
+调整节点 01，会在播放头处添加关键帧	Adjusting node 01 adds a keyframe at the playhead
+调整音量	Adjust volume
+调整音量关键帧	Adjust volume keyframe
+调色	Color
+调色关键帧	Grade keyframes
+调色关键帧：缓入	Grade keyframe: ease in
+调色关键帧：缓出	Grade keyframe: ease out
+调色前	Before
+调色前后对比	Before and after
+调色后	After
+调色版本：{0}，共 {1} 个，点按切换、新建或删除	Grade version: {0}, {1} in all, tap to switch, create or delete
+调色：{0}	Grade: {0}
+调音台	Mixer
+调音台视图	Mixer view
+调高强度后，“嘶”“丝”这类齿音会被压低	Raised, sibilants like “s” and “sh” are lowered
+起点 	Start 
+起音	Attack
+超宽布局：时间轴铺满加宽的窗口	Ultrawide layout: the timeline across a wider window
+超宽布局：窗口加宽到 2700 dp，时间轴铺满底部，上方并排两个监视器	Ultrawide layout: the window widens to 2700 dp, the timeline runs across the bottom, two viewers side by side above
+距底	From bottom
+跟踪	Track
+跟踪时大小跟随画面缩放	Tracking: the size follows the subject's zoom
+跟踪时角度跟随画面旋转	Tracking: the angle follows the subject's turn
+跟踪窗口	Track window
+跟踪窗口：从播放头向前和向后跟随画面	Track window: follows the picture backward and forward from the playhead
+跟踪遮罩	Track mask
+跟踪遮罩：从播放头向前和向后跟随画面	Track mask: follow the picture from the playhead backward and forward
+跟随系统	System default
+跳到入点	Go to In
+跳到出点	Go to Out
+跳转	Jump
+轨道	Tracks
+轨道 {0} 已重命名为“{1}”	Track {0} renamed to “{1}”
+轨道上的第一个片段	The first clip on the track
+轨道不存在	The track does not exist
+轨道声音 {0}	Track sound {0}
+轨道已锁定	The track is locked
+轨道显示 {0}	Track visible {0}
+轨道样式 · {0}	Track style · {0}
+轨道输出	Track output
+转场	Transition
+转场 {0} 秒	Transition {0} s
+转场{0}	Transition {0}
+转场只能应用到画面片段	Transitions can be applied to picture clips only
+转场对齐	Transition alignment
+转场已经是{0}	The transition is already {0}
+转场描边	Transition border
+转场改为：{0}	Transition changed to: {0}
+转场方向	Transition direction
+转场时长	Transition duration
+转场柔化	Transition softness
+转场类型	Transition type
+转场类型：{0}	Transition type: {0}
+转场缓动	Transition easing
+转场角度	Transition angle
+转场颜色	Transition color
+轻微	Slight
+输入字幕	Enter subtitle
+输入时间码	Enter timecode
+输入时间码（如 00:00:03:00 或 3:00）或秒数（如 2.5）	Enter a timecode (e.g. 00:00:03:00 or 3:00) or seconds (e.g. 2.5)
+输入标题文字	Enter title text
+输入色彩空间	Input color space
+返回“{0}”（{1} 里的复合片段）	Back to “{0}” (compound clip in {1})
+返回上一级	Back up a level
+返回列表	Back to the list
+返回项目库	Back to project library
+还有 {0} 个视频没有代理，一次生成一个	{0} videos still have no proxy; made one at a time
+还没有“{0}”的噪声底：打开降噪后会自动测量	No noise floor for “{0}” yet: it is measured when noise reduction is turned on
+还没有备份：打开项目编辑时会自动备份，或点“立即备份”	No backups yet: projects back up automatically while you edit, or tap “Back up now”
+还没有总线：点「添加总线」，再在轨道视图里点轨道名称，把对白、音乐等轨道输出到同一条总线，一个推子一起调。	No buses yet: tap “Add bus”, then tap track names in the track view to send dialogue, music and other tracks to one bus and adjust them with one fader.
+还没有标记：按 M 或下方按钮在播放头处添加	No markers yet: press M or the button below to add one at the playhead
+还没有读到画面，稍后再试	No picture read yet: try again in a moment
+还没有静帧：在播放头处抓取一张，用来对比镜头、复用调色	No stills yet: grab one at the playhead to compare shots and reuse grades
+还没有项目	No projects yet
+这一段已经是 {0}	This section is already {0}
+这个备份已无法读取	This backup can no longer be read
+这个多机位片段没有声音部分	This multicam clip has no sound part
+这个多机位片段没有画面部分	This multicam clip has no picture part
+这个标记没有范围：先设置时长或用入出点	This marker has no range: set a duration or use In and Out first
+这个片段没有可以做关键帧的属性	This clip has no properties to keyframe
+这个片段没有这条曲线	This clip does not have this curve
+这个视频没有自带声音，无法按波形同步	This video has no sound of its own and cannot sync by waveform
+这个颜色不在选区里	This color is not in the selection
+这个颜色在选区正中，无法只减去它	This color is in the middle of the selection and cannot be subtracted alone
+这个颜色在选区的核心里，请用减选	This color is in the core of the selection: use Subtract
+这个颜色已在选区的柔和边缘里	This color is already in the selection's soft edge
+这个颜色已在选区里	This color is already in the selection
+这个颜色无法加入选区	This color cannot be added to the selection
+这个颜色离选区太远，柔化够不到它，请用加选	This color is too far from the selection for softening to reach: use Add
+这台设备无法读取解码后的画面	This device cannot read the decoded picture
+这台设备的编码器不支持通用 YUV 输入	This device's encoder does not support generic YUV input
+这条总线已不存在	This bus no longer exists
+这条素材的说明	Notes on this media
+这条轨道上还没有声音片段	No sound clips on this track yet
+这里不能导出静帧。	Stills cannot be exported here.
+这里已有关键帧	A keyframe is already here
+这里已经有变速点	A speed point is already here
+这里的剪辑点已经有转场	The cut here already has a transition
+进入	Arriving
+迷你时间线	Mini timeline
+追加	Append
+追加到时间线末尾（Shift+F12）	Append to the end of the timeline (Shift+F12)
+适应	Fit
+适配全片	Zoom to fit
+适配填充	Fit to fill
+适配填充到 {0} → {1}	Fit to fill {0} → {1}
+适配填充要先在时间线上标记入点和出点	Fit to fill needs an In and Out point on the timeline first
+适配填充（{0}）：源片段的入点到出点变速，正好填满时间线的入点到出点	Fit to fill ({0}): the source In to Out changes speed to fill the timeline In to Out exactly
+逆时针	Counter-clockwise
+选一个房间，或调高干湿比	Pick a room, or raise dry/wet
+选一个预设替换整条曲线，再按需微调	Pick a preset to replace the whole curve, then fine-tune as needed
+选一个预设替换门限、压缩器和限制器的设置，再按需微调	Pick a preset to replace the gate, compressor and limiter settings, then fine-tune as needed
+选中的片段没有链接	The selected clips are not linked
+选择一个声音片段	Select a sound clip
+选择一个画面片段和一个声音片段来链接	Select a picture clip and a sound clip to link
+选择一个素材进行预览	Select media to preview
+选择全部{0}色片段	Select all {0} clips
+选择全部片段	Select all clips
+选择右侧全部片段	Select all clips to the right
+选择形状后，片段只在形状内显示，形状外露出下层轨道	With a shape picked, the clip shows only inside it and the tracks below show outside
+选择文件…	Choose file…
+选择片段后滑动	Select a clip, then slide
+选择片段后滑移	Select a clip, then slip
+选择片段后滚动	Select a clip, then roll
+选择窗口形状后，可以添加关键帧	Pick a window shape to add keyframes
+选择至少两个片段：最后点选的片段作为参照	Select at least two clips: the one tapped last is the reference
+选择至少两个画面片段：每个是一个机位（先对齐）	Select at least two picture clips: each is an angle (align them first)
+选择要导入的视频、音频或图片。素材以引用方式加入媒体池，不会复制文件。	Pick videos, audio or images to import. Media joins the media pool by reference; files are not copied.
+选择音频片段后测量响度	Select an audio clip to measure loudness
+选择项目	Select project
+选段 {0}	Selection {0}
+选色以外	Outside the picked color
+逐字	Typewriter
+逐字打出，{0} 个字 {1} 秒打完{2}	Types out letter by letter, {0} characters in {1} s{2}
+遮住画面移动时露出的边缘	Hides the edges that show when the picture moves
+遮罩	Mask
+遮罩{0}	Mask {0}
+遮罩关键帧	Mask keyframes
+遮罩形状	Mask shape
+遮罩形状：{0}	Mask shape: {0}
+遮罩恢复为显示形状之内的画面	The mask shows the picture inside the shape again
+遮罩模糊	Matte blur
+遮罩精修	Matte finesse
+遮罩跟踪	Mask tracking
+遮罩需要一个形状	A mask needs a shape
+遮罩：拖动以移动	Mask: drag to move
+那里已有另一个标记	Another marker is already there
+部分完成	Partially complete
+部分片段在已锁定的轨道上：会改动它们的编辑将被拒绝	Some clips are on locked tracks: edits that change them will be refused
+采样率	Sample rate
+释放	Release
+释放空间；需要时可以再生成	Frees space; it can be made again when needed
+重做	Redo
+重做 {0} 步	Redo {0} steps
+重做：{0}	Redo: {0}
+重命名	Rename
+重命名…	Rename…
+重命名媒体夹	Rename bin
+重命名标记	Rename marker
+重命名片段	Rename clip
+重命名轨道	Rename track
+重命名轨道 {0}	Rename track {0}
+重新分析	Analyse again
+重新分析摄像机运动	Analyse camera motion again
+重新授权	Grant again
+重新渲染	Render again
+重新生成代理	Make proxy again
+重新读取	Rescan library
+重新链接	Relink
+重新链接 {0} 个	Relink {0}
+重新链接…	Relink…
+重新链接离线素材	Relink offline media
+重新链接离线素材：在设备中查找或手动选择文件	Relink offline media: search the device or pick files by hand
+重新链接素材	Relink media
+重置	Reset
+重置 RGB 混合器	Reset RGB mixer
+重置动态	Reset dynamics
+重置均衡器	Reset EQ
+重置字幕样式	Reset subtitle style
+重置曲线	Reset curve
+重置标题样式	Reset title style
+重置此点	Reset this point
+重置混响	Reset reverb
+重置色彩扭曲器	Reset color warper
+重置裁切	Reset crop
+重置调色	Reset grade
+重置闪避	Reset ducking
+重置降噪	Reset noise reduction
+重置齿音消除	Reset de-esser
+重试	Retry
+铺满画面，{0} {1} 倍	Fills the frame, {0} {1}×
+铺满画面，裁去{0}各 {1}%	Fills the frame, cutting {1}% off each {0}
+链接到 {0}	Link to {0}
+链接片段	Link clips
+链接的片段在已锁定的轨道上	The linked clips are on locked tracks
+锁定轨道	Lock track
+锁定轨道 {0}	Lock track {0}
+锐化	Sharpen
+键轨道已不存在：不起作用	The key track no longer exists: no effect
+镜 {0}	Shot {0}
+镜像	Mirror
+镜头	Shot
+镜头匹配	Shot match
+长按编辑条件或删除	long-press to edit the conditions or delete
+长按重命名或删除	long-press to rename or delete
+门限	Gate
+闪避	Ducking
+闪避 · {0}	Ducking · {0}
+闪避曲线	Ducking curve
+闪避预设	Ducking presets
+闪避预设：{0}	Ducking preset: {0}
+闪避：{0}	Ducking: {0}
+闪避：侧链 {0}	Ducking: sidechain {0}
+闪避：关闭	Ducking: off
+闪避：开启	Ducking: on
+阈值	Threshold
+阈值 {0}	Threshold {0}
+队列为空。设置好参数后点“加入渲染队列”。	The queue is empty. Set things up and tap “Add to render queue”.
+队列里没有等待渲染的任务，先点“加入渲染队列”	Nothing waiting in the queue: tap “Add to render queue” first
+阴影	Shadow
+降低	Lower
+降噪	Noise reduction
+降噪 · {0}	Noise reduction · {0}
+降噪半径	NR radius
+降噪半径：{0}	NR radius: {0}
+降噪量	Reduction
+降噪量为 0：声音不变	Reduction is 0: the sound is unchanged
+降噪量：噪声压低多少；阈值：比噪声底高多少以内算噪声	Reduction: how much the noise is lowered; threshold: how far above the noise floor still counts as noise
+降噪：{0}	Noise reduction: {0}
+降噪：关闭	Noise reduction: off
+降噪：开启	Noise reduction: on
+降序 ↓	Descending ↓
+限制器	Limiter
+限定器	Qualifier
+限定器页面	Qualifier page
+限定器：{0}	Qualifier: {0}
+限定器：{0}{1}	Qualifier: {0}{1}
+限定器：减选颜色	Qualifier: subtract color
+限定器：加选颜色	Qualifier: add color
+限定器：反转	Qualifier: invert
+限定器：取消反转	Qualifier: uninvert
+限定器：柔化减选	Qualifier: soft subtract
+限定器：柔化加选	Qualifier: soft add
+隐藏轨道	Hide track
+需要“照片和视频”和“音乐和音频”权限才能在设备中查找文件；也可以逐个手动选择文件。	The Photos and videos and Music and audio permissions are needed to search the device for files; you can also pick files one by one.
+需要另一条音频轨道作为侧链	Another audio track is needed as the sidechain
+需要麦克风权限才能录制旁白：请在系统设置里允许 {0} 使用麦克风	Recording a voice-over needs the microphone permission: allow {0} to use the microphone in the system settings
+霓虹夜	Neon night
+青	Cyan
+青柠	Lime
+青橙电影	Teal & orange
+青色旗标	Cyan flag
+静帧	Stills
+静帧 {0}	Still {0}
+静帧图片缺失：{0}	Still image missing: {0}
+静帧太平或几乎是单色，无法匹配	The still is too flat or nearly one color to match
+静帧已删除	Still deleted
+静帧的图片已丢失，无法匹配	The still's image is lost and cannot be matched
+静帧缺少素材：{0}	Missing media in this still: {0}
+静态图片没有可滑移的素材	A still image has no media to slip
+静音	Mute
+静音 {0}	Mute {0}
+韩	KO
+音乐和音频	music and audio
+音乐整合	Music integration
+音调	Pitch
+音调 	Pitch 
+音调归零	Reset pitch
+音调（半音）	Pitch (semitones)
+音轨 · 拖动片段两端的淡化手柄调整淡入淡出	Audio tracks · drag the fade handles at a clip's ends to adjust fades
+音量	Volume
+音量 {0}	Volume {0}
+音量与声像	Volume and pan
+音量关键帧	Volume keyframes
+音量变化：调整会记录在播放头处的关键帧	Volume changes: changes are recorded in the keyframe at the playhead
+音量变化：调整会记录在此关键帧 · 可设缓入缓出	Volume changes: changes are recorded in this keyframe · easing can be set
+音量缓入	Volume ease in
+音量缓出	Volume ease out
+音频	Audio
+音频 · {0}	Audio · {0}
+音频交叉淡化	Audio cross fade
+音频无需代理	Audio needs no proxy
+音频时间线	Audio timeline
+音频格式	Audio format
+音频片段没有画面	Audio clips have no picture
+音频片段没有画面属性	Audio clips have no picture properties
+音频片段没有画面属性。	Audio clips have no picture properties.
+音频素材无法读取：{0}	Cannot read audio source: {0}
+音频素材：{0}	Audio media: {0}
+音频轨已满：请选一条已有的音频轨	The audio tracks are full: pick an existing audio track
+顶部	Top
+项目名称	Project name
+项目备份 · {0}	Project backups · {0}
+项目备份…	Project backups…
+项目库	Project library
+项目文件无法读取	Project file could not be read
+项目至少要有一条时间线	A project needs at least one timeline
+项目里已有名为“{0}”的时间线	The project already has a timeline named “{0}”
+项目里没有需要代理的视频	No videos in the project need proxies
+顺时针	Clockwise
+预延迟	Pre-delay
+预览为近似效果 · 画中画与转场在导出时精确合成	The preview is approximate · picture-in-picture and transitions are composited exactly on export
+预览出错：{0}	Preview error: {0}
+预计 {0} · {1} · 	Estimated {0} · {1} · 
+预计 {0} · {1} · 仅音频 {2}	Estimated {0} · {1} · audio only {2}
+预设	Presets
+预设 {0}	Preset {0}
+预设：{0}	Preset: {0}
+频段	Band
+频率	Frequency
+颜色	Color
+颜色、字重、描边、阴影、背景与入场动画	Color, weight, outline, shadow, background and entrance animation
+颜色减淡	Color dodge
+颜色加深	Color burn
+颜色过渡	Color dip
+飞梭 {0}	Jog {0}
+飞梭模式	Jog mode
+饱和度	Saturation
+马赛克	Mosaic
+高	High
+高于时间线（{0} fps）：每秒渲染 {1} 帧，素材帧不够时重复前一帧	Above the timeline ({0} fps): renders {1} frames a second, repeating the previous frame when the media runs short
+高光	Highlights
+高斯模糊	Gaussian blur
+高频	High
+高频 {0}	High {0}
+高频衰减	High damping
+麦克风电平	Mic level
+黄	Yellow
+黄色旗标	Yellow flag
+黑	Black
+黑场过渡	Dip to black
+黑白	Black and white
+黑色纯色	Black solid
+齿音消除	De-esser
+齿音消除 · {0}	De-esser · {0}
+齿音消除：关闭	De-esser: off
+齿音消除：开启	De-esser: on
+齿音消除：强度	De-esser: strength
+齿音消除：频段 {0}	De-esser: band {0}
+齿音频段	Sibilant band
+（	 (
+（{0} {1}）	 ({0} {1})
+（{0} 个不适用或已锁定，未改动）	 ({0} not applicable or locked, unchanged)
+（{0} 在这段有内容，保持不动）	 ({0} has content here and stays)
+（{0}）	 ({0})
+（已标）	 (flagged)
+（当前）	 (current)
+（循环）	 (looping)
+（新建轨道 {0}）	 (new track {0})
+（未能保存到“下载”文件夹）	 (could not save to the Downloads folder)
+（比片段用到的短 {0}）	 ({0} shorter than the clip uses)
+（空）	 (empty)
+＋ 新建媒体夹	+ New bin
+＋ 新建智能媒体夹	+ New smart bin
+，	, 
+，PQ 母版峰值按 {0} nits	, PQ master peak {0} nits
+，{0}	, {0}
+，{0} 回到主输出	, {0} back to the main output
+，{0}{1}	, {0}{1}
+，{0}色	, {0}
+，使用 {0} 次	, used {0} times
+，偏色较重，已尽量校正	, a strong color cast, corrected as far as possible
+，其中 {0} 个比片段用到的短	, {0} of them shorter than the clip uses
+，其中 {0} 个素材回到媒体池	, {0} media items back in the media pool
+，其他轨道剪去了同样长度	, the other tracks cut by the same length
+，原入点不在它之前，已清除	, the old In point was not before it and was cleared
+，原出点不在它之后，已清除	, the old Out point was not after it and was cleared
+，各一个 .{0}	, one .{0} each
+，后面的片段前移 {0}	, the clips after it moved earlier by {0}
+，后面的片段后移	, the clips after it moved later
+，后面的片段后移 {0}	, the clips after it moved later by {0}
+，声音一并替换	, its sound replaced too
+，大小最多变化 {0}%	, size changing up to {0}%
+，字幕轨已满：放在 {0}（{1}）	, the subtitle tracks are full: put on {0} ({1})
+，已在媒体池	, already in the media pool
+，已应用到“{0}”	, applied to “{0}”
+，已打开	, opened
+，已调色	, graded
+，并保存到 {0}	, and saved to {0}
+，并校正了偏色	, and the color cast corrected
+，按时间线入出点放置	, placed at the timeline In and Out
+，按时间线入出点替换	, replacing at the timeline In and Out
+，改动会用到全部 {0} 个使用它的片段	, the changes apply to all {0} clips using it
+，新建字幕轨 {0}	, new subtitle track {0}
+，新素材没有声音，原声保留	, the new media has no sound: the original sound is kept
+，旗标：	, flags:
+，替换了原有 {0} 条	, replacing {0} existing ones
+，最多转动 {0}°	, turning up to {0}°
+，未使用	, unused
+，正在播放{0}	, playing {0}
+，没有空闲音频轨道，未放置声音	, no free audio track: the sound was not placed
+，渲染入点至出点	, rendering In to Out
+，渲染整条时间线	, rendering the whole timeline
+，真峰值可达 {0} dBTP，超过 -1 dBTP 可能削波	, the true peak can reach {0} dBTP; above -1 dBTP it may clip
+，素材离线	, media offline
+，结尾 {0} 秒渐隐	, fades out over the last {0} s
+，覆盖了原有内容	, overwriting what was there
+，覆盖了原有声音	, overwriting the sound that was there
+，部分差异超出色轮范围，已尽量接近	, some differences are beyond the color wheels' range, matched as closely as possible
+，长度相同，后面的片段不动	, the same length: the clips after it stay
+：媒体池里没有“{0}”	: “{0}” is not in the media pool
+：循环播放已开	: loop playback on
+；	; 
+；{0}	; {0}
+；{0} 个文件无法读取	; {0} files could not be read
+；{0} 个未导入	; {0} not imported
+；之后放到时间线的片段会使用它	; clips put on the timeline from now on use it
+；保留 {0}% 原画面	; {0}% of the original picture kept
+；字幕文件：	; subtitle files:
+；当前片段的调色显示 LUT 缺失	; the clip's grade shows the LUT as missing
+；打开「字幕文件」可把 {0} 种语言各存一个文件	; open “Subtitle files” to save each of the {0} languages as its own file
+；未包含：	; not included:
+；未导入：	; not imported:
+；注意：新文件比片段用到的短 {0}，超出的部分没有画面和声音	; note: the new file is {0} shorter than the clip uses; the part beyond it has no picture or sound
+；还有 {0} 个离线	; {0} more offline

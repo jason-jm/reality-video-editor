@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reality Video Editor icon</title>
+<style>
+  html, body { margin: 0; padding: 0; background: transparent; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<!--
+  Reality Video Editor's app icon (release round R3), drawn on PICO's 3D icon grid (1024 × 1024):
+  #layer0     the round plate: deep indigo, lit from the top left, with the prism's soft shadow
+  #layer1     the floating glyph: a glass prism shaped like a play button, white light entering it and leaving as
+              red, green and blue bands (video and colour)
+  #composite  both on a full square, 1424 × 1424, for the flat launcher icon
+  render_icon.mjs screenshots each with a transparent background.
+-->
+<svg id="art" width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="plate" x1="0.15" y1="0.05" x2="0.85" y2="0.95">
+      <stop offset="0" stop-color="#34397A"/>
+      <stop offset="0.55" stop-color="#1E1F4A"/>
+      <stop offset="1" stop-color="#0F0E26"/>
+    </linearGradient>
+    <radialGradient id="plateGlow" cx="0.3" cy="0.22" r="0.6">
+      <stop offset="0" stop-color="#7F86FF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#7F86FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.6" stop-color="#E4EEFF"/>
+      <stop offset="1" stop-color="#B9CCFF"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF7A86"/><stop offset="1" stop-color="#FF3B55"/></linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7BF0A8"/><stop offset="1" stop-color="#22C96A"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#86B2FF"/><stop offset="1" stop-color="#3D7BFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
+    <g id="glyph">
+      <!-- light in -->
+      <rect x="170" y="499" width="230" height="26" rx="13" fill="url(#beam)"/>
+      <!-- the spectrum out: three bands widening from the prism's tip -->
+      <path d="M676 500 L878 388 L888 430 L680 512 Z" fill="url(#red)"/>
+      <path d="M680 505 L896 492 L896 532 L680 519 Z" fill="url(#green)"/>
+      <path d="M680 512 L888 594 L878 636 L676 524 Z" fill="url(#blue)"/>
+      <!-- the prism: a play triangle in glass, corners rounded by a stroke of its own fill -->
+      <path d="M372 336 L372 688 L676 512 Z" fill="url(#glass)" stroke="url(#glass)" stroke-width="64" stroke-linejoin="round"/>
+      <!-- a highlight along its upper edge, and the facet the light crosses -->
+      <path d="M396 362 L622 494" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+      <path d="M372 512 L620 512" stroke="#9FB6FF" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+    </g>
+  </defs>
+  <g id="plateLayer">
+    <circle cx="512" cy="512" r="512" fill="url(#plate)"/>
+    <circle cx="512" cy="512" r="512" fill="url(#plateGlow)"/>
+    <circle cx="512" cy="512" r="506" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="10"/>
+    <use href="#glyph" transform="translate(0 26) translate(512 512) scale(0.85) translate(-512 -512)" filter="url(#shadow)" opacity="0.45" style="mix-blend-mode:multiply"/>
+  </g>
+  <!-- The glyph at 85 % about the centre, so the spectrum keeps clear of the plate's rim as PICO's own icons do. -->
+  <g id="glyphLayer"><use href="#glyph" transform="translate(512 512) scale(0.85) translate(-512 -512)"/></g>
+</svg>
+<script>
+  // Which layer the screenshot takes: #layer0, #layer1 or #composite (the flat launcher icon).
+  const mode = location.hash.slice(1) || "composite";
+  const svg = document.getElementById("art");
+  if (mode === "layer0") document.getElementById("glyphLayer").remove();
+  if (mode === "layer1") document.getElementById("plateLayer").remove();
+  if (mode === "composite") {
+    // A full square (the launcher crops it as it likes): the plate's gradient corner to corner, the glyph scaled up.
+    svg.setAttribute("width", "1424"); svg.setAttribute("height", "1424");
+    const sq = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    Object.entries({ x: -200, y: -200, width: 1424, height: 1424, fill: "url(#plate)" }).forEach(([k, v]) => sq.setAttribute(k, v));
+    const plate = document.getElementById("plateLayer");
+    plate.querySelectorAll("circle").forEach((c) => {
+      if (c.getAttribute("fill") === "url(#plate)") c.replaceWith(sq);
+      else if (c.getAttribute("fill") === "url(#plateGlow)") {
+        const glow = sq.cloneNode(); glow.setAttribute("fill", "url(#plateGlow)"); c.replaceWith(glow);
+        glow.setAttribute("x", -100); glow.setAttribute("y", -100); glow.setAttribute("width", 1224); glow.setAttribute("height", 1224);
+      }
+      else if (c.getAttribute("fill") === "none") c.remove();  // the plate's rim belongs to the round 3D plate only
+    });
+    // The glyph a little larger than on the plate: the launcher shows the square smaller than the 3D icon.
+    sq.setAttribute("x", -100); sq.setAttribute("y", -100); sq.setAttribute("width", 1224); sq.setAttribute("height", 1224);
+    svg.setAttribute("viewBox", "-100 -100 1224 1224");
+  }
+</script>
+</body>
+</html>

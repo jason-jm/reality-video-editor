@@ -1,0 +1,12 @@
+# msgids that are not interface text (patterns that find the next free number in a name, glyph-coverage samples):
+# they need no translation. One per line, escaped as in msgids.tsv.
+[,，、;；]
+们这个说时为会来对国学后点里么还动们过开关头东车长门问间现实电话书见让从号样经应听写欢谢
+們這個說時為會來對國學後點裡麼還動們過開關頭東車長門問間現實電話書見讓從號樣經應聽寫歡謝
+复合片段 (\\d+)
+多机位 (\\d+)
+媒体夹 (\\d+)
+旁白 (\\d+)\\.(?:wav|m4a)
+时间线 (\\d+)
+智能媒体夹 (\\d+)
+版本 (\\d+)

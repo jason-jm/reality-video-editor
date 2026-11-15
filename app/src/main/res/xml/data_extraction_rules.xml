@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  What Android backs up (release round R4; API 31+, so all of the app's devices).
+  Cloud backup stops altogether past 25 MB, so it takes the small, irreplaceable data: projects and their backups, the
+  colour gallery, imported LUTs, generated media and the settings (language, layout). Freeze-frame stills and voiceover
+  recordings can be large: a cloud restore leaves those clips offline. A device-to-device transfer has no such limit and
+  takes them too. Proxies and the render cache are rebuilt on demand and never backed up.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="file" path="projects/" />
+        <include domain="file" path="backups/" />
+        <include domain="file" path="gallery/" />
+        <include domain="file" path="luts/" />
+        <include domain="file" path="generators/" />
+        <include domain="sharedpref" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="file" path="projects/" />
+        <include domain="file" path="backups/" />
+        <include domain="file" path="gallery/" />
+        <include domain="file" path="luts/" />
+        <include domain="file" path="generators/" />
+        <include domain="file" path="stills/" />
+        <include domain="file" path="recordings/" />
+        <include domain="sharedpref" path="." />
+    </device-transfer>
+</data-extraction-rules>

@@ -1,0 +1,7 @@
+/gradlew text eol=lf
+/gradlew.bat text eol=crlf
+*.jar binary
+*.mp4 binary
+*.png binary
+# UI fragments can have a significant trailing space before the next label.
+/app/src/main/resources/i18n/*.tsv whitespace=-blank-at-eol

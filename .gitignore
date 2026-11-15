@@ -1,0 +1,56 @@
+# Gradle files
+.gradle/
+.kotlin/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+.DS_Store
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+output.json
+
+# IntelliJ
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Release signing
+keystore.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Android Profiling
+*.hprof
+
+# Local PICO tooling, generated design files and device captures
+.pico/
+.pico-env.json
+.agents/
+.claude/
+.codex/
+.scratch/
+/devtools/work/
+*.rev[0-9]*
+__pycache__/
+node_modules/

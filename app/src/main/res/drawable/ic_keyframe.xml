@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- A keyframe (Resolve's diamond beside a parameter), none at the playhead: a 2-unit outline, 18 x 18 footprint. -->
+    <path
+        android:fillColor="#FF000000"
+        android:fillType="evenOdd"
+        android:pathData="M12 3L21 12L12 21L3 12Z M12 5.83L18.17 12L12 18.17L5.83 12Z"/>
+</vector>

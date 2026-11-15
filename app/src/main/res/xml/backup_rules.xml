@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 and older only (the app needs 15): the cloud set of data_extraction_rules.xml, kept the same. -->
+<full-backup-content>
+    <include domain="file" path="projects/" />
+    <include domain="file" path="backups/" />
+    <include domain="file" path="gallery/" />
+    <include domain="file" path="luts/" />
+    <include domain="file" path="generators/" />
+    <include domain="sharedpref" path="." />
+</full-backup-content>

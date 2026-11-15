@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Debug-only QA automation entry point; absent from release builds. -->
+        <receiver
+            android:name=".debug.AutomationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.prismstudio.AUTOMATION" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name=".debug.AutomationInstaller"
+            android:authorities="${applicationId}.automation"
+            android:exported="false" />
+    </application>
+</manifest>
