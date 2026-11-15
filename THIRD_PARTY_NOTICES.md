@@ -4,7 +4,7 @@
 
 The cover and feature images show excerpts from *Big Buck Bunny*, © 2008 Blender Foundation / [www.bigbuckbunny.org](https://peach.blender.org/). The film is licensed under [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/). See the [filmmakers’ attribution instructions](https://peach.blender.org/about/).
 
-The demo project trims, rearranges and color grades selected shots. The interface details come from the running editor’s windows and PICO OS 6.2 emulator captures. The delivery image includes a frame from the finished 1080p export. The cover uses a generated optical-glass background. The film remains under its own license and is used here only in the project gallery.
+The demo project trims, rearranges and color grades selected shots. The interface details come from the running editor’s windows and PICO OS 6.2 emulator captures. The delivery image includes a frame from the finished 1080p export. Its settings inset uses the captured field labels and control outlines, with the option text typeset for readability. The cover uses a generated optical-glass background. The film remains under its own license and is used here only in the project gallery.
 
 ## PICO icons
 
