@@ -1,5 +1,9 @@
 # Third-party notices
 
+## Film in the GitHub screenshots
+
+The English interface screenshots and cover poster on the project pages show selected frames from *Big Buck Bunny*, © 2008 Blender Foundation / [www.bigbuckbunny.org](https://peach.blender.org/). The film is licensed under [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/); see the [filmmakers’ attribution instructions](https://peach.blender.org/about/). The demonstration project trims and arranges film excerpts and adjusts the color of selected shots. The poster frames and interface details are cropped from captures of the running app on a PICO OS 6.2 emulator. The film is not bundled with the app and is not covered by the project’s MIT license.
+
 ## PICO icons
 
 PICO Immersive Pte. Ltd. provides the ICON 7.0 Android vectors in PICO Intelligent Plugins under the Apache License 2.0. The following drawables in `app/src/main/res/drawable/` come from that catalog. [Upstream icon catalog](https://github.com/Pico-Developer/PICO-Intelligent-Plugins/tree/2b60e4c362779a3ed97cde563c1d259662b07ec6/pico-spatial-agentic-tools/skills/pico-spatial-app-designer/assets/icon-7.0) · [Apache License 2.0 text](app/src/main/resources/licenses/apache-2.0.txt)

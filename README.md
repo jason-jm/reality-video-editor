@@ -1,37 +1,55 @@
 # Reality Video Editor
 
-Reality Video Editor is a multitrack video editor for PICO spatial windows. Import footage, edit a timeline, grade color, mix audio and export on the headset. The app works offline, including all nine interface languages.
+**English** · [简体中文](docs/readme/zh-Hans.md) · [繁體中文](docs/readme/zh-Hant.md) · [日本語](docs/readme/ja.md) · [한국어](docs/readme/ko.md) · [Français](docs/readme/fr.md) · [Deutsch](docs/readme/de.md) · [Español](docs/readme/es.md) · [Русский](docs/readme/ru.md)
 
-Reality Video Editor 是一款运行在 PICO 空间窗口中的多轨视频编辑器。从导入素材、剪辑、调色、混音到导出，整个流程都可以在头显上离线完成，支持九种界面语言。
+**A video editor built for PICO Space Pro.** Put on the headset, open a rough cut and watch a scene come together in front of you. Your footage, edits and exports stay on the device. You can finish a film without a desktop, an account or an internet connection.
 
-Use the globe in the project library or editor to follow your system language or choose **简体中文 · 繁體中文 · English · 日本語 · 한국어 · Français · Deutsch · Español · Русский**. The choice is saved on the headset and is independent of subtitle languages. See [translation and layout checks](docs/localization.md).
+![Reality Video Editor for PICO Space Pro, with the Edit and Color windows open on a woodland scene](docs/images/reality-video-editor.png)
 
-![The Edit and Color workspaces in Reality Video Editor](docs/images/reality-video-editor.png)
+[Open source](LICENSE) · [Build & install](docs/building.md)
 
-## Editing and export
+## Find the take you want to keep
 
-- Organize video, audio and stills in bins. Edit on a timeline with up to eight video and eight audio tracks, with trimming, transitions, keyframes and subtitles.
-- Grade shots with color wheels, curves and LUTs. Record voiceover and mix dialogue and music with EQ, dynamics and loudness metering.
-- Queue H.264 or H.265 video exports, save stills, or export WAV audio and subtitles. Available video resolutions and codecs depend on the device's encoder.
+The Media page puts a preview beside your footage. Flag a favorite, give it a keyword, then use a smart bin to pull matching clips together. You can even make one that shows only the shots you’ve already used, so you know what’s made it into the cut.
 
-## Build from source
+![The Media pool with four forest shots, two sound clips and a smart bin named In the cut](docs/images/showcase/media.webp)
 
-Use **JDK 21** and the Android SDK with **Android API 37.2** and **Build Tools 37.0.0**. Set `ANDROID_HOME` to the SDK directory or set `sdk.dir` in a local `local.properties` file. The Gradle wrapper resolves AndroidX, Media3 and the PICO Spatial SDK **6.2.8** from the repositories configured in this project. The first build requires internet access.
+## Room for the whole cut
 
-```sh
-./gradlew :app:assembleDebug
-```
+Open the ultrawide layout to see your source shot beside the cut. Mark the part you want to keep, drop it onto the timeline and check how it plays against the previous shot. With larger files, cut with lightweight proxies; the final export still uses your originals.
 
-The debug APK is written to `app/build/outputs/apk/debug/app-debug.apk`. Use `gradlew.bat` on Windows. To install the app, connect an ARM64 PICO device or start a compatible PICO OS 6.2 emulator, then run `./gradlew :app:installDebug`. The app targets Android API 37 and requires API 35 or later.
+![The ultrawide Edit view, with a wooded clearing in the source monitor and the rabbit in the timeline monitor](docs/images/showcase/workspace.webp)
 
-## Run the tests
+## Find the frame that makes the edit
 
-```sh
-./gradlew :app:testDebugUnitTest :app:testReleaseUnitTest :app:lintRelease
-```
+Let the sound of the creek arrive before you cut to the water. Trim picture and sound independently, or ripple a cut to move everything that follows with it. Set two scale keyframes for a slow push-in, or use a speed ramp to ease the action into slow motion.
 
-With a compatible PICO device or emulator connected, run the instrumentation suite with `./gradlew :app:connectedDebugAndroidTest`. It exercises project save and recovery, media export, the language picker, font coverage and the app name under different system languages.
+There’s room for eight video and eight audio tracks. For a multicamera shoot, sync an external recording by waveform and switch camera angles on the timeline.
 
-## License
+![Detail of the timeline with overlapping picture, sound and subtitle clips in Meadow Morning](docs/images/showcase/timeline.webp)
 
-The project's original code and assets are available under the [MIT License](LICENSE). The Gradle wrapper, PICO icons and SDK, and other dependencies have their own terms. See the [third-party notices](THIRD_PARTY_NOTICES.md).
+## Make two shots feel like one scene
+
+A sunny clearing and a shady creek can feel like different days. Adjust shadows, midtones and highlights with the color wheels, then check the waveform and RGB parade to see where the shots differ. Save a reference still for the next shot, or bring in a .cube LUT for a look you already love.
+
+![Four primary color wheels beside the red, green and blue traces from the meadow shot](docs/images/showcase/color.webp)
+
+## Give the voice its own space
+
+Record a voiceover straight onto an audio track. Use EQ to clear up a muddy voice, let the music dip automatically when someone speaks, and check loudness in LUFS before you export. Solo any track to hear exactly what you’re changing.
+
+![Two green waveforms for the forest sounds and score, beside the four-point EQ curve on track A1](docs/images/showcase/audio.webp)
+
+## One timeline, several ways out
+
+Queue the whole film, just the stretch between your In and Out marks, or individual clips. Choose H.264 or H.265 video, save a still, or export a WAV for sound work. Burn captions into the picture or hand them over as separate SRT or WebVTT files. Video sizes and codecs depend on the headset’s encoder.
+
+![The render queue shows Meadow Morning.mp4 finished in H.264 at 1080p and 30 fps](docs/images/showcase/deliver.webp)
+
+## Try Reality Video Editor
+
+To run the project on your headset or a compatible PICO emulator, follow the [build and install guide](docs/building.md). Once inside, the globe in the project library or editor lets you choose from nine interface languages. Your choice won’t change the language of your subtitles.
+
+The original code and artwork are available under the [MIT License](LICENSE). See the [third-party notices](THIRD_PARTY_NOTICES.md) for dependencies and credits.
+
+Demo footage: *Big Buck Bunny*, © 2008 Blender Foundation / [www.bigbuckbunny.org](https://peach.blender.org/) ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)). Selected scenes were trimmed for the screenshots.
