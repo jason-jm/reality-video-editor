@@ -8,7 +8,7 @@ import com.example.prismstudio.p40b43a88.ui.components.LanguageMenuButton
 import com.example.prismstudio.p40b43a88.domain.i18n.AppLanguage
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -52,7 +52,7 @@ fun LibraryTitleBar(
                     onValueChange = onQuery,
                     onSearch = onQuery,
                     placeholder = { Text("搜索项目") },
-                    modifier = Modifier.width(360.dp).tabMovesFocus(),
+                    modifier = Modifier.weight(1f, fill = false).widthIn(max = 360.dp).fillMaxWidth().tabMovesFocus(),
                 )
             }
         },

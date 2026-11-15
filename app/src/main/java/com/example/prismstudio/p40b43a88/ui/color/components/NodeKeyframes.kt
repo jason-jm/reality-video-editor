@@ -83,7 +83,7 @@ fun NodeKeyframes(
             if (enabled) keys.hint else "选择窗口形状后，可以添加关键帧",
             style = PrismType.caption,
             color = PicoTheme.colorScheme.labelTertiary,
-            maxLines = 1,
+            maxLines = 3,
             overflow = TextOverflow.Ellipsis,
         )
     }

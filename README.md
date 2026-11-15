@@ -1,8 +1,10 @@
 # Reality Video Editor
 
-Reality Video Editor is a multitrack video editor for PICO spatial windows. Import footage, edit a timeline, grade color, mix audio and export on the headset. The app works offline and has English and Simplified Chinese interfaces.
+Reality Video Editor is a multitrack video editor for PICO spatial windows. Import footage, edit a timeline, grade color, mix audio and export on the headset. The app works offline, including all nine interface languages.
 
-Reality Video Editor 是一款运行在 PICO 空间窗口中的多轨视频编辑器。从导入素材、剪辑、调色、混音到导出，整个流程都可以在头显上离线完成，支持简体中文和英文界面。
+Reality Video Editor 是一款运行在 PICO 空间窗口中的多轨视频编辑器。从导入素材、剪辑、调色、混音到导出，整个流程都可以在头显上离线完成，支持九种界面语言。
+
+Use the globe in the project library or editor to follow your system language or choose **简体中文 · 繁體中文 · English · 日本語 · 한국어 · Français · Deutsch · Español · Русский**. The choice is saved on the headset and is independent of subtitle languages. See [translation and layout checks](docs/localization.md).
 
 ![The Edit and Color workspaces in Reality Video Editor](docs/images/reality-video-editor.png)
 
@@ -28,7 +30,7 @@ The debug APK is written to `app/build/outputs/apk/debug/app-debug.apk`. Use `gr
 ./gradlew :app:testDebugUnitTest :app:testReleaseUnitTest :app:lintRelease
 ```
 
-With a compatible PICO device or emulator connected, run the instrumentation suite with `./gradlew :app:connectedDebugAndroidTest`. It exercises project save and recovery, media export and the app name under different system languages.
+With a compatible PICO device or emulator connected, run the instrumentation suite with `./gradlew :app:connectedDebugAndroidTest`. It exercises project save and recovery, media export, the language picker, font coverage and the app name under different system languages.
 
 ## License
 

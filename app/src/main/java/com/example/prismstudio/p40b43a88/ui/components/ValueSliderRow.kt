@@ -41,7 +41,7 @@ fun ValueSliderRow(
     enabled: Boolean = true,
     step: Float = 0f,
     minSliderWidth: Dp = 100.dp,
-    labelWidth: Dp = 72.dp,
+    labelWidth: Dp = 92.dp,
     onValueChangeFinished: (() -> Unit)? = null,
     valueWidth: Dp = 72.dp,
     trailing: (@Composable () -> Unit)? = null,
@@ -53,7 +53,7 @@ fun ValueSliderRow(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        Text(label, style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary, modifier = Modifier.width(labelWidth), fit = true, context = labelContext)
+        Text(label, style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary, modifier = Modifier.width(labelWidth), fit = true, fitLines = 2, context = labelContext)
         TrackingSlider(
             value = value.coerceIn(range),
             onValueChange = { raw -> onValueChange(snap(raw, range, step)) },

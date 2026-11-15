@@ -165,7 +165,7 @@ fun SourceColumn(
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
                     Text("色彩", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary)
                     // 320 dp and one line: at 280 the device wrapped "Rec.709" onto two.
-                    SegmentControl(Modifier.width(320.dp).semantics { contentDescription = "输入色彩空间".localized() }) {
+                    SegmentControl(Modifier.width(360.dp).semantics { contentDescription = "输入色彩空间".localized() }) {
                         InputColorSpace.entries.forEach { space ->
                             SegmentItem(selected = space == input, onClick = { onInputColor(space) }, title = { Text(space.label, maxLines = 1) }, modifier = Modifier.weight(1f))
                         }
@@ -204,7 +204,7 @@ private fun TargetSegments(choices: List<TargetChoiceUi>, selected: String?, des
     }
 }
 
-private val TARGET_SEGMENT = 60.dp
+private val TARGET_SEGMENT = 76.dp
 
 /**
  * `source-sync-chip`: what the selected video's sound comes from — its own, or a recorder's file synced by waveform; its

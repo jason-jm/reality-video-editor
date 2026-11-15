@@ -40,6 +40,7 @@ class AutomationReceiver : BroadcastReceiver() {
                     .setLanguage(com.example.prismstudio.p40b43a88.domain.i18n.AppLanguage.fromTag(parts[1]))
             }
             parts[0] == "bounds" -> AutomationTouch.window()?.let { AutomationBounds.dump(it, parts.getOrNull(1)) }
+            parts[0] == "text-layout" && parts.size >= 2 -> AutomationTouch.window()?.let { AutomationBounds.textLayout(it, parts[1], parts.getOrNull(2) == "windows") }
             // QA: every control of the resumed window with its state (PrismClick), and the toasts shown since the last call.
             // QA: how long the next frame takes to come (PrismFrame): the UI's response time when nothing animates.
             parts[0] == "frame" -> {

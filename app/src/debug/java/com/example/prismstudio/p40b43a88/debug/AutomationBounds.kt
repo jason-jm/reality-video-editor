@@ -8,12 +8,71 @@ import androidx.compose.ui.semantics.SemanticsActions
 import androidx.compose.ui.semantics.SemanticsNode
 import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.semantics.getOrNull
+import androidx.compose.ui.text.TextLayoutResult
+import org.json.JSONArray
+import org.json.JSONObject
 
 /**
  * Debug-only layout dump: every labelled Compose node of the resumed window with its bounds in window pixels, logged as
  * `PrismBounds`. uiautomator stops at the emulator display (2160 px), so this is how QA reads a 2700 dp (5400 px) window.
  */
 object AutomationBounds {
+    /** Measured glyph layout of visible labels, including ellipsis that accessibility text does not expose. */
+    fun textLayout(root: View, request: String, includePopups: Boolean) {
+        val windows = if (includePopups) android.view.inspector.WindowInspector.getGlobalWindowViews().filter { it.isShown } + root else listOf(root)
+        val surfaces = windows.mapNotNull(::findRoot).distinct()
+        var count = 0
+        fun walk(node: SemanticsNode, scrollX: Boolean, scrollY: Boolean, surface: Int) {
+            val inScrollX = scrollX || node.config.contains(SemanticsProperties.HorizontalScrollAxisRange)
+            val inScrollY = scrollY || node.config.contains(SemanticsProperties.VerticalScrollAxisRange)
+            val bounds = node.boundsInWindow
+            val read = node.config.getOrNull(SemanticsActions.GetTextLayoutResult)?.action
+            if (read != null && !bounds.isEmpty) {
+                val layouts = mutableListOf<TextLayoutResult>()
+                if (read(layouts)) for (layout in layouts) {
+                    val record = JSONObject().apply {
+                        put("request", request)
+                        put("surface", surface)
+                        put("text", layout.layoutInput.text.text)
+                        put("x", bounds.left.toInt())
+                        put("y", bounds.top.toInt())
+                        put("width", bounds.width.toInt())
+                        put("height", bounds.height.toInt())
+                        layout.layoutInput.style.fontSize.value.takeIf { it.isFinite() }?.let { put("fontSp", it.toDouble()) }
+                        put("lines", layout.lineCount)
+                        val ellipsis = (0 until layout.lineCount).any(layout::isLineEllipsized)
+                        val left = (0 until layout.lineCount).minOfOrNull(layout::getLineLeft) ?: 0f
+                        val right = (0 until layout.lineCount).maxOfOrNull(layout::getLineRight) ?: 0f
+                        put("ellipsis", ellipsis)
+                        put("scrollX", inScrollX)
+                        put("scrollY", inScrollY)
+                        put("ink", JSONArray().apply {
+                            if (layout.size.width <= bounds.width + 1f && layout.size.height <= bounds.height + 1f) {
+                                for (line in 0 until layout.lineCount) put(JSONArray(listOf(
+                                    (bounds.left + layout.getLineLeft(line)).toInt(), (bounds.top + layout.getLineTop(line)).toInt(),
+                                    (bounds.left + layout.getLineRight(line)).toInt(), (bounds.top + layout.getLineBottom(line)).toInt(),
+                                )))
+                            }
+                        })
+                        put("textWidth", (right - left).toDouble())
+                        put("textHeight", layout.multiParagraph.height.toDouble())
+                        put("measuredWidth", layout.size.width)
+                        put("measuredHeight", layout.size.height)
+                        // The fast BasicText semantics path rounds intrinsic line heights differently. A
+                        // fraction of a pixel at the baseline is not clipping. Ellipsis is always significant.
+                        put("overflow", ellipsis || right - left > (if (inScrollX) layout.size.width.toFloat() else bounds.width) + 1f ||
+                            layout.multiParagraph.height > (if (inScrollY) layout.size.height.toFloat() else bounds.height) + 1f)
+                    }
+                    Log.i("PrismTextLayout", record.toString())
+                    count++
+                }
+            }
+            node.children.forEach { walk(it, inScrollX, inScrollY, surface) }
+        }
+        surfaces.forEachIndexed { index, view -> walk(view.semanticsOwner.unmergedRootSemanticsNode, false, false, index) }
+        Log.i("PrismTextLayout", JSONObject().put("request", request).put("count", count).toString())
+    }
+
     fun dump(root: View, filter: String?) {
         val compose = findRoot(root)
         if (compose == null) {

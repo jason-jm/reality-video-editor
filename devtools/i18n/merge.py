@@ -29,9 +29,13 @@ for line in open(batch, encoding="utf-8").read().splitlines():
     if need != got:
         print(f"placeholders differ at {idx}: {src!r} -> {tr!r}"); problems += 1
     # A native language name ("日本語") stays itself: written as the source.
-    if lang in ("en", "de", "fr", "es") and HAN.search(tr) and tr != src:
+    if not tr.strip() or src.count(r"\n") != tr.count(r"\n"):
+        print(f"empty translation or changed line breaks at {idx}"); problems += 1
+    if lang not in ("ja", "zh-Hant", "zh-Hans") and HAN.search(tr) and not (tr == src and src in ("简体中文", "繁體中文", "日本語")):
         print(f"han left at {idx}: {tr!r}"); problems += 1
     table[src] = tr
+if problems:
+    sys.exit(f"{lang}: {problems} invalid entries; the catalog was not changed")
 with open(out, "w", encoding="utf-8") as f:
     f.write(f"# Reality Video Editor — {lang} translations of the Chinese source (devtools/i18n/msgids.tsv). source<TAB>translation\n")
     for k in sorted(table):

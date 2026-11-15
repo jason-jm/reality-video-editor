@@ -35,15 +35,81 @@ class CatalogCoverageTest {
     }
 
     @Test
-    fun `english covers every text of the code and keeps its placeholders`() {
-        val en = table("en")
-        val missing = msgids.filter { it !in exempt && it !in en }
-        assertTrue("untranslated: ${missing.take(20)}", missing.isEmpty())
+    fun `every selectable interface covers the same messages contexts and placeholders`() {
+        val english = table("en")
+        assertTrue("Source messages missing: ${(msgids - exempt - english.keys).take(20)}",
+            (msgids - exempt - english.keys).isEmpty())
         val placeholder = Regex("""\{(\d+)[,}]""")
-        val broken = en.filter { (src, tr) -> placeholder.findAll(src).map { it.groupValues[1] }.toSet() != placeholder.findAll(tr).map { it.groupValues[1] }.toSet() }
-        assertTrue("placeholders differ: ${broken.keys.take(10)}", broken.isEmpty())
-        val chinese = en.filter { (src, tr) -> I18n.HAN.containsMatchIn(tr) && tr != src }
-        assertTrue("chinese left: ${chinese.values.take(10)}", chinese.isEmpty())
+        val endonyms = setOf("简体中文", "繁體中文", "日本語")
+        fun arguments(s: String) = placeholder.findAll(s).map { it.groupValues[1] }.toSet()
+        for (lang in AppLanguage.selectable.filterNot { it == AppLanguage.ZH_HANS }) {
+            val translations = table(lang.tag)
+            assertEquals(lang.tag, english.keys, translations.keys)
+            for ((key, value) in translations) {
+                val where = "${lang.tag}: $key → $value"
+                assertTrue(where, value.isNotBlank())
+                assertEquals(where, arguments(key), arguments(value))
+                assertEquals(where, key.count { it == '\n' }, value.count { it == '\n' })
+                if (key in endonyms) assertEquals(where, key, value)
+                else if (lang != AppLanguage.JA && lang != AppLanguage.ZH_HANT)
+                    assertTrue(where, !I18n.HAN.containsMatchIn(value))
+            }
+        }
+    }
+
+    @Test
+    fun `system language considers the full preference list and Chinese script before region`() {
+        fun match(vararg tags: String) = AppLanguage.forLocales(tags.map(java.util.Locale::forLanguageTag)).tag
+        assertEquals("ja", match("it-IT", "ja-JP", "en-US"))
+        assertEquals("zh-Hant", match("zh-TW"))
+        assertEquals("zh-Hant", match("zh-HK"))
+        assertEquals("zh-Hant", match("zh-Hant-CN"))
+        assertEquals("zh-Hans", match("zh-Hans-TW"))
+        assertEquals("zh-Hans", match("zh-CN"))
+        assertEquals("es", match("es-MX"))
+        assertEquals("en", match("ar-EG"))
+        assertEquals("en", match())
+        assertEquals(9, AppLanguage.selectable.size)
+    }
+
+    @Test
+    fun `CJK translations can retain source characters while nested labels counts and names survive`() {
+        I18n.missing.clear()
+        for (lang in listOf(AppLanguage.ZH_HANT, AppLanguage.JA)) {
+            assertEquals("字幕", I18n.translate("字幕", lang))
+            val key = "界面语言：日本語"
+            val translated = I18n.translate(key, lang)
+            assertTrue(translated, translated.endsWith("日本語") && translated != key)
+            assertTrue(I18n.missing.toString(), key !in I18n.missing && "字幕" !in I18n.missing)
+        }
+        val name = "旅途 03.mov"
+        for (lang in AppLanguage.selectable) {
+            assertTrue(lang.tag, I18n.translate("关于 $name", lang).contains(name))
+            assertEquals(name, I18n.stored(name, "时间线 1", lang))
+            assertEquals("剪辑", I18n.projectName("剪辑", lang))
+            assertEquals("调色.mp4", I18n.translate("调色.mp4", lang))
+        }
+        fun clips(n: Int, lang: AppLanguage) = I18n.translate("$n 个片段", lang)
+        assertEquals(listOf("0 clip", "1 clip", "2 clips"), (0..2).map { clips(it, AppLanguage.FR) })
+        assertEquals(listOf("1 клип", "2 клипа", "5 клипов", "11 клипов", "21 клип", "22 клипа"),
+            listOf(1, 2, 5, 11, 21, 22).map { clips(it, AppLanguage.RU) })
+    }
+
+    @Test
+    fun `subtitle dialogue is verbatim and a failed render can contain its own translated sentence`() {
+        val code = "ERROR_CODE_MUXING_TIMEOUT"
+        val source = "失败：渲染失败（$code），请重试。"
+        for (language in AppLanguage.selectable.filterNot { it == AppLanguage.ZH_HANS }) {
+            I18n.missing.clear()
+            // The second subtitle is itself the name of an editor action. Neither may be translated.
+            for (caption in listOf("夜跑开始了，快看！", "剪辑")) {
+                assertEquals(I18n.format("字幕：{0}", caption, language = language),
+                    I18n.translate("字幕：$caption", language))
+            }
+            val cause = I18n.format("渲染失败（{0}），请重试。", code, language = language)
+            assertEquals(I18n.format("失败：{0}", cause, language = language), I18n.translate(source, language))
+            assertTrue(I18n.missing.toString(), I18n.missing.isEmpty())
+        }
     }
 
     @Test
@@ -118,7 +184,6 @@ class CatalogCoverageTest {
             "Tracked the mask: 39 keyframes, moving up to 30% of the picture, size changing up to 35%, turning up to 24°",
             I18n.translate("已跟踪遮罩：39 个关键帧，最多移动画面的 30%，大小最多变化 35%，最多转动 24°", AppLanguage.EN),
         )
-        I18n.install(AppLanguage.EN, Catalog.parse(""))
     }
 
     @Test

@@ -193,7 +193,7 @@ fun MixerPanel(
             }
         }
         Row(Modifier.height(56.dp), horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
-            Text("主输出", style = PrismType.label, color = PicoTheme.colorScheme.labelPrimary, modifier = Modifier.width(64.dp), fit = true)
+            Text("主输出", style = PrismType.label, color = PicoTheme.colorScheme.labelPrimary, modifier = Modifier.width(80.dp), fit = true, fitLines = 2)
             TrackingSlider(
                 value = masterDb,
                 onValueChange = onMaster,
@@ -219,12 +219,12 @@ fun MixerPanel(
             enabled = selection != null && !selection.locked && !selection.gainBlocked,
             step = 0.5f,
             minSliderWidth = 150.dp,
-            labelWidth = 80.dp,
+            labelWidth = 100.dp,
             modifier = Modifier.fillMaxWidth(),
         )
         // `audio-clip-eq-row`: the selected sound's own equaliser (Resolve's clip EQ), in the same sheet as a track's.
         Row(Modifier.fillMaxWidth().heightIn(min = 40.dp), horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
-            Text("片段均衡器", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary, modifier = Modifier.width(80.dp), fit = true)
+            Text("片段均衡器", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary, modifier = Modifier.width(100.dp), fit = true, fitLines = 2)
             Text(
                 selection?.eqSummary ?: "选择一个声音片段",
                 style = PrismType.label,
@@ -253,11 +253,11 @@ fun MixerPanel(
 private fun LoudnessSection(loudness: LoudnessUi, target: Int, onTarget: (Int) -> Unit, onNormalize: () -> Unit) {
     Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Row(Modifier.fillMaxWidth().heightIn(min = 40.dp), horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
-            Text("响度", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary, modifier = Modifier.width(80.dp), fit = true)
+            Text("响度", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary, modifier = Modifier.width(100.dp), fit = true, fitLines = 2)
             Text(loudness.readout, style = PrismType.body, color = PicoTheme.colorScheme.labelPrimary)
         }
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
-            Text("目标", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary, modifier = Modifier.width(80.dp), fit = true)
+            Text("目标", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary, modifier = Modifier.width(100.dp), fit = true, fitLines = 2)
             // The segment takes what the label and 标准化 leave ("Normalize" is twice as wide).
             SegmentControl(Modifier.weight(1f).widthIn(max = 330.dp).semantics { contentDescription = "目标响度".localized() }) {
                 AudioUiState.LOUDNESS_TARGET_LABELS.forEachIndexed { index, label ->

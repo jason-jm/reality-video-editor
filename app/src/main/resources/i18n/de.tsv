@@ -1,0 +1,2813 @@
+# Reality Video Editor · de
+ {0} 个片段	 {0} Clips
+ {0} 个素材的	 {0} Mediums
+ {0} 声道	 {0} Kanal
+ · {0} 个复合片段	 · {0} Kombi-Clips
+ · 动态	 · Dynamik
+ · 无音频	 · Kein Audio
+ · 真峰值 {0} dBTP，可能削波	 · Reale Peaks: {0} dBTP, möglicherweise abgeschnitten
+ · 离开斜率 {0}	 · Abfluss-Krümmung {0}
+ · 进入斜率 {0}	 · Eintritt-Krümmung {0}
+ 半音	 Halbton
+ 单声道	 Mono
+ 秒	 Sekunde
+ 立体声	 Stereo
+ 等	 usw.
+ ～ 	 ~ 
+* 未包含：{0}	* Nicht enthalten: {0}
++1 档	+1 Stufe
++{0} 秒	+{0} Sekunden
+0.00 秒	0.00 Sekunden
+1 低切	1 Tiefenkontrast
+1.10：多轨、转场、标题、变速与标记，保存到“下载”	1.10: Mehrere Tracks, Übergänge, Titel, Tempoänderung und Markierungen, Speichern unter „Download“
+1080p 方形	1080p Quadrat
+1080p 横屏	1080p quer
+1080p 竖屏	1080p hoch
+1D LUT 过大：最多 {0} 个点	1D LUT zu groß: maximal {0} Punkte
+2 低频	2 Tiefe
+2 秒	2 Sekunden
+2 秒 · 字幕轨	2 Sekunden · Untertitel-Track
+24 位按 16 位的混音精度封装（样本 ×256），用于要求 24 位的交付。	24-Bit mit 16-Bit-Mischungsgenauigkeit (Sample ×256), für 24-Bit-Deliverables
+3 中频	3 Mittelton
+3 秒 · {0} px	3 Sekunden · {0} px
+4 高频	4 Höhe
+4K 横屏	4K quer
+6 秒	6 Sekunden
+AAC 48 kHz 立体声	AAC 48 kHz Stereo
+B站	Bilibili
+B站 1080p	Bilibili 1080p
+CMX 3600：V1、A1、A2，保存到“下载”	CMX 3600: V1, A1, A2, Speichern unter „Download“
+DOMAIN_MAX 必须大于 DOMAIN_MIN	DOMAIN_MAX muss größer als DOMAIN_MIN sein.
+EDL 里没有能在媒体池中找到的素材：{0}	Es gibt keine Materialien in EDL, die im Media Pool gefunden werden können: {0}
+EQ 不计入响度读数	EQ wird nicht in den Lautheit-Wert eingerechnet.
+FCPXML 的时间线是空的	Die Timeline in FCPXML ist leer.
+FCPXML 里没有时间线（sequence）	In FCPXML gibt es keine Timeline (Aufeinanderfolge).
+FCPXML 里没有能在媒体池中找到的素材	In FCPXML gibt es keine Materialien, die im Media Pool gefunden werden können.
+Final Cut、Resolve 或本应用导出的文件，按文件名匹配媒体池	Dateien, die mit Final Cut, Resolve oder dieser Anwendung exportiert wurden, werden nach Namen im Media Pool abgeglichen.
+LUT 尺寸无效	Die Größe der LUT ist ungültig.
+LUT 已在库中：{0}{1}	Die LUT befindet sich bereits in der Bibliothek: {0}{1}
+LUT 库里已有同样的 LUT：{0}{1}{2}	In der LUT-Bibliothek gibt es bereits eine ähnliche LUT: {0}{1}{2}
+LUT 强度	Intensität der LUT.
+LUT 数据不完整：应为 {0} 行，只有 {1} 行	Die LUT-Daten sind unvollständig: Es sollten {0} Zeilen sein, aber nur {1} Zeilen vorhanden sind.
+LUT 没有数据	Die LUT enthält keine Daten.
+LUT 缺失：{0} · 重新导入同一个 .cube 文件即可恢复	LUT fehlt: {0} · Wiederherstellung durch Import des gleichen .cube-Dateis.
+LUT 过大：最多支持 {0}³，这个是 {1}³	LUT zu groß: Bis zu {0}³ unterstützt, das ist {1}³
+LUT 风格	LUT-Stil
+LUT 风格 {0}	LUT-Stil {0}
+LUT 风格：{0}	LUT-Stil: {0}
+LUT：{0}	LUT: {0}
+PCM 48 kHz 16 位单声道	PCM 48 kHz 16 Bit Mono
+PICO 上的视频剪辑、调色与后期软件	Videoschnitt, Farbkorrektur und Postproduktion auf PICO
+PICO 开发者协议	PICO-Entwicklervertrag
+PQ 峰值	PQ-Peak
+PQ 峰值 {0} nits	PQ-Peak {0} Nits
+RGB 分量	RGB-Faktoren
+RGB 混合器：{0}	RGB-Mischer: {0}
+RGB 混合器：{0} {1}	RGB-Mischer: {0} {1}
+RGB 混合器：不保持亮度	RGB-Mischer: Helligkeit nicht beibehalten
+RGB 混合器：保持亮度	RGB-Mischer: Helligkeit beibehalten
+RGB 混合器：单色	RGB-Mischer: Monochrom
+RGB 混合器：彩色	RGB-Mischer: Farbenfroh
+Rec.2100 HLG · {0} 位	Rec.2100 HLG · {0} Bit
+Rec.2100 PQ（HDR10）· {0} 位	Rec.2100 PQ (HDR10) · {0} Bit
+Rec.709 Gamma 2.4（SDR）	Rec.709 Gamma 2.4 (SDR)
+SMPTE 彩条	SMPTE Farbstreifen
+V1 以外的 {0} 个转场	{0} Übergänge außer V1
+WAV {0} {1} 位	WAV {0} {1} Bit
+WAV 只有一条声音轨	WAV nur ein Tonband
+WAV 只能写入 PCM 声音	WAV nur PCM-Ton möglich
+\n* 片段有变速点：EDL 只能记一个速度，这里是第一段的	\n* Der Clip hat Tempotuppler: EDL kann nur eine Geschwindigkeit aufzeichnen, hier ist es der erste Abschnitt
+compact|上限	Obergr.
+compact|删除关键帧	Key löschen
+compact|压缩器	Komp.
+compact|添加关键帧	Key setzen
+compact|补偿	Make-up
+compact|衰减	Redukt.
+compact|起音	Attack
+compact|释放	Release
+compact|门限	Gate
+compact|阈值	Schwelle
+compact|限制器	Limiter
+tab|媒体	Medien
+tab|标题	Titel
+tab|特效	Effekte
+tab|生成	Generatoren
+tab|索引	Index
+tab|转场	Übergänge
+{0} / {1} 个片段	{0} / {1} Clips
+{0} / {1} 个视频有代理；在媒体页为素材生成代理	{0} / {1} Videos haben Proxy-Dateien; Proxy-Dateien werden auf der Media-Seite für die Medien erstellt
+{0} LUFS · 真峰值 {1} dBTP	{0} LUFS · echter Peakwert {1} dBTP
+{0} {1} 段	{0} {1} Abschnitte
+{0} {1} 秒	{0} {1} Sekunden
+{0} {1}，{2} 个关键帧	{0} {1}, {2} Keyframes
+{0} {1}，{2}{3}	{0} {1}, {2}{3}
+{0} {1}，{2}，{3}，{4}	{0} {1}, {2}, {3}, {4}
+{0} · {1} · {2} 个片段	{0} · {1} · {2} Clips
+{0} · {1} 个片段 · {2} · {3}	{0} · {1} Clips · {2} · {3}
+{0} · {1} 个素材	{0} · {1} Medium
+{0} · {1} 个素材 · {2}	{0} · {1} Medium · {2}
+{0} · {1} 位	{0} · {1} Person
+{0} · {1} 秒 · 湿声 {2} %	{0} · {1} Sekunde · {2} % feuchte Stimme
+{0} · {1}，输入时间码（时:分:秒:帧）或秒数	{0} · {1}, geben die Zeitcode (Uhr: Minute: Sekunde: Frame) oder die Anzahl der Sekunden ein
+{0} · 到 {1}	{0} · bis {1}
+{0} 上 {1} 个片段（CMX 3600 只有一条画面轨和两条声音轨）	{0} Clips auf {1} (CMX 3600 hat nur einen Bildträger und zwei Tonträger)
+{0} 个	{0} Stück
+{0} 个{1}	{0} {1}
+{0} 个交叉叠化	{0} Kreuzprojektionen
+{0} 个交叉淡化	{0} Kreuzabdeckungen
+{0} 个任务失败，请查看渲染队列	{0} Aufgaben konnten nicht ausgeführt werden. Bitte überprüfen Sie die Reihenfolge der Ausführung der Aufgaben.
+{0} 个停用的片段	{0} Inaktive Clips
+{0} 个关键帧	{0,plural,one{# Keyframe}other{# Keyframes}}
+{0} 个关键帧 · 拖动或调整会记在播放头处	{0} Keyframes · Bewegen oder Anpassen wird am Abspielkopf registriert
+{0} 个关键帧 · 播放头不在片段内，移进片段再调整强度	{0} Keyframes · Der Abspielkopf liegt außerhalb des Clips, verschieben Sie ihn in den Clip und passen Sie die Intensität an
+{0} 个关键帧 · 调整会记录在此关键帧	{0} Keyframes · Die Anpassungen werden in diesen Keyframes aufgezeichnet
+{0} 个关键帧 · 调整强度会在播放头处添加关键帧	{0} Keyframes · Die Stärkeanpassungen werden an der Abspielkopfstelle Keyframes hinzufügen
+{0} 个半音	{0} Halbtonen
+{0} 个复合或多机位片段	{0} Kombinationen oder mehr Kamerawinkel-Clip
+{0} 个字幕文件保存失败，请检查存储空间	{0} Untertitel-Datei konnte nicht gespeichert werden, überprüfen Sie den Speicher
+{0} 个找不到素材的片段	{0} Clips mit fehlenden Materialien
+{0} 个机位 · {1}	{0} Kamerawinkel · {1}
+{0} 个机位：按轨道从下往上依次为机位 1、2…，保持现在的对齐	{0} Kamerawinkel: Nachfolgend auf Spurbasis von unten nach oben Kamerawinkel 1, 2…, behalten die aktuelle Anordnung bei
+{0} 个标记 · Shift+↑ / ↓ 跳转	{0} Markers · Shift+↑ / ↓ Sprung
+{0} 个标题（没有源文件）	{0} Titel (ohne Quellendatei)
+{0} 个片段	{0,plural,one{# Clip}other{# Clips}}
+{0} 个片段 · {1}	{0,plural,one{# Clip}other{# Clips}} · {1}
+{0} 个片段的效果与变换	{0} Effekte und Transformationen der Clips
+{0} 个片段的画面变换与效果	{0} Bildwechsel und Effekte der Clips
+{0} 个片段的素材离线（{1}），渲染时{2}：先到媒体页重新链接	Offline-Medien ({0,plural,one{# Clip}other{# Clips}}): {1}. Beim Rendern: {2}. Zuerst auf der Medienseite neu verknüpfen.
+{0} 个片段的调色	{0} Farbkorrekturen der Clips
+{0} 个片段的音量关键帧	{0} Keyframes für die Lautstärke der Clips
+{0} 个片段（重叠处每类最多 {1} 条轨道）	{0} Clips (bei Überlappung maximal {1} Spuren pro Kategorie)
+{0} 个画面片段按项目设置缩放	{0} Bildclips werden nach Projektinstanzen skaliert
+{0} 个素材	{0,plural,one{# Mediendatei}other{# Mediendateien}}
+{0} 个素材 · 共 {1}	{0} Medien · Insgesamt {1}
+{0} 个素材不在媒体池里（{1}{2}）	{0} Medien befinden sich nicht im Medienpool ({1}{2})
+{0} 个素材无法读取，请检查读取权限或在媒体页重新链接。	Nicht lesbar: {0,plural,one{# Mediendatei}other{# Mediendateien}}. Leserechte prüfen oder auf der Medienseite neu verknüpfen.
+{0} 个素材离线：原文件已被移动、改名或删除	{0} Medien sind offline: Die Originaldateien wurden verschoben, umbenannt oder gelöscht
+{0} 个素材离线：原文件已被移动或删除	{0} Medien sind offline: Die Originaldateien wurden verschoben oder gelöscht
+{0} 个组件 · {1}	{0,plural,one{# Komponente}other{# Komponenten}} · {1}
+{0} 个转场按交叉溶解写出	{0} Übergänge werden nach Kreuzlösung dargestellt
+{0} 个项目 · 按最近修改排序	{0,plural,one{# Projekt}other{# Projekte}} · zuletzt geändert zuerst
+{0} 亮度	{0} Helligkeit
+{0} 以上	{0} oder mehr
+{0} 以上 · 强度 {1}	{0} oder mehr · Intensität {1}
+{0} 以上的频段超过 {1} dBFS 时按 4:1 压低，最多 {2} dB；在均衡器之后、动态之前	Wenn die Frequenzbereiche über {0} hinaus den Wert von {1} dBFS erreichen, dann wird die Frequenz um das Verhältnis von 4:1 abgesenkt – maximal bis zu {2} dB. Dies geschieht nach dem Equalizer und vor der Dynamikregelung.
+{0} 份成片缺少素材，请查看渲染队列	{0} Fassungen fehlen Medien, bitte sehen Sie sich die Renderwarteschlange an
+{0} 位	{0} Positionen
+{0} 使用了下列 {1} 个组件，它们按各自的许可证分发	Von {0} verwendete Komponenten: {1,plural,one{# Komponente}other{# Komponenten}}. Für jede gilt die jeweilige Lizenz.
+{0} 全文	{0} Volltext
+{0} 分 {1} 秒	{0} Minuten {1} Sekunden
+{0} 分钟前	{0} Minuten zuvor
+{0} 副本	{0} Kopien
+{0} 副本 {1}	{0} Kopien {1}
+{0} 可以逐个手动选择文件。	{0} Dateien können manuell einzeln ausgewählt werden.
+{0} 在所选片段之间还有没选中的片段：一起选中，或先移开	{0} Zwischen den ausgewählten Clips gibt es noch unausgewählte Clips: Auswählen Sie sie alle zusammen oder entfernen Sie sie zuerst
+{0} 在机位之间还有没选中的片段：一起选中，或先移开	{0} Zwischen den Ecken gibt es ungewählte Clips. Bitte wählen Sie diese ebenfalls aus – oder verschieben Sie sie zunächst weg.
+{0} 在用	{0} wird verwendet.
+{0} 在这段时间里还有其他片段，无法分解“{1}”	Auf {0} liegen in diesem Bereich weitere Clips. „{1}“ lässt sich daher nicht zerlegen.
+{0} 增益	{0} Gain.
+{0} 处声音交叉淡化	An {0} Stellen verläuft der Klang unterschiedlich.
+{0} 天前	{0} Tage vorher.
+{0} 字幕语言：{1}，点按更换	{0} Untertitelsprache: {1}. Klicken Sie hier, um die Sprache zu ändern.
+{0} 小时前	{0} Stunden vorher.
+{0} 已经是{1}字幕	{0} ist bereits in der Sprache {1} untertitelt.
+{0} 已经输出到{1}	{0} wurde bereits in {1} ausgegeben.
+{0} 已锁定，无法分解“{1}”	{0} ist gesperrt und kann „{1}“ nicht lösen.
+{0} 帧	{0} Frame.
+{0} 张静帧	{0} Standbilder.
+{0} 按原尺寸居中：上下留黑边，裁去左右各 {1}%	{0} In Originalgröße zentriert: Schwarze Ränder oben und unten, {1}% abgeschnitten von links und rechts.
+{0} 按原尺寸居中：左右留黑边，裁去上下各 {1}%	{0} In Originalgröße zentriert: Schwarze Ränder links und rechts, {1}% abgeschnitten von oben und unten.
+{0} 是基础轨道，不能删除	{0} ist eine Basispiste und kann nicht gelöscht werden.
+{0} 暂不链接	{0} ist vorerst nicht verknüpft.
+{0} 有声音时压低 {1} dB	Wenn {0} ein Geräusch erzeugt, sollte die Lautstärke um {1} dB gesenkt werden.
+{0} 条时间线{1} · 当前打开“{2}”	{0} Zeitlinie {1} · Derzeit geöffnet „{2}“.
+{0} 条视频轨	{0} Video-Spuren
+{0} 条音频轨	{0} Audio-Spuren
+{0} 次 · 	{0,plural,one{# Mal}other{# Mal}} · 
+{0} 段：	{0} Abschnitte:
+{0} 比画面大：按原尺寸居中，裁去	{0} größer als Bild: In Originalgröße zentriert, gekürzt
+{0} 比画面小：按原尺寸居中，{1}	{0} kleiner als Bild: In Originalgröße zentriert, {1}
+{0} 毫秒	{0} Millisekunden
+{0} 电平	{0} Pegel
+{0} 的声音逐采样原样写入，其他采样率的声音转换一次。	{0} Ton wird pro Sample original übernommen, andere Sampleraten werden umgewandelt.
+{0} 的轨道：{1}	{0} Spur: {1}
+{0} 的输入色彩空间：	{0} Eingangskolorimetrischer Raum:
+{0} 秒	{0} Sekunden
+{0} 秒前	{0} Sekunden zuvor
+{0} 调色	{0} Farbkorrektur
+{0} 输出到{1}	{0} Ausgabe an {1}
+{0} 输出到{1}，点按更改	{0} Ausgabe an {1}, klicken um zu ändern
+{0} 需要“照片和视频”权限才能列出设备中的素材。	{0} Die Materialien im Gerät können nur mit den Berechtigungen „Bilder und Videos“ angezeigt werden.
+{0} 高于阈值时压低这条轨道，在推子之前	{0} Die Spur wird tiefer, wenn {0} das Schwellenwert überschreitet, bevor sie gepushed wird
+{0}\n导出时整体 {1} dB → {2} LUFS{3}	{0}\nBei der Exportation um {1} dB → {2} LUFS{3}
+{0}{1}{2} · 频率 ×{3} · 长度和速度不变	{0}{1}{2} · Frequenz ×{3} · Länge und Geschwindigkeit unverändert
+{0}×{1} · {2} · {3} 个片段	{0}×{1} · {2} · {3} Clips
+{0}。{1}按「{2}」色调映射到 Rec.709	{0}. {1} wird nach „{2}“ Farbtrend in Rec.709 abgebildet
+{0}。{1}按「{2}」色调映射到 Rec.709，母版峰值按 {3} nits	{0}. {1} wird nach „{2}“ Farbtrend in Rec.709 abgebildet, die Peakwerte der Master sind {3} nits
+{0}。导出时按「{1}」色调映射到 Rec.709	{0}. Bei der Exportierung wird nach „{1}“ Farbtrend in Rec.709 abgebildet
+{0}。导出时按「{1}」色调映射到 Rec.709，母版峰值按 {2} nits	{0}. Bei der Exportierung wird nach „{1}“ Farbtrend in Rec.709 abgebildet, die Peakwerte der Master sind {2} nits
+{0}。直接进入 {1} 时间线	{0}. Direkt zur {1} Timeline
+{0}关键帧	{0} Keyframes
+{0}关键帧曲线：拖动关键帧改时间和数值，拖动控制点改快慢，点按空白处移动播放头	{0} Keyframe-Kurven: Bewegen Sie die Keyframes, um die Zeit und Werte zu ändern, bewegen Sie die Kontrollpunkte, um die Geschwindigkeit zu ändern, klicken Sie auf leeres Feld, um den Abspielkopf zu bewegen
+{0}到时间线	{0} zur Timeline
+{0}到时间线播放头（{1}）	{0} zum Abspielkopf der Timeline ({1})
+{0}名称不能为空	Der Name von {0} darf nicht leer sein
+{0}名称最多 {1} 个字	Der Name von {0} darf maximal {1} Zeichen lang sein
+{0}年{1}月{2}日	{2}.{1}.{0}
+{0}斜率 {1}	{0} Neigung {1}
+{0}无法写进 LUT；当前片段没有其他调色	{0} kann nicht in die LUT eingefügt werden; das aktuelle Clip hat keine Farbkorrektur
+{0}时间线	{0} Zeitlinie
+{0}曲线 {1}	{0} Kurve {1}
+{0}月{1}日	{1}.{0}.
+{0}月{1}日 {2}	{1}.{0}. {2}
+{0}没有关键帧：把播放头移到片段内，点「添加关键帧」	{0} kein Keyframe: Bewegen Sie den Abspielkopf zum Clip und klicken Sie auf „Keyframe hinzufügen“
+{0}没有可以交换的片段	{0} kein austauschbarer Clip
+{0}的被抹平，更大的边缘和细节保留（8 位色阶）；	{0} wurde abgeschnitten, größere Ränder und Details bleiben erhalten (8-Bit-Farbton);
+{0}色	{0} Farbe
+{0}色旗标	{0} Farbflagge
+{0}色旗标片段	{0} Farbflaggen-Clip
+{0}色片段	{0} Farbclip
+{0}超时：这台设备的编解码器没有响应	{0} Zeitüberschreitung: Der Decoder dieses Geräts reagiert nicht
+{0}轨道已满，无法分解“{1}”	{0} Spur ist voll, „{1}“ kann nicht getrennt werden
+{0}（{1}）	{0} ({1})
+{0}（备份 {1}）	{0} (Backup {1})
+{0}（已删除）	{0} (Entfernt)
+{0}，{1}	{0}, {1}
+{0}，{1}{2}	{0}，{1}{2}
+{0}，{1}，{2}	{0}，{1}，{2}
+{0}，{1}，{2}{3}{4}	{0}，{1}，{2}{3}{4}
+{0}，从{1}平移到{2}	{0}，von {1} nach {2} verschieben
+{0}，其中 {1} 个与画面尺寸不同	{0}，dabei {1} nicht der Bildgröße entsprechen
+{0}，其中 {1} 个与画面比例不同	{0}，dabei {1} nicht der Bildproportion entsprechen
+{0}，再除以三者之和（{1}），灰色保持原来的亮度	{0}，dann durch die Summe der drei (>{1}) teilen, die Grautönung bleibt bei der ursprünglichen Helligkeit
+{0}，播放头 {1}	{0}，Abspielkopf {1}
+{0}，放大 {1}% 遮住边缘	{0}，{1}% vergrößern, um die Ränder zu verdecken
+{0}，水平和垂直都在中间时画面不移动	{0}，wenn horizontal und vertikal in der Mitte sind, bewegt sich das Bild nicht
+{0}，边缘会露出	{0}，die Ränder werden sichtbar
+{0}，都与画面尺寸相同	{0}，alle entsprechen der Bildgröße
+{0}，都与画面比例相同	{0}，alle entsprechen der Bildproportion
+{0}：{1}	{0}：{1}
+{0}：声音目标轨道，再点恢复自动	{0}：Sound-Ziel-Spur, dann automatisch zurückkehren
+{0}：画面目标轨道	{0}：Bild-Ziel-Spur
+{0}；未保持亮度：三者之和不是 1 时画面变亮或变暗	{0}；Helligkeit nicht beibehalten: Wenn die Summe der drei nicht 1 ist, wird das Bild heller oder dunkler
+“{0}”不在媒体夹里	„{0}“ ist nicht im Ablage
+“{0}”不是复合片段	„{0}“ ist kein komplexer Clip
+“{0}”不是多机位片段	„{0}“ ist kein mehrkameriges Segment.
+“{0}”之后没有素材了，只能直接切换	Nach „{0}“ gibt es keine Materialien mehr, man kann nur direkt wechseln.
+“{0}”之后的素材只够 {1}，交叉淡化按此长度进行	Die Materialien nach „{0}“ reichen nur für {1}, die Kreuzverzögerung erfolgt entsprechend dieser Länge.
+“{0}”从源入点起只有 {1}，	„{0}“ hat von der Ausgangszeitpunkt an nur {1}.
+“{0}”在源播放头之前少了 {1}素材，填不满片段开头：把源播放头往后移	„{0}“ fehlt vor dem Ausgangsabspielkopf mit {1} Materialien, um den Anfang des Segments zu füllen: Verschieben Sie das Ausgangsabspielkopf nach hinten.
+“{0}”在源播放头之后少了 {1}素材，填不满片段结尾：把源播放头往前移	„{0}“ fehlt nach dem Ausgangsabspielkopf mit {1} Materialien, um das Ende des Segments zu füllen: Verschieben Sie das Ausgangsabspielkopf nach vorne.
+“{0}”已在“{1}”里	„{0}“ befindet sich bereits in „{1}“.
+“{0}”已经打开	„{0}“ ist bereits geöffnet.
+“{0}”没有代理	„{0}“ hat keinen Proxy.
+“{0}”的时长	Die Länge von „{0}“.
+“{0}”的时长改为 {1}{2}	Die Länge von „{0}“ wird auf {1}{2} geändert.
+“{0}”被复合片段使用，不能删除	„{0}“ wird von einem zusammengesetzten Segment verwendet, kann nicht gelöscht werden.
+“{0}”里没有画面或声音	In „{0}\)“ gibt es weder Bild noch Ton.
+“{0}”里面用到了当前时间线，不能放进来	„{0}“ verwendet die aktuelle Timeline, kann nicht hinzugefügt werden.
+−1 档	−1 Stufe.
+−{0} 秒	−{0} Sekunden.
+。注意：{0} 个片段的素材离线，渲染时画面是黑场或没有声音	. Hinweis: Offline-Medien ({0,plural,one{# Clip}other{# Clips}}). Im Render sind Bild oder Ton nicht vorhanden.
+「{0}」{1} {2} 秒	„{0}“ {1} {2} Sekunden.
+「{0}」倒放，无法按声音对齐	„{0}“ wird umgekehrt abgespielt, kann nicht mit dem Ton abgestimmt werden.
+「{0}」变速了，无法按声音对齐	„{0}“ wurde mit Tempo verändert, kann nicht mit dem Ton abgestimmt werden.
+「{0}」找不到与参照相同的声音	„{0}“ findet keinen Ton, der mit dem Referenzton übereinstimmt.
+「{0}」改回使用自带的声音	„{0}“ wird auf den eingebauten Ton zurückgesetzt.
+「{0}」没有声音	„{0}“ hat keinen Ton.
+一个片段最多 {0} 个调色版本	Ein Clip kann maximal {0} Farbkorrekturen haben.
+一次只能交换一个片段	Man kann nur einen Clip ausgetauscht werden.
+一点	Ein Punkt.
+一级校色	Primärkorrektur
+一级校色、曲线、LUT、窗口与限定器	Erste Korrektur, Kurven, LUT, Fenster und Beschränker.
+三全音	Dreifach.
+上	Oben.
+上一个{0}关键帧	Vorherige {0} Keyframe.
+上一个关键帧	Vorheriges Keyframe.
+上一个片段	Vorheriger Clip.
+上一个窗口关键帧	Vorheriges Fenster-Keyframe.
+上一级时间线已不存在	Die übergeordnete Timeline existiert nicht mehr.
+上一编辑点	Vorheriger Bearbeitungspunkt.
+上下	Oben und unten.
+上下各 {0}%	{0}% oben und unten
+上下留黑边	Schwarze Ränder oben und unten
+上弯 {0}%	{0}% nach oben
+上弯：淡入更快到位，淡出保持更久再落下；下弯相反。也可以拖时间线上淡化中间的圆点。	Nach oben: Flackern schneller ein und hält länger an, Flackern nach unten dauert länger; nach unten umgekehrt. Man kann auch die Mitte auf der Zeitachse verblassen lassen.
+上方	Oben
+上浮	Aufwärts
+上移	Nach oben
+上限	Obergrenze
+上面的速度只改第 {0} 段（播放头所在），其余各段不变	Die Geschwindigkeit oben ändert sich nur für den {0}-Abschnitt (an dem die Abspielkopf steht), die anderen Abschnitte bleiben gleich.
+下	Unten
+下一个{0}关键帧	Nächstes {0}-Keyframe
+下一个关键帧	Nächstes Keyframe
+下一个片段	Nächster Clip
+下一个窗口关键帧	Nächstes Fenster-Keyframe
+下一条字幕	Nächster Untertitel
+下一编辑点	Nächstes Bearbeitungspunkt
+下三分之一	Unterschiedlich
+下弯 {0}%	{0}% nach unten
+下方	Unten
+下移	Nach unten verschieben
+下限	Untere Grenze
+不导出音频	Kein Export der Audioinhalte
+不放入媒体夹	Nicht in die Mediablage einfügen
+不放大	Kein Vergrößern
+不映射	Keine Mapping-Funktion
+不是 FCPXML 文件	Nicht ein FCPXML-Datei
+不是有效的 .cube LUT：缺少 LUT_3D_SIZE 或 LUT_1D_SIZE	Ungültige .cube LUT: Fehlende LUT_3D_SIZE oder LUT_1D_SIZE
+不能把时间线放进它自己里面	Die Timeline kann nicht in sich selbst eingefügt werden
+不能移动到该轨道	Nicht an die jeweilige Spur verschieben
+不调整	Aus
+不透明度	Deckkraft
+不限	Unbegrenzt
+不限（场记里的关键词）	Unbegrenzt (Schlüsselwort in den Notizen)
+与“{0}”之间直接切换；拖动可交叉淡化（等功率）	Direkte Übergang zwischen „{0}“; Ziehen führt zu abnehmender Helligkeit (gleichmäßig)
+与下方轨道的画面混合	Mischung mit dem Bild der unteren Spur
+与右侧片段交换	Austausch mit dem Clip auf der rechten Seite
+与左侧片段交换	Austausch mit dem Clip auf der linken Seite
+两侧余量都不够，转场缩短为 {0} 秒（{1}）。	Keine ausreichenden Freiräume auf beiden Seiten, Übergang verkürzt auf {0} Sekunden ({1}).
+中	Mittel
+中圈	Mittelkreis
+中心	Zentrum
+中文	Chinesisch
+中灰纯色	Mittelgrau
+中间调 Gamma	Mitteltöne Gamma
+中间调更柔和：皮肤、天空更平滑	Mitteltöne – weicher: Haut, Himmel, glatter
+中间调的纹理更突出（降噪之后）	Texturen der Mitteltöne werden hervorgehoben (nach der Unschärfeentfernung)
+中间调细节	Details der Mitteltöne
+中频	Mittelfrequenz
+中频 {0} @ {1} Hz	Mittelfrequenz {0} @ {1} Hz
+为 {0} 手动选择文件	Manuelles Auswählen von Dateien für {0}
+为全部视频生成代理	Erstellung eines Proxies für das gesamte Video
+主校色	Primär
+主输出	Master
+主输出推子	Hauptausgabe-Push
+主输出电平	Hauptausgabe-Level
+之后放到时间线的片段使用视频自带的声音	Die später in die Timeline eingefügten Clips verwenden den integrierten Ton des Videos
+事件 {0}：{1} 通道没有对应的轨道	Ereignis {0}: Es gibt keinen entsprechenden Spur für den {1}-Kanal
+事件 {0}：与前面的片段重叠	Ereignis {0}: Überlappen mit dem vorherigen Clip
+事件 {0}：媒体池里没有“{1}”	Ereignis {0}: „{1}“ fehlt im Medienpool
+互换	Tauschen
+交付	Ausgabe
+交付时间线，{0}	Ausgabentimeline, {0}
+交叉淡化	Kreuzverblendung
+交叉溶解	Kreuzlösung
+交换{0}和{1}	Tauschen von {0} und {1}
+交换后链接的片段会和其他片段重叠	Nach dem Tauschen überlappen die verknüpften Clips mit anderen Clips
+亮度	Helligkeit
+亮度·饱和	Helligkeit·Sättigung
+亮度对饱和度	Helligkeit auf Sättigung
+亮度映射	Helligkeitskartierung
+亮度起伏约 {0} 级以内	Helligkeitsunterschiede von ca. {0} Stufen
+亮度阈值	Helligkeitsschwellenwert
+亮度阈值：明暗起伏多大以内算噪点；色度阈值：色彩斑点多大以内算噪点。半径越大越平滑，也越慢	Helligkeitsschwellenwert: Wie groß der Unterschied zwischen Hell und Dunkel als Störung gilt; Farbton-Schwellenwert: Wie groß die Farbunterschiede als Störung gilt. Je größer der Radius, desto flacher und langsamer
+亮部 Gain	Helligkeitsgewinn
+人声压缩	Sprachkompression
+人声清晰	Sprachklarheit
+人物 · 地点	Personen · Orte
+仅右	Nur rechts
+仅声音	Nur Ton
+仅好条	Nur gute Markierungen
+仅好条：只收集场记里标为好条的素材	Nur gute Markierungen: Nur Materialien, die als gute Markierungen in den Notizen gesammelt wurden, werden erfasst
+仅左	Nur links
+仅画面	Nur Bild
+仅音频 · {0}	Nur Audio · {0}
+今天 {0}	Heute um {0}
+从 LUT 库移除“{0}”？	„{0}“ aus der LUT-Bibliothek entfernen?
+从 LUT 库移除…	Aus der LUT-Bibliothek entfernt…
+从{0} {1}°	Von {0} {1}°
+从{0}（{1}）拉远到全画面	Vom Punkt {0} ({{1}}) aus gesehen – auf den ganzen Bildschirm ausgedehnt.
+从“{0}”交叉淡化 {1}（等功率，前一段在切点后延续）	Von „{0}“ in die „{1}“ kreuzen und abmischen {1} (gleiche Leistung, der vorherige Abschnitt setzt sich nach dem Schnittpunkt fort)
+从“{0}”粘贴到“{1}”：关键帧保持各自的时间。	Von „{0}“ in die „{1}“ einfügen: Die Keyframes behalten ihre eigene Zeit.
+从两侧合拢	Von beiden Seiten zusammenfassen
+从中心展开	Von der Mitte auseinanderziehen
+从中间打开	Von der Mitte öffnen
+从全画面推近到{0}，{1}	Vom gesamten Bild auf {0}, {1} heranzoomen
+从右推入	Von rechts einschieben
+从媒体池或素材库添加素材到时间线	Medien aus dem Pool oder der Mediensammlung zur Timeline hinzufügen
+从左推入	Von links einschieben
+从播放头 {0} 开始，录音时节目从这里播放	Von der Abspielkopf-Position {0} aus beginnen, wo die Sendung während der Aufnahme abgespielt wird
+从播放头向前、向后跟随窗口里的画面，沿途添加关键帧	Von der Abspielkopf-Position aus vorwärts und rückwärts dem Bild in der Fensteransicht folgen und dabei Keyframes hinzufügen
+从播放头向前、向后跟随遮罩里的画面，沿途添加关键帧	Von der Abspielkopf-Position aus vorwärts und rückwärts der Maske in der Fensteransicht folgen und dabei Keyframes hinzufügen
+从片段第一帧到最后一帧平滑推近、拉远或平移，适合照片	Vom ersten zum letzten Frame des Clips sanft näher oder weiter ziehen oder verschieben, geeignet für Fotos
+从设备导入	Aus dem Gerät importieren
+代理	Proxy
+代理 {0}×{1} · {2}	Proxy {0}×{1} · {2}
+代理：{0}，点按生成或删除代理	Proxy: {0}, anklicken um einen Proxy zu erstellen oder zu löschen
+以最后点选的「{0}」为参照，按声音把其余片段移到同步的位置	Mit dem letzten ausgewählten „{0}“ als Referenz, die übrigen Clips nach dem Klang in die synchronen Positionen verschieben
+任意旗标	beliebige Flaggen
+位深	Bittiefe
+位置	Position
+位置 X	Position X
+位置 Y	Position Y
+位置、裁切、窗口和标题按画面的比例保存：换成竖屏或方形，版面跟着新画面走	Position, Cutten, Fenster und Titel in der Maßstab des Bildes speichern: In vertikale oder quadratische Bildschirmgröße umwandeln, die Layoutstruktur folgt dem neuen Bild
+低于时间线（{0} fps）：每秒渲染 {1} 帧，按时刻取画面，舍去其余 {2} 帧	Niedriger Frame-Rate (≤ {0} fps): Es werden pro Sekunde {1} Bilder renderiert. Die Bilder werden nach bestimmten Zeitpunkten ausgewählt, während die restlichen {2} Bilder ignoriert werden.
+低切	Niedriger Schnitt.
+低切 {0} Hz	Niedriger Schnitt {0} Hz.
+低频	Niedrigfrequenz.
+低频 {0}	Niedrigfrequenz {0}.
+作用于输出到这条总线的所有轨道，在各轨道的处理之后	Gilt für alle Spuren, die an diese Bus geleitet werden, nach der Verarbeitung der einzelnen Spuren.
+作用于这条轨道上的全部字幕	Gilt für alle Untertitel auf dieser Spur.
+作用于这条轨道的所有片段	Gilt für alle Clips auf dieser Spur.
+作用于这条轨道的所有片段，在均衡器之前	Gilt für alle Clips auf dieser Spur, vor dem Equalizer.
+作用于这条轨道的所有片段，在均衡器之后、推子之前	Gilt für alle Clips auf dieser Spur, nach dem Equalizer und vor dem Push.
+作用于这条轨道的所有片段，在推子之前	Gilt für alle Clips auf dieser Spur, vor dem Push.
+使用	Verwenden.
+使用 {0} 次	Verwendet: {0,plural,one{# Mal}other{# Mal}}
+使用代理播放	Verwenden von Proxy-Playback.
+使用次数	Anzahl der Verwendungen.
+侧链	Seitengruppe.
+侧链 {0}	Seitengruppe {0}.
+侧链无声	Seitengruppe stumm.
+侧链轨道 {0}	Seitengruppe Spur {0}.
+保存	Speichern
+保存到相册失败：{0}	Verschiedene Probleme bei der Speicherung in das Album: {0}
+保存失败 · 检查存储后可再次返回重试	Speicherung fehlschlug · Überprüfen Sie die Speicherung und versuchen Sie es erneut
+保存静帧失败：{0}	Speicherung des Standbilds fehlschlug: {0}
+保持	Beibehalten
+保持亮度	Helligkeit beibehalten
+保持亮度：混合只改变颜色，不改变亮度	Helligkeit beibehalten: Die Mischung ändert nur die Farbe, nicht die Helligkeit
+保持色相	Farbton beibehalten
+保留整个画面，{0}留黑边	Das gesamte Bild beibehalten, {0} mit schwarzen Rändern
+修剪	Schneiden
+修剪开头到播放头	Anfang bis zum Abspielkopf schneiden
+修剪片段	Clip schneiden
+修剪结尾到播放头	Ende bis zum Abspielkopf schneiden
+修改字号	Schriftgröße ändern
+修改时间	Zuletzt geändert
+修改标题文字	Titeltext ändern
+倒放	Umkehren
+倒放失败	Umkehren fehlschlug
+倒放生成中	Umkehren in Vorbereitung
+倒放的片段不能检测场景剪切	Der umgekehrte Clip kann keine Szene-Schnitt-Einstellungen verwenden
+倒放的片段不能添加变速点	Für umgedrehte Clips können keine Tempotuppler hinzugefügt werden.
+倒放的片段不能添加变速点：先关闭倒放	Für umgedrehte Clips können keine Tempotuppler hinzugefügt werden: Schließen Sie zuerst die Umkehrung.
+倒放的片段不能稳定	Umgedrehte Clips können nicht stabil sein.
+倒放的片段不能跟踪窗口	Umgedrehte Clips können die Fenster nicht verfolgen.
+倒放的片段不能跟踪遮罩	Umgedrehte Clips können die Masken nicht verfolgen.
+倒放素材已生成：{0}	Umgedrehtes Medium wurde erstellt: {0}
+倒放素材生成失败：{0}。关闭再打开倒放可重试。	Die Umleitung der Medien erfolgte nicht – Fehlercode: {0}. Bitte deaktivieren Sie die Funktion der Umleitung und aktivieren Sie sie erneut, um den Versuch erneut zu starten.
+倒放素材生成失败：{0}（{1}）	Fehler bei der Wiedergabe der Inhalte: {0} (({1})).
+停在出点	An dem Out-Punkt stoppen
+停止并保存	Stoppen und speichern
+停用 {0} 个片段	Aktivieren von {0} Clips
+停用全部	Alle Clips deaktivieren
+停用片段	Einen Clip deaktivieren
+停用节点	Eine Node deaktivieren
+停用节点 {0}	Node {0} deaktivieren
+停用节点 {0}（Ctrl+D）	Node {0} (Ctrl+D) deaktivieren
+先为片段选择遮罩形状	Wählen Sie zuerst die Maskenform für den Clip aus
+先吸取颜色建立限定器	Entfernen Sie zuerst Farben, um einen Limiter zu erstellen
+先吸取颜色建立限定器，再精修它的选区。	Entfernen Sie zuerst Farben, um einen Limiter zu erstellen, und bearbeiten Sie anschließend die Auswahlbereiche.
+先在左侧媒体池中选择素材	Zuerst wählen Sie das Medium im linken Bereich aus.
+先在时间线上标记入点和出点	Markieren Sie den In-Punkt und den Out-Punkt auf der Zeitachse.
+先在时间线上选择一个声音片段	Wählen Sie einen Tonclip auf der Zeitachse aus.
+先在时间线上选择一个多机位片段	Wählen Sie einen Multi-Kamerawinkel-Clip auf der Zeitachse aus.
+先在时间线上选择要修剪的片段	Wählen Sie den zu kürzenden Clip auf der Zeitachse aus.
+先在曲线上点选一个关键帧	Wähle zuerst einen Keyframe auf der Kurve
+先在画廊中选择一张静帧	Wählen Sie ein Standbild in der Galerie aus.
+先在画廊里选一张静帧	Wählen Sie ein weiteres Standbild in der Galerie aus.
+先开启动态缩放	Aktivieren Sie die dynamische Skalierung.
+先开启抠像	Aktivieren Sie die Maskierung.
+先开启稳定	Aktivieren Sie die Stabilisierung.
+先抓取或选择一张静帧	Wählen Sie ein Standbild aus oder nehmen Sie eines auf.
+先按 I / O 标记	Markieren Sie mit I/O.
+先标记入点和出点	Markieren Sie den In-Punkt und den Out-Punkt.
+先标记时间线入点和出点（I / O）	Markieren Sie die In-Punkt- und Out-Punkte auf der Zeitachse (I/O).
+先画一个窗口，再跟踪	Zeichnen Sie ein Fenster und verfolgen Sie es.
+先选择{0}形状，再添加关键帧	Wählen Sie die Form von {0} aus und fügen Sie Keyframes hinzu.
+先选择一个片段	Wählen Sie einen Clip aus.
+先选择一个画面片段	Wählen Sie einen Bildclip aus.
+光流	Lichtfluss
+入出点：用标记范围	In-Punkt und Out-Punkt: Mit Markerbereich
+入场转场	Eintritts-Übergang
+入点 	In-Punkt 
+入点 {0}	In-Punkt {0}
+入点 {0} · 出点 {1} · 	In-Punkt {0} · Out-Punkt {1} · 
+入点 {0} → 出点 {1}（{2}）	In-Punkt {0} → Out-Punkt {1} ({2})
+入点 {0} 至出点 {1}	In-Punkt {0} bis Out-Punkt {1}
+入点到出点	Von In-Punkt bis Out-Punkt
+入点到出点之间没有画面	Zwischen In-Punkt und Out-Punkt gibt es kein Bild
+入点处已有另一个标记	Im In-Punkt befindet sich bereits ein anderer Marker
+入点必须早于出点	Der In-Punkt muss vor dem Out-Punkt liegen
+入点至出点	Von In-Punkt bis Out-Punkt
+入点至出点之间和之后都没有片段	Zwischen und nach dem In-Punkt gibt es keinen Clip
+入点至出点之间没有片段	Zwischen In-Punkt und Out-Punkt gibt es keinen Clip
+全屏	Vollbild
+全画面	Ganzes Bild
+全画面不需要跟踪：先选择圆形、矩形或渐变	Für das Vollbild ist keine Verfolgung erforderlich: Wählen Sie zuerst Kreis, Rechteck oder Gradient
+全部	Alle
+全部时间线加入	Alle Zeitlinien hinzufügen
+全部时间线加入渲染队列	Alle Zeitlinien in die Renderwarteschlange einschieben
+全部添加	Alle hinzufügen
+全部渲染	Alles rendern
+全部片段	Alle Clips
+全部素材	Alle Medien
+全部重置	Alle zurücksetzen
+八度	Achtstellig
+关	Schließen
+关于 {0}	Über {0}
+关联的音频片段会与其他片段重叠	Verknüpfte Audio-Clips überschneiden sich mit anderen Clips
+关键帧	Keyframe
+关键帧 {0}/{1} · {2} · {3}	Keyframe {0}/{1} · {2} · {3}
+关键帧已不存在	Keyframe nicht mehr existent
+关键帧斜率	Steigung des Keyframes
+关键帧曲线编辑器	Keyframe-Kurveneditor
+关键帧移到第 {0} 帧	Keyframe auf die Stelle {0} verschieben
+关键帧移到第 {0} 帧 · {1}	Keyframe auf die Stelle {0} verschieben · {1}
+关键帧缓动	Keyframe-Smoothing
+关键帧缓动：{0}	Keyframe-Smoothing: {0}
+关键词	Schlüsselwörter
+关键词“{0}”	Schlüsselwort „{0}“
+关键词包含	Schlüsselwörter enthalten
+关键词条件最多 {0} 个字	Die Anzahl der Schlüsselwörter beträgt maximal {0} Zeichen
+关键词用逗号或顿号隔开；媒体池搜索和智能媒体夹都会用到这些信息	Schlüsselwörter werden durch Kommas oder Punkte getrennt; diese Informationen werden für die Suchfunktion des Medienspeichers und den intelligenten Medienspeicher verwendet
+关闭	Schließen
+关闭低切	Ausschalten der Kamerabewegung
+关闭动态缩放	Ausschalten der dynamischen Skalierung
+关闭抠像	Ausschalten der Maskierung
+关闭稳定	Ausschalten der Stabilisierung
+关：把亮度或色度阈值调高即开启	Ausschalten: Erhöht den Helligkeits- oder Farbton-Schwellenwert, um die Funktion zu aktivieren
+关：调高后，静止处的噪点按前后帧平均掉	Ausschalten: Nach Erhöhung der Schwellenwerte werden die Störungen an stillen Stellen nach dem Vorkommen in vorherigen und nachfolgenden Bildern gleichmäßig verteilt
+其中 {0} 个素材回到媒体池	{0} Materialien kehren in den Medienspeicher zurück
+其他轨道在这段空隙里有内容，删除它会让“{0}”和链接的片段错位	Andere Spuren enthalten Inhalt in diesem Intervall; das Löschen würde „{0}“ und die verknüpften Clips aus dem Gleichgewicht bringen
+内圈	Innerer Kreis
+再高 {0} dB 以上的声音不受影响	Geräusche über {0} dB hinaus sind unbeeinflusst
+写入视频文件时出错：请确认设备还有空间后重试（{0}）。	Bei der Schreibung des Videos zum Fehler kam: Bitte überprüfen Sie, ob noch Platz auf dem Gerät vorhanden ist, und versuchen Sie es erneut ({0}).
+净化白场	Reinigung von Weißflächen
+净化黑场	Reinigung der Schwarzflächen
+净化黑场去掉零星的弱选区，净化白场补满选区里的空洞，模糊半径柔化选区边缘。打开“显示选区”查看效果。	Reinigung der Schwarzflächen: Entfernt vereinzelte schwache Auswahlbereiche, füllt die Lücken in den Auswahlbereichen mit Weißflächen aus, verschwimmt die Ränder der Auswahlbereiche mit einem Radius. Öffnen Sie „Auswahlbereich anzeigen“, um den Effekt zu sehen.
+减弱嘶声	Reduzierung des Zischen
+减选	Auswahl reduzieren
+减选：点击画面中的颜色移出选区	Auswahl reduzieren: Klicken auf eine Farbe im Bild, um sie aus dem Auswahlbereich zu entfernen
+出点 {0}	Out-Punkt {0}
+出点不能在时间线开头	Der Out-Punkt darf nicht am Anfang der Zeitlinie liegen
+分割片段	Fragmentteilen
+分析失败：{0}	Analyse fehlgeschlagen: {0}
+分析摄像机的抖动，逐帧反向移动画面去掉它	Analyse der Kamerataschirrungen, verschieben das Bild pro Frame umgekehrt, um es zu beseitigen
+分解	Zerlegen
+分解复合片段	Zerlegen von komplexen Fragmenten
+分解复合片段 {0}	Zerlegen von komplexen Fragmenten {0}
+分辨率	Auflösung
+切换到此版本	Auf diese Version wechseln
+切换到此版本（Shift+Alt+[ ]）	Auf diese Version wechseln (Shift+Alt+[ ])
+切换时间线	Zeitlinie wechseln
+切换机位	Kamerawinkel wechseln
+切换特效	Effekte wechseln
+切换调色版本	Farbkorrektur-Version wechseln
+划像	Bildausschnitt
+划像对比	Bildausschnitt-Vergleiche
+列表	Liste
+刚刚	Gerade erst
+创建	Erstellen
+创建 {0} 个副本	{0} Kopien erstellen
+创建副本	Kopien erstellen
+创建项目	Projekt erstellen
+删除	Löschen
+删除 {0}	{0} löschen
+删除 {0} 个片段	{0} Clips löschen
+删除{0}	{0} löschen
+删除{0}关键帧	{0} Keyframes löschen
+删除代理	Proxy löschen
+删除入点至出点	In-Punkt bis Out-Punkt löschen
+删除关键帧	Keyframe löschen
+删除区间	Zeitraum löschen
+删除变速点	Tempoänderung löschen
+删除媒体夹	Medienablage löschen
+删除当前时间线	Aktuelle Zeitlinie löschen
+删除当前版本	Aktuelle Version löschen
+删除当前调色版本	Aktuelle Farbkorrekturlösung löschen
+删除总线	Bus löschen
+删除所有空隙	Alle Leerstellen löschen
+删除控制点	Kontrollpunkte löschen
+删除时间线	Zeitlinie löschen
+删除智能媒体夹	Intelligente Medienablagen löschen
+删除曲线控制点	Kurvenkontrollpunkte löschen
+删除最近的	Letzte Version löschen
+删除标记	Markierungen löschen
+删除片段	Clips löschen
+删除空隙	Leerstellen löschen
+删除空隙（{0}）	Leerstellen ({0}) löschen
+删除节点	Knoten löschen
+删除节点 {0}	Knoten {0} löschen
+删除调色版本	Farbkorrekturlösung löschen
+删除轨道	Spuren löschen
+删除轨道 {0}	Entfernen der Spur {0}
+删除这个项目？	Entfernen dieses Elements?
+删除静帧	Entfernen des Standbilds
+到播放头	Zur Abspielkopf
+前一个片段	Vorheriges Clip
+前一片段出点后余量不够，转场移向剪辑点前（{0}）。	Im vorherigen Abschnitt ist der verbleibende Raum nicht ausreichend. Der Wechsel wird also zum Punkt vor dem Schnittpunkt erfolgen ({0}).
+前一片段出点后只剩 {0} 秒素材，转场缩短为 {1} 秒。	Nach dem Aus-Punkt des vorherigen Clips bleiben nur {0} Sekunden Material übrig, der Übergang wird auf {1} Sekunden verkürzt.
+前一片段出点后和本片段入点前都没有余量素材，按硬切播放。	Nach dem Aus-Punkt des vorherigen Clips und vor dem In-Punkt dieses Clips gibt es kein Material mehr übrig, der Film wird direkt abgespielt.
+前一片段出点后没有余量素材，转场无法显现它，按硬切播放。	Nach dem Aus-Punkt des vorherigen Clips gibt es kein Material mehr übrig, der Übergang kann nicht angezeigt werden, der Film wird direkt abgespielt.
+前一片段太短，无法过渡，按硬切播放。	Das vorherige Clip ist zu kurz, um einen Übergang zu ermöglichen, der Film wird direkt abgespielt.
+前一片段太短，转场缩短为 {0} 秒（{1}）。	Das vorherige Clip ist zu kurz, der Übergang wird auf {0} Sekunden verkürzt ({1}).
+前移	Vorwärtsverschieben
+前第 {0} 个片段	Vorheriges Clip {0}
+前进	Voranschreiten
+前面没有片段	Es gibt keine Clips vorne
+前面没有相邻片段，转场从下层画面（或黑场）显现。	Es gibt keine benachbarten Clips vorne, der Übergang wird von der unteren Bildfläche (oder Schwarz) angezeigt.
+前面没有相邻片段：转场从剪辑点开始，从下层画面（或黑场）显现。	Es gibt keine benachbarten Clips vorne: Der Übergang beginnt am Schnitt-Punkt und wird von der unteren Bildfläche (oder Schwarz) angezeigt.
+前面没有第 {0} 个片段	Es gibt kein Clip {0} vorne
+前面没有紧挨着的声音片段，无法交叉淡化	Es gibt keine direkt nebenliegenden Tonklips, daher kann man sie nicht kreuzen und abspielen.
+剪切	Ausschneiden
+剪切片段	Schnecklippe
+剪贴板是空的	Die Zwischenspeicher sind leer.
+剪贴板是空的：先复制一个片段	Die Zwischenspeicher sind leer: Kopieren Sie zuerst einen Klip.
+剪辑	Schnitt
+剪辑点 	Schnittpunkt 
+剪辑点不能再往前了	Der Schnittpunkt kann nicht weiter vorne sein.
+剪辑点不能再往后了	Der Schnittpunkt kann nicht weiter hinten sein.
+剪辑点前	Vor dem Schnittpunkt
+剪辑点前 {0} 秒、后 {1} 秒	Vor dem Schnittpunkt {0} Sekunden, nach dem Schnittpunkt {1} Sekunden
+剪辑点后	Nach dem Schnittpunkt
+剪辑点所在的轨道已锁定	Die Spur, an der der Schnittpunkt liegt, ist gesperrt.
+加入渲染队列	Zur Renderwarteschlange
+加选	Auswählen
+加选：点击画面中的颜色加入选区	Auswählen: Klicken Sie auf die Farbe im Bild, um die Auswahl zu erweitern.
+动态 {0}	Dynamisch {0}
+动态 · {0}	Dynamisch · {0}
+动态传输曲线	Dynamische Übertragungskurve
+动态缩放	Dynamischer Zoom
+动态缩放幅度	Dynamischer Skalierungsbereich
+动态缩放方向	Dynamische Skalierungsrichtung
+动态缩放焦点	Dynamischer Skalierungsfokus
+动态缩放缓动	Dynamische Skalierung mit Bewegung
+动态缩放起止画面：	Dynamische Skalierungsbeginn und Ende:
+动态预设	Dynamische Einstellung
+动态预设：{0}	Dynamische Einstellung: {0}
+动态：{0}{1}	Dynamisch: {0}{1}
+动态：关闭压缩器	Dynamisch: Kompressor deaktivieren
+动态：关闭门限	Dynamisch: Schwellenwert deaktivieren
+动态：关闭限制器	Dynamisch: Beschränker deaktivieren
+动态：启用	Dynamisch: Aktivieren
+动态：开启压缩器	Dynamisch: Kompressor aktivieren
+动态：开启门限	Dynamisch: Schwellenwert aktivieren
+动态：开启限制器	Dynamisch: Beschränker aktivieren
+动态：旁通	Dynamisch: Notch
+动画	Animation
+匹配帧	Passende Bilder
+匹配帧：{0} {1}	Passende Bilder: {0} {1}
+匹配静帧	Passende Standbilder
+匹配静帧：按静帧的暗部、中间调和亮部调整当前片段	Passende Standbilder: Anpassen des aktuellen Clips an die Dunkelheit, Mitteltöne und Helligkeit der Standbilder
+升序 ↑	Aufsteigend ↑
+升高	Höher
+半径	Radius
+半径 {0}：周围 {1} 像素	Radius {0}: {1} Pixel umgibend
+单个文件	Einzeldatei
+单声道	Mono
+单声道素材：左右两边本来就相同	Mono-Material: Die Seiten sind von Anfang an gleich
+单独片段	Einzelne Clips
+单独的声音片段不能做成机位：先把它链接到一个画面	Einzelner Tonclip kann nicht als Kamerawinkel verwendet werden: Verbinden Sie ihn zu einem Bild
+单色	Einfarbig
+单色：按灰度的混合输出黑白画面	Einfarbig: Ausgabe von Schwarz-Weiß-Bildern nach der Mischung von Grautönen
+历史记录	Verlauf
+压低 {0}	Abfallen {0}
+压低量为 0：声音不变	Abfallmenge 0: Ton bleibt unverändert
+压缩亮度后，超出的颜色降低饱和度：保持亮度和色相	Nach der Komprimierung der Helligkeit wird die überschüssige Farbe dezentriert: Helligkeit und Farbton bleiben erhalten
+压缩器	Kompressor
+原位置：{0} · {1}	Ursprünglicher Ort: {0} · {1}
+原位置：{0}{1}	Ursprünglicher Ort: {0}{1}
+原尺寸	Originalgröße
+原文件已被移动或删除	Das ursprüngliche File wurde verschoben oder gelöscht
+原调：拖动以升高或降低音调，长度和速度不变	Originalton: Ziehen zur Erhöhung oder Senkung des Tons, Länge und Geschwindigkeit bleiben gleich
+去低频噪声	Entfernen von Tiefenrauschen
+去掉绿幕或蓝幕，露出下方轨道的画面	Entfernen der grünen oder blauen Leinwand, zeigen der Bilder der unteren Spur
+去白	Entfernen von Weiß
+去设置	Entfernen der Einstellungen
+去黑	Entfernen der Schwarzfärbung
+参照片段「{0}」没有声音	Die Referenzclip „{0}“ hat keinen Ton
+参考白（203 nits）对齐 SDR 白，更亮的部分直接裁切	Referenzweiß (203 nits) ausgerichtet auf SDR-Weiß, hellere Teile werden direkt abgeschnitten
+及链接的片段	Und verknüppte Clips
+反转	Umkehren
+反转窗口：调整窗口外	Umkehrerfenster: Anpassung außerhalb des Fensters
+反转遮罩	UmkehrerMaske
+反转遮罩：显示形状之外的画面	UmkehrerMaske: Zeigen von Bildern außerhalb der Form
+反转限定器：调整未选中的颜色	UmkehrerBegrenzer: Anpassung der nicht ausgewählten Farben
+发光	Leuchten
+取消	Abbrechen
+取消同步	Abbrücken
+取消同步音频	Abbrücken der Audio-Synchronisation
+取消总线独奏	Abbrechen des Bus-Solo
+取消总线静音	Abbrechen der Bus-Schwarzmarkierung
+取消独奏	Abbrechen des Solo
+取消跟踪	Abbrechen der Verfolgung
+取消选择	Abbrechen der Auswahl
+取消链接	Abbrechen der Verknüpfung
+取消静音	Abbrechen der Schwarzmarkierung
+变亮	Aufhellen
+变暗	Dunkeln
+变速	Tempo
+变速 	Tempoänderung 
+变速 {0}	Tempoänderung {0}
+变速后片段时长自动调整，后面的片段随之移动。	Nach der Tempoänderung wird die Länge des Clips automatisch angepasst, wodurch der nachfolgende Clip verschoben wird.
+变速处理	Tempoänderungsverarbeitung
+变速处理：{0}	Tempoänderungsverarbeitung: {0}
+变速点	Tempoänderungspunkt
+叠加	Überlagerung
+只作用于这个片段，在轨道的均衡器之前	Wird nur auf diesen Clip angewendet, vor dem Equalizer der Spur
+只压缩亮度、保持比例：颜色更饱满，过亮的颜色会被裁切	Komprimiert nur die Helligkeit, behält die Proportionen: Farben werden voller, überhelle Farben werden gekürzt
+只导出声音：AAC {0} kbps 立体声 .m4a，保存到“音乐/{1}”。	Exportiert nur den Ton: AAC {0} kbps Stereo .m4a, in „Musik/{1}“ speichern
+只导出音频时不能关闭声音	Wird der Ton nicht ausgeblendet, wenn nur der Ton exportiert wird
+只有一个关键帧，没有变化可以缓动	Nur ein Keyframe, keine Veränderungen können mit Ease-in dargestellt werden
+只有声音片段可以交叉淡化	Nur Tonclips können abgeschwächt werden
+只有声音片段可以变调	Nur Tonclips können umtont werden
+只有声音片段可以设置声道	Nur Tonclips können die Kanäle eingestellt werden
+只有声音片段有均衡器	Nur Tonclips haben einen Equalizer
+只有声音片段有声像	Nur Tonclips haben ein Panorama
+只有字幕轨有语言	Nur Untertitelclips haben Sprache
+只有画面片段可以加遮罩	Nur Bildclips können mit einer Maske versehen werden
+只有画面片段可以抠像	Nur Bildclips können abgeschnitten werden
+只有画面片段可以设置动态缩放	Nur Bildclips können eine dynamische Skalierung eingestellt werden
+只有画面片段可以设置变速处理	Nur Bildclips können eine Tempoänderung vorgenommen werden
+只有画面片段可以设置合成模式	Nur Bildclips können einen Kombinationstyp eingestellt werden
+只有画面片段可以设置画面布局	Nur Bildclips können eine Bildanordnung eingestellt werden
+只有画面片段可以设置缩放方式	Nur Bildclips können eine Skalierungsmethode eingestellt werden
+只有画面片段可以调色	Nur Bildclips können farblich bearbeitet werden.
+只有画面片段有调色版本	Nur Bildclips verfügen über eine farbliche Bearbeitungsversion.
+只有视频片段可以检测场景剪切	Nur Videoclips können als Szeneabschnitte erkannt werden.
+只有视频片段可以稳定	Nur Videoclips können stabilisiert werden.
+只有视频片段可以跟踪窗口	Nur Videoclips können Fenster verfolgen.
+只有视频片段可以跟踪遮罩	Nur Videoclips können Masken verfolgen.
+只有视频素材可以同步音频	Nur Video-Mediums können die Tonquelle synchronisieren.
+只有音频片段有音量线	Nur Audioclips verfügen über eine Lautstärkeanzeige.
+只用右声道，两边都听到它（适合只录在右声道的领夹麦）	Nur die rechte Spur wird verwendet; beide Seiten werden wahrgenommen (geeignet für Kopfhörer, die nur die rechte Spur aufnehmen).
+只用左声道，两边都听到它（适合只录在左声道的领夹麦）	Nur die linke Spur wird verwendet; beide Seiten werden wahrgenommen (geeignet für Kopfhörer, die nur die linke Spur aufnehmen).
+只能为视频片段定格	Nur Videoclips können eingefroren werden.
+只能把调色应用到画面片段	Nur die farbliche Bearbeitung kann auf Bildclips angewendet werden.
+只能选择视频轨道作为画面目标	Nur Video-Spuren können als Ziel für Bilder ausgewählt werden.
+只能选择音频轨道作为声音目标	Nur Audio-Spuren können als Ziel für Geräusche ausgewählt werden.
+可用入出点设范围	Mit den Eingangs- und Ausgangspunkten kann ein Bereich eingeschränkt werden.
+右	Rechts
+右 {0}	Rechts {0}
+右上	Oben rechts
+右下	Unten rechts
+右侧	Rechtsseite
+右移	Rechtsverschieben
+合成模式	Kombinationseinstellungen
+合成模式：{0}	Kombinationseinstellungen: {0}
+同名，但时长或大小不同	Gleiche Namen, aber unterschiedliche Länge oder Größe
+同名，大小和时长一致	Gleiche Namen, gleiche Größe und Länge
+同名，时长一致	Gleiche Namen, gleiche Länge
+同时跟随	Gleichzeitig folgen
+同步	Synchronisieren
+同步的音频已不在媒体池中	Die synchronisierte Audio-Datei befindet sich nicht mehr im Medienspeicher
+同步音频	Synchronisierte Audio
+同步音频：{0}，点按选择录音文件	Synchronisierte Audio: {0}, klicken Sie darauf, um die Aufnahme-Datei auszuwählen
+名称	Name
+名称不能为空	Der Name darf nicht leer sein
+名称包含	Der Name enthält
+名称含“{0}”	Der Name enthält „{0}“
+名称最多 {0} 个字	Der Name darf maximal {0} Zeichen haben
+名称条件最多 {0} 个字	Die Namensobjektionsbedingungen dürfen maximal {0} Zeichen haben
+名称没有变化	Der Name hat keine Änderungen
+后移	Zurückschieben
+后退	Rückwärts
+后面的片段不动：加长到下一个片段为止，缩短留下空隙	Hinter dem Clip bleibt nichts stehen: Der Clip wird bis zum nächsten Clip verlängert, um Lücken zu schaffen
+后面的片段跟着移动，不覆盖也不留空隙	Die hinter dem Clip befindlichen Clips bewegen sich mit, ohne zu überlappen oder Lücken zu hinterlassen
+向中心收拢	Zentral zusammenfassen
+含 HDR 素材（{0}）：时间线为 {1}，导出时按「{2}」色调映射	Mit HDR-Materialien ({0}): Timeline ist {1}, bei Export wird die Farbverteilung nach „{2}“ angewendet
+启用	Aktivieren
+启用 {0} 个片段	{0} Clips aktivieren
+启用全部	Alle aktivieren
+启用动态：关闭即旁通	Dynamik aktivieren: Aus schalten = Parallelisieren
+启用均衡器：关闭即旁通	Equalizer aktivieren: Aus schalten = Parallelisieren
+启用效果	Effekte aktivieren
+启用混响	Reverberation aktivieren
+启用片段	Clips aktivieren
+启用节点	Knoten aktivieren
+启用节点 {0}	Knoten {0} aktivieren
+启用节点 {0}（Ctrl+D）	Knoten {0} aktivieren (Ctrl+D)
+启用闪避：关闭即旁通	Flucht aktivieren: Aus schalten = Parallelisieren
+启用降噪	Schärfen aktivieren
+启用齿音消除	Zahnlosen-Erkennung aktivieren
+吸取	Absorbieren
+吸取幕布颜色	Farbe der Absorbierungsvorhang
+吸取颜色	Farbe absorbieren
+吸取：点击画面中幕布的颜色	Absorbieren: Klicken auf die Farbe des Vorhangs auf dem Bild
+吸管：点击画面中的颜色	Pipette: Klicken auf die Farbe auf dem Bild
+吸附	Einrasten
+吸附已关闭	Absorbieren deaktiviert
+吸附已开启	Absorbieren aktiviert
+和	und
+品红	Magenta
+响度	Lautheit
+响度已是 {0} LUFS	Lautheit beträgt bereits {0} LUFS
+响度标准化	Lautheit standardisieren
+响度范围 {0}	Lautheitsspanne {0}
+响度范围 {0}，真峰值 {1}	Lautheitsspanne {0}, tatsächlicher Pegel {1}
+响度还在测量中	Die Lautheit wird noch gemessen
+噪声底来自“{0}”（{1}）：每个文件各自测量，压低的是接近它的声音	Der Schallpegel stammt von „{0}“ ({1}): Jedes Filet wird separat gemessen, die abgesenkte Lautheit entspricht der näher liegenden Lautheit
+噪声谱：噪声底和阈值线	Schallspektrum: Schallpegel und Schwellenlinie
+噪声谱：还没有测量	Rauschenfrequenz: Noch nicht gemessen
+四周留黑边	Umrandung mit schwarzen Rändern
+图片	Bild
+图片 · 5 秒	Bild · 5 Sekunden
+图片和标题没有可以变速的画面	Bild und Titel ohne veränderbare Teile
+图片无需代理	Bild benötigt keinen Proxy
+图片本身就是静帧，无需定格	Bild ist bereits ein Standbild, keine Festlegung erforderlich
+图片没有可以变速的画面	Bild ohne veränderbare Teile
+图片没有可以补出的中间帧	Bild ohne zusätzliche Zwischengrafiken
+图片素材固定为 5 秒，无需标记入出点	Bildmaterial festgelegt auf 5 Sekunden, keine Punkte erforderlich
+圆形	Kreis
+圆形划像	Kreisförmige Darstellung
+在 {0} 	In {0} 
+在 {0} 把{1}切到{2}（{3}）	In {0} schneiden Sie {1} zu {2} ({3})
+在剪辑页把视频加到时间线后，可以在这里逐个调色。	Auf der Schnittseite können Sie das Video nach dem Hinzufügen zur Zeitlinie die Farbe individuell anpassen.
+在右侧“媒体夹”中把选中的素材放进来。	Legen Sie das ausgewählte Material in den „Ablage“-Ordner auf der rechten Seite.
+在左侧“特效”库选择效果，然后点“应用到所选片段”。	Wählen Sie einen Effekt aus der „Special Effects“-Bibliothek auf der linken Seite und klicken Sie auf „Auf den ausgewählten Clip anwenden“.
+在推子和声像之后；片段后面有空隙时，尾音延续进去（最长 {0} 秒，素材要有余量）	Nach dem Hinzufügen des Videos und der Panorama-Einstellungen; wenn nach dem Clip ein Freiraum vorhanden ist, wird der Abspielverlauf dort fortgesetzt (maximal {0} Sekunden, Material muss genügend Platz bieten).
+在播放头处分割	Aufteilen am Abspielkopf
+在播放头处定格 2 秒	Anhalten bei der Abspielkopf für 2 Sekunden
+在播放头处添加	Hinzufügen bei der Abspielkopf
+在播放头处添加变速点，把片段分成几段，各段可以设置自己的速度	Hinzufügen von Tempopunkten bei der Abspielkopf, in mehrere Abschnitte unterteilen, jeder Abschnitt kann seine eigene Geschwindigkeit haben
+在播放头标记入点（I）	Markieren eines In-Punktes bei der Abspielkopf
+在播放头标记出点（O）	Markieren eines Out-Punktes bei der Abspielkopf
+在播放头添加标记	Hinzufügen von Markern bei der Abspielkopf
+在时间线上选择一个片段以调整属性；长按片段可剪切、复制、粘贴；按住 Ctrl / Cmd 点按或开启「多选」可选择多个片段。	Einen Abschnitt auf der Zeitachse auswählen, um Eigenschaften zu ändern; Drücken länger, um schneiden, kopieren, einfügen zu können; Halten mit Ctrl/Cmd und anklicken oder „Mehrere Auswahl“ verwenden, um mehrere Abschnitte auszuwählen.
+在时间线上选择一个片段，这里显示它的关键帧曲线：缩放、位置、旋转、不透明度、裁切、特效强度或音量随时间的变化	Einen Abschnitt auf der Zeitachse auswählen, hier wird die Kurve der Keyframes angezeigt: Skalierung, Position, Drehung, Transparenz, Schnitt, Effektkraft oder Lautstärke über Zeit hinweg.
+在此输入字幕	Hier die Untertitel eingeben.
+在监视器上拖动可移动遮罩 · 点菱形按钮添加关键帧，让遮罩随时间移动	Mit dem Cursor auf dem Monitor bewegbare Masken · Dreieck-Button verwenden, um Keyframes hinzuzufügen, damit die Masken mit der Zeit bewegt werden.
+在相册中查看	Im Album ansehen.
+在素材库中选择一个媒体，或在时间线上选择片段	Ein Medium im Materialpool auswählen, oder einen Abschnitt auf der Zeitachse auswählen.
+场 {0}	Szene {0}
+场次	Szenen
+场次、镜头、条次各最多 {0} 个字	Anzahl der Szenen, Kameraeinstellungen, Einzelteile – jeweils maximal {0} Zeichen
+场记	Notizen zur Szenen
+场记 · {0}	Notizen zur Szenen · {0}
+场记没有变化	Notizen zur Szenen unverändert
+场记：{0}，点按编辑场次、镜头、条次、关键词和备注	Notizen zur Szenen: {0}, Klicken, um Szenen, Kameraeinstellungen, Einzelteile, Schlüsselwörter und Anmerkungen zu bearbeiten
+均衡器	Equalizer
+均衡器 {0}	Equalizer {0}
+均衡器 · {0}	Equalizer · {0}
+均衡器曲线：拖动编号点调整频段	Equalizer-Kurve: Bewegen Sie die Punktmarkierung, um die Frequenzbänder zu verändern
+均衡器预设	Equalizer-Voreinstellungen
+均衡器预设：{0}	Equalizer-Voreinstellungen: {0}
+均衡器：{0}	Equalizer: {0}
+均衡器：{0}{1}	Equalizer: {0}{1}
+均衡器：关闭低切	Equalizer: Schaltet den niedrigen Schnitt aus
+均衡器：启用	Equalizer: Aktiviert
+均衡器：开启低切	Equalizer: Schaltet den niedrigen Schnitt ein
+均衡器：旁通	Equalizer: Parallelanschluss
+垂直	Vertikal
+垂直位置	Vertikal-Position
+填不满时间线入出点（{0}）	Spur nicht vollständig füllen ( {0} )
+填充	Füllen
+增益	Gain
+增益已到极限：{0} LUFS（目标 {1}）	Gain erreicht das Limit: {0} LUFS (Ziel {1} )
+增益衰减	Gainabbau
+声像	Panorama
+声像 {0}	Panorama {0}
+声像关键帧	Keyframe für Panorama
+声道	Kanäle
+声道：{0}	Kanal: {0}
+声音	Ton
+声音 {0}	Ton {0}
+声音将落在 {0}	Ton wird auf {0} fallen
+声音目标改为自动：视频的原声到 A1，纯音频到音乐轨 A2	Tonziel auf Automatik umstellen: Originalton des Videos auf A1, reiner Ton auf Musiktrack A2
+声音落在的音频轨道（自动：原声到 A1，音乐到 A2）	Ton auf dem entsprechenden Audio-Kanal (Automatik: Originalton auf A1, Musik auf A2)
+声音：机位 {0}	Ton: Kamerawinkel {0}
+处理声音时出错：请重试；如果反复出现，试着关掉部分音频效果（{0}）。	Fehler beim Tonbehandeln: Versuchen Sie es erneut; wenn es immer wieder vorkommt, versuchen Sie, einige Audio-Effekte zu deaktivieren ({0}).
+处理画面时出错：请重试；如果反复出现，试着关掉部分特效或降低分辨率（{0}）。	Fehler beim Bildbehandeln: Versuchen Sie es erneut; wenn es immer wieder vorkommt, versuchen Sie, einige Effekte zu deaktivieren oder die Auflösung zu reduzieren ({0}).
+备份失败：存储空间不足或不可写	Backup-Fehler: Fehlende Speicherkapazität oder unlesbar
+备注	Anmerkungen
+备注最多 {0} 个字	Anmerkungen können maximal {0} Zeichen lang sein
+备注（可选）	Anmerkungen (optional)
+复制	Kopieren
+复制当前时间线	Kopieren der aktuellen Timeline
+复制当前版本的调色，另试一种（Ctrl+Shift+N）	Kopieren der aktuellen Farbkorrektur-Version, Versuch mit einer anderen (Ctrl+Shift+N)
+复制时间线	Kopieren der Timeline
+复制的片段不能把这项给到这个片段	Das kopierte Clip kann diese Eigenschaften nicht an das Original-Clip übertragen
+复制的片段没有可以粘贴到所选片段的属性	Das kopierte Clip hat keine Eigenschaften, die an den ausgewählten Clip angepasst werden können
+复制调色	Kopieren der Farbkorrektur-Version
+复合片段	Kombiniertes Clip
+复合片段 {0}	Kombiniertes Clip {0}
+复合片段 · 	Kombiniertes Clip · 
+复合片段 · {0}	Kombiniertes Clip · {0}
+复合片段不能倒放：打开后为里面的片段倒放	Kombiniertes Clip kann nicht umgedreht werden: Nach dem Öffnen werden die Innen-Clips umgedreht
+复合片段不能变速：打开后为里面的片段变速	Kombiniertes Clip kann nicht mit Tempo verändert werden: Nach dem Öffnen werden die Innen-Clips mit Tempo verändert
+复合片段和多机位片段不能做成机位	Kombiniertes Clip und mehrere Kamerawinkel können nicht zu Kamerawinkeln umgewandelt werden
+复合片段的时间线不能在这里删除：回到上一级后删除复合片段	Die Timeline eines Kombiniertes Clips kann nicht hier gelöscht werden: Löschen Sie das Kombiniertes Clip, bevor Sie zur vorherigen Ebene zurückkehren
+复合片段的时间线不能复制：回到上一级后复制复合片段	Die Timeline eines Kombiniertes Clips kann nicht kopiert werden: Kopieren Sie das Kombiniertes Clip, bevor Sie zur vorherigen Ebene zurückkehren
+外圈	Außenring
+多层画面需要约 {0} GB 临时空间来逐层合成，设备只剩 {1} GB。请清理空间，或缩短渲染范围后重试。	Für die Zusammenführung mehrerer Bildschichten benötigt man etwa {0} GB temporären Speicherplatz. Der Speicher ist nur noch {1} GB verfügbar. Bitte leeren Sie den Speicher oder verringern Sie den Rendering-Bereich und versuchen Sie es erneut.
+多机位	Mehrere Kamerawinkel
+多机位 {0}	Mehrere Kamerawinkel {0}
+多机位 · {0}	Mehrere Kamerawinkel · {0}
+多机位 · 机位 {0}	Mehrere Kamerawinkel · Kamerawinkel {0}
+多机位片段	Mehrere Kamerawinkel-Clip
+多选	Mehrere Auswahl
+多选已关闭	Mehrere Auswahl ist deaktiviert
+多选已开启：点按片段加入或移出选择，在空白处拖动可框选	Mehrere Auswahl ist aktiviert: Klicken Sie auf einen Clip, um ihn in die Auswahl zu nehmen oder herauszunehmen. Bewegen Sie den Clip über den leeren Bereich, um ihn auszuwählen.
+多选：点按片段加入或移出选择，在空白处拖动可框选	Mehrere Auswahl: Klicken Sie auf einen Clip, um ihn in die Auswahl zu nehmen oder herauszunehmen. Bewegen Sie den Clip über den leeren Bereich, um ihn auszuwählen.
+夜景，跑步	Nachtaufnahme, Lauf
+夜空渐变	Nachthimmel-Transition
+大	Groß
+大七度	Große Septime
+大三度	Große Triade
+大二度	Große Sekunde
+大六度	Große Sechste
+大厅	Saal
+大小	Größe
+失败	Fehler
+失败：{0}	Fehler: {0}
+好条	Gute Strecke
+好条：标记为可用的一条	Gute Strecke: Als verfügbar markierte Strecke
+如 1:00、+15、-1:00:00	Zum Beispiel 1:00, +15, -1:00:00
+如 2A	Zum Beispiel 2A
+如 3	Zum Beispiel 3
+如 4	Zum Beispiel 4
+媒体	Medien
+媒体夹	Ablage
+媒体夹 {0}	Ablage {0}
+媒体夹 {0}，{1} 个素材，长按重命名或删除	Ablage {0}, {1} Materialien, drücken länger um zu umbenennen oder zu löschen
+媒体夹不存在	Ablage existiert nicht
+媒体夹是空的	Ablage ist leer
+媒体夹里的素材仍在媒体池中；删除媒体夹不会删除素材	Die Materialien in der Ablage befinden sich weiterhin im Medium-Pool; Löschen der Ablage löscht die Materialien nicht
+媒体夹：{0}，点按放入其他媒体夹	Ablage: {0}, klicken um in eine andere Ablage zu legen
+媒体已保存，字幕文件未保存：{0}	Das Medium ist gespeichert, die Untertitel-Datei ist nicht gespeichert: {0}
+媒体池	Medienpool
+媒体池是空的	Der Medienpool ist leer
+媒体池视图	Ansicht der Mediensammlung.
+媒体池里没有音频文件：先导入录音	Es gibt keine Audio-Dateien in der Mediensammlung: Laden Sie zunächst die Aufnahme.
+媒体池里的视频都已有代理	Alle Videos in der Mediensammlung haben bereits einen Proxy.
+媒体池里还没有素材	Es gibt noch keine Mediums in der Mediensammlung.
+字号	Schriftgröße.
+字幕	Untertitel
+字幕{0}	Untertitel{0}.
+字幕文件	Untertiteldatei
+字幕文字	Untertiteltext.
+字幕显示在画面底部；导出时会烧录进画面，也可另存 SRT。	Untertitel werden am unteren Bildrand angezeigt; beim Export werden sie in das Bild eingefügt, können aber auch als SRT-Datei gespeichert werden.
+字幕样式：{0}	Untertitelstil: {0}.
+字幕样式：颜色	Untertitelstil: Farbe.
+字幕的样式在轨道样式里调整	Der Stil der Untertitel kann im Stil der Spuren angepasst werden.
+字幕语言：{0}	Sprachoption für Untertitel: {0}.
+字幕轨上的 {0} 条字幕（可用“导出字幕”）	Es gibt {0} Untertitel auf der Untertitel-Spur (können mit „Export Untertitel“ exportiert werden).
+字幕轨上的字幕不能放进复合片段	Untertitel auf der Untertitel-Spur können nicht in komplexe Clips eingefügt werden.
+字幕轨道不存在	Die Untertitel-Spur existiert nicht.
+字幕轨道不能作为编辑目标	Die Untertitel-Spur kann nicht als Bearbeitungsziel verwendet werden.
+字幕随对白出现和消失，没有淡入淡出	Untertitel erscheinen und verschwinden mit der Sprache, ohne fade-in/fade-out
+字幕颜色 {0}	Farbe des Untertitels {0}
+字幕：{0}	Untertitel: {0}
+字重	Textdruck
+定格 · {0}	Stillstand · {0}
+定格 · {0} · {1}	Stillstand · {0} · {1}
+定格帧	Stillstandsframe
+实线：中低频 {0} 秒衰减 60 dB · 虚线：8 kHz {1} 秒	Festlinie: Mittel- und niedrigfrequente {0} Sekunden Abfall 60 dB · Schellline: 8 kHz {1} Sekunden
+宽	Breite
+宽高比	Bildschirmbreite
+对开门	Doppel-Türen
+对比度	Kontrast
+对白	Sprache
+对白字幕	Sprachuntertitel
+对白门限	Sprachgrenze
+对齐	Ausrichtung
+对齐后「{0}」会与「{1}」重叠：先挪开它	Nach der Ausrichtung wird „{0}“ mit „{1}“ überschneiden: Verschieben Sie es zuerst
+对齐后「{0}」会完全移出时间线开头	Nach der Ausrichtung wird „{0}“ vollständig vom Anfang der Zeitlinie entfernt
+导入	Importieren
+导入 EDL	EDL-Importieren
+导入 EDL…	EDL-Importieren…
+导入 FCPXML	FCPXML-Importieren
+导入 FCPXML…	FCPXML-Importieren…
+导入 LUT…	LUT-Importieren…
+导入 LUT（.cube 文件）	LUT-Importieren (.cube-Datei)
+导入 {0} 个素材	{0} Materialien importieren
+导入失败：无法读取所选文件	Importierung fehlgeschlagen: Die ausgewählte Datei konnte nicht gelesen werden
+导入媒体	Medien importieren
+导入字幕	Untertitel importieren
+导入的 EDL	Importiertes EDL
+导入的 FCPXML	Importiertes FCPXML
+导入的 LUT {0}（{1}）	Importiertes LUT {0}({1})
+导入设备里的视频、音频和图片，它们会出现在这里。	Videos, Audios und Bilder aus dem Gerät importieren – sie werden hier angezeigt.
+导入顺序	Importierungsreihenfolge
+导出 EDL…	EDL-exportieren…
+导出 FCPXML…	FCPXML-exportieren…
+导出字幕文件	Untertitel exportieren
+导出当前帧	Aktuellen Frame exportieren
+导出时	Ausgabe
+导出画面	Video exportieren
+导出音频	Audio exportieren
+导演	Regisseur
+导演 · 剪辑	Regisseur · Schnitt
+将永久删除“{0}”的时间线、调色、混音设置和全部项目备份。设备上的原始素材会保留。	Die Zeitlinien, Farbkorrekturen, Mischungen und alle Projektbackups der „{0}“ werden dauerhaft gelöscht. Die ursprünglichen Medien auf dem Gerät bleiben erhalten.
+将链接到 {0}{1} · {2}	Verbinden mit {0}{1} · {2}
+小	Klein
+小七度	Kleinsechsgrad
+小三度	Kleindreieck
+小二度	Kleinzweidreieck
+小六度	Kleinsechstdreieck
+小房间	Kleinraum
+尚未保存	Noch nicht gespeichert
+居中	Zentrieren
+居中大标题	Großtitel zentrieren
+展平	Flachstellen
+展平多机位片段	Flachstellen von mehr Kamerawinkeln
+展平多机位片段 {0}	Flachstellen von mehr Kamerawinkeln {0}
+峰值限制	Peakbeschränkung
+嵌套时间线	Verkettete Zeitachse
+嵌套时间线 · 	Verkettete Zeitachse · 
+左	Links
+左 {0}	Links {0}
+左上	Oben links
+左下	Unten links
+左侧	Linksseite
+左右	Links-rechts
+左右互换：左声道放到右边，右声道放到左边	Links-rechts umkehren: Linkänderung auf rechts, Rechtsänderung auf links
+左右各 {0}%	Links-rechts je {0}%
+左右声道保持原样	Linkänderung beibehalten
+左右声道混合为一路，两边相同，各为原来的一半	Linkänderung zu einer einzigen Linie, beide Seiten gleich, jeweils zur Hälfte des ursprünglichen Wertes
+左右留黑边	Links-rechts mit schwarzen Rändern
+左移	Linksverschiebung
+差值	Differenz
+已	Ja
+已{0}添加 {1}	Ja{0} hinzugefügt {1}
+已为 {0} 个素材加上{1}色旗标	Für {0} Materialien {1} Farbflaggen hinzugefügt
+已为{0}添加关键帧 · 共 {1} 个	Für {0} wurden Keyframes hinzugefügt · insgesamt {1} Stück
+已为“{0}”应用转场：{1}	Für „{0}“ wurde eine Übergang eingefügt: {1}
+已为素材加上{0}色旗标	Für das Medium wurde eine Farbflagge {0} hinzugefügt
+已从 EDL 导入 {0} 个片段，{1}{2}	{0} Clips wurden aus dem EDL importiert, {1}{2}
+已从 FCPXML 导入 {0} 个片段，{1}{2}	{0} Clips wurden aus FCPXML importiert, {1}{2}
+已从 LUT 库移除“{0}”	„{0}“ wurde aus der LUT-Bibliothek entfernt
+已使用	Verwendet
+已保存 {0} 个字幕文件到 Download/{1}	Untertiteldateien gespeichert in Download/{1}: {0}
+已保存 {0} 个视频到 Movies/{1}	Videos gespeichert in Movies/{1}: {0}
+已保存 {0} 个音频文件到 Music/{1}	Audiodateien gespeichert in Music/{1}: {0}
+已修剪“{0}”，时长 {1}	„{0}“ wurde gekürzt, Länge {1}
+已停用	Deaktiviert
+已停用 {0} 个片段：不播放、不渲染	{0} Clips wurden deaktiviert: Nicht abgespielt, nicht gerendert
+已停用 · 画面跳过	Deaktiviert · Bild weglassen
+已停用“{0}”{1}：不播放、不渲染	„{0}“{1} wurde deaktiviert: Nicht abgespielt, nicht gerendert
+已停用节点 {0}：画面跳过这个节点，设置保留	Der Knoten {0} wurde deaktiviert: Dieser Knoten wird beim Bildwechsel nicht abgespielt, die Einstellung bleibt bestehen
+已停用：画面跳过这个节点，设置保留	Deaktiviert: Bild überspringt diesen Punkt, Einstellung beibehalten
+已关闭缓入	Verzögerung eingeschaltet
+已关闭缓出	Verzögerung deaktiviert
+已减选：选区不再包含这个颜色	Ausgewählt: Ausgewählter Bereich enthält nicht mehr diese Farbe
+已分解“{0}”：放回 {1} 个片段	„{0}“ wurde bereits aufgelöst: Die 1 Fragment wird nun wieder in {1} eingeordnet.
+已切换到{0}	Umgeschaltet auf {0}
+已切换到“{0}”	Umgeschaltet auf „{0}“
+已创建 {0} 个片段的副本（{1}）	Es wurden {0} Kopien der Segmente erstellt (({1})).
+已创建副本：{0}	Kopie erstellt: {0}
+已创建副本：“{0}”（{1}）	Kopie bereits erstellt: “{0}” (({1}))
+已删除 {0} 个片段，保留空隙	{0} Clips gelöscht, Leerstellen beibehalten
+已删除 {0} 处空隙，共 {1} 秒	{0} Leerstellen gelöscht, insgesamt {1} Sekunden
+已删除 {0} 的内容，留下空隙	{0} Inhalt gelöscht, Leerstellen übrig
+已删除 {0} 秒空隙，后面的片段前移{1}	{0} Sekunden Leerstellen gelöscht, folgende Clips vorgeschoben um {1}
+已删除{0}	{0} gelöscht
+已删除{0}{1}	{0}{1} gelöscht
+已删除{0}关键帧 · 还剩 {1} 个	{0} Keyframes gelöscht · noch {1} übrig
+已删除{0}关键帧，{1}不再移动	{0} Keyframes gelöscht, {1} bewegt sich nicht mehr
+已删除{0}的关键帧 · 还剩 {1} 个	{0} Keyframes gelöscht · noch {1} übrig
+已删除{0}的关键帧，{1}不再变化	Die Keyframes von {0} wurden entfernt, {1} verändert sich nicht mehr.
+已删除{0}的关键帧，强度不再变化	Die Keyframes von {0} wurden entfernt, die Intensität verändert sich nicht mehr.
+已删除{0}，显示{1}	{0} wurde entfernt, {1} wird angezeigt.
+已删除“{0}”	„{0}“ wurde entfernt.
+已删除“{0}”及链接的片段，保留空隙	„{0}“ sowie die verknüpften Clips wurden entfernt, der Freiraum bleibt erhalten.
+已删除“{0}”的代理	Der Proxy für „{0}“ wurde entfernt.
+已删除“{0}”，保留空隙	„{0}“ wurde entfernt, der Freiraum bleibt erhalten.
+已删除“{0}”，打开“{1}”	„{0}“ wurde entfernt, „{1}“ wird geöffnet.
+已删除“{0}”，部分备份未能清理	„{0}“ wurde entfernt, ein Teil der Sicherung wurde nicht gelöscht.
+已删除关键帧 · 还剩 {0} 个	Keyframes wurden entfernt · Es bleiben noch {0} übrig.
+已删除关键帧，{0}不再变化	Keyframes wurden entfernt, {0} verändert sich nicht mehr.
+已删除关键帧，片段不再有动画	Keyframes wurden entfernt, der Clip hat keine Animation mehr.
+已删除变速点 · 还剩 {0} 个	Tempopunkte wurden entfernt · Es bleiben noch {0} übrig.
+已删除变速点，片段恢复匀速	Tempopunkte wurden entfernt, der Clip kehrt zur gleichmäßigen Geschwindigkeit zurück.
+已删除声像关键帧 · 还剩 {0} 个	Panorama-Keyframes wurden entfernt · Es bleiben noch {0} übrig.
+已删除声像关键帧，声像不再变化	Panorama-Keyframes wurden entfernt, das Panorama verändert sich nicht mehr.
+已删除媒体夹“{0}”{1}	Der Ablage „{0}“ wurde entfernt {1}.
+已删除智能媒体夹“{0}”，素材仍在媒体池中	Der intelligente Ablage „{0}“ wurde entfernt, das Medium befindet sich jedoch noch im Pool.
+已删除节点 {0}	Gelöschte Knoten {0}
+已删除调色关键帧 · 还剩 {0} 个	Gelöschte Farbkorrekturgrafke · Es bleiben noch {0} übrig
+已删除调色关键帧，调色不再变化	Gelöschte Farbkorrekturgrafke, Farbkorrektur ändert sich nicht mehr
+已删除轨道 {0}	Gelöschte Spur {0}
+已删除轨道 {0} 及其中 {1} 个片段	Gelöschte Spur {0} sowie {1} Clips
+已删除音量关键帧 · 还剩 {0} 个	Gelöschte Lautstärkgrafke · Es bleiben noch {0} übrig
+已删除音量关键帧，音量不再变化	Gelöschte Lautstärkgrafke, Lautstärke ändert sich nicht mehr
+已剪切 {0} 个片段	Gelöschte Clips: {0}
+已剪切“{0}”	Gelöscht: „{0}“
+已加入渲染队列：{0}	Zur Renderwarteschlange hinzugefügt: {0}
+已加入渲染队列：{0}{1}	Zur Renderwarteschlange hinzugefügt: {0}{1}
+已加选：选区扩大到包含这个颜色	Ausgewählt: Die Auswahl wurde erweitert, um diese Farbe zu enthalten
+已匹配到静帧：暗部、中间调、亮部按通道对齐	Zu einem Standbild gepasst: Dunkle, Mitteltöne, helle Töne werden nach Kanälen angeordnet
+已反转遮罩：显示形状之外的画面	Maske umgekehrt: Bild außerhalb der Form angezeigt
+已取消	Abgelehnt
+已取消 {0} 组链接	Abgelehnt: {0} Gruppenverbindung
+已取消录音	Aufnahme abgelehnt
+已取消链接：画面和声音可以分别移动和修剪	Verbindung abgelehnt: Bild und Ton können getrennt bewegt und gekürzt werden
+已叠加“{0}”到 {1} · {2}（{3}）	Überlagerung von „{0}“ bis {1} · {2} ({3})
+已同步「{0}」：两者同时开始	„{0}“ wurde synchronisiert: Beide beginnen gleichzeitig
+已同步「{0}」：录音比画面早开始 {1} 秒	„{0}“ wurde synchronisiert: Die Aufnahme beginnt {1} Sekunden vor dem Bild
+已同步「{0}」：录音比画面晚开始 {1} 秒	„{0}“ wurde synchronisiert: Die Aufnahme beginnt {1} Sekunden nach dem Bild
+已启用 {0} 个片段	{0} Clips sind aktiviert
+已启用“{0}”{1}	„{0}“ {1} ist aktiviert
+已启用节点 {0}	Die Knoten {0} sind aktiviert
+已在 {0} {1}“{2}”（{3}）	In {0} {1} „{2}“ ( {3})
+已在 {0} 分割 {1} 个片段	In {0} wurden {1} Clips geteilt
+已在 {0} 定格 {1}，后面的片段顺延	In {0} wurden {1} Clips festgelegt, die folgenden Clips werden versetzt
+已在 {0} 波纹覆盖“{1}”（{2}，原为 {3}）	In {0} wurde das Ripple über „{1}“ ( {2}, ursprünglich {3}) gefüllt
+已在 {0} 添加{1}	In {0} wurden {1} hinzugefügt
+已在 {0} 添加下一条字幕	In {0} wurde der nächste Untertitel hinzugefügt
+已在媒体池	In der Medienpool
+已在第 {0} 帧添加关键帧 · 共 {1} 个	In der {0}-Frame wurden Keyframes hinzugefügt · insgesamt {1}
+已备份“{0}”	„{0}“ wurde gesichert
+已复制 {0} 个片段	{0} Clips wurden kopiert
+已复制“{0}”	„{0}“ wurde kopiert
+已复制“{0}”及链接的片段	„{0}“ sowie die verknüpften Clips wurden kopiert
+已复制“{0}”的调色	Die Farbkorrektur für „{0}“ wurde kopiert.
+已复制为“{0}”	Für „{0}“ wurde die Farbkorrektur kopiert.
+已完成	Vollendet.
+已导入	Eingeführt.
+已导入 LUT：{0}（{1}）{2}	Eingeführte LUT: {0} ({1}) {2}
+已导入 {0} 个素材	{0} Medien wurden eingeführt.
+已导入 {0} 个素材，{1} 个无法读取	{0} Medien wurden eingeführt, {1} wurden nicht lesbar.
+已导入 {0} 条{1}字幕（{2}）	Importiert: {0} {1} Untertitel ({2})
+已导出 EDL（{0} 个事件）到 {1}{2}	EDLs ({0} Ereignisse) wurden in {1}{2} exportiert.
+已导出 FCPXML（{0} 个片段）到 {1}{2}	FCPXML ({0} Clips) wurde in {1}{2} exportiert.
+已导出当前帧：{0}.png，保存在“图片/{1}”	Der aktuelle Frame: {0}.png wurde exportiert und gespeichert unter „Bilder/{1}“.
+已将 {0} 个片段{1} {2} 条轨道{3}	Verschobene Clips: {0}. Richtung: {1}, Spuren: {2}{3}
+已将 {0} 个片段标为{1}色	{0} Clips wurden mit {1} Farbe markiert.
+已将 {0} 个片段的{1}修剪到播放头	{1} von {0} Clips wurde bis zum Abspielkopf geschnitten.
+已将 {0} 个片段的{1}波纹修剪到播放头，后面的片段前移 {2}	{1} von {0} Clips wurde bis zum Abspielkopf geschnitten, die folgenden Clips wurden um {2} vorgeschoben.
+已将“{0}”与{1}的“{2}”交换	Die „{0}“ wurde mit der „{2}“ der {1} ausgetauscht.
+已将“{0}”放入“{1}”	Die „{0}“ wurde in die „{1}“ eingefügt.
+已将“{0}”的{1}粘贴到 {2} 个片段	Die {1} der „{0}“ wurde in {2} Clips geklebt.
+已将“{0}”的{1}粘贴到“{2}”	Die {1} der „{0}“ wurde in „{2}“ geklebt.
+已将“{0}”的转场换成：{1}	Der Übergang der „{0}“ wurde durch: {1} ersetzt.
+已将“{0}”移出媒体夹	Die „{0}“ wurde aus dem Ablage entfernt.
+已将“{0}”移到 {1}	Die „{0}“ wurde an {1} verschoben.
+已将“{0}”重命名为“{1}”	Die „{0}“ wurde in „{1}“ umbenannt.
+已将片段标为{0}色	Der Clip wurde mit Farbe {0} markiert.
+已展平“{0}”：换成所选机位的 {1} 个片段	„{0}“ wurde entfaltet: In {1} Clips der ausgewählten Kamerawinkel umgewandelt.
+已应用{0}“{1}”的调色	Die Farbkorrektur von {0} „{1}“ wurde angewendet.
+已应用特效：{0}	Effekte wurden angewendet: {0}
+已开启代理播放：{0} 个视频用代理，渲染仍用原片	Die Proxy-Wiedergabe wurde aktiviert: {0} Videos werden mit einem Proxy abgespielt, die Rendering-Operationen verwenden weiterhin die Originalbilder.
+已开启代理播放：还没有代理，在媒体页为素材生成	Die Proxy-Wiedergabe wurde aktiviert: Noch kein Proxy vorhanden, die Effekte werden auf der Medienseite für die Materialien erzeugt.
+已开启缓入 · 到达此关键帧时逐渐减速	Die Verzögerung beim Eintreffen wurde aktiviert: Bei diesem Keyframe wird die Geschwindigkeit allmählich verringert.
+已开启缓出 · 离开此关键帧时逐渐加速	Die Verzögerung beim Verlassen wurde aktiviert: Bei diesem Keyframe wird die Geschwindigkeit allmählich erhöht.
+已开：{0} / {1} 个视频用代理播放，渲染始终用原片	Geöffnet: {0} / {1} Videos werden mit einem Proxy abgespielt, die Rendering-Phase erfolgt immer mit der Originalversion.
+已开：播完从头再放	Geöffnet: Wiedergabe von Anfang an.
+已录制“{0}”（{1}），放在 {2} 的 {3}	„{0}“ (({1})) wurde bereits aufgenommen und befindet sich im {3} von {2}.
+已恢复为新项目：{0}	Wiederhergestellt als neues Projekt: {0}.
+已恢复标准布局	Standardanordnung wiederhergestellt.
+已手动设为 {0}（文件标记：{1}）	Manuell auf {0} gesetzt (Dateimarker: {1}).
+已打开	Geöffnet.
+已打开{0}“{1}”{2}	{0} „{1}“ {2} ist geöffnet.
+已把 {0} 个片段加入渲染队列，每个片段一个文件	Zur Renderwarteschlange hinzugefügt: {0,plural,one{# Clip}other{# Clips}}. Eine Datei pro Clip.
+已把 {0} 个片段加入渲染队列，每个片段一个文件{1}	Zur Renderwarteschlange hinzugefügt: {0,plural,one{# Clip}other{# Clips}}. Eine Datei pro Clip{1}
+已把 {0} 个片段收进复合片段“{1}”	{0} Clips wurden in den Komplexclip „{1}“ eingefügt.
+已把 {0} 条时间线加入渲染队列	{0} Zeitlinien wurden in die Rendering-Warteschlange eingefügt.
+已把{0}{1}到 {2}	{0}{1} bis {2} wurden eingefügt.
+已把{0}的调色应用到“{1}”	Die Farbkorrektur von {0} wurde auf „{1}“ angewendet.
+已把“{0}”（{1}）以 {2} 	„{0}“ ({({1})}) wurde in {2} umgewandelt. 
+已抓取{0}：{1} · {2}	{0} wurde erfasst: {1} · {2}.
+已按{0}建立限定器：节点 2 的调色只作用于这些颜色	Ein Begrenzer wurde nach {0} erstellt: Die Farbkorrektur des Knotens 2 wirkt nur auf diese Farben.
+已按“{0}”标记入出点 {1} → {2}	„{0}“ wurde als Marker in den Out-Punkt {1} → {2} eingefügt.
+已按吸取的颜色 {0} 抠像	Hinzugefügt wurde die Kolorierung nach dem Abschneiden mit Farbe {0}
+已按波形对齐：{0}	Hergestellt wurde eine Anpassung nach der Wav-Wellenform: {0}
+已插入粘贴 {0} 个片段到 {1}，后面的片段后移 {2}	{0} Clips wurden eingefügt und an {1} angehängt; die folgenden Clips wurden um {2} versetzt
+已撤销 {0} 步，回到“{1}”之前	Es wurde {0} Schritte zurückgenommen, zurück zu „{1}“
+已撤销：{0}	Zurückgenommen: {0}
+已改回原始素材播放	Der Vorgänger-Materialton wurde wiederhergestellt
+已新建{0}	Es wurde ein neuer {0} erstellt
+已新建{0}（复制自{1}）	Es wurde ein neuer {0} erstellt (kopiert von {1})
+已新建“{0}”	Es wurde das neue „{0}“ erstellt
+已新建并打开“{0}”	Es wurde das neue „{0}“ erstellt und geöffnet
+已新建智能媒体夹“{0}”（{1} 个素材）	Es wurde das intelligente Ablage „{0}“ erstellt (mit {1} Materialien)
+已旁通	Es wurde abgekoppelt
+已是片段条中的最后一个片段	Es ist der letzte Clip im Clip-Editor
+已是片段条中的第一个片段	Es ist der erste Clip im Clip-Editor
+已更新“{0}”的场记	Die Bilduntertitel für „{0}“ wurden aktualisiert
+已更新智能媒体夹“{0}”（{1} 个素材）	Das intelligente Ablage „{0}“ wurde aktualisiert (mit {1} Materialien)
+已有{0}字幕轨	Es gibt bereits {0} Untertitel-Tracks
+已有同名的媒体夹	Es gibt bereits Ablagen mit demselben Namen
+已有同名的智能媒体夹	Es gibt bereits intelligente Ablagen mit demselben Namen
+已有名为“{0}”的轨道	Es gibt bereits eine Bahn mit dem Namen „{0}“.
+已柔化减选：这个颜色移出了选区的柔和边缘	Gelöster Abzug: Diese Farbe hat die weichen Ränder des ausgewählten Bereichs ausgeblendet.
+已柔化加选：这个颜色约一半被选中，选区边缘更柔和	Gefilterte und ausgewählte Farben: Etwa die Hälfte der Farben wurde ausgewählt. Die Ränder der ausgewählten Bereiche sind etwas weicher.
+已标准化到 {0} LUFS · 增益 {1} dB	Standardisiert auf {0} LUFS – Steigerung: {1} dB
+已标旗标片段	Clips mit Flagge
+已标记入点 {0}	Gepunktet in Punkt {0}
+已标记出点 {0}	Der Punkt {0} wurde bereits markiert.
+已标记时间线入点 {0}	Zeitlinie mit Punkt {0} markiert.
+已标记时间线出点 {0}	Die markierte Zeitpunkt im Zeitstrahl ist {0}.
+已标记源入点 {0}	Quelle-Punkt {0} wurde bereits markiert.
+已标记源出点 {0}	Die Quelle {0} wurde bereits markiert.
+已框选 {0} 个片段	{0} Teile wurden ausgewählt.
+已波纹删除 {0} 个片段，后续片段最多前移 {1}	{0} Segmente wurden gelöscht. Die weiteren Segmente können maximal {1} Stellen nach vorne verschoben werden.
+已波纹删除 {0}，后面的片段前移 {1}	{0} wurde gelöscht. Die folgenden Segmente wurden um {1} vorgeschoben.
+已波纹删除“{0}”，后续片段前移 {1}	„{0}“ wurde gelöscht; die Clips, die nach diesem Punkt liegen, haben sich um {1} Positionen verschoben.
+已波纹剪切{0}，后面的片段前移	Ripple-cut {0}; die Clips, die zuvor verschwunden waren…
+已添加{0}关键帧 · 共 {1} 个	Keyframe für {0} hinzugefügt · insgesamt {1}
+已添加{0}窗口：节点 2 的调色只作用于窗口内	Fenster ({0}) hinzugefügt: Die Farbkorrektur in Knoten 2 wirkt nur innerhalb des Fensters.
+已添加{0}遮罩：形状之外露出下层轨道	Hinzugefügt: {0} Masken – Überlaufseiten sind sichtbar.
+已添加{0}，{1} 输出到它	Hinzugefügt: {0}, {1} werden an diese Stelle ausgegeben.
+已添加{0}：{1}	Hinzugefügt: {0} – {1}
+已添加{0}：在轨道的名称上选择输出到它	Hinzugefügt: {0} – Ausgabe an den Namen der Spur.
+已添加关键帧 · 共 {0} 个	Hinzugefügt: {0} Keyframes – Insgesamt {0} Stück.
+已添加到时间线：{0}（{1}）	Hinzugefügt zur Timeline: {0} ({1})
+已添加变速点 · 片段分为 {0} 段	Hinzugefügt: Tempoänderungen – Der Clip ist in {0} Abschnitte unterteilt.
+已添加声像关键帧 · 共 {0} 个	Hinzugefügt: Panorama Keyframes – Insgesamt {0} Stück.
+已添加字幕轨 {0}（{1}），显示在画面上	Hinzugefügt: Untertitel-Spur {0} ({1}) – Sichtbar auf dem Bildschirm.
+已添加节点 {0}：调整整个画面，在前面的节点之后	Hinzugefügt: Knoten {0} – Die gesamte Bildfläche wird angepasst, nach vorherigen Knoten.
+已添加调色关键帧 · 共 {0} 个	Hinzugefügt: Farbkorrektur Keyframes – Insgesamt {0} Stück.
+已添加调色关键帧：再到别处调整，调色会随时间变化	Hinzugefügt: Farbkorrektur Keyframes – Weitere Anpassungen, die Farbkorrektur ändert sich mit der Zeit.
+已添加轨道 {0}	Hinzugefügt: Spur {0}
+已添加音量关键帧 · 共 {0} 个	Hinzugefügt: Lautstärke Keyframes – Insgesamt {0} Stück.
+已清除 {0} 个片段的颜色	Die Farben von {0} Clips wurden entfernt.
+已清除 {0} 个素材的旗标	Die Flaggen von {0} Mediums wurden entfernt.
+已清除 {0} 条渲染记录，已导出的文件保留在原位置	{0} Rendering-Protokolle wurden entfernt; exportierte Dateien bleiben an ihrem ursprünglichen Ort.
+已清除“{0}”的场记	Die „{0}“-Notizen wurden entfernt.
+已清除变速点，片段恢复 1×，时长 {0}	Die Tempo-Punkte wurden entfernt, die Clips wurden auf 1× zurückgesetzt, Länge: {0}.
+已清除旗标	Die Flaggen wurden entfernt.
+已清除时间线入出点	Die Eingang- und Ausgang-Punkte der Zeitlinie wurden entfernt.
+已清除源片段入出点	Die Eingang- und Ausgang-Punkte der Quellclips wurden entfernt.
+已清除片段颜色	Die Farben der Clips wurden entfernt.
+已生成 LUT“{0}”（{1}）：已加入 LUT 库{2}{3}	Die LUT „{0}“ (({1})) wurde erstellt: Die LUT wurde in die Bibliothek {2}{3} aufgenommen.
+已用 {0} 个机位新建多机位片段“{1}”：在检查器里点按机位即可切换	Mit {0} Kamerawinkeln wurde ein neuer Mehrkameraclip „{1}“ erstellt: Klicken Sie auf die Kamerawinkel im Inspector, um zu wechseln.
+已用“{0}”替换 {1} 上的“{2}”（{3}）	„{0}“ wurde durch „{2}“ (({3})) auf {1} ersetzt.
+已移动 {0} 个片段 {1}{2}	{0} Clips wurden {1}{2} versetzt.
+已移动“{0}”到 {1}	„{0}“ wurde zu {1} verschoben.
+已移除{0}{1}色旗标	Die Farbflaggen von {0}{1} wurden entfernt.
+已移除特效：{0}	Effekte: {0} wurden entfernt.
+已移除窗口	Fenster wurden entfernt.
+已移除窗口，限定器保留在全画面	Fenster entfernt, Beschränker bleibt im ganzen Bild
+已移除转场：{0}	Übergang entfernt: {0}
+已移除遮罩	Maske entfernt
+已移除限定器	Beschränker entfernt
+已粘贴 {0} 个片段到 {1}	{0} Clips wurden in {1} eingefügt
+已经在最上面的轨道	Auf der obersten Spur
+已经在最下面的轨道	Auf der untersten Spur
+已经是{0}	Es ist bereits {0}
+已经是最后一个调色版本	Es ist die letzte Farbkorrektur-Version
+已经是第一个调色版本	Es ist die erste Farbkorrektur-Version
+已自动保存 · {0}	Automatisch gespeichert · {0}
+已自动调色：黑位 {0} → 0，白位 {1} → 100	Automatische Farbkorrektur: Schwarze Position {0} → 0, Weiße Position {1} → 100
+已设为倒放	Umkehrung eingestellt
+已设为倒放：正在后台生成倒放素材，完成后预览自动更新	Umkehrung eingestellt: Im Hintergrund wird Material für die Umkehrung generiert, nach Abschluss wird die Vorverarbeitung automatisch aktualisiert
+已调色	Farbkorrektur durchgeführt
+已调色片段	Farbkorrektur-Clips
+已跟踪窗口：{0} 个关键帧，最多移动画面的 {1}%	Fenster verfolgt: {0} Keyframes, maximal {1}% Bildbewegung
+已跟踪窗口：{0} 个关键帧，最多移动画面的 {1}%{2}	Fenster verfolgt: {0,plural,one{# Keyframe}other{# Keyframes}}, Verschiebung bis zu {1} % des Bildes{2}
+已跟踪遮罩：{0} 个关键帧，最多移动画面的 {1}%	Maske verfolgt: {0,plural,one{# Keyframe}other{# Keyframes}}, Verschiebung bis zu {1} % des Bildes
+已跟踪遮罩：{0} 个关键帧，最多移动画面的 {1}%{2}	Maske verfolgt: {0,plural,one{# Keyframe}other{# Keyframes}}, Verschiebung bis zu {1} % des Bildes{2}
+已返回“{0}”	Zurück zu „{0}“
+已选择 {0} 个{1}色片段	Gelöste {0} {1} Clips
+已选择 {0} 个片段	{0} Clips wurden ausgewählt.
+已选择 {0} 项 · {1}	{0} Elemente · {1} wurden ausgewählt.
+已重做 {0} 步，到“{1}”之后	{0} Schritte wurden wiederholt, bis zum Schritt „{1}“.
+已重做：{0}	Wiederholtes Vorgang: {0}.
+已重新加入队列	Wieder im Warten angekommen
+已重新链接 {0} 个素材	{0} Medium wurde erneut verknüpft.
+已重新链接“{0}”（{1}）	„{0}“ wurde erneut verknüpft ({1}).
+已链接片段：画面和声音一起移动和修剪	Clips werden verknüpft: Bild und Ton bewegen sich gemeinsam und werden gekürzt.
+帧混合	Frame-Mischung.
+帧率	Bildrate
+常规	Standard.
+幅度	Amplituden.
+幕布	Vorhang.
+干湿比	Feuchtigkeitsverhältnis.
+干湿比为 0：声音不变	Feuchtigkeitsverhältnis 0: Ton bleibt unverändert.
+干湿比为 0：声音不变；调高后听到房间的回响	Feuchtigkeitsverhältnis 0: Ton bleibt unverändert; nach Erhöhung hört man Rückkopplung aus dem Raum.
+平滑	Glattlauf.
+平滑变速	Glattlauf mit Tempowechselung.
+平滑过渡	Glattlaufübergang.
+平直	Flach
+平直：不改变声音	Flach: Kein Soundänderung
+平移	Verschiebung
+广播	Sendung
+应用	Anwenden
+应用{0}的调色	Farbkorrektur der Anwender{0}
+应用到所选片段	Anwenden auf ausgewählten Clip
+应用前一片段的调色	Farbkorrektur des vorherigen Clips anwenden
+应用前一片段的调色（=）	Farbkorrektur des vorherigen Clips anwenden (=)
+应用前两个片段的调色	Farbkorrektur der ersten beiden Clips anwenden
+应用前两个片段的调色（−）	Farbkorrektur der ersten beiden Clips anwenden (−)
+应用特效	Effekte anwenden
+应用调色	Farbkorrektur anwenden
+应用转场	Übergang anwenden
+应用转场到所选片段	Übergang auf ausgewählten Clip anwenden
+底噪压低 {0} dB	Rauschen senken {0} dB
+底部	Unten
+开	Einschalten
+开启低切	Niedrige Schnittfunktion aktivieren
+开启动态缩放	Aktivieren der dynamischen Skalierung
+开启抠像	Aktivieren der Maskierung
+开启稳定	Aktivieren der Stabilisierung
+开启闪避后显示侧链电平与压低曲线	Aktivieren der Anzeige der Seitenleiterpegel und der Absenkungskurve nach dem Ablenkungseffekt
+开头	Anfang
+开头 {0} 秒渐显{1}	{0} Sekunden lang langsam erscheinen {1}
+开头 {0} 秒由小放大{1}	{0} Sekunden lang von klein zu groß wachsen {1}
+开头 {0} 秒自下而上浮现{1}	{0} Sekunden lang von unten nach oben erscheinen {1}
+开始为 {0} 个视频生成代理，一次生成一个	Erstellen von Proxies für {0} Videos, ein Proxy pro Mal
+开始为“{0}”生成代理（{1}）	Erstellen von Proxies für „{0}“ ( {1})
+开始录音	Aufnahme starten
+开源软件许可	Open-Source-Lizenzen
+强光	Helligkeitsstrahl
+强力压缩	Starker Komprimierungsmodus
+强度	Intensität
+强度 50%	Intensität 50%
+强度为 0：声音不变	Intensität 0: Ton unverändert
+归零	Zurücksetzen
+当前 {0}	Aktuell {0}
+当前片段没有调色，无需生成 LUT	Der aktuelle Clip ist nicht farbkorrigiert, keine LUT erforderlich
+当前环境无法生成倒放素材	Für die aktuelle Umgebung ist das Umkehren von Materialen nicht möglich
+当前画面	Der aktuelle Bild
+当前语言	Aktuelle Sprache
+录制旁白	Voiceover aufnehmen
+录制旁白：对着播放的节目录一段解说	Voiceover aufnehmen: Eine Erklärung vor die ausgeübte Sendung
+录成不压缩的 WAV 文件（48 kHz · 16 位 · 单声道），和画面逐帧对齐	Aufzeichnen als komprimierter WAV-File (48 kHz · 16 Bit · Stereo), mit jedem Frame des Bildes übereinstimmend
+录音 · {0}	Aufnehmen · {0}
+录音太短，没有保存	Die Aufnahme ist zu kurz, wurde nicht gespeichert
+录音太短，没有可以放上时间线的声音	Die Aufnahme ist zu kurz, es gibt keine Töne für die Timeline
+录音时播放节目声音	Ton während des Aufnehmens
+形状之外变为透明，露出下层轨道；遮罩随画面移动和缩放	Über dem Shape wird es transparent, die untere Spur wird sichtbar; die Maske bewegt sich und skaliert mit dem Bild
+循环	Wiederholung
+循环播放	Wiederholtes Abspielen
+循环播放（Ctrl+/）	Wiederholtes Abspielen (Ctrl+/)
+循环播放：关	Wiederholtes Abspielen: Aus
+循环播放：开	Wiederholtes Abspielen: Einschalten
+循环播放：开（Ctrl+/）	Wiederholtes Abspielen: Einschalten (Ctrl+/)
+微移片段	Mikroverschiebung des Clips
+总线	Bus
+总线 {0}	Bus {0}
+总线推子	Bus-Drücker
+总线独奏	Bus-Solo
+总线静音	Bus-Modus
+恒定 {0} fps，与时间线相同；慢放和低帧率素材重复前一帧补齐	Konstanter {0} fps, wie die Timeline; abgeschnittene und niedriger Frames werden durch das vorherige Frame ergänzt
+恢复为新项目	Zurück zum neuen Projekt
+恢复会创建一个新项目，原文件会保留。	Zurück erstellt ein neues Projekt, das Originalfile wird behalten.
+恢复标准布局	Zurück zum Standard-Layout
+慢放和低帧率素材缺的帧由前后两帧按时间混合，动作更连贯	Abgeschnittene und niedriger Frames werden durch die vorherige und das nachfolgende Frame gemischt, um die Bewegung flüssiger zu machen
+慢放和低帧率素材缺的帧重复前一帧	Abgeschnittene und niedriger Frames werden durch das vorherige Frame ergänzt
+成片缺少素材：{0}	Fehlende Materialien im Film: {0}
+我的媒体夹	Mein Ablage
+戴耳机时再打开：外放的声音会被麦克风录进去	Wenn Sie Kopfhörer tragen, öffnen Sie es erneut: Der ausgegebene Ton wird vom Mikrofon aufgezeichnet
+房间	Raum
+所有轨道都已锁定	Alle Spuren sind gesichert
+所有项目里用到它的调色都会显示 LUT 缺失，画面不再套用它；重新导入同一个 .cube 文件即可恢复。	Alle, die dieses Toningearbeitungsverfahren verwenden, werden eine fehlende LUT anzeigen, das Bild wird nicht mehr damit abgeglichen; Wiederimportieren des gleichen .cube-Dateis kann die Situation wiederherstellen.
+所选 {0} 个片段{1} {2}	Ausgewählte {0} Clips{1} {2}
+所选位置	Ausgewählte Position
+所选文件：{0}{1} · {2}	Ausgewählte Datei: {0}{1} · {2}
+所选片段不是标题	Der ausgewählte Clip ist kein Titel.
+所选片段后面没有紧邻的片段，无法滚动剪辑点	Nach dem ausgewählten Clip gibt es keinen direkten nächsten Clip, es ist nicht möglich, die Schnittpunkte zu verschieben.
+所选片段在已锁定的轨道上	Der ausgewählte Clip befindet sich auf einem gesperrten Spur.
+所选片段没有素材，无法标记旗标	Der ausgewählte Clip verfügt über kein Medium, es ist nicht möglich, Flaggen zu markieren.
+所选片段没有转场	Der ausgewählte Clip hat keine Übergänge.
+所选片段没有音频	Der ausgewählte Clip enthält keinen Ton.
+所选片段没有音频。	Der ausgewählte Clip enthält keinen Ton.
+所选片段的两端没有紧挨着的片段，无法添加转场	An den Enden des ausgewählten Clips gibt es keine direkten Clips, es ist nicht möglich, Übergänge hinzuzufügen.
+所选片段都不能接受这些属性	Keiner der ausgewählten Clips akzeptiert diese Eigenschaften.
+所选的灰色	Die ausgewählten grauen Clips.
+所选素材已在媒体池中	Die ausgewählten Medien befinden sich bereits im Medienpool.
+所选素材没有旗标	Die ausgewählten Medien haben keine Flaggen.
+所选音频轨已锁定，先解锁再录音	Die ausgewählten Ton-Spuren sind gesperrt, löschen Sie sie zuerst, bevor Sie Aufnahmen machen.
+所选颜色（色相 {0}°）	Die ausgewählten Farben (Farbton {0}°)
+打不开这个文件：它可能已被移动或删除，或是之前安装的 {0} 渲染的	Dieses File kann nicht geöffnet werden: Es wurde möglicherweise verschoben oder gelöscht, oder es handelt sich um eine von {0} renderte Version.
+打开	Öffnen
+打开后可以剪辑里面的片段、调色和调整声音，改动会用到每个使用它的片段；分解把里面的片段放回时间线，替换它。	Nach dem Öffnen können die Clips darin geschnitten, farbig korrigiert und der Ton angepasst werden. Die Änderungen werden auf jedem Clip angewendet, der sie verwendet. Kombinierte Clips können wieder in die Timeline eingeordnet und ersetzt werden.
+打开复合片段	Kombinierte Clips öffnen
+打开复合片段 {0}	Öffnen des Kombi-Clips {0}
+打开多机位片段	Öffnen eines Mehr-Kameraklips
+打开多机位片段 {0}：调整机位对齐	Öffnen eines Mehr-Kameraklips {0}: Anpassung der Kamerawinkelanordnung
+打开项目	Öffnen des Projekts
+扩展器 / 门限	Expander / Schwellenwert
+扭曲器	Würfel
+找不到「{0}」与「{1}」相同的声音：确认它们是同一条录制	Sound „{0}“ und „{1}“ können nicht gefunden werden: Überprüfen Sie, ob es sich um denselben Aufnahmevorgang handelt
+找不到复合片段“{0}”的内容	Inhalt des Kombi-Clips „{0}“ nicht gefunden
+找不到片段的素材	Material des Clips nicht gefunden
+找不到这个片段的素材	Material dieses Clips nicht gefunden
+找不到这条时间线	Diese Timeline nicht gefunden
+找不到这条轨道	Diese Spur nicht gefunden
+找不到这条音频轨	Diese Audiospur nicht gefunden
+找到 {0} / {1} 个素材的文件。素材在时间线上的片段、旗标、媒体夹和场记都会保留。	{0} / {1} Materialien gefunden. Die Materialien werden in den Clips, Flaggen, Ablagen und Notizen auf der Zeitlinie erhalten bleiben.
+找到 {0} 个项目 · 共 {1} 个	{0} Projekte gefunden · insgesamt {1}
+找到同名文件，但时长或大小不同：请确认后从候选中选择	Dateien mit demselben Namen gefunden, aber unterschiedliche Länge oder Größe: Überprüfen Sie und wählen Sie aus den Kandidaten aus
+把 {0} 设为声音目标轨道	{0} als Ziel-Audiospur festlegen
+把 {0} 设为画面目标轨道	{0} als Ziel-Bildspur festlegen
+把所选片段新建为复合片段	Ausgewählten Clip als Kombi-Clip neu erstellen
+把所选片段新建为多机位片段	Ausgewählten Clip erstellen als Mehrkameraclip
+把所选的 {0} 组片段收进一个复合片段，放在原来的位置	Ausgewählte {0} Clips zu einem Komplexclip zusammenfassen und an die ursprüngliche Position legen
+把播放头移到关键帧上，再设置缓入缓出	Abspielkopf auf Keyframes verschieben und Einführungs- sowie Ausführungsverzögerungen einstellen
+把播放头移到所选片段上，再在画面上吸取幕布颜色	Abspielkopf auf den ausgewählten Clip verschieben und Farbe des Vorhangs auf dem Bild aufnehmen
+把播放头移到片段内（不在首尾），再添加变速点	Abspielkopf innerhalb des Clips verschieben (nicht am Anfang oder Ende) und Tempoänderungen hinzufügen
+把播放头移到片段内，再添加{0}关键帧	Bewegen Sie den Player innerhalb des Abschnitts, und fügen Sie anschließend die {0} Schlüsselframes hinzu.
+把播放头移到片段内，再添加关键帧	Abspielkopf innerhalb des Clips verschieben und weitere Keyframes hinzufügen
+把播放头移到片段内，再添加声像关键帧	Abspielkopf innerhalb des Clips verschieben und Panorama-Keyframes hinzufügen
+把播放头移到片段内，再添加特效关键帧	Abspielkopf innerhalb des Clips verschieben und Effektkkeyframes hinzufügen
+把播放头移到片段内，再添加调色关键帧	Abspielkopf innerhalb des Clips verschieben und Farbkorrektur-Keyframes hinzufügen
+把播放头移到片段内，再添加音量关键帧	Abspielkopf innerhalb des Clips verschieben und Lautstärkekeyframes hinzufügen
+把播放头移到片段内，再调整关键帧	Abspielkopf innerhalb des Clips verschieben und Keyframes anpassen
+把播放头移到片段内，再调整声像关键帧	Abspielkopf innerhalb des Clips verschieben und Panorama-Keyframes anpassen
+把播放头移到片段内，再调整特效关键帧	Abspielkopf innerhalb des Clips verschieben und Effektkkeyframes anpassen
+把播放头移到片段内，再调整音量关键帧	Bewegen Sie den Abspielkopf in den Clip, und stellen Sie anschließend die Keyframes für die Lautstärke ein.
+把播放头移到窗口关键帧上，再设置缓入缓出	Bewegen Sie den Abspielkopf zu einem Keyframe für das Fenster, und stellen Sie anschließend die Einführungs- und Ausführungszeiten ein.
+把播放头移到调色关键帧上，再设置缓入缓出	Bewegen Sie den Abspielkopf zu einem Keyframe für die Farbkorrektur, und stellen Sie anschließend die Einführungs- und Ausführungszeiten ein.
+把播放头移到音量关键帧上，再设置缓入缓出	Bewegen Sie den Abspielkopf zu einem Keyframe für die Lautstärke, und stellen Sie anschließend die Einführungs- und Ausführungszeiten ein.
+抓取静帧	Erfassen Sie Standbilder.
+抓取静帧：播放头处的画面和调色	Erfassen Sie Standbilder: Bild und Farbkorrektur am Abspielkopf.
+抖音	Douyin
+抖音竖屏	Douyin Hochformat
+抠像	Cutout.
+抠像颜色 {0}	Cutout-Farbe {0}.
+抠像：{0}	Cutout: {0}.
+抠像：吸取颜色	Cutout: Farbabsaugen.
+拉伸	Verlängern.
+拉远	Entfernen.
+拖动其中任一片段可一起移动或换轨道，, 和 . 键一起微移，Ctrl+↑ / ↓ 一起上下换轨；按住 Ctrl / Cmd 点按片段，或开启时间线的「多选」，可加入或移出选择；多选时在空白处拖动可框选。	Bewegen Sie einen der Clips, um ihn zusammen mit anderen zu verschieben oder auf andere Spuren zu wechseln. Mit der Tastenkombination Ctrl+↑ / ↓ können Sie zwischen Spuren wechseln. Halten Sie die Taste Ctrl / Cmd gedrückt und tippen Sie auf einen Clip, oder aktivieren Sie die „Mehrere Auswahl“ in der Zeitlinie, um ausgewählte Clips hinzuzufügen oder zu entfernen. Bewegen Sie in der Mehrfachauswahl über den leeren Raum, um Auswahllinien zu erstellen.
+拖动网格上的点：沿圆周改变附近颜色的色相，向内外改变饱和度；亮度不变，灰色不受影响。	Bewegen Sie auf den Punkten der Grille: Ändern Sie die Farbton der benachbarten Farben entlang der Kreislinie, und ändern Sie die Sättigung nach innen und außen. Die Helligkeit bleibt unverändert, Grautöne werden nicht beeinflusst.
+按 1920×1080 画面的像素裁去各边，被裁去的部分露出下层轨道	Schneiden Sie die Seiten mit den Pixeln von 1920×1080 Bildpunkten ab, sodass die abgeschnittenen Teile die unteren Spuren freilegen.
+按{0} {1}	Nach {0} {1}
+按{0}排序	Nach {0} sortieren
+按亮度	Nach Helligkeit
+按前后两帧之间的运动补出中间帧：运动的物体清晰不重影；遮挡处改为混合	Erstellen von Zwischenbildern durch Anpassung der Bewegung zwischen den vorherigen und nachfolgenden Bildern: Bewegende Objekte sollten klar und ohne Schatten sein; verdeckte Bereiche sollten als Mischung dargestellt werden.
+按播放头处的调色	Nach der Farbkorrektur am Abspielkopf
+按文件标记（{0}）	Nach den Dateimarkern ({0})
+按文件标记：{0}	Nach den Dateimarkern: {0}
+按条件自动收集：{0}	Automatische Sammlung nach Bedingungen: {0}
+按波形对齐	Eingliederung der Wellenformen
+按波形对齐后使用它的声音	Verwenden des Sounds nach der Eingliederung der Wellenformen
+按波形自动对齐所选片段	Automatische Anpassung der ausgewählten Clips an die Wellenformen
+按源文件名匹配媒体池，生成一条新时间线	Passen Sie die Medienpool-Dateinamen an, um einen neuen Zeitlinie zu erstellen.
+按片段标记入出点	Fügen Sie die Clips mit Markern in die Out-Punkte ein.
+按项目	Nach dem Projekt
+按项目设置（{0}）：{1}	Einstellungen für das Projekt ({0}): {1}
+换个关键词或分类试试。	Versuchen Sie es mit einem anderen Schlüsselwort oder Kategorie.
+换个关键词试试，或清空搜索查看全部项目。	Versuchen Sie es mit einem anderen Schlüsselwort oder leeren Sie die Suche, um alle Projekte anzusehen.
+换成其他转场，时长和样式不变	Wechseln Sie zu einem anderen Übergang, wobei Länge und Stil unverändert bleiben.
+授予权限	Berechtigungen gewähren
+排序	Sortieren
+排序：{0}，点按更改	Sortieren: {0}, Tippen um zu ändern
+排队中	In der Warteschlange
+排队时的导出范围超出当前时间线，请重新标记范围并加入队列	Der Exportbereich während der Warteschlange überschreitet die aktuelle Timeline, bitte ändern Sie den Bereich und fügen Sie ihn zur Warteschlange hinzu
+排除	Ausschließen
+推入	Zurückschieben
+推子	Rückschieber
+推子 {0}	Rückschieber {0}
+推近	Annähern
+描边	Umranden
+描边色	Farbe für das Umranden
+描边颜色	Farbe des Umrandens
+插入	Einfügen
+插入 / 覆盖 / 叠加到时间线入点 {0}，替换在播放头	Einfügen / Überdecken / Überlagerung am In-Punkt {0} der Timeline, ersetzen im Abspielkopf
+插入 / 覆盖 / 叠加到时间线出点 {0} 之前，替换在播放头	Einfügen / Überdecken / Überlagerung vor dem Out-Punkt {0} der Timeline, ersetzen im Abspielkopf
+插入 / 覆盖 / 波纹覆盖 / 替换 / 叠加到时间线播放头 {0}	Einfügen / Überdecken / Ripple-Überlagerung / Ersatz / Überlagerung am Abspielkopf {0} der Timeline
+插入 / 覆盖 / 波纹覆盖 / 适配填充 / 叠加到时间线入点 {0} → 出点 {1}（{2}），替换在播放头	Einfügen / Überdecken / Ripple-Überlagerung / Anpassungsfüllung / Überlagerung vom In-Punkt {0} bis zum Out-Punkt {1} ({2}) der Timeline, ersetzen im Abspielkopf
+插入粘贴	Einfügen und Kleben
+搜索素材	Medien suchen
+搜索项目	Projekte suchen
+撤销	Rückgängig
+撤销 {0} 步	Rückgängig machen {0} Schritte
+撤销：{0}	Rückgängig machen: {0}
+播完从头再放（入点到出点或整条时间线）	Von Anfang an abspielen (In-Punkt bis Out-Punkt oder ganze Timeline)
+播客人声	Sprecher in der Wiedergabe
+播客垫乐	Unterlegmusik des Podcasts
+播放	Wiedergabe
+播放{0}	Wiedergabe {0}
+播放头	Abspielkopf
+播放头{0} {1}，到 {2}	Abspielkopf {0} {1}, bis {2}
+播放头下没有可分割的片段	Keine teilbare Szene unter dem Abspielkopf
+播放头下没有片段	Keine Szene unter dem Abspielkopf
+播放头下的片段都在已锁定的轨道上	Alle Szene unter dem Abspielkopf befinden sich auf gesicherten Spuren
+播放头不在任何片段上	Der Abspielkopf befindet sich nicht auf irgendeiner Szene
+播放头不在片段内：移进片段再调整{0}	Der Abspielkopf befindet sich nicht innerhalb der Szene: Schieben in die Szene und anpassen {0}
+播放头不在片段内：移进片段再调整动画	Der Abspielkopf befindet sich nicht innerhalb der Szene: Schieben in die Szene und anpassen die Animation
+播放头不在片段内：移进片段再调整声像	Der Abspielkopf befindet sich nicht innerhalb der Szene: Schieben in die Szene und anpassen das Panorama
+播放头不在片段内：移进片段再调整窗口	Der Abspielkopf befindet sich nicht im Clip: Verschieben Sie den Clip und passen Sie anschließend die Maske an.
+播放头不在片段内：移进片段再调整遮罩	Der Abspielkopf befindet sich nicht im Clip: Verschieben Sie den Clip und passen Sie anschließend die Lautheit an.
+播放头不在片段内：移进片段再调整音量	Der Abspielkopf befindet sich nicht im Clip: Verschieben Sie den Clip und passen Sie anschließend die Farbkorrektur an.
+播放头不在片段内：移进片段再调色	Der Abspielkopf befindet sich nicht im Clip: Verschieben Sie den Clip und passen Sie anschließend die Kamerawinkel an.
+播放头不在片段内：移进片段，速度改的是播放头所在的一段	Der Abspielkopf befindet sich nicht im Clip: Verschieben Sie den Clip, die Geschwindigkeitsänderung betrifft dabei den Abschnitt, an dem sich der Abspielkopf befindet.
+播放头不在这个多机位片段上：点按机位会切换整段（{0}）	Der Abspielkopf befindet sich nicht auf diesem Clip mit mehreren Kamerawinkeln: Drücken Sie auf den Kamerawinkel, um den gesamten Abschnitt zu wechseln ({0}).
+播放头之后没有片段	Nach dem Abspielkopf gibt es keinen weiteren Clip.
+播放头前后 2 秒	2 Sekunden vor und nach dem Abspielkopf.
+播放头前后 {0} 秒	{0} Sekunden vor und nach dem Abspielkopf.
+播放头处没有可以匹配的片段	Es gibt keinen passenden Clip am Abspielkopf.
+播放头处的 {0} 上没有片段可替换	Es gibt keinen Clip, der an der Stelle von {0} ersetzt werden kann.
+播放头处的 {0} 上没有片段可波纹覆盖	Es gibt keinen Clip, der an der Stelle von {0} überlagert werden kann.
+播放头所在的片段	Der Clip, an dem sich der Abspielkopf befindet.
+播放头跳到 {0}	Der Abspielkopf springt zu {0}.
+播放或拖动播放头查看响度	Steuern Sie die Lautheit, indem Sie den Abspielkopf bewegen oder ziehen.
+播放控制	Steuerung der Wiedergabe.
+播放选项	Wiedergabemöglichkeiten.
+播放速度	Wiedergabetempo
+播放速度 {0}，片段时长 {1}	Wiedergabeschritt {0}, Cliplänge {1}.
+播放速度、倒放和变速处理；素材范围不变，时长随之变化，后面的片段跟着移动	Wiedergabegeschwindigkeit, Rückwärtslauf und Tempowechselung; der Umfang des Mediums bleibt gleich, die Dauer ändert sich, die nachfolgenden Clips bewegen sich entsprechend.
+播放音频	Audiowiedergabe
+支点	Drehpunkt
+改过名，大小和时长一致	Umbenennung, Größe und Dauer gleich bleiben
+放入媒体夹	In das Ablage legen
+放到	Auf den Ablage legen
+放在 {0} 上：录音覆盖这条轨在这段时间里原有的声音	Auf {0} legen: Die Aufnahme überdeckt den ursprünglichen Klang dieser Strecke für diesen Zeitraum.
+放在新建的音频轨上，不影响已有的声音	Auf eine neue Audio-Strecke legen, ohne den vorhandenen Klang zu beeinträchtigen.
+放大	Vergrößern
+放大 {0}%	{0} % vergrößern
+放弃这段	Diesen Abschnitt aufgeben
+效果	Effekte
+效果 {0}	Effekt {0}
+效果 {0}：{1} 个在起作用	Effekt {0}: {1} Effekte sind aktiv.
+效果强度	Stärke des Effekts
+教堂	Kirche
+数字从右往左按帧、秒、分、时填，如 15、1:00、+15、-1:00:00	Zahlen werden von rechts nach links in Frame, Sekunde, Minute, Stunde eingegeben, z. B. 15, 1:00, +15, -1:00:00
+数据行数过多：应为 {0} 行	Zu viele Datensätze: Es sollten {0} Sätze sein.
+整个画面	Die gesamte Bildfläche
+整个画面 · 动态	Gesamtbild · Dynamik
+整体 I	Gesamt I
+整体 Offset	Gesamt Offset
+整体 {0} LUFS	Gesamt {0} LUFS
+整条时间线	Die gesamte Zeitlinie
+整段{0}切到{1}（{2}）	Der gesamte Abschnitt {0} zum Abschnitt {1} ({2})
+整段切换	Abschnittwechsel
+整段切换：不剪切，播放头所在的整段换机位	Abschnittwechsel: Kein Schnitt, Wechsel des Kamerawinkels zum Abschnitt, in dem sich die Abspielkopf befindet
+文件	Datei
+文件名	Dateiname
+文件过大：{0}	Datei zu groß: {0}
+文件里没有可以识别的 EDL 事件	In der Datei gibt es keine erkennbaren EDL-Ereignisse
+文件里没有可倒放的画面或声音	In der Datei gibt es keine umspielbaren Bilder oder Töne
+文件里没有可识别的字幕	In der Datei gibt es keine erkennbaren Untertitel
+新建一个项目，导入设备里的视频，开始第一次剪辑。	Erstellen eines neuen Projekts, importieren eines Videos aus dem Gerät, beginnen mit dem ersten Schnitt.
+新建复合片段	Erstellen eines neuen Kombi-Clips
+新建多机位片段	Erstellen eines neuen Mehr-Kamerawinkel-Clips
+新建媒体夹	Erstellen eines neuen Ablages
+新建字幕轨（另一种语言）	Erstellen eines neuen Untertitel-Spuren (andere Sprache)
+新建总线并输出到它	Neuer Bus erstellen und in ihn einfügen
+新建时间线	Neue Timeline erstellen
+新建智能媒体夹	Neuer intelligentes Medium-Ablage erstellen
+新建版本	Neue Version erstellen
+新建调色版本	Neue Farbkorrektur-Version erstellen
+新建调色版本（Ctrl+Shift+N）	Neue Farbkorrektur-Version erstellen (Ctrl+Shift+N)
+新建音轨	Neue Tonspur erstellen
+新建项目	Neues Projekt
+方向	Richtung
+方形	Quadrat
+旁白	Voiceover
+旁白 {0}	Voiceover {0}
+旁白 {0}.wav	Voiceover {0}.wav
+旁白已保存到素材库：{0}	Voiceover gespeichert in der Medium-Bibliothek: {0}
+旁白放到哪条音轨	Wo soll das Voiceover auf die Tonspur gesetzt werden?
+旁通	Parallel
+旋转	Drehung
+旗标	Flag
+旗标、使用情况变了或导入新素材后，这里会自动更新。	Flag, die Nutzung hat sich geändert oder neue Medien wurden eingeführt, hier wird automatisch aktualisiert.
+旗标条件：{0}，点按更改	Flaggsätze: {0}, klicken Sie darauf um zu ändern
+旗标：	Flaggen:
+无	Keine
+无代理	Kein Proxy
+无场次	Keine Szenen
+无损 PCM 立体声 .wav，每分钟约 {0} MB，保存到“音乐/{1}”。	Löser PCM Stereo .wav, ca. {0} MB pro Minute, speichern unter „Musik/{1}“.
+无旗标	Keine Flaggen
+无法以 {0}×{1} 编码倒放画面（{2}）	Es ist nicht möglich, den Bildausschnitt {2} mit der Kodierung {0}×{1} umzuwandeln.
+无法使用麦克风：请检查麦克风权限，或麦克风是否被占用	Mikrofon nicht verfügbar: Überprüfen Sie die Mikrofon-Rechte oder ob das Mikrofon belegt ist.
+无法保存 LUT：存储空间不足或不可写	LUT nicht speichern: Fehlende Speicherkapazität oder unlesbare Datei.
+无法保存代理文件	Proxy-Datei nicht speichern.
+无法保存倒放素材	Umkopplte Materialien nicht speichern.
+无法保存场记	Notizen nicht speichern.
+无法保存录音，请检查设备存储空间后重试。	Aufnahmen nicht speichern, überprüfen Sie den Speicherplatz des Geräts und versuchen Sie es erneut.
+无法保存静帧：存储空间不足或不可写	Standbilder nicht speichern: Fehlende Speicherkapazität oder unlesbare Datei.
+无法修剪	Nicht schneiden.
+无法修改	Nicht ändern.
+无法修改关键帧	Keyframes nicht ändern.
+无法修改均衡器	Equalizer nicht ändern.
+无法修改总线	Bus nicht ändern können
+无法修改时间线设置	Zeitlinien-Einstellungen nicht ändern können
+无法修改标记	Markierungen nicht ändern können
+无法修改淡化	Unschärfe nicht ändern können
+无法修改轨道	Spuren nicht ändern können
+无法修改遮罩	Masken nicht ändern können
+无法写入图片库，请检查存储空间。	In die Bildbibliothek nicht schreiben können, bitte überprüfen Sie den Speicherplatz.
+无法写入相册，请检查存储空间。	In die Album nicht schreiben können, bitte überprüfen Sie den Speicherplatz.
+无法分解复合片段	Komplexe Clips nicht aufteilen können
+无法切换时间线	Die Zeitlinie nicht wechseln können
+无法切换机位	Die Kamerawinkel nicht wechseln können
+无法创建副本，请检查存储空间后重试	Kopien erstellen können nicht, bitte überprüfen Sie den Speicherplatz und versuchen Sie erneut
+无法创建项目，请检查存储空间后重试	Projekte erstellen können nicht, bitte überprüfen Sie den Speicherplatz und versuchen Sie erneut
+无法删除“{0}”，项目和备份均已保留	„{0}“ nicht löschen können, Projekte und Backups sind gespeichert
+无法删除标记	Markierungen nicht löschen können
+无法取消同步	Synchronisierung nicht abbrechen können
+无法变速	Tempo nicht ändern können
+无法同步	Synchronisieren können nicht
+无法复制	Kopieren können nicht
+无法完成	Nichts möglich
+无法完成编辑	Bearbeitung nicht möglich
+无法定格	Stillhalten nicht möglich
+无法对齐	Ausrichtung nicht möglich
+无法导入 EDL	EDL nicht importieren möglich
+无法导入 FCPXML	FCPXML nicht importieren möglich
+无法导入 LUT：{0}	LUT nicht importieren möglich: {0}
+无法导出当前帧	Aktuelle Frame nicht exportieren möglich
+无法平滑变速	Tempoänderung nicht glatt gestalten möglich
+无法恢复备份，请检查存储空间后重试	Backup nicht wiederherstellen möglich, überprüfen Sie den Speicher und versuchen Sie erneut
+无法打开时间线	Timeline nicht öffnen möglich
+无法打开项目：文件已损坏或不存在	Projekt nicht öffnen möglich: Datei ist beschädigt oder nicht vorhanden
+无法播放	Wiedergabe nicht möglich
+无法放上时间线	Timeline nicht hinzufügen möglich
+无法放入这条时间线	Diese Timeline nicht einfügen möglich
+无法新建复合片段	Neues komplexes Clip erstellen nicht möglich
+无法新建多机位片段	Neues mehrachsiges Clip erstellen nicht möglich
+无法更换语言	Sprache nicht wechseln möglich
+无法标准化	Standardisieren nicht möglich
+无法标记入出点	Unmöglich, den Out-Punkt zu markieren.
+无法标记旗标	Unmöglich, die Flaggen zu markieren.
+无法检测场景剪切：读取画面时出错	Unmöglich, die Szenenanschnitte zu erkennen: Fehler beim Lesen des Bildes.
+无法添加到时间线	Unmöglich, zum Zeitplan hinzufügen.
+无法添加生成器	Unmöglich, den Generator hinzufügen.
+无法生成{0}	Unmöglich, {0} zu generieren.
+无法生成倒放素材：{0}	Unmöglich, das Material umzukehren: {0}.
+无法移动	Unmöglich, zu verschieben.
+无法移动标记	Unmöglich, die Markierungen zu verschieben.
+无法粘贴属性	Unmöglich, Eigenschaften zu kopieren.
+无法编码倒放的声音	Unmöglich, die Geräusche umzukehren zu kodieren.
+无法解码这段声音	Unmöglich, dieses Geräusch zu dekodieren.
+无法设置编辑目标	Unmöglich, das Editierziel einzustellen.
+无法读取 FCPXML：文件不是有效的 XML	Unmöglich, FCPXML zu lesen: Das Dokument ist kein gültiges XML.
+无法读取所选文件	Unmöglich, das ausgewählte Dokument zu lesen.
+无法读取所选文件：请选择视频、音频或图片	Unmöglich, das ausgewählte Dokument zu lesen: Wählen Sie ein Video, Audio oder Bild aus.
+无法读取文件	Unmöglich, das Dokument zu lesen.
+无法读取文件：{0}	Unmöglich, das Dokument zu lesen: {0}.
+无法读取渲染出的画面。	Unmöglich, das gerenderte Bild zu lesen.
+无法读取画面	Bild nicht lesbar
+无法读取设备媒体	Gerätemedium nicht lesbar
+无法读取这一帧	Dieses Frame nicht lesbar
+无法读取这一帧的画面	Bild dieses Frames nicht lesbar
+无法读取这一帧的颜色	Farbe dieses Frames nicht lesbar
+无法读取这个视频的画面	Bild dieses Videos nicht lesbar
+无法读取音频	Ton nicht lesbar
+无法读取项目备份	Projektbackup nicht lesbar
+无法读取项目库	Projektbibliothek nicht lesbar
+无法读取项目，副本未创建	Projekt nicht lesbar, Kopie nicht erstellt
+无法读取项目，未备份	Projekt nicht lesbar, nicht gesichert
+无法调整淡化	Dunkelheit nicht einstellbar
+无法调整淡化曲线	Dunkelheitskurve nicht einstellbar
+无法调整转场	Übergang nicht einstellbar
+无法调整音量	Lautstärke nicht einstellbar
+无法跟踪：读取画面时出错	Fehler beim Lesen des Bildes
+无法重新链接	Wiederherstellen nicht möglich
+无画面	Kein Bild
+无音频	Kein Ton
+无（字幕轨都已隐藏）	Kein (alle Untertitel-Spuren sind versteckt)
+日	Tag
+日本語	日本語
+时域降噪	Zeitbereichsrauschen
+时钟划像	Uhrzeigermarke
+时长	Dauer
+时长 0.5 秒	0,5 Sekunden-Dauer
+时长没有变化	Dauer ohne Änderung
+时间码	Zeitcode
+时间码 {0}，点按输入	Zeitcode {0}, Tippen zum Einfügen
+时间线	Timeline
+时间线 1	Zeitlinie 1
+时间线 {0}	Zeitlinie {0}
+时间线“{0}”已删除	Zeitlinie „{0}“ wurde gelöscht
+时间线上没有{0}色的片段	Auf der Zeitlinie gibt es keine Spuren in der Farbe {0}
+时间线上没有入出点	Auf der Zeitlinie gibt es keine Einfüge- oder Ausgabepunkte
+时间线上没有入出点，将渲染整条时间线：在剪辑页按 I / O 或用飞梭台的入点、出点键标记	Auf der Zeitlinie gibt es keine Einfüge- oder Ausgabepunkte, die gesamte Zeitlinie wird gerendert: Markieren auf der Schnittseite mit I/O oder den Einfüge- und Ausgabepunkten der Wimpernschwingungs-Tastatur
+时间线上没有剪辑点，无法添加转场	Auf der Zeitlinie gibt es keine Schnittpunkte, daher können keine Übergänge hinzugefügt werden
+时间线上没有可以写进 FCPXML 的片段	Auf der Zeitlinie gibt es keine Spuren, die in FCPXML eingefügt werden können
+时间线上没有可以删除的空隙	Auf der Zeitachse gibt es keine leeren Stellen, die entfernt werden können.
+时间线上没有声音	Auf der Zeitachse gibt es keinen Ton.
+时间线上还没有片段	Auf der Zeitachse gibt es noch keine Clips.
+时间线上还没有画面片段	Auf der Zeitachse gibt es noch keine Bildclips.
+时间线上还没有音频片段	Auf der Zeitachse gibt es noch keine Audioclips.
+时间线为空	Die Timeline ist leer
+时间线为空，无法加入渲染队列	Die Zeitachse ist leer und kann keine Renderwarteschlange hinzufügen.
+时间线为空，暂无可渲染内容	Die Zeitachse ist leer und es gibt momentan keine zu rendernden Inhalte.
+时间线为空，没有可导出的画面	Die Zeitachse ist leer und es gibt keine exportierbaren Bilder.
+时间线为空，没有可渲染的内容。	Die Zeitachse ist leer und es gibt keine zu rendernden Inhalte.
+时间线出点之前放不下“{0}”（需要 {1}）	Vor dem Out-Punkt auf der Zeitachse kann „{0}“ nicht platziert werden (erforderlich: {1}).
+时间线可以插入、覆盖或追加到时间线上	Die Zeitachse kann eingefügt, überdeckt oder hinzugefügt werden.
+时间线名称	Name der Zeitachse
+时间线名称不能为空	Der Name der Zeitachse darf nicht leer sein.
+时间线改为 {0}×{1} {2}	Die Zeitachse wird auf {0}×{1}{2} umgestellt.
+时间线改名为“{0}”	Die Zeitachse wird in „{0}“ umbenannt.
+时间线是空的	Die Zeitachse ist leer.
+时间线格式	Timeline-Format
+时间线画面	Bild der Zeitachse
+时间线的 V1、A1、A2 上没有可以写进 EDL 的片段	Auf den Zeitlinien V1, A1 und A2 gibt es keine Abschnitte, die in das EDL eingefügt werden können.
+时间线缩放	Zeitlinienvergrößerung
+时间线设置	Zeitlinieneinstellungen
+时间线设置没有变化	Die Zeitlinieneinstellungen haben sich nicht geändert.
+时间线都是空的，没有可渲染的内容	Die Zeitlinien sind leer, es gibt nichts, was gerendert werden kann.
+时间线：{0}，点按切换、新建或复制	Zeitlinie: {0} – Klicken, um zu wechseln, neu zu erstellen oder zu kopieren.
+明亮	Hell
+明度	Helligkeit
+昨天 {0}	Gestern um {0}
+显示形状之外的画面	Anzeige von Bildern außerhalb der Formen.
+显示轨道	Anzeige der Spuren.
+显示选区	Anzeige der Auswahlbereiche.
+显示选区：选中部分保留颜色，其余显示为灰色	Anzeige der Auswahlbereiche: Die ausgewählten Teile behalten ihre Farbe, der Rest wird grau angezeigt.
+智能媒体夹	Intelligenter Ablage
+智能媒体夹 {0}	Intelligenter Ablage {0}
+智能媒体夹 {0}，{1}，{2} 个素材，长按编辑条件或删除	Intelligenter Ablage {0}, {1}, {2} Materialien – Drücken länger, um die Bedingungen zu bearbeiten oder zu löschen.
+智能媒体夹不存在	Intelligenter Ablage existiert nicht.
+智能媒体夹名称	Name des intelligenten Ablages.
+暂不支持同时含 1D 和 3D 表的 LUT	Es wird derzeit nicht unterstützt, dass sowohl 1D- als auch 3D-Tabellen in einer LUT enthalten sind.
+暂不支持这种声音格式的倒放	Diese Tonformate werden derzeit nicht in Rückwärtslauf umgewandelt.
+暂不支持这种视频格式的倒放（例如 10 位 HDR）	Diese Videoformate werden derzeit nicht in Rückwärtslauf umgewandelt (z. B. 10-Bit-HDR).
+暂不链接	Keine Verbindungen vorhanden.
+暂停	Pause
+暂无画面	Kein Bild vorhanden.
+暖色褪色	Warme Farben verblassen.
+暖阳渐变	Warmes Licht verändert sich.
+暗角	Dunkle Ecken.
+暗部 Lift	Dunkle Bereiche aufhellen.
+曝光	Exposition.
+曲线	Kurven
+曲线：{0}	Kurve: {0}
+更改时长…	Änderung der Dauer…
+更改片段时长	Änderung der Clip-Dauer.
+更改选择	Änderung der Auswahl.
+替换	Ersetzen.
+替换四项设置，保留侧链；未开启时一并开启	Vier Einstellungen ersetzen, Sidechains behalten; wenn nicht aktiviert, aktivieren Sie sie ebenfalls.
+替换时间线播放头处的片段（{0}）：源播放头对齐时间线播放头，片段长度不变	Ersetzen des Clips am Timeline-Abspielkopf ({0}): Quellabspielkopf passt zum Timeline-Abspielkopf, Länge des Clips bleibt gleich.
+替换片段	Ersetzen des Clips.
+最上面的轨道上已有选中的片段	Auf der obersten Spur befinden sich bereits ausgewählte Clips.
+最下面的轨道上已有选中的片段	Auf der untersten Spur befinden sich bereits ausgewählte Clips.
+最佳	Bester Zustand.
+最后一个关键帧之后没有变化，无需缓出	Nach dem letzten Keyframe gibt es keine Veränderungen, keine Ladezeit erforderlich.
+最后点选的「{0}」没有声音：最后点选一个有声音的片段作参照	Die letztlich ausgewählte „{0}“ hat keinen Ton: Wählen Sie einen mit Ton ausgewählten Clip als Referenz.
+最多 {0} 个关键词	maximal {0} Schlüsselwörter.
+最多 {0} 个媒体夹	maximal {0} Ablagen.
+最多 {0} 个字，不能与其他媒体夹同名	maximal {0} Wörter; sie dürfen nicht denselben Namen wie andere Ablagen haben.
+最多 {0} 个字，不能与其他轨道同名	maximal {0} Wörter; sie dürfen nicht denselben Namen wie andere Spuren haben.
+最多 {0} 个字，时间线上的片段标签显示这个名称	maximal {0} Wörter; die Beschriftung der Clips auf der Zeitlinie zeigt diesen Namen.
+最多 {0} 个智能媒体夹	maximal {0} intelligente Ablagen.
+最多 {0} 个机位	maximal {0} Kamerawinkel.
+最多 {0} 个节点：节点 01、02 和串行节点 03–0{1}	maximal {0} Knoten: Knoten 01, 02 und serielle Knoten 03–0{1}.
+最多 {0} 条{1}轨道	maximal {0} Spuren{1}.
+最多 {0} 条字幕轨（每种语言一条）	maximal {0} Untertitel-Spur für jede Sprache.
+最多 {0} 条总线	maximal {0} Bussen.
+最短	Kürzest.
+最近 30 秒的短期响度	Kürzester Ton der letzten 30 Sekunden.
+最近帧	Kürzester Frame.
+最近的第 {0} 个变速点两侧速度相同（{1}），不需要平滑过渡	Die Geschwindigkeit an den Seiten des letzten {0} Tempo-Punktes ist gleich ({1}); keine glatte Übergangslösung erforderlich.
+最近的第 {0} 个变速点（{1}）立即变速；拖动滑块，让速度在一段时间内平滑过渡	Der letzte {0} Tempo-Punkt ({1}) ändert die Geschwindigkeit sofort; ziehen Sie den Schalter, damit die Geschwindigkeit über einen Zeitraum hinweg glatt abnimmt.
+有关键帧的数值调整后记在播放头处，其余数值整段改变	Änderungen an den Werten von Schlüsselframes werden am Abspielkopf festgehalten, die übrigen Werte werden im gesamten Clip angepasst.
+有关键帧的数值调整后记在此处 · 可设缓入缓出	Änderungen an den Werten von Schlüsselframes werden hier festgehalten · Einfach- und Rücklauf können eingestellt werden.
+有变速点的片段不能倒放：先清除变速点	Clips mit Tempo-Punkten können nicht umgedreht werden: Entfernen Sie zuerst die Tempo-Punkte.
+有变速点的片段不能检测场景剪切	Clips mit Tempo-Punkten können nicht als Szeneabschnitt erkannt werden.
+有素材无法读取，请检查原文件是否仍在设备上。	Einige Materialien können nicht gelesen werden, überprüfen Sie, ob die Originaldatei noch auf dem Gerät vorhanden ist.
+有素材的编码格式无法解码，请替换该素材后重试。	Die Kodierungsformate einiger Materialien können nicht decodiert werden, ersetzen Sie diese Materialien und versuchen Sie es erneut.
+未使用	Nicht verwendet
+未压低	Nicht gedämpft
+未同步：使用视频自带的声音	Nicht synchronisiert: Verwendet die mit dem Video verbundene Tonquelle.
+未启用：只压低齿音频段	Nicht aktiviert: Nur die Tonspuren gedämpft
+未启用：打开后只压低齿音频段，人声主体不受影响	Nicht aktiviert: Nach dem Öffnen nur die Tonspuren gedämpft, der Hauptspeechton bleibt unbeeinflusst
+未启用：打开后声音带上房间的回响，片段后面有空隙时尾音延续到空隙里	Nicht aktiviert: Beim Öffnen entsteht ein Raumfrequenz-Effekt im Tonband, und wenn es einen Abstand zwischen den Clips gibt, dauert der Abfalleffekt bis in diesen Abstand hinein an.
+未启用：给声音加上房间的回响	Nicht aktiviert: Erzeugt einen Raumfrequenz-Effekt für den Ton.
+未命名	Nicht benannt
+未命名项目	Unbenanntes Projekt
+未填写	Nicht ausgefüllt
+未开启：另一条轨道有声音时自动压低本轨	Nicht aktiviert: Die eigene Geräuschunterlage wird automatisch gesenkt, wenn ein anderes Spur-Spur mit Ton verwendet wird.
+未开启：打开后按每个文件自己的噪声底压低噪声	Nicht aktiviert: Beim Öffnen wird die Geräuschunterlage jedes einzelnen Files automatisch gesenkt.
+未开启：打开后，侧链轨道发声时这条轨道自动压低	Nicht aktiviert: Wenn eine Seiten-Spur mit Ton verwendet wird, wird diese Spur automatisch gesenkt.
+未开启：打开门限、压缩器或限制器	Nicht aktiviert: Öffnet die Grenzwerte, Kompressoren oder Beschränkungen.
+未开启：按测得的底噪逐频段压低噪声	Nicht aktiviert: Senkt die Geräuschunterlage in verschiedenen Frequenzbändern entsprechend den gemessenen Werten.
+未放入媒体夹	Nicht in das Ablage eingefügt
+未标记入出点：编辑时使用整段素材。按 I / O 标记源片段	Nicht als Out-Punkt markiert: Verwendet den gesamten Clip beim Editieren. Markiert den Quellclip mit I/O.
+未标记（按 Rec.709）	Nicht markiert (nach Rec.709)
+未知错误	Unbekannte Fehler
+未能保存 EDL 到“下载”文件夹	Es konnte nicht das EDL in die „Download“-Ordner gespeichert werden.
+未能保存 FCPXML 到“下载”文件夹	Es konnte nicht das FCPXML in die „Download“-Ordner gespeichert werden.
+未调色片段	Die Clips wurden nicht farbcorrected.
+未选择	Nicht ausgewählt
+未选择素材	Die Materialien wurden nicht ausgewählt.
+本片段入点前余量不够，转场移向剪辑点后（{0}）。	Vor dem In-Punkt dieses Clips ist nicht genug Spielraum, der Übergang wird nach dem Schnittpunkt ( {0} ) verschoben.
+本片段入点前只剩 {0} 秒可用，转场缩短为 {1} 秒。	Vor dem In-Punkt dieses Clips bleiben nur {0} Sekunden verfügbar, der Übergang wird auf {1} Sekunden verkürzt.
+本片段入点前没有余量素材，转场无法提前开始，按硬切播放。	Vor dem In-Punkt dieses Clips gibt es kein Material mehr, der Übergang kann nicht vorzeitig beginnen, es wird mit einem harten Übergang abgespielt.
+机位 {0}	Kamerawinkel {0}
+机位切换内容	Inhalt der Kamerawinkel-Übergabe
+条 {0}	Streifen {0}
+条件没有变化	Die Bedingungen haben sich nicht geändert
+条次	Streifenanzahl
+板式	Layout
+柔光	Weichlicht
+柔化	Weichzeichnen
+柔化：加选、减选改为调整选区的柔和边缘	Weichzeichnen: Ändern der Auswahlbereichsweichheit durch Hinzufügen oder Entfernen von Auswahlmöglichkeiten
+柔和压缩	Weichkompression
+查看备份	Ansicht der Sicherungskopie
+查看抠像遮罩	Ansicht des Keying-Maskings
+查看遮罩	Ansicht des Maskings
+标准	Standard
+标准化	Standardisierung
+标记	Marker
+标记 	Marker 
+标记 {0}	Marker {0}
+标记为可用的一条	Als verfügbar markiert
+标记为可用的一条（Resolve 的 Good Take）	Als verfügbar markiert (Resolve's Good Take)
+标记入点	In-Punkt markieren
+标记出点	Out-Punkt markieren
+标记名称	Markennamen
+标记名称不能为空	Markennamen darf nicht leer sein
+标记备注	Markierungsnotizen
+标记已删除	Markierung gelöscht
+标记时长	Markierungsdauer
+标记时长 {0} 秒	Markierungsdauer {0} Sekunden
+标记时间线入点（I）	Markierungszeitpunkt in der Timeline (I)
+标记时间线出点（O）	Markierungszeitpunkt in der Timeline (O)
+标记范围：用入出点	Markierungsbereich: mit In- und Out-Punkten
+标记颜色	Markierungsfarbe
+标记颜色：{0}	Markierungsfarbe: {0}
+标题	Titel
+标题{0}	Überschrift {0}
+标题和字幕不能做成机位	Titel und Untertitel dürfen nicht als Kamerawinkel verwendet werden.
+标题文字	Titeltext
+标题样式	Titelstil
+标题样式：{0}	Titelstil: {0}
+标题样式：动画	Titelstil: Animation
+标题样式：字重	Titelstil: Schriftfarbe
+标题样式：背景	Titelstil: Hintergrund
+标题样式：颜色	Titelstil: Farbe
+标题没有可滑移的素材	Der Titel verfügt über kein Material, das verschoben werden kann.
+标题没有源素材	Der Titel verfügt über kein Quellmaterial.
+标题片段不能倒放	Der Titel-Clip darf nicht umgedreht werden.
+标题片段不能变速	Der Titel-Clip darf nicht mit Tempo verändert werden.
+标题片段不能替换为素材	Der Titel-Clip darf nicht durch Material ersetzt werden.
+标题颜色：{0}	Farbe des Titels: {0}
+校色	Farbkorrektur
+框内没有可加入的片段	Im Rahmen gibt es keine Clips, die hinzugefügt werden können.
+检测到 {0} 处场景剪切，已切成 {1} 段	Es wurde eine Szene-Abtrennung bei {0} festgestellt, die in {1} Teile aufgeteilt wurde.
+检测场景剪切	Szene-Abtrennung erkannt
+棕	Braun
+模糊、锐化、暗角等片段特效，以及抠像	Unschärfe, Vergrößerung, Kantenverstärkung und andere Effekte für Clips sowie Maskierung
+模糊半径	Unschärfe-Radius
+模糊溶解	Unschärfe-Lösen
+横向拉宽	Querverbreiterung
+横屏	Querformat
+橙	Orange
+正值让纹理更突出，负值让中间调更柔和	Positive Werte verstärken die Textur, negative Werte machen die Mitteltöne sanfter
+正在使用 · 点按重新比较	Wird verwendet · Drücken, um erneut zu vergleichen
+正在保存…	Wird gespeichert…
+正在分析 {0} 的响度…	Analyse der Lautheit von {0}…
+正在分析摄像机运动 {0}%	Analyse der Kamerawandbewegungen {0}%
+正在匹配…	Wird abgeglichen…
+正在对齐…	Wird ausgerichtet…
+正在导入 LUT	Wird die LUT importiert
+正在导入…	Wird importiert…
+正在导出…	Wird exportiert…
+正在导出当前帧，完成后再渲染队列	Exportiert der aktuelle Frame, anschließend die Renderwarteschlange
+正在抓取…	Wird geschnitten…
+正在播放{0}	Wird abgespielt {0}
+正在显示	Anzeige
+正在查找…	Suche
+正在检测「{0}」的场景剪切…	Prüfung der Szenenabbildung mit „{0}“…
+正在比较声音…	Vergleich der Geräusche…
+正在测量“{0}”的噪声底…	Messung der Schalldichte von „{0}“…
+正在测量响度…	Messung der Lautheit…
+正在测量节目响度…	Messung der Lautstärke des Programms…
+正在渲染，完成后再导出当前帧	Rendering, Exportieren der aktuellen Frame nach Fertigstellung
+正在渲染，新加入的任务会接着渲染	Rendering, neue Aufgaben werden fortgesetzt
+正在生成…	Erstellung…
+正在生成倒放素材… {0}%	Erstellung der umgekehrten Materialien… {0}%
+正在生成定格帧…	Erstellung der eingefrorenen Frames…
+正在设备中按文件名查找…	Suche nach Dateinamen im Gerät…
+正在读取声音并比较…	Lesen und Vergleich der Geräusche…
+正在读取画面 0%	Lesen des Bildes 0%
+正在读取画面 {0}%	Lesen des Bildes {0}%
+正在跟踪 {0}%	Verfolgung von {0}…
+正常	Normal
+正片叠底	Dümpeln
+此项目没有可用备份	Dieses Projekt verfügt über keine verfügbaren Backups.
+母版	Master.
+母版 H.265	Master H.265.
+每个关键词最多 {0} 个字	Jeder Schlüsselwort kann maximal {0} Wörter umfassen.
+每个机位最多带一条声音	Jeder Kamerawinkel kann maximal einen Ton enthalten.
+每项数值的关键帧各自独立：移动时间或改缓动只影响这条曲线	Die Schlüsselframes für jede Zahl sind unabhängig voneinander: Bewegungszeit oder Anpassungen der Animation beeinflussen nur diesen Curve.
+比例不同的素材	Materialien mit unterschiedlichen Proportionen.
+比例不同的素材{0}	Materialien mit unterschiedlichen Proportionen {0}.
+比噪声底高 {0} dB 以内的声音压低 {1} dB，	Ton, der um maximal {0} dB unterhalb des Niveaus liegt, wird um {1} dB gedämpft.
+比率	Verhältnis.
+比较声音中…	Vergleichender Ton…
+水平	Horizontal.
+水平位置	Horizontale Position.
+没有{0}片段	Keine {0} Clips.
+没有{0}，可在筛选中改回全部片段	Keine {0}; Sie können diese in den Filter-Einstellungen wieder alle Clips auswählen.
+没有匹配的素材	Kein passendes Material.
+没有匹配的项目	Keine passenden Projekte
+没有可以对齐的片段	Keine zum Ausrichtbare Clips.
+没有可以粘贴到这个片段的属性	Keine Eigenschaften, die an diesen Clip angehängt werden können.
+没有可以返回的上一级时间线	Es gibt keine Zeitlinie, auf die man zurückkehren kann.
+没有可播放视频的应用，可在系统文件管理器的 Movies 目录查找	Es gibt keine Anwendung, die Videos abspielen kann. Diese finden Sie im Ordner „Movies“ des System-Dateimanagers.
+没有可播放音频的应用，可在系统文件管理器的 Music 目录查找	Es gibt keine Anwendung, die Audiodateien abspielen kann. Diese finden Sie im Ordner „Music“ des System-Dateimanagers.
+没有可替换的轨道	Es gibt keine Spuren, die ersetzt werden können.
+没有可波纹覆盖的轨道	Es gibt keine Spuren, die mit Ripple überdeckt werden können.
+没有声音	Es gibt keinen Ton.
+没有找到可以重新链接的文件	Es wurden keine Dateien gefunden, die neu verknüpft werden können.
+没有找到场景剪切	Es wurden keine Szenenausschnitte gefunden.
+没有找到场景剪切：片段是一个连续的镜头	Es wurden keine Szenenausschnitte gefunden: Der Clip ist eine kontinuierliche Szene.
+没有按项目设置缩放的片段：检查器的缩放方式选“按项目”的片段才会按这里显示	Es gibt keine Clips, die nach Projekten skaliert werden: Clips, deren Skalierung auf „nach Projekten“ eingestellt ist, werden hier angezeigt.
+没有机位 {0}	Es gibt keine Kamerawinkel {0}.
+没有离线素材	Es gibt keine offline-medialen Inhalte.
+没有空闲的视频轨道可以叠加	Es gibt keine freien Video-Spuren, die übertragen werden können.
+没有空闲的音频轨道可以叠加	Es gibt keine freien Audio-Spuren, die übertragen werden können.
+没有符合条件的素材	Es gibt keine passenden Medialen.
+没有获得访问{0}的权限，这里不会列出它们	Es wurden keine Berechtigungen für die Zugriff auf {0} erhalten; diese werden hier nicht aufgelistet.
+没有解码出任何画面或声音	Es wurden keine Bilder oder Töne dekodiert.
+没有轨道	Es gibt keine Spuren.
+没有这个调色版本	Diese Farbkorrektur-Version ist nicht verfügbar.
+没有这种颜色的片段	Clips in dieser Farbe gibt es nicht.
+没有需要去掉的抖动	Es gibt keine Vibrationen, die entfernt werden müssen.
+波形	Wavform.
+波纹	Ripple.
+波纹修剪	Ripple-Trimmen
+波纹删除	Ripple-Löschen
+波纹删除入点至出点	Ripple-Löschen von In-Punkt bis Out-Punkt.
+波纹删除区间	Ripple-Löschen des Bereichs.
+波纹剪切	Ripple-Ausschneiden
+波纹覆盖	Ripple-Überdecken.
+波纹覆盖要用时间线的入点和出点：再标记一个点，或清除标记后替换播放头处的片段	Ripple-Überdecken mit In-Punkt und Out-Punkt der Timeline: Markieren einen neuen Punkt oder ersetzen den Clip am Abspielkopf, nachdem der Markierungspunkt gelöscht wurde.
+波纹覆盖（{0}）：源片段的入点到出点替换时间线播放头处的片段（或时间线入点到出点），后面的片段随长度变化前后移动	Ripple-Überdecken ({0}): Ersetzen des Clips am Abspielkopf der Timeline mit dem In-Punkt und Out-Punkt des Quelclips (oder dem In-Punkt und Out-Punkt der Timeline). Die folgenden Clips bewegen sich entsprechend der Länge vor und zurück.
+测试图 · 75% 彩条	Testbild · 75% Farbstreifen.
+淡入	Eintauchen.
+淡入曲线	Eintaucheffekt-Kurve.
+淡入淡出	Eintauchen und Verblassen.
+淡出	Verblassen.
+淡出曲线	Verblasseffekt-Kurve.
+深度	Tiefe.
+深度为 0：声音不变	Tiefe 0: Ton unverändert
+深度压低	Tiefenpressung
+混合器	Mischer
+混响	Hall
+混响 · {0}	Hall · {0}
+混响房间：{0}	Hallraum: {0}
+混响时间	Hallzeit
+混响衰减曲线：{0} 秒衰减 60 dB	Hallabfallkurve: {0} Sekunden abfallend um 60 dB
+混响：{0}	Hall: {0}
+混响：关闭	Hall: Aus
+混响：干湿比	Hall: Feuchtigkeitsverhältnis
+混响：开启	Hall: Ein
+混响：混响时间	Hall: Hallzeit
+混响：预延迟	Hall: Vorlaufzeit
+混响：高频衰减	Hall: Hochfrequenzabfall
+添加{0}	Hinzufügen von {0}
+添加{0}关键帧	Hinzufügen von {0} Keyframes
+添加串行节点：调整整个画面，在最后一个节点之后	Hinzufügen von Serial Nodes: Die gesamte Szene anpassen, nach dem letzten Knoten
+添加关键帧	Keyframe setzen
+添加关键帧后，窗口可以随时间移动，跟住移动的主体	Nachdem Keyframes hinzugefügt wurden, kann das Fenster mit der Zeit bewegt werden, um den bewegten Objekt zu folgen.
+添加关键帧后，调色可以随时间变化，跟上光线	Mit Keyframes folgt die Farbkorrektur dem Licht.
+添加关键帧后，音量可以随时间变化	Nachdem Keyframes hinzugefügt wurden, kann die Lautstärke mit der Zeit variiert werden.
+添加到播放头处	Hinzufügen an die Abspielkopf-Position.
+添加到时间线	Hinzufügen zur Zeitlinie.
+添加变速点	Hinzufügen von Tempoänderungspunkten.
+添加字幕	Hinzufügen von Untertiteln.
+添加总线	Hinzufügen von Bussen.
+添加控制点	Hinzufügen von Steuerungspunkten.
+添加曲线控制点	Hinzufügen von Kurvensteuerungspunkten.
+添加标记	Marker setzen
+添加标题	Hinzufügen von Titeln.
+添加标题到时间线	Hinzufügen von Titeln zur Zeitlinie.
+添加生成器	Hinzufügen von Generatoren.
+添加窗口	Hinzufügen von Fenstern.
+添加节点 {0}	Hinzufügen von Knoten {0}.
+添加视频轨	Hinzufügen von VideoSpuren.
+添加轨道	Hinzufügen von Spuren.
+添加转场	Übergang hinzufügen
+添加音频轨	Audio-Track hinzufügen
+清空搜索	Suche leeren
+清除	Entfernen
+清除入出点	Out-Punkt entfernen
+清除变速点	Tempoänderung entfernen
+清除已完成	Erledigte entfernen
+清除旗标	Flag entfernen
+清除片段颜色	Clip-Farbe entfernen
+渐变	Gradient
+渐变 · 橙到紫	Gradient · Orange zu Lila
+渐变 · 深蓝到黑	Gradient · Dunkelblau zu Schwarz
+渐显	Allmählich sichtbar werden
+温暖	Wärme
+渲染 {0} → {1}（{2}，{3}）	Rendern von {0} zu {1} ({2}, {3})
+渲染中	Rendering in progress
+渲染中 {0}%	Rendering in progress: {0} %
+渲染大约需要 {0} GB 空间（临时文件和存进相册的文件各一份），设备只剩 {1} GB。请清理空间，或缩短渲染范围后重试。	Die Rendering-Funktion benötigt etwa {0} GB Speicherplatz (ein Exemplar für temporäre Dateien und ein Exemplar für die gespeicherten Bilder). Der Speicher reicht nur für {1} GB. Bitte leeren Sie den Speicher oder reduzieren Sie den Rendering-Bereich und versuchen Sie es erneut.
+渲染失败（{0}），请重试。	Rendering fehlgeschlagen (({0}). Bitte versuchen Sie es erneut.
+渲染失败，请重试（{0}）。	Rendering fehlgeschlagen. Bitte versuchen Sie es erneut ({0}).
+渲染方式	Rendermodus
+渲染范围	Renderbereich
+渲染范围内没有声音，无法只导出音频。	Es gibt keinen Ton im Rendering-Bereich, daher kann nur die Audio-Datei exportiert werden.
+渲染范围里没有{0}片段	Im Rendering-Bereich gibt es keine {0}-Clips.
+渲染范围里没有片段	Im Rendering-Bereich gibt es keine Clips.
+渲染进度 {0}%	Rendering-Fortschritt: {0}%
+渲染队列	Renderwarteschlange
+渲染预设	Rendervorgabe
+源 	Quelle 
+源片段	Quellen-Clips
+源片段刮擦条	Cliptip für Quellen-Clips
+溢色抑制	Überflutungsunterdrückung
+滑动	Sklidirung
+滑动 {0} 帧	Sklirung {0} Frame
+滑动片段	Sklirbedingte Clips
+滑移	Verschiebung
+滑移 {0} 帧	Verschiebung {0} Frame
+滚动	Scrollen
+滚动剪辑点	Scrollbedingte Schnittpunkte
+滚动剪辑点 {0} 帧	Schieben des Schnittpunkts {0} Bilder
+滚动字幕	Schieben der Untertitel
+滤色	Farbverarbeitung
+漂白旁路	Weißabtönung
+灰度	Grauton
+灰度 = {0}·R + {1}·G + {2}·B	Grauton = {0}·R + {1}·G + {2}·B
+灰色没有色相可以柔化，请用加选	Grau ohne Farbton kann abgeflacht werden, verwenden Sie die Option „Farbton abflachen“
+点“吸取颜色”，再点画面里要调整的颜色：节点 2 的调色将只作用于相近的颜色。	Klicken Sie auf „Farbe aufnehmen“, dann auf die Farbe im Bild, die Sie anpassen möchten: Die Farbkorrektur am Punkt 2 wirkt nur auf ähnliche Farben.
+点击柔和边缘里的颜色，把它移出边缘	Klicken Sie auf die Farbe in der Option „Weichere Ränder“, um sie aus den Rändern zu entfernen.
+点击画面中的颜色，让它落在选区的柔和边缘里	Klicken Sie auf die Farbe im Bild, damit sie in die weichen Ränder des ausgewählten Bereichs fällt.
+点击画面中要加入选区的颜色	Klicken Sie auf die Farbe im Bild, die in den ausgewählten Bereich aufgenommen werden soll.
+点击画面中要移出选区的颜色	Klicken Sie auf die Farbe im Bild, die aus dem ausgewählten Bereich entfernt werden soll.
+点击画面中要调整的颜色	Klicken Sie auf die Farbe, die Sie anpassen möchten.
+点按加点，两侧自动加锚点 · 双击删除	Klicken Sie auf die Punkt-Einblendung, automatisch werden Ankerpunkte hinzugefügt · Doppelklicken zum Löschen.
+点按机位：在播放头处剪切，之后切到该机位（{0}）；播放时也可以点按	Klicken Sie auf den Kamerawinkel: Schneiden Sie an der Position des Abspielkopfes, dann wechseln Sie zu dieser Position ({0}); Klicken Sie auch während des Abspiels darauf.
+点按机位：播放头所在的整段切到该机位（{0}）	Klicken Sie auf den Kamerawinkel: Schneiden Sie den gesamten Abschnitt, an dem sich der Abspielkopf befindet, zu dieser Position ({0}).
+点按添加窗口	Klicken Sie auf „Fenster hinzufügen“.
+点按生成或删除代理	Klicken Sie auf „Proxy erstellen“ oder „Proxy löschen“.
+点按编辑场次、镜头、条次、关键词和备注	Klicken Sie auf Bearbeiten von Szenen, Kameraeinstellungen, Abschnitten, Schlüsselframes und Anmerkungen.
+点按选择录音文件	Klicken Sie auf Auswahl von Aufnahmedateien.
+点数值右侧的关键帧按钮，让这一项随时间变化；全部添加则一次记下所有数值	Klicken Sie auf das Schlüsselfeld rechts neben der Zahl, um diese zu verändern mit der Zeit; wenn Sie alle hinzufügen, werden alle Werte auf einmal eingetragen.
+点曲线上的关键帧选中它：拖动改时间和数值，拖动两侧的控制点改快慢	Klicken Sie auf ein Schlüsselfeld auf der Kurve, um es auszuwählen: Ziehen Sie die Zeit und die Werte, ziehen Sie die Kontrollpunkte auf beiden Seiten, um die Geschwindigkeit zu ändern.
+然后回到播放头	Dann kehren Sie zum Abspielkopf zurück.
+照片	Fotos.
+照片和视频的访问范围受限。	Die Zugriffsbereich für Fotos und Videos ist eingeschränkt.
+片尾字幕	Zusammenfassungssatz.
+片段	Clip
+片段 {0} {1}	Clip {0} {1}.
+片段 · {0}	Clip · {0}.
+片段不能再往前滑了	Der Clip kann nicht mehr nach vorne verschoben werden.
+片段不能再往后滑了	Der Clip kann nicht mehr zurück verschoben werden.
+片段几乎无声	Der Clip ist fast stumm.
+片段几乎无声，无法标准化	Der Clip ist fast stumm und kann nicht standardisiert werden.
+片段只有一个调色版本	Der Clip hat nur eine Farbkorrekturversion.
+片段均衡器	Clip-EQ
+片段均衡器：{0}	Clipequilibrierungsgerät: {0}.
+片段增益	Clip-Gain
+片段太短，无法测量响度（至少 0.4 秒）	Der Clip ist zu kurz, um die Lautheit zu messen (mindestens 0,4 Sekunden)
+片段太短，无法测量（至少 0.4 秒）	Der Clip ist zu kurz, um etwas zu messen (mindestens 0,4 Sekunden)
+片段太长：先切短再检测	Der Clip ist zu lang: Kürzen Sie ihn zuerst und überprüfen Sie ihn anschließend
+片段太长：先切短再跟踪	Der Clip ist zu lang: Kürzen Sie ihn zuerst und verfolgen Sie ihn anschließend
+片段已不在时间线上	Der Clip befindet sich nicht mehr auf der Zeitlinie
+片段已停用：不播放、不渲染（按 D 切换）	Der Clip ist deaktiviert: Nicht abgespielt, nicht gerendert (wird mit D umgeschaltet)
+片段已经无法再修剪	Der Clip kann nicht mehr gekürzt werden
+片段已重命名为“{0}”	Der Clip wurde in „{0}“ umbenannt
+片段或所在轨道已停用，启用后可重试	Der Clip oder die dazugehörige Spur ist deaktiviert, kann nach Aktivierung wieder versucht werden
+片段按帧排在时间线上，帧率在新建项目时确定	Der Clip ist in der Zeitlinie nach Frames angeordnet, die Frequenz wird bei neuen Projekten festgelegt
+片段无法再加长：素材或后面的片段挡住了	Der Clip kann nicht länger verlängert werden: Material oder nachfolgende Clips blockieren ihn
+片段无法再缩短	Der Clip kann nicht kürzer gemacht werden
+片段时长	Länge des Clips
+片段条中没有片段	Es gibt keinen Clip in der Clip-Leiste
+片段没有变速点	Der Clip hat keine Tempotipps
+片段没有可测量的音频	Der Clip hat kein messbares Audio
+片段的变调（半音），长度不变	Die Modulation des Clips (Oktave), Länge unverändert
+片段筛选：{0}	Filtern für Clips: {0}
+片段自己的均衡器	Eigenes Equalizer für den Clip
+片段至少 {0} 帧	Clip muss mindestens {0} Frames enthalten.
+片段音量和声像，含关键帧	Ton- und Panorama-Einstellungen des Clips, einschließlich Keyframes.
+片段音量，含音量关键帧	Ton-Einstellungen des Clips, einschließlich Ton-Keyframes.
+片段颜色	Farben des Clips.
+片段颜色：{0}	Farben des Clips: {0}.
+版本	Version.
+版本 1	Version 1.
+版本 {0}	Version {0}.
+特效	Effekte
+特效不存在	Effekte existieren nicht.
+特效关键帧	Keyframes für Effekte.
+特效只能应用到画面片段	Effekte können nur auf Bildclips angewendet werden.
+特效强度	Stärke der Effekte.
+特粗	Drastisch.
+独奏	Solo.
+独奏 {0}	Solo {0}.
+琥珀	Bernstein.
+生成	Generatoren
+生成 LUT	Generieren LUT.
+生成中 {0}%	Erzeugung in Prozess {0}%
+生成代理	Erzeugen eines Proxies
+生成器的尺寸与时间线不符	Die Größe des Generators stimmt nicht mit der Timeline überein
+生成失败	Erzeugung fehlschlug
+用入出点	Verwenden von In- und Out-Punkten
+用当前片段的调色生成 LUT（33³）	Erzeugen eines LUTs mit der Farbkorrektur des aktuellen Clips (33³)
+电平表	Pegelanzeige
+电话音	Telefonstimme
+画廊	Galerie
+画质	Bildqualität
+画面	Bild
+画面 {0}	Bild {0}
+画面+声音	Bild + Ton
+画面变换	Bildwechsel
+画面和声音	Bild und Ton
+画面和声音的淡入、淡出时长	Einblend- und Ausblendzeiten für Bild und Ton
+画面太平或几乎是单色，无法匹配	Bild zu flach oder fast einfarbig, nicht abzubilden
+画面太平或几乎是单色，无法自动调色	Bild zu flach oder fast einfarbig, nicht automatisch farbkorrigierbar
+画面将落在 {0}	Bild wird auf {0} landen
+画面布局	Bildlayout
+画面布局：{0}	Bildlayout: {0}
+画面是黑场	Bild ist schwarz
+画面是黑场、没有声音	Bild ist schwarz und ohne Ton
+画面最多移动 {0}	Bild bewegt sich maximal {0}
+画面比例与时间线不同时：适应留黑边，填充裁去多出的部分，拉伸会变形，原尺寸不缩放	Wenn Bildverhältnis und Timeline unterschiedlich sind: Passen Sie an, indem man schwarze Ränder behält, überschüssige Teile entfernen, zieht führt zu Verzerrungen, Originalgröße bleibt unverändert
+画面淡入	Bild-Einschwingung
+画面淡入曲线	Bild-Einschwingungskurve
+画面淡出	Bild-Verzerrung
+画面淡出曲线	Bild-Verzerrungskurve
+画面烧录：	Bild-Brennen:
+画面落在的视频轨道	Bild auf der entsprechenden Video-Spur
+画面静止处平均前后几帧的噪点，运动处保持原样	Stille Stellen: Durchschnittlich einige Frames vor und nach dem Stillstand, Bewegungsstellen bleiben unverändert
+画面：机位 {0}	Bild: Kamerawinkel {0}
+界面语言	Oberflächensprache
+界面语言：{0}	Oberflächensprache: {0}
+白	Weiß
+白场闪白	Weißes Flackern
+白色保留，黑色被抠掉	Weiße Farbe beibehalten, schwarze Teile entfernt
+白色纯色	Weißer Hochglanz
+监视器和导出都	Beide Monitor- und Export-Funktionen
+目标	Ziel
+目标 {0}	Ziel {0}
+目标位置已被占用	Zielposition bereits belegt
+目标响度	Ziel-Lautheit
+目标轨道已锁定	Ziel-Spur bereits gesperrt
+直接出现，直接消失	Direkt erscheinen, direkt verschwinden
+直方图	Histogramm
+相似度	Ähnlichkeit
+相加	Summen
+真峰值 {0}	Echte Peak {0}
+瞬时 M	Momentaner M
+瞬时 {0}	Momentaner {0}
+矢量示波器	Vektorgrafenmesser
+矩形	Rechteck
+短期 S	Kurzzeitig S
+短期 {0}	Kurzzeitig {0}
+短边 540 像素，只含画面；渲染始终用原片	Kurze Seite 540 Pixel, nur Bild; Rendern erfolgt immer mit dem Originalbild
+确定	Bestätigen
+示波器：{0}	Oscam: {0}
+离开	Verlassen
+离开音频页或关闭窗口时，会保存已录的旁白。	Wenn Sie die Audio-Seite verlassen oder das Fenster schließen, werden die aufgezeichneten Voiceovers gespeichert.
+离线	Offline
+秒	Sekunde
+移到 {0}	Zu {0} bewegen
+移动	Verschieben
+移动关键帧	Keyframes verschieben
+移动到其他轨道	Auf andere Spuren verschieben
+移动或调整窗口，会在播放头处添加关键帧	Fenster verschieben oder anpassen, fügen dabei Keyframes am Abspielkopf hinzu
+移动标记	Markers verschieben
+移动片段	Clips verschieben
+移动窗口	Fenster verschieben
+移动遮罩	Masken verschieben
+移除	Entfernen
+移除效果	Effekte entfernen
+移除特效	Spezialeffekte entfernen
+移除窗口	Fenster entfernen
+移除转场	Übergang entfernen
+移除遮罩	Maske entfernen
+移除限定器	Beschränker entfernen
+稳定	Stabilisieren
+稳定平滑度	Stabilitätsgeschwindigkeit
+稳定强度	Stabilisierungsstärke
+稳定时放大遮住边缘	Rand verdeckend vergrößern bei Stabilisierung
+稳定路径：	Stabilisierungspfad:
+稳定：不放大	Stabilisieren: ohne Vergrößerung
+稳定：放大遮边	Stabilisieren: Rand verdeckend vergrößern
+空间降噪	Raumrauschen reduzieren
+窄	Schmal
+窗口	Fenster
+窗口 · {0}	Fenster · {0}
+窗口 · 限定器	Fenster · Beschränker
+窗口关键帧	Fenster-Keyframes
+窗口关键帧：缓入	Fenster-Keyframes: Eintritt verzögert
+窗口关键帧：缓出	Fenster-Keyframes: Ausgang verzögert
+窗口内	Innenfenster
+窗口只作用于画面的一部分，未写入	Fenster beeinflusst nur einen Teil des Bildes, wird nicht gespeichert
+窗口外	Außerhalb des Fensters
+窗口形状：{0}	Fensterform: {0}
+窗口跟踪	Fensterverfolgung
+窗口：{0}	Fenster: {0}
+窗口：反转	Fenster: Umkehrung
+窗口：取消反转	Fenster: Umkehrung entfernen
+窗口：拖动以移动	Fenster: Verschieben durch Ziehen
+立体声	Stereo
+立即	Sofort
+立即备份	Sofort Sicherung
+竖屏	Hochformat
+符合条件：{0} 个素材	Bedingungen: {0} Materialien
+第 {0} 个变速点两侧速度相同，不需要平滑过渡	Der {0}-Tempo-Punkt hat die gleiche Geschwindigkeit auf beiden Seiten, keine glatte Übergangszeit erforderlich
+第 {0} 个变速点在 {1} 秒内平滑过渡	Der {0}-Tempo-Punkt hat eine glatte Übergangszeit von {1} Sekunden
+第 {0} 个变速点改为立即变速	Der {0}-Tempo-Punkt wird auf Sofort-Tempo umgestellt
+第 {0} 个变速点（{1}）的过渡有一部分在片段之外，剪短前的画面不变	Der {0}-Tempo-Punkt ({1}) hat einen Teil der Übergangszeit außerhalb des Clips, das Bild vor der Kürzung bleibt unverändert
+第 {0} 个变速点（{1}）：速度在 {2} 秒内平滑过渡，变速点在过渡中间，片段时长不变	Der {0}-Tempo-Punkt ({1}): Die Geschwindigkeit verläuft glatt über {2} Sekunden, der Tempo-Punkt befindet sich in der Mitte der Übergangszeit, die Länge des Clips bleibt unverändert
+第 {0} 段速度 {1}，片段时长 {2}	Die {0}-Geschwindigkeit {1}, Länge des Clips {2}
+第 {0} 行不是三个数值：{1}	Zeile {0} enthält nicht drei Werte: {1}
+第 {0} 行应有 {1} 个数值	Zeile {0} sollte {1} Werte enthalten
+第 {0} 行：LUT_1D_SIZE 不是整数	Zeile {0}: LUT_1D_SIZE ist keine ganze Zahl
+第 {0} 行：LUT_3D_SIZE 不是整数	Zeile {0}: LUT_3D_SIZE ist keine ganze Zahl
+第 {0} 行：数据之后不能再有设置项	Zeile {0}: Nach den Daten dürfen keine weiteren Einstellungen stehen
+第一个关键帧之前没有变化，无需缓入	Vor dem ersten Keyframe gibt es keine Veränderung, keine Notwendigkeit für Slow-In
+简中	Kompakthandbuch
+简体	Simplified
+简体中文	简体中文
+简单	Einfach
+类型	Typ
+类型不同：“{0}”是{1}，所选文件是{2}	Unterschiedlicher Typ: „{0}“ ist {1}, der ausgewählte File ist {2}
+类型不同：原素材是{0}，所选文件是{1}	Unterschiedlicher Typ: Das Originalmaterial ist {0}, der ausgewählte File ist {1}
+粉	Rosa
+粉色旗标	Rosa Flag
+粗	Drastisch
+粗体	Fett
+粘贴	Einfügen
+粘贴{0}	Kleben {0}
+粘贴属性	Eigenschaften einfügen
+粘贴属性…	Eigenschaften einfügen…
+粘贴片段	Clip einfügen
+粘贴调色	Farbkorrektur einfügen
+精修	Feinabstimmung
+素材 {0}×{1}	Medium {0}×{1}
+素材 {0}×{1} 比画面{2}：	Medium {0}×{1} ist kleiner als Bild{2}:
+素材与时间线同为 {0}×{1}，原尺寸正好铺满画面	Medium und Timeline haben die gleiche Größe {0}×{1}, das Medium füllt das Bild genau aus
+素材与时间线的画面比例相同，适应、填充、拉伸看起来一样	Die Bildverhältnisse von Medium und Timeline sind gleich, sie sehen gleich aus, wenn sie angepasst, gefüllt oder verlängert werden
+素材仍在媒体池中	Das Medium befindet sich noch im Medienpool
+素材前面没有更多内容	Medienanfang erreicht.
+素材后面没有更多内容	Nach dem Medium gibt es keine weiteren Inhalte
+素材已不在媒体池中	Das Medium befindet sich nicht mehr im Medienpool
+素材已不存在	Das Medium existiert nicht mehr
+素材或后面的片段只够	Das Medium oder der nachfolgende Clip reicht nicht aus
+素材离线	Das Medium ist offline
+素材离线，无法匹配	Das Medium ist offline und kann nicht abgeglichen werden
+素材离线，无法匹配帧	Das Medium ist offline und kann keine Frames abgleichen
+素材离线，无法同步	Das Medium ist offline und kann nicht synchronisiert werden
+素材离线，无法吸取颜色	Material ist offline, Farben können nicht entnommen werden.
+素材离线，无法定格	Material ist offline, Standbilder können nicht erstellt werden.
+素材离线，无法抓取静帧	Material ist offline, Standbilder können nicht erfasst werden.
+素材离线，无法测量	Material ist offline, Messungen können nicht durchgeführt werden.
+素材离线，无法添加：{0}	Material ist offline, die Option {0} kann nicht hinzugefügt werden.
+素材离线，无法自动调色	Die Materialien sind offline und können nicht automatisch farblich angepasst werden.
+素材离线：原文件已被移动或删除	Index
+索引	Index
+紫	Lila-Flagge
+紫色旗标	Chinesisch
+繁中	Chinesische Schrift
+繁体	Chinesisch
+繁體	Chinesisch
+繁體中文	繁體中文
+红	Rot
+红 ⇄ 绿	Rot ⇄ Grün
+红 ⇄ 蓝	Rot ⇄ Blau
+红绿蓝各自压缩高光：最稳妥，很亮的颜色会自然褪白	Rot, Grün und Blau: Jeweils komprimiertes Lichter: Die hellsten Farben verblassen natürlich.
+红色旗标	Rot-Flagge
+红色输出	Rote Ausgabe
+纯五度	Pure fünf Grad
+纯四度	Pure vier Grad
+纯色 · 18% 灰	Pure Farbe · 18% Grau
+纯色 · 抠像测试	Pure Farbe · Kiebeltest
+纯色 · 文字背景	Pure Farbe · Textuntergrund
+纯色 · 白场、闪白	Pure Farbe · Weißfeld, Blitzweiß
+纯色 · 黑场、垫底	Pure Farbe · Schwarze Zone, Untergrund
+纵向拉高	Vertikale Erhöhung
+线性	Linear
+细	Dünn
+细线是摄像机的路径，粗线是稳定后画面走的路径；上为水平，下为垂直	Die dünnen Linien zeigen den Weg des Kameras, die dicken Linien den Weg, den der Bildschirm nach der Stabilisierung nimmt; oben horizontal, unten vertikal
+细节	Details
+结尾	Ende
+绿	Grün
+绿 ⇄ 蓝	Grün ⇄ Blau
+绿幕	Grünbildschirm
+绿框是第一帧的画面，红框是最后一帧的	Das grüne Rahmenbild ist das erste Bild, das rote Rahmenbild das letzte Bild
+绿色旗标	Grüner Flaggenwert
+绿色纯色	Grünes Einfarbiges
+绿色输出	Grüner Ausgang
+缓入	Ease-in
+缓入缓出	Verzögerte Eingabe und Ausgabe
+缓出	Ease-out
+缓动	Verzögerte Bewegung
+编码	Codec
+编码器不支持 {0} {1} {2} fps，请降低分辨率或帧率后重试。	Der Kodierer unterstützt nicht {0} {1} {2} fps, bitte reduzieren Sie die Auflösung oder die Framerate und versuchen Sie erneut.
+编码器不支持 {0}，请降低分辨率或帧率后重试。	Der Kodierer unterstützt {0}, bitte reduzieren Sie die Auflösung oder die Framerate und versuchen Sie erneut.
+编码器没有给出画面格式	Der Kodierer gibt das Bildformat nicht an
+编码视频时出错：请重试；如果反复出现，试着降低分辨率或换用 H.264（{0}）。	Fehler beim Kodieren von Videos: Versuchen Sie es erneut; wenn dies wiederholt, versuchen Sie, die Auflösung zu reduzieren oder H.264 zu verwenden ({0}).
+编辑	Bearbeiten
+编辑场记	Bearbeitungsnotizen
+编辑时每 10 分钟自动备份一次；保留最近 1 小时的全部备份、24 小时内每小时一份、7 天内每天一份	Automatische Sicherung alle 10 Minuten während der Bearbeitung; Behalten Sie alle Sicherungen der letzten 1 Stunde, jede Stunde innerhalb der letzten 24 Stunden und jede Tag innerhalb der letzten 7 Tage bei.
+编辑智能媒体夹	Intelligente Bearbeitung von Ablagen
+编辑条件	Bearbeitungsbedingungen
+编辑条件…	Bearbeitungsbedingungen…
+编辑片段均衡器	Clip-EQ bearbeiten
+缩放	Zoom
+缩放方式	Skalierungsmethode
+缩放方式、缩放、位置、旋转、不透明度、合成模式、裁切、动态缩放，含关键帧	Skalierungsmethode, Skalierung, Position, Drehung, Transparenz, Kombinationseinstellungen, Zerkleinerung, dynamische Skalierung, mit Keyframes
+缩放方式：{0}	Skalierungsmethode: {0}
+缩放模糊	Skalierungsverschwommenheit
+缩略图	Miniaturen
+背景	Hintergrund
+背景框	Hintergrundrahmen
+胶片 2383	Film 2383
+胶片颗粒	Filmpartikel
+自动	Auto
+自动对齐	Automatische Ausrichtung
+自动调色	Automatische Farbkorrektur
+自动调色（Shift+Alt+C）：按画面的黑位、白位设定暗部与亮部，并校正偏色	Automatische Farbkorrektur (Shift+Alt+C): Bestimmt Dunkelheit und Helligkeit anhand der Schwarz- und Weißwerte des Bildes und korrigiert Farbabweichungen
+自定义	Benutzerdefiniert
+自带声音	Voreingestellte Tonart
+色差	Farbunterschiede
+色度阈值	Farbtemperaturschwellen
+色彩	Farben
+色彩增强	Farbstärke
+色彩扭曲器网格：拖动点改变色相和饱和度	Farbverzerrungsnetz: Ziehen Sie an, um Farbton und Sättigung zu ändern
+色彩扭曲器：{0}	Farbverzerrungsgerät: {0}
+色彩扭曲器：重置{0}	Farbverzerrungsgerät: Reset {0}
+色彩斑点约 {0} 级以内	Farbstellen innerhalb von etwa {0} Stufen
+色温	Farbtemperatur
+色相	Farbton
+色相 {0}°	Farbton {0}°
+色相·亮度	Farbton·Helligkeit
+色相·色相	Farbton·Farbton
+色相·饱和	Farbton·Sättigung
+色相对亮度	Farbton·Helligkeit
+色相对色相	Farbton·Farbton
+色相对饱和度	Farbton·Sättigung
+色相范围	Farbtonbereich
+色调	Farbtonart
+色调映射	Tonemapping
+色调映射：{0}	Farbtonabbildung: {0}
+节点	Knoten
+节点 01 之前 · 对比视图左侧是降噪前	Knoten 01 vorher · Kontrastansicht links ist vor der Schärfung
+节点 01 关键帧 · 调色	Knoten 01 Keyframe · Farbkorrektur
+节点 01、02 不能停用：可以重置它们的调色	Knoten 01, 02 Nicht deaktivierbar: Die Farbkorrektur kann wiederhergestellt werden.
+节点 02 关键帧 · 窗口位置	Knoten 02 Keyframe · Fensterposition
+节点 02 的窗口只作用于画面的一部分，无法写进 LUT；节点 01 没有调色	Das Fenster des Knotens 02 wirkt nur auf einen Teil des Bildes und kann nicht in die LUT eingefügt werden; Knoten 01 hat keine Farbkorrektur.
+节点 {0} {1}	Knoten {0} {1}
+节点 {0} {1}，{2}{3}	Knoten {0} {1}, {2}{3}
+节点 {0} · {1}	Knoten {0} · {1}
+节点关键帧：{0}	Keyframes: {0}
+节目几乎无声	Sendung fast stumm
+节目响度	Sendungslautstärke
+节目响度 {0} LUFS · 真峰值 ≤ {1} dBTP	Sendungslautstärke {0} LUFS · tatsächlicher Pegel ≤ {1} dBTP
+节目响度 · LUFS	Sendungslautstärke · LUFS
+节目响度：瞬时 {0}，短期 {1}，整体 {2} LUFS，	Sendungslautstärke: Momentan {0}, Kurzfristig {1}, Gesamt {2} LUFS,
+范围	Bereich
+范围内的 {0} 个片段各存一个文件（共 {1}）：只含片段本身和链接的声音，文件名后加片段名	Bereich: {0,plural,one{# Clip}other{# Clips}}, eine Datei je Clip (insgesamt {1}). Jede Datei enthält nur den Clip und seinen verknüpften Ton. Der Clipname wird an den Dateinamen angehängt.
+范围：{0} → {1}（时间线入点到出点）	Bereich: {0} → {1} (Zeitlinien-In-Punkt-Out-Punkt)
+蓝	Blau
+蓝幕	Blaues Hintergrundbild
+蓝色旗标	Blaue Flag
+蓝色纯色	Blauer Farbton
+蓝色输出	Blaue Ausgabe
+藏青	Dunkelblau
+补偿	Aufholverstärkung
+衰减	Abfall
+裁切	Zuschneiden
+裁切 上	Schnitt oben
+裁切 下	Schnitt unten
+裁切 右	Schnitt rechts
+裁切 左	Schnitt links
+裁切{0}	Schnitt {0}
+裁切柔化	Weichzeichnung beim Schnitt
+要以 {0} 播放才能填满入出点，超出 {1}–{2} 的范围	Muss mit {0} abgespielt werden, um die Eingangs- und Ausgangspunkte zu füllen. Überschreitet die Grenzen von {1}–{2}
+覆盖	Überlagerung
+视频	Video
+视频 · {0}	Video · {0}
+视频尺寸无效	Ungeeignete Videogröße
+视频转场	Video-Übergang
+视频里没有可解码的关键帧	Keine dekodierbaren Keyframes im Video
+角	Ecke
+角度	Winkel
+解码	Dekodierung
+解码或编码出错	Fehler bei der Dekodierung oder Kodierung
+解码素材时出错：请重试；如果反复出现，试着替换出错的素材（{0}）。	Bei der Dekodierung des Materials gab es einen Fehler: Bitte versuchen Sie es erneut. Falls der Fehler weiterhin auftritt, versuchen Sie, das fehlerhafte Material ({0}) durch ein anderes zu ersetzen.
+解锁轨道	Track freischalten
+设为入出点	Als In-Punkt und Out-Punkt festlegen
+设备上还没有视频、音频或图片。	Es gibt keine Videos, Audios oder Bilder auf dem Gerät.
+设备中没有找到这个文件，可以手动选择	Das Datei nicht auf dem Gerät gefunden. Sie können es manuell auswählen.
+设备处理过慢，渲染中断。请关闭其他应用，或降低分辨率后重试。	Die Geräteverarbeitung ist zu langsam, die Rendering-Prozess wird unterbrochen. Schließen Sie andere Anwendungen an oder versuchen Sie es erneut mit niedrigerer Auflösung.
+该位置已有标记	Diese Position ist bereits markiert.
+请先在时间线上选择标题	Wählen Sie zuerst den Titel auf der Zeitlinie aus.
+请先在时间线上选择片段	Wählen Sie zuerst den Clip auf der Zeitlinie aus.
+请先在时间线上选择片段，或标记入点和出点	Wählen Sie zuerst den Clip auf der Zeitlinie aus oder markieren Sie den In-Punkt und Out-Punkt.
+请先在时间线上选择要粘贴到的片段	Wählen Sie zuerst den Clip auf der Zeitlinie aus, an den Sie das Untertitel einfügen möchten.
+请先在时间线上选择视频片段	Wählen Sie zuerst den Video-Clip auf der Zeitlinie aus.
+请先填写文件名	Füllen Sie zuerst den Dateinamen aus.
+请先点选时间线上的空隙	Markieren Sie zuerst die Lücken auf der Zeitlinie.
+请先选择一个画面片段	Wählen Sie zuerst einen Bild-Clip aus.
+请先选择一条字幕	Wählen Sie zuerst ein Untertitel aus.
+请先选择多机位片段	Bitte wählen Sie zuerst mehrere Kamerawinkel-Clip aus.
+请先选择片段	Bitte wählen Sie zuerst den Clip aus.
+请先选择素材	Bitte wählen Sie zuerst das Medium aus.
+请先选择视频	Bitte wählen Sie zuerst das Video aus.
+请先选择音频片段	Bitte wählen Sie zuerst den Audio-Clip aus.
+请在系统设置的应用权限里允许 {0} 访问	Erlaube {0} den Zugriff in den App-Berechtigungen der Systemeinstellungen
+请恢复读取权限或在媒体页重新链接后重试。	Bitte erneueren Sie die Berechtigungen oder versuchen Sie es erneut nach dem Linkieren auf der Medienseite.
+请把播放头移到所选片段上	Bewegen Sie den Abspielkopf auf den ausgewählten Clip.
+请检查设备存储后重试。	Bitte überprüfen Sie die Speicherung auf dem Gerät und versuchen Sie es erneut.
+请点在画面上	Markieren Sie auf dem Bildschirm.
+请至少设置一个条件	Bitte setzen Sie mindestens eine Bedingung.
+读不出参照片段的声音	Es ist der Ton des Clips nicht abzulesen.
+读取素材或写入文件时出错：请确认素材仍在设备上、设备还有空间，然后重试（{0}）。	Ein Fehler beim Lesen des Mediums oder beim Schreiben des Files: Stellen Sie sicher, dass das Medium noch auf dem Gerät ist und dass auf dem Gerät noch Platz vorhanden ist, und versuchen Sie es erneut ({0}).
+读取设备媒体时出错：{0}	Ein Fehler beim Lesen der Gerätemedien: {0}
+调整会记录在此关键帧 · 可设缓入缓出	Die Anpassung wird in diesem Keyframe aufgezeichnet · Einfache Ein- und Ausgabe möglich.
+调整整个画面，接在前一个节点之后 · 不设关键帧	Anpassung des gesamten Bildes, nachfolgend zum vorherigen Knoten · Keine Keyframes.
+调整曲线	Anpassung der Kurve.
+调整节点 01，会在播放头处添加关键帧	Anpassung des Knotens 01, es werden Keyframes am Abspielkopf hinzugefügt.
+调整音量	Anpassung der Lautstärke.
+调整音量关键帧	Lautstärkeanpassung mit Keyframes
+调色	Farbe
+调色关键帧	Farbkorrektur-Keyframes
+调色关键帧：缓入	Farbkorrektur-Keyframes: Einfach einschalten
+调色关键帧：缓出	Farbkorrektur-Keyframes: Einfach ausschalten
+调色前	Vor der Farbkorrektur
+调色前后对比	Vergleich vor und nach der Farbkorrektur
+调色后	Nach der Farbkorrektur
+调色版本：{0}，共 {1} 个，点按切换、新建或删除	Farbkorrektur-Version: {0}, insgesamt {1} Stück, klicken zum Wechseln, Erstellen oder Löschen
+调色：{0}	Farbkorrektur: {0}
+调音台	Mischpult
+调音台视图	Ansicht des Mischpults
+调高强度后，“嘶”“丝”这类齿音会被压低	Nach der Hervorhebung werden Zähneklänge wie "ss" und "z" gedämpft
+起点 	Startpunkt 
+起音	Attack
+超宽布局：时间轴铺满加宽的窗口	Ultra-breite Layout: Zeitachse füllt ein verbreitertes Fenster aus
+超宽布局：窗口加宽到 2700 dp，时间轴铺满底部，上方并排两个监视器	Ultra-breites Layout: Fenster verbreitert auf 2700 dp, Zeitachse füllt unten aus, zwei Monitore nebeneinander oben
+距底	Abstand zur Unterkante
+跟踪	Tracking
+跟踪时大小跟随画面缩放	Begleitung bei Skalierung des Bildes
+跟踪时角度跟随画面旋转	Begleitung bei Drehung des Bildes
+跟踪窗口	Begleitfenster
+跟踪窗口：从播放头向前和向后跟随画面	Begleitfenster: Begleitung des Bildes nach vorne und hinten vom Abspielkopf aus
+跟踪遮罩	Begleitmaske
+跟踪遮罩：从播放头向前和向后跟随画面	Begleitmaske: Begleitung des Bildes nach vorne und hinten vom Abspielkopf aus
+跟随系统	Systemsprache verwenden
+跳到入点	Weiter zum In-Punkt
+跳到出点	Weiter zum Out-Punkt
+跳转	Sprung
+轨道	Spur
+轨道 {0} 已重命名为“{1}”	Die Spur {0} wurde in „{1}“ umbenannt
+轨道上的第一个片段	Der erste Clip auf der Spur
+轨道不存在	Die Spur existiert nicht
+轨道声音 {0}	Spursound {0}
+轨道已锁定	Die Spur ist gesperrt
+轨道显示 {0}	Spurschaltung {0}
+轨道样式 · {0}	Spurschaltung · {0}
+轨道输出	Spurschaltung
+转场	Übergänge
+转场 {0} 秒	Übergang {0} Sekunden
+转场{0}	Übergang{0}
+转场只能应用到画面片段	Übergang kann nur auf Bildausschnitte angewendet werden
+转场对齐	Übergang Ausrichtung
+转场已经是{0}	Übergang ist bereits {0}
+转场描边	Übergang Umriss
+转场改为：{0}	Übergang ändern auf: {0}
+转场方向	Übergangseinstellung
+转场时长	Übergangdauer
+转场柔化	Übergang Weichheit
+转场类型	Übergangtyp
+转场类型：{0}	Übergangtyp: {0}
+转场缓动	Übergang Verzögerung
+转场角度	Übergangwinkel
+转场颜色	Übergangfarbe
+轻微	Leicht
+输入字幕	Eingeben Untertitel
+输入时间码	Eingeben Zeitcode
+输入时间码（如 00:00:03:00 或 3:00）或秒数（如 2.5）	Geben Sie eine Zeitcode ein (z. B. 00:00:03:00 oder 3:00) oder die Anzahl der Sekunden (z. B. 2.5)
+输入标题文字	Geben Sie den Titeltext ein
+输入色彩空间	Geben Sie den Farbraum ein
+返回“{0}”（{1} 里的复合片段）	Kehren Sie zu „{0}“ zurück (kombiniertes Clip in {1})
+返回上一级	Kehren Sie zur vorherigen Ebene zurück
+返回列表	Zurück zur Liste
+返回项目库	Zurück zur Projektbibliothek
+还有 {0} 个视频没有代理，一次生成一个	Es gibt noch {0} Videos ohne Proxy, erstellen Sie einen pro Mal
+还没有“{0}”的噪声底：打开降噪后会自动测量	Noch kein „{0}“ für den Schleier: Die Messung wird automatisch durchgeführt, nachdem das Noise Reduction aktiviert wurde
+还没有备份：打开项目编辑时会自动备份，或点“立即备份”	Noch kein Backup: Das Backup wird automatisch durchgeführt, wenn Sie das Projekt bearbeiten, oder klicken Sie auf „Sofort Backup“
+还没有总线：点「添加总线」，再在轨道视图里点轨道名称，把对白、音乐等轨道输出到同一条总线，一个推子一起调。	Noch kein Bus: Klicken Sie auf „Hinzufügen zu einem Bus“, dann klicken Sie im Spur-View auf den Spurnamen, um Dialoge, Musik und andere Spuren auf denselben Bus zu legen und sie gemeinsam zu bearbeiten
+还没有标记：按 M 或下方按钮在播放头处添加	Noch kein Marker: Fügen Sie einen Marker mit M oder dem unten stehenden Knopf am Abspielkopf hinzu
+还没有读到画面，稍后再试	Noch kein Bild gelesen, versuchen Sie es später noch einmal
+还没有静帧：在播放头处抓取一张，用来对比镜头、复用调色	Noch kein Standbild: Erfassen eines Standbilds am Abspielkopf, zur Vergleichs- und Wiederverwendungs-Farbkorrektur
+还没有项目	Noch keine Projekte
+这一段已经是 {0}	Dieser Clip ist bereits {0}.
+这个备份已无法读取	Dieses Backup ist nicht lesbar.
+这个多机位片段没有声音部分	Dieser Clip mit mehreren Kameraeinstellungen hat keinen Ton.
+这个多机位片段没有画面部分	Dieser Clip mit mehreren Kameraeinstellungen hat keine Bildteile.
+这个标记没有范围：先设置时长或用入出点	Dieser Marker hat keinen Bereich: Setzen Sie zunächst die Dauer oder verwenden Sie Out-Punkte.
+这个片段没有可以做关键帧的属性	Dieser Clip hat keine Eigenschaften, die als Keyframes verwendet werden können.
+这个片段没有这条曲线	Dieser Clip hat diese Kurve nicht.
+这个视频没有自带声音，无法按波形同步	Dieses Video hat keinen eigenen Ton und kann nicht in der Wav-Form synchronisiert werden.
+这个颜色不在选区里	Diese Farbe liegt außerhalb des Auswahlfeldes.
+这个颜色在选区正中，无法只减去它	Diese Farbe liegt genau im Mittelpunkt des Auswahlfeldes, sie kann nicht einfach weggelassen werden.
+这个颜色在选区的核心里，请用减选	Diese Farbe liegt im Kern des Auswahlfeldes, verwenden Sie den Selektionsfilter.
+这个颜色已在选区的柔和边缘里	Diese Farbe liegt bereits in den sanften Rändern des Auswahlfeldes.
+这个颜色已在选区里	Diese Farbe liegt bereits im Auswahlfeld.
+这个颜色无法加入选区	Diese Farbe kann nicht zum Auswahlfeld hinzugefügt werden.
+这个颜色离选区太远，柔化够不到它，请用加选	Diese Farbe liegt zu weit vom Auswahlfeld entfernt, die Weichheit reicht nicht bis dorthin, verwenden Sie den Ergänzungsfilter.
+这台设备无法读取解码后的画面	Dieses Gerät kann die dekodierten Bilder nicht lesen.
+这台设备的编码器不支持通用 YUV 输入	Das Encodergerät dieses Geräts unterstützt keine allgemeine YUV-Eingabe.
+这条总线已不存在	Diese Bus existiert nicht mehr.
+这条素材的说明	Die Beschreibung dieses Mediums...
+这条轨道上还没有声音片段	Auf dieser Spur gibt es noch keine Soundclips.
+这里不能导出静帧。	Hier kann keine Standbildsdatei exportiert werden.
+这里已有关键帧	Hier gibt es Keyframes.
+这里已经有变速点	Hier gibt es Tempoänderungspunkte.
+这里的剪辑点已经有转场	Hier gibt es Übergänge an den Schnittpunkten.
+进入	Eintritt
+迷你时间线	Miniatur-Timeline
+追加	Hinzufügen
+追加到时间线末尾（Shift+F12）	Hinzufügen zum Ende der Timeline (Shift+F12)
+适应	Anpassung
+适配全片	Anpassung für den gesamten Film
+适配填充	Füllung mit Anpassung
+适配填充到 {0} → {1}	Füllung mit Anpassung bis zu {0} → {1}
+适配填充要先在时间线上标记入点和出点	Die Füllung muss zuerst die Eintritts- und Ausgangspunkte auf der Timeline markieren.
+适配填充（{0}）：源片段的入点到出点变速，正好填满时间线的入点到出点	Füllung mit Anpassung ({0}): Tempoänderung vom Eintrittspunkt zum Ausgangspunkt des Quellclips, um den gesamten Zeitraum zu füllen.
+逆时针	gegen den Uhrzeigersinn
+选一个房间，或调高干湿比	Wählen Sie eine Räumlichkeit oder erhöhen Sie das Feuchtigkeitsverhältnis.
+选一个预设替换整条曲线，再按需微调	Wählen Sie eine voreingestellte Alternative für die gesamte Kurve und justieren Sie sie nach Bedarf.
+选一个预设替换门限、压缩器和限制器的设置，再按需微调	Wählen Sie eine voreingestellte Alternative für die Einstiegsgrenze, Kompressor und Beschränker und justieren Sie sie nach Bedarf.
+选中的片段没有链接	Das ausgewählte Clip hat keine Verbindung.
+选择一个声音片段	Wählen Sie einen Sound-Clip aus.
+选择一个画面片段和一个声音片段来链接	Wählen Sie einen Bild-Clip und einen Sound-Clip aus, um sie zu verbinden.
+选择一个素材进行预览	Wählen Sie ein Medium aus, um eine Voransicht zu erstellen.
+选择全部{0}色片段	Wählen Sie alle Farbclicks aus {0}.
+选择全部片段	Wählen Sie alle Clips aus.
+选择右侧全部片段	Wählen Sie alle Clips auf der rechten Seite aus.
+选择形状后，片段只在形状内显示，形状外露出下层轨道	Nachdem Sie eine Form ausgewählt haben, wird der Clip nur innerhalb der Form angezeigt, während die untere Spur außerhalb der Form sichtbar ist.
+选择文件…	Wählen Sie den Datei-Ordner aus…
+选择片段后滑动	Wählen Sie einen Clip aus und bewegen Sie den Cursor.
+选择片段后滑移	Wählen Sie einen Clip aus und verschieben Sie den Cursor.
+选择片段后滚动	Wählen Sie einen Clip aus und scrollen Sie.
+选择窗口形状后，可以添加关键帧	Nachdem Sie die Form des Fensters ausgewählt haben, können Sie Keyframes hinzufügen.
+选择至少两个片段：最后点选的片段作为参照	Wählen Sie mindestens zwei Clips aus: Wählen Sie den letzten ausgewählten Clip als Referenz.
+选择至少两个画面片段：每个是一个机位（先对齐）	Wählen Sie mindestens zwei Bild-Clips aus: Jeder ist ein Kamerawinkel (stellen Sie sie zunächst aus).
+选择要导入的视频、音频或图片。素材以引用方式加入媒体池，不会复制文件。	Wählen Sie das Video, die Audio-Datei oder das Bild aus, das Sie importieren möchten. Das Medium wird in Form einer Verlinkung zum Medienspeicher hinzugefügt, ohne dass die Datei kopiert wird.
+选择音频片段后测量响度	Wählen Sie einen Sound-Clip aus und messen Sie die Lautheit.
+选择项目	Wählen Sie ein Projekt aus.
+选段 {0}	Ausgewählte {0}
+选色以外	Farbauswahl außerhalb
+逐字	Wort für Wort
+逐字打出，{0} 个字 {1} 秒打完{2}	Eingepflegt in Wortstellung: {0} Zeichen in {1} Sekunden {2}
+遮住画面移动时露出的边缘	Verdeckung der Kanten, die beim Bewegen des Bildes sichtbar werden
+遮罩	Maske
+遮罩{0}	Maske {0}
+遮罩关键帧	Keyframe-Maske
+遮罩形状	Maskenform
+遮罩形状：{0}	Form-Maske: {0}
+遮罩恢复为显示形状之内的画面	Wiederherstellung der Maske auf die Form des Bildes
+遮罩模糊	Unscharfe Maske
+遮罩精修	Feinere Bearbeitung der Maske
+遮罩跟踪	Masken-Tracking
+遮罩需要一个形状	Die Maske benötigt eine Form
+遮罩：拖动以移动	Maske: Bewegen durch Ziehen
+那里已有另一个标记	Dort gibt es bereits einen anderen Marker
+部分完成	Teilerledigt
+部分片段在已锁定的轨道上：会改动它们的编辑将被拒绝	Teile des Clips befinden sich auf gesicherten Spuren: Die Bearbeitung dieser Teile wird abgelehnt
+采样率	Abtastrate
+释放	Release
+释放空间；需要时可以再生成	Platz schaffen; kann bei Bedarf erneut erstellt werden
+重做	Wiederholen
+重做 {0} 步	Wiederholen von Schritt {0}
+重做：{0}	Wiederholen: {0}
+重命名	Umbenennen
+重命名…	Umbenennen…
+重命名媒体夹	Umbenennen des Ablages
+重命名标记	Umbenennen des Markers
+重命名片段	Umbenennen des Clips
+重命名轨道	Umbenennen der Spur
+重命名轨道 {0}	Umbenennen der Spur {0}
+重新分析	Neuanalyse
+重新分析摄像机运动	Neuanalyse der Kamerafahrt
+重新授权	Neuerlizenzieren
+重新渲染	Neurenderhalten
+重新生成代理	Neuer Proxy erstellen
+重新读取	Neu laden
+重新链接	Neulinken
+重新链接 {0} 个	Neuverknüpfen von {0} Elementen
+重新链接…	Neuverknüpfen…
+重新链接离线素材	Neuverknüpfen von Offline-Materialien
+重新链接离线素材：在设备中查找或手动选择文件	Neuverknüpfen von Offline-Materialien: Suchen oder manuell auswählen des Files im Gerät
+重新链接素材	Neuverknüpfen von Materialien
+重置	Zurücksetzen
+重置 RGB 混合器	RGB-Mischer zurücksetzen
+重置动态	Dynamik zurücksetzen
+重置均衡器	Equalizer zurücksetzen
+重置字幕样式	Untertitelstil zurücksetzen
+重置曲线	Kurve zurücksetzen
+重置标题样式	Titelsatz zurücksetzen
+重置此点	Diesen Punkt zurücksetzen
+重置混响	Hall zurücksetzen
+重置色彩扭曲器	Farbverzerrungsverfahren zurücksetzen
+重置裁切	Schnitt zurücksetzen
+重置调色	Farbkorrektur zurücksetzen
+重置闪避	Flash zurücksetzen
+重置降噪	Schärfereduzierung zurücksetzen
+重置齿音消除	Zahnlöschung zurücksetzen
+重试	Erneut versuchen
+铺满画面，{0} {1} 倍	Bild füllen, {0} {1}-fach
+铺满画面，裁去{0}各 {1}%	Bild füllen, {0} um {1}% kürzen
+链接到 {0}	An {0} anknüpfen
+链接片段	Segment anknüpfen
+链接的片段在已锁定的轨道上	Das anknüpfende Segment befindet sich auf einem gesicherten Spur
+锁定轨道	Spur sichern
+锁定轨道 {0}	Spur {0} sichern
+锐化	Schärfen
+键轨道已不存在：不起作用	Schlüsselspur nicht vorhanden: Wirkungslos
+镜 {0}	Spiegel {0}
+镜像	Spiegelbild
+镜头	Kamera
+镜头匹配	Kamerakonfiguration
+长按编辑条件或删除	Drücken länger für Bearbeitungsbedingungen oder Löschen
+长按重命名或删除	Drücken länger für Umbenennung oder Löschen
+门限	Gate
+闪避	Ausweichbewegung
+闪避 · {0}	Ausweichung · {0}
+闪避曲线	Ausweichkurve
+闪避预设	Ausweichvorlagen
+闪避预设：{0}	Ausweichvorlage: {0}
+闪避：{0}	Ausweichung: {0}
+闪避：侧链 {0}	Ausweichung: Seitengitter {0}
+闪避：关闭	Ausweichung: Ausschalten
+闪避：开启	Ausweichung: Einschalten
+阈值	Schwelle
+阈值 {0}	Schwellenwert {0}
+队列为空。设置好参数后点“加入渲染队列”。	Die Warteschlange ist leer. Setze die Parameter und klicke „Zur Warteschlange hinzufügen“.
+队列里没有等待渲染的任务，先点“加入渲染队列”	Es gibt keine Aufgaben in der Warteschlange, die gerade gerendert werden. Klicke zunächst „Zur Warteschlange hinzufügen“.
+阴影	Schatten
+降低	Reduzieren
+降噪	Scharfsignalisierung
+降噪 · {0}	Scharfsignalisierung · {0}
+降噪半径	Scharfsignalisierungsradius
+降噪半径：{0}	Scharfsignalisierungsradius: {0}
+降噪量	Menge an Scharfsignalisierung
+降噪量为 0：声音不变	Schärfungsstufe 0: Ton unverändert
+降噪量：噪声压低多少；阈值：比噪声底高多少以内算噪声	Schärfungsstufe: Wie viel Lärm abgesenkt wird; Schwellenwert: Wie hoch der Lärm ist, der als Lärm gilt
+降噪：{0}	Schärfung: {0}
+降噪：关闭	Schärfung: Ausschalten
+降噪：开启	Schärfung: Einschalten
+降序 ↓	Absteigender Reihenverlauf ↓
+限制器	Limiter
+限定器	Qualifier
+限定器页面	Seite des Limitierers
+限定器：{0}	Limitierer: {0}
+限定器：{0}{1}	Limitierer: {0}{1}
+限定器：减选颜色	Limitierer: Farbauswahl
+限定器：加选颜色	Limitierer: Farbauswahl
+限定器：反转	Limitierer: Umkehrung
+限定器：取消反转	Limitierer: Umkehrung ausschalten
+限定器：柔化减选	Limitierer: Weichheit bei Auswahl
+限定器：柔化加选	Limitierer: Weichheit bei Zusatz
+隐藏轨道	Versteckte Spuren
+需要“照片和视频”和“音乐和音频”权限才能在设备中查找文件；也可以逐个手动选择文件。	Für die Suche nach Dateien im Gerät sind Berechtigungen für „Bilder und Videos“ sowie „Musik und Audiodateien“ erforderlich; Dateien können auch manuell einzeln ausgewählt werden.
+需要另一条音频轨道作为侧链	Eine weitere Audiodraht benötigt wird als Nebenkette.
+需要麦克风权限才能录制旁白：请在系统设置里允许 {0} 使用麦克风	Für die Aufnahme des Voiceover benötigt man die Mikrofonberechtigung: Erlauben Sie {0} die Verwendung des Mikrofons in den Systemeinstellungen.
+霓虹夜	Neon-Nacht
+青	Blau
+青柠	Limetteblau
+青橙电影	Blaue Orangen-Film
+青色旗标	Blaue Flag
+静帧	Standbild
+静帧 {0}	Standbild {0}
+静帧图片缺失：{0}	Standbild fehlt: {0}
+静帧太平或几乎是单色，无法匹配	Standbild ist zu still oder fast einfarbig, kann nicht abgeglichen werden.
+静帧已删除	Standbild wurde gelöscht.
+静帧的图片已丢失，无法匹配	Bild des Standbilds ist verloren gegangen, kann nicht abgeglichen werden.
+静帧缺少素材：{0}	Standbild fehlt Material: {0}
+静态图片没有可滑移的素材	Statisches Bild hat kein verschiebbares Material.
+静音	Stille
+静音 {0}	Stille {0}
+韩	Korea
+音乐和音频	Musik und Audio
+音乐整合	Musikintegration
+音调	Tonhöhe
+音调 	Tonhöhe 
+音调归零	Tonhöhe auf Null stellen
+音调（半音）	Tonhöhe (Halbtonschritt)
+音轨 · 拖动片段两端的淡化手柄调整淡入淡出	Titel · Verändern der Unschärkegradanzeigen an den Enden des Clips zur Anpassung der Eingangs- und Ausgangszeiten
+音量	Lautstärke
+音量 {0}	Lautstärke {0}
+音量与声像	Lautstärke und Panorama
+音量关键帧	Lautstärke-Keyframes
+音量变化：调整会记录在播放头处的关键帧	Lautstärkeänderung: Die Anpassungen werden in den Keyframes am Abspielkopf aufgezeichnet
+音量变化：调整会记录在此关键帧 · 可设缓入缓出	Lautstärkeänderung: Die Anpassungen werden in diesem Keyframe aufgezeichnet · Verzögerung beim Eintreten und Verlassen möglich
+音量缓入	Lautstärkeverzögerung beim Eintreten
+音量缓出	Lautstärkeverzögerung beim Verlassen
+音频	Audio
+音频 · {0}	Audio · {0}
+音频交叉淡化	Audio-Überschneidung der Unschärkegrade
+音频无需代理	Audio ohne Proxy
+音频时间线	Audio-Timeline
+音频格式	Audioformat
+音频片段没有画面	Audio-Clip ohne Bild
+音频片段没有画面属性	Audio-Clip ohne Bild-Eigenschaften
+音频片段没有画面属性。	Audio-Clip ohne Bild-Eigenschaften.
+音频素材无法读取：{0}	Audio-Medium kann nicht gelesen werden: {0}
+音频素材：{0}	Audio-Medium: {0}
+音频轨已满：请选一条已有的音频轨	Die Audio-Track ist voll: Wählen Sie einen bereits vorhandenen Audio-Track aus.
+顶部	Oben
+项目名称	Projektname
+项目备份 · {0}	Projekt-Sicherung · {0}
+项目备份…	Projekt-Sicherung…
+项目库	Projektbibliothek
+项目文件无法读取	Projekt-Datei kann nicht gelesen werden
+项目至少要有一条时间线	Das Projekt muss mindestens einen Timeline haben
+项目里已有名为“{0}”的时间线	Im Projekt gibt es bereits einen Timeline mit dem Namen „{0}“
+项目里没有需要代理的视频	Im Projekt gibt es keine Videos, die einen Proxy benötigen
+顺时针	Mit der Uhrzeigersinnrichtung
+预延迟	Vorlaufzeit
+预览为近似效果 · 画中画与转场在导出时精确合成	Vorstellung ist eine Annäherung · In-Bild-In-Bild-Übergänge werden beim Export exakt kombiniert
+预览出错：{0}	Vorschaufehler: {0}
+预计 {0} · {1} · 	Voraussichtlich {0} · {1} · 
+预计 {0} · {1} · 仅音频 {2}	Voraussichtlich {0} · {1} · nur Audio {2}
+预设	Vordefinierte Einstellungen
+预设 {0}	Vordefinierte Einstellung {0}
+预设：{0}	Vordefinierte Einstellung: {0}
+频段	Frequenzbänder
+频率	Frequenz
+颜色	Farben
+颜色、字重、描边、阴影、背景与入场动画	Farben, Schriftgröße, Umrandung, Schatten, Hintergrund und Eintrittsanimation
+颜色减淡	Farbverstrichen
+颜色加深	Farbverstärkung
+颜色过渡	Farbübergang
+飞梭 {0}	Flugrad {0}
+飞梭模式	Flugrad-Modus
+饱和度	Sättigung
+马赛克	Mosaik
+高	Hoch
+高于时间线（{0} fps）：每秒渲染 {1} 帧，素材帧不够时重复前一帧	Höher als die Timeline ({0} fps): Jede Sekunde werden {1} Bilder gerendert, wenn nicht genügend Bilder für das Medium vorhanden sind, wird das vorherige Bild wiederholt.
+高光	Lichter
+高斯模糊	Gauß-Filterung
+高频	Hochfrequenz
+高频 {0}	Hochfrequenz {0}
+高频衰减	Hochfrequenz-Verdoppelung
+麦克风电平	Mikrofonpegel
+黄	Gelb
+黄色旗标	Gelb-Flagge
+黑	Schwarz
+黑场过渡	Schwarz-Übergang
+黑白	Schwarz-Weiß
+黑色纯色	Schwarze Fläche
+齿音消除	Zahnlöschung
+齿音消除 · {0}	Zahnlöschung · {0}
+齿音消除：关闭	Zahnlöschung: Ausschalten
+齿音消除：开启	Zahnlöschung: Einstellen
+齿音消除：强度	Zahnlöschung: Stärke
+齿音消除：频段 {0}	Zahnlöschung: Frequenzband {0}
+齿音频段	Zahnlöschungsfrequenzband
+（	（
+（{0} {1}）	（{0} {1}）
+（{0} 个不适用或已锁定，未改动）	（{0} nicht anwendbar oder gesperrt, unverändert）
+（{0} 在这段有内容，保持不动）	（{0} befindet sich in diesem Abschnitt, bleibt unverändert）
+（{0}）	（{0}）
+（已标）	（Markiert）
+（当前）	（Aktuell）
+（循环）	（Wiederholung）
+（新建轨道 {0}）	（Neuer Spur {0})
+（未能保存到“下载”文件夹）	（Nicht gespeichert in die „Download“-Ordner）
+（比片段用到的短 {0}）	（Kurz als Clip verwendet als {0})
+（空）	（Leer）
+＋ 新建媒体夹	+ Neuer Ablage
+＋ 新建智能媒体夹	+ Intelligenter Ablage
+，	，
+，PQ 母版峰值按 {0} nits	，PQ-Mutter mit Peakwert von {0} nits
+，{0}	，{0}
+，{0} 回到主输出	，{0} zurück zum Hauptausgang
+，{0}{1}	，{0}{1}
+，{0}色	，{0} Farbe
+，使用 {0} 次	，mit {0} Mal verwendet
+，偏色较重，已尽量校正	，Farbsprung stark, bereits korrigiert
+，其中 {0} 个比片段用到的短	，von denen {0} kürzer als die Clips sind
+，其中 {0} 个素材回到媒体池	，von denen {0} Materialien in den Media Pool zurückkehren
+，其他轨道剪去了同样长度	，andere Spuren wurden um die gleiche Länge gekürzt
+，原入点不在它之前，已清除	，der ursprüngliche In-Punkt nicht vorher, bereits entfernt
+，原出点不在它之后，已清除	，der ursprüngliche Out-Punkt nicht danach, bereits entfernt
+，各一个 .{0}	，jeweils ein .{0}
+，后面的片段前移 {0}	，die nachfolgenden Clips werden um {0} vorgeschoben
+，后面的片段后移	，die nachfolgenden Clips werden zurückgedrängt
+，后面的片段后移 {0}	，die nachfolgenden Clips werden um {0} zurückgedrängt
+，声音一并替换	，der Ton wurde komplett ersetzt
+，大小最多变化 {0}%	，maximale Größenänderung {0}%
+，字幕轨已满：放在 {0}（{1}）	，Untertitel-Spur voll: legen in {0} ({1})
+，已在媒体池	，bereits im Media Pool
+，已应用到“{0}”	，anwendet „{0}“
+，已打开	，geöffnet
+，已调色	，farbig korrigiert
+，并保存到 {0}	, Speichern und in {0} ablegen
+，并校正了偏色	, Farbabweichungen korrigieren
+，按时间线入出点放置	, An den Zeitpunkten in der Timeline platzieren
+，按时间线入出点替换	, An den Zeitpunkten in der Timeline ersetzen
+，改动会用到全部 {0} 个使用它的片段	, Die Änderungen verwenden alle {0} Clips, die sie verwenden
+，新建字幕轨 {0}	, Neuer Untertitel-Spur {0} erstellen
+，新素材没有声音，原声保留	, Der neue Material hat keinen Ton, der Originalton bleibt erhalten
+，旗标：	, Flaggen:
+，替换了原有 {0} 条	, Die ursprünglichen {0} Stücke ersetzt
+，最多转动 {0}°	, Bis zu {0}° Drehung
+，未使用	, Nicht verwendet
+，正在播放{0}	, Wird gerade abgespielt {0}
+，没有空闲音频轨道，未放置声音	, Keine freien Ton-Spuren, Ton nicht platziert
+，渲染入点至出点	, Rendern von In-Punkt bis Out-Punkt
+，渲染整条时间线	, Das gesamte Timeline rendern
+，真峰值可达 {0} dBTP，超过 -1 dBTP 可能削波	, Die echte Pegelhöhe kann bis zu {0} dBTP erreichen, über -1 dBTP kann abgeschnitten werden
+，素材离线	, Material offline
+，结尾 {0} 秒渐隐	, Enden in {0} Sekunden mit Verlust
+，覆盖了原有内容	, Die ursprüngliche Inhalt überdeckt
+，覆盖了原有声音	, Überdeckt den ursprünglichen Ton
+，部分差异超出色轮范围，已尽量接近	, Teile der Unterschiede liegen außerhalb des Farbräder-Bereichs, wurden so weit wie möglich angepasst
+，长度相同，后面的片段不动	, Gleiche Länge, der nachfolgende Clip bleibt unverändert
+：媒体池里没有“{0}”	: Es gibt kein „{0}“ im Medienspeicher
+：循环播放已开	: Wiedergabe ist aktiviert
+；	;
+；{0}	;{0}
+；{0} 个文件无法读取	;{0} Dateien können nicht gelesen werden
+；{0} 个未导入	;{0} Dateien wurden nicht importiert
+；之后放到时间线的片段会使用它	: Nachfolgende Clips in der Timeline werden diese Dateien verwenden
+；保留 {0}% 原画面	: {0}% des ursprünglichen Bildes bleibt erhalten
+；字幕文件：	;Untertitel-Datei:
+；当前片段的调色显示 LUT 缺失	: Die Farbkorrektur des aktuellen Clips zeigt einen fehlenden LUT
+；打开「字幕文件」可把 {0} 种语言各存一个文件	: Öffnen der „Untertitel-Datei“ ermöglicht es, {0} Sprachen jeweils als separate Dateien zu speichern
+；未包含：	: Enthalten nicht:
+；未导入：	: Nicht importiert:
+；注意：新文件比片段用到的短 {0}，超出的部分没有画面和声音	; Hinweis: Die neue Datei ist um {0} kürzer als der verwendete Ausschnitt. Im restlichen Bereich fehlen Bild und Ton.
+；还有 {0} 个离线	: Noch {0} offline Dateien

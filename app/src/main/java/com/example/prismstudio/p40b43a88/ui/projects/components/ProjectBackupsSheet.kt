@@ -1,5 +1,7 @@
 package com.example.prismstudio.p40b43a88.ui.projects.components
 
+import com.example.prismstudio.p40b43a88.ui.components.trFormat
+import com.example.prismstudio.p40b43a88.ui.components.projectDisplayName
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -47,7 +49,7 @@ fun ProjectBackupsSheet(
         properties = BackDismissSheet,
         modifier = Modifier.fillMaxWidth(),
         onDismissRequest = onClose,
-        title = { Text("项目备份 · ${ui.projectName}") },
+        title = { Text(trFormat("项目备份 · {0}", projectDisplayName(ui.projectName)), translate = false) },
     ) {
         Column(Modifier.width(640.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             if (ui.recoveryOnly) {

@@ -16,7 +16,6 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.prismstudio.p40b43a88.domain.model.OssLicense
 import com.example.prismstudio.p40b43a88.ui.components.Button
@@ -54,7 +53,11 @@ fun AboutSheet(ui: AboutUi, onShowLicense: (OssLicense?) -> Unit, onClose: () ->
                 Column(Modifier.fillMaxWidth().heightIn(max = 440.dp).verticalScroll(rememberScrollState())) {
                     Text(ui.licenseText.orEmpty(), style = PrismType.caption, color = PicoTheme.colorScheme.labelSecondary, translate = false)
                 }
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.End)) {
+                androidx.compose.foundation.layout.FlowRow(
+                    Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.End),
+                    verticalArrangement = Arrangement.spacedBy(6.dp),
+                ) {
                     Button(onClick = { onShowLicense(null) }, size = ButtonDefaults.Regular, colors = quiet) { Text("返回列表") }
                     Button(onClick = onClose, size = ButtonDefaults.Regular, colors = quiet) { Text("关闭") }
                 }
@@ -85,14 +88,16 @@ fun AboutSheet(ui: AboutUi, onShowLicense: (OssLicense?) -> Unit, onClose: () ->
                                 style = PrismType.caption,
                                 color = PicoTheme.colorScheme.labelTertiary,
                                 translate = false,
-                                maxLines = 2,
-                                overflow = TextOverflow.Ellipsis,
                             )
                         }
                         HorizontalDivider()
                     }
                 }
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.End)) {
+                androidx.compose.foundation.layout.FlowRow(
+                    Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.End),
+                    verticalArrangement = Arrangement.spacedBy(6.dp),
+                ) {
                     // `about-license-button`: one for each license the app carries a text of.
                     ui.licenses.forEach { license ->
                         Button(onClick = { onShowLicense(license) }, size = ButtonDefaults.Regular, colors = quiet) { Text("${license.label} 全文") }

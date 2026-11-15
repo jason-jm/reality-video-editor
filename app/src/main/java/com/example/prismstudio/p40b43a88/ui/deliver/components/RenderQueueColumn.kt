@@ -44,8 +44,11 @@ fun RenderQueueColumn(
     onClearDone: () -> Unit = {},
 ) {
     Column(modifier, verticalArrangement = Arrangement.spacedBy(12.dp)) {
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
-            Text("渲染队列", style = PrismType.title, color = PicoTheme.colorScheme.labelPrimary, modifier = Modifier.weight(1f), fit = true)
+        Text("渲染队列", style = PrismType.title, color = PicoTheme.colorScheme.labelPrimary)
+        androidx.compose.foundation.layout.FlowRow(
+            Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp),
+        ) {
             if (clearDoneEnabled) {
                 Button(
                     onClick = onClearDone,
@@ -102,7 +105,7 @@ private fun JobBlock(job: RenderJobUi, onCancel: (String) -> Unit, onOpen: (Stri
     )
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
-            Text(job.name, style = PrismType.body, color = PicoTheme.colorScheme.labelPrimary, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f))
+            Text(job.name, translate = false, style = PrismType.body, color = PicoTheme.colorScheme.labelPrimary, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f))
             Text(job.statusLabel, style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary)
         }
         Text(job.detail, style = PrismType.caption, color = PicoTheme.colorScheme.labelTertiary)

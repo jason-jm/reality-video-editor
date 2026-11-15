@@ -1,0 +1,2813 @@
+# Reality Video Editor · es
+ {0} 个片段	 {0} clips
+ {0} 个素材的	 {0} de los medios
+ {0} 声道	 {0} canales
+ · {0} 个复合片段	 · {0} clips compuestos
+ · 动态	 · Dinámico
+ · 无音频	 · Sin audio
+ · 真峰值 {0} dBTP，可能削波	 · Pico real {0} dBTP, posible sobreexplotación
+ · 离开斜率 {0}	 · Pendiente de salida {0}
+ · 进入斜率 {0}	 · Pendiente de entrada {0}
+ 半音	 Semitono
+ 单声道	 Mono
+ 秒	 Segundos
+ 立体声	 Estéreo
+ 等	 etc.
+ ～ 	 ~ 
+* 未包含：{0}	* No incluido: {0}
++1 档	+1 nivel
++{0} 秒	+{0} segundos
+0.00 秒	0.00 segundos
+1 低切	1 Corte Baja
+1.10：多轨、转场、标题、变速与标记，保存到“下载”	1.10: Múltiples pistas, transiciones, títulos, cambio de velocidad y marcadores, guardar en "Descargas"
+1080p 方形	1080p cuadrado
+1080p 横屏	1080p horizontal
+1080p 竖屏	1080p vertical
+1D LUT 过大：最多 {0} 个点	1D LUT excesivo: hasta {0} puntos
+2 低频	2 Bajas Frecuencias
+2 秒	2 segundos
+2 秒 · 字幕轨	2 segundos · Pista de subtítulos
+24 位按 16 位的混音精度封装（样本 ×256），用于要求 24 位的交付。	Encapsulación de 24 bits a 16 bits de precisión de mezcla (ejemplo ×256), para entregas que requieren 24 bits.
+3 中频	3 Medias Frecuencias
+3 秒 · {0} px	3 segundos · {0} px
+4 高频	4 Altas Frecuencias
+4K 横屏	4K horizontal
+6 秒	6 segundos
+AAC 48 kHz 立体声	AAC 48 kHz estéreo
+B站	Bilibili
+B站 1080p	Bilibili 1080p
+CMX 3600：V1、A1、A2，保存到“下载”	CMX 3600: V1, A1, A2, guardar en "Descargas"
+DOMAIN_MAX 必须大于 DOMAIN_MIN	DOMAIN_MAX debe ser mayor que DOMAIN_MIN.
+EDL 里没有能在媒体池中找到的素材：{0}	No hay materiales en EDL que se encuentren en la pila de medios: {0}.
+EQ 不计入响度读数	EQ no se tiene en cuenta en la lectura de sonoridad.
+FCPXML 的时间线是空的	La línea de tiempo de FCPXML está vacía.
+FCPXML 里没有时间线（sequence）	No hay línea de tiempo (sequence) en FCPXML.
+FCPXML 里没有能在媒体池中找到的素材	No hay materiales en la pila de medios que se encuentren en FCPXML.
+Final Cut、Resolve 或本应用导出的文件，按文件名匹配媒体池	Los archivos exportados por Final Cut, Resolve o esta aplicación se comparan con la pila de medios por nombre de archivo.
+LUT 尺寸无效	Tamaño del LUT no válido.
+LUT 已在库中：{0}{1}	El LUT ya está en la biblioteca: {0}{1}.
+LUT 库里已有同样的 LUT：{0}{1}{2}	Ya hay un mismo LUT en la biblioteca de LUTs: {0}{1}{2}.
+LUT 强度	Intensidad del LUT.
+LUT 数据不完整：应为 {0} 行，只有 {1} 行	Datos del LUT incompletos: Deberían haber {0} líneas, solo {1} líneas.
+LUT 没有数据	No hay datos en el LUT.
+LUT 缺失：{0} · 重新导入同一个 .cube 文件即可恢复	Falta el LUT: {0} · Reimportando el mismo archivo .cube puede restaurarlo.
+LUT 过大：最多支持 {0}³，这个是 {1}³	Tamaño excesivo del LUT: Se admite hasta {0}³, este es {1}³
+LUT 风格	Estilo del LUT
+LUT 风格 {0}	Estilo del LUT {0}
+LUT 风格：{0}	Estilo del LUT: {0}
+LUT：{0}	LUT: {0}
+PCM 48 kHz 16 位单声道	PCM 48 kHz 16 bits mono
+PICO 上的视频剪辑、调色与后期软件	Edición de vídeo, etalonaje y posproducción en PICO
+PICO 开发者协议	Acuerdo de desarrolladores de PICO
+PQ 峰值	Pico de valor máximo (PQ)
+PQ 峰值 {0} nits	Pico de valor máximo {0} nits
+RGB 分量	Componentes RGB
+RGB 混合器：{0}	Mezclador RGB: {0}
+RGB 混合器：{0} {1}	Mezclador RGB: {0} {1}
+RGB 混合器：不保持亮度	Mezclador RGB: sin mantenimiento de brillo
+RGB 混合器：保持亮度	Mezclador RGB: con mantenimiento de brillo
+RGB 混合器：单色	Mezclador RGB: monocromático
+RGB 混合器：彩色	Mezclador RGB: colorido
+Rec.2100 HLG · {0} 位	Rec.2100 HLG · {0} bits
+Rec.2100 PQ（HDR10）· {0} 位	Rec.2100 PQ (HDR10) · {0} bits
+Rec.709 Gamma 2.4（SDR）	Gamma 2.4 Rec.709 (SDR)
+SMPTE 彩条	Tiras de color SMPTE
+V1 以外的 {0} 个转场	{0} transiciones además de V1
+WAV {0} {1} 位	WAV {0} {1} bits
+WAV 只有一条声音轨	WAV solo tiene un canal de sonido
+WAV 只能写入 PCM 声音	WAV solo puede escribirse en sonido PCM
+\n* 片段有变速点：EDL 只能记一个速度，这里是第一段的	\n* Los clips tienen puntos de cambio de velocidad: EDL solo puede registrar una velocidad, este es el primer segmento
+compact|上限	Techo
+compact|删除关键帧	Borrar clave
+compact|压缩器	Comp.
+compact|添加关键帧	Añadir clave
+compact|补偿	Ganancia
+compact|衰减	Reducc.
+compact|起音	Ataque
+compact|释放	Caída
+compact|门限	Puerta
+compact|阈值	Umbral
+compact|限制器	Limit.
+tab|媒体	Medios
+tab|标题	Títulos
+tab|特效	Efectos
+tab|生成	Generadores
+tab|索引	Índice
+tab|转场	Transiciones
+{0} / {1} 个片段	{0} / {1} segmentos
+{0} / {1} 个视频有代理；在媒体页为素材生成代理	{0} / {1} videos tienen proxies; se generan proxies para los medios en la página de medios
+{0} LUFS · 真峰值 {1} dBTP	{0} LUFS · Pico real {1} dBTP
+{0} {1} 段	{0} {1} segmentos
+{0} {1} 秒	{0} {1} segundos
+{0} {1}，{2} 个关键帧	{0} {1}, {2} fotogramas clave
+{0} {1}，{2}{3}	{0} {1}, {2}{3}
+{0} {1}，{2}，{3}，{4}	{0} {1}, {2}, {3}, {4}
+{0} · {1} · {2} 个片段	{0} · {1} · {2} segmentos
+{0} · {1} 个片段 · {2} · {3}	{0} · {1} clips · {2} · {3}
+{0} · {1} 个素材	{0} · {1} materiales
+{0} · {1} 个素材 · {2}	{0} · {1} materiales · {2}
+{0} · {1} 位	{0} · {1} personas
+{0} · {1} 秒 · 湿声 {2} %	{0} · {1} segundos · {2} % de sonido húmedo
+{0} · {1}，输入时间码（时:分:秒:帧）或秒数	{0} · {1}, ingresa el código de tiempo (hora:minuto:segundo:fotograma) o número de segundos
+{0} · 到 {1}	{0} · de {1}
+{0} 上 {1} 个片段（CMX 3600 只有一条画面轨和两条声音轨）	{0} clips {1} (CMX 3600 solo tiene una pista de imagen y dos pistas de sonido)
+{0} 个	{0} unidades
+{0} 个{1}	{0} {1}
+{0} 个交叉叠化	{0} superposiciones cruzadas
+{0} 个交叉淡化	{0} desvanecimientos cruzados
+{0} 个任务失败，请查看渲染队列	{0} tareas fallaron, consulte la cola de renderizado
+{0} 个停用的片段	{0} clips desactivados
+{0} 个关键帧	{0,plural,one{# fotograma clave}other{# fotogramas clave}}
+{0} 个关键帧 · 拖动或调整会记在播放头处	{0} fotogramas clave · la desplazamiento o ajuste se registra en el cabezal de reproducción
+{0} 个关键帧 · 播放头不在片段内，移进片段再调整强度	{0} fotogramas clave · el cabezal de reproducción no está dentro del clip, mueve al clip y ajusta la intensidad
+{0} 个关键帧 · 调整会记录在此关键帧	{0} fotogramas clave · los ajustes se registrarán en estos fotogramas clave
+{0} 个关键帧 · 调整强度会在播放头处添加关键帧	{0} fotogramas clave · la intensidad de los ajustes agregará fotogramas clave en el cabezal de reproducción
+{0} 个半音	{0} semitonos
+{0} 个复合或多机位片段	{0} fragmentos compuestos o con múltiples ángulos
+{0} 个字幕文件保存失败，请检查存储空间	{0} archivos de subtítulos fallaron en la salvación, por favor verifique el espacio de almacenamiento
+{0} 个找不到素材的片段	{0} fragmentos con materiales no encontrados
+{0} 个机位 · {1}	{0} ángulos · {1}
+{0} 个机位：按轨道从下往上依次为机位 1、2…，保持现在的对齐	{0} ángulos: por pista, de abajo hacia arriba, son ángulos 1, 2..., manteniendo la alineación actual
+{0} 个标记 · Shift+↑ / ↓ 跳转	{0} marcadores · Shift+↑ / ↓ para saltar
+{0} 个标题（没有源文件）	{0} títulos (sin archivo fuente)
+{0} 个片段	{0,plural,one{# clip}other{# clips}}
+{0} 个片段 · {1}	{0,plural,one{# clip}other{# clips}} · {1}
+{0} 个片段的效果与变换	{0} efectos y transformaciones de los fragmentos
+{0} 个片段的画面变换与效果	{0} transformaciones y efectos de las imágenes de los fragmentos
+{0} 个片段的素材离线（{1}），渲染时{2}：先到媒体页重新链接	Medios sin conexión ({0,plural,one{# clip}other{# clips}}): {1}. Al renderizar: {2}. Vuelve a vincularlos en Medios.
+{0} 个片段的调色	{0} etalonajes de los fragmentos
+{0} 个片段的音量关键帧	{0} fotogramas clave de volumen de los fragmentos
+{0} 个片段（重叠处每类最多 {1} 条轨道）	{0} fragmentos (en las zonas de superposición, máximo {1} pistas por categoría)
+{0} 个画面片段按项目设置缩放	{0} fragmentos de imágenes ajustados según los ajustes del proyecto
+{0} 个素材	{0,plural,one{# archivo multimedia}other{# archivos multimedia}}
+{0} 个素材 · 共 {1}	{0} materiales · Total {1}
+{0} 个素材不在媒体池里（{1}{2}）	{0} materiales no están en el pool de medios ({1}{2})
+{0} 个素材无法读取，请检查读取权限或在媒体页重新链接。	No se puede leer: {0,plural,one{# archivo multimedia}other{# archivos multimedia}}. Comprueba el permiso de lectura o vuelve a vincular los archivos en Medios.
+{0} 个素材离线：原文件已被移动、改名或删除	{0} materiales fuera de línea: los archivos originales han sido movidos, renombrados o eliminados
+{0} 个素材离线：原文件已被移动或删除	{0} materiales fuera de línea: los archivos originales han sido movidos o eliminados
+{0} 个组件 · {1}	{0,plural,one{# componente}other{# componentes}} · {1}
+{0} 个转场按交叉溶解写出	{0} transiciones escritas de manera cruzada
+{0} 个项目 · 按最近修改排序	{0,plural,one{# proyecto}other{# proyectos}} · más recientes primero
+{0} 亮度	{0} luminosidad
+{0} 以上	Más de {0}
+{0} 以上 · 强度 {1}	Más de {0} · Intensidad {1}
+{0} 以上的频段超过 {1} dBFS 时按 4:1 压低，最多 {2} dB；在均衡器之后、动态之前	Las bandas por encima de {0} se reducen en un factor de 4:1 cuando la señal supera los {1} dBFS, en un rango de hasta {2} dB. Este cambio ocurre después del proceso de equalización, pero antes de la modificación de la dinámica de la señal.
+{0} 份成片缺少素材，请查看渲染队列	Falta material en la película {0}, por favor ver la cola de renderizado
+{0} 位	{0} personas
+{0} 使用了下列 {1} 个组件，它们按各自的许可证分发	Componentes que usa {0}: {1,plural,one{# componente}other{# componentes}}. Cada uno se distribuye con su propia licencia.
+{0} 全文	{0} texto completo
+{0} 分 {1} 秒	{0} minutos {1} segundos
+{0} 分钟前	Hace {0} minutos
+{0} 副本	{0} copias
+{0} 副本 {1}	{0} copias {1}
+{0} 可以逐个手动选择文件。	{0} archivos se pueden seleccionar manualmente uno por uno.
+{0} 在所选片段之间还有没选中的片段：一起选中，或先移开	{0} hay clips no seleccionados entre los seleccionados: seleccione todos juntos, o desplácelos primero
+{0} 在机位之间还有没选中的片段：一起选中，或先移开	{0} Hay clips no seleccionados entre los ángulos: seleccione todos juntos o desplácelos primero.
+{0} 在用	{0} Está en uso.
+{0} 在这段时间里还有其他片段，无法分解“{1}”	{0} Hay otros clips en este período, por lo que no se puede descomponer “{1}”.
+{0} 增益	{0} Ganancia.
+{0} 处声音交叉淡化	{0} Intersección de sonidos con atenuación en este punto.
+{0} 天前	{0} Hace {0} días.
+{0} 字幕语言：{1}，点按更换	{0} Idioma de subtítulos: {1}, haga clic para cambiar.
+{0} 小时前	{0} Hace {0} horas.
+{0} 已经是{1}字幕	{0} Ya tiene subtítulos en {1}.
+{0} 已经输出到{1}	{0} Ya se ha exportado a {1}.
+{0} 已锁定，无法分解“{1}”	{0} Se ha bloqueado, no se puede descomponer “{1}”.
+{0} 帧	{0} Fotogramas.
+{0} 张静帧	{0} Fotogramas fijos.
+{0} 按原尺寸居中：上下留黑边，裁去左右各 {1}%	{0} Centrado a la escala original: se dejan bordes negros arriba y abajo, se eliminan {1}% a los lados.
+{0} 按原尺寸居中：左右留黑边，裁去上下各 {1}%	{0} Centrado a la escala original: se dejan bordes negros a los lados, se eliminan {1}% arriba y abajo.
+{0} 是基础轨道，不能删除	{0} Es una pista base, no se puede eliminar.
+{0} 暂不链接	{0} No está conectado por ahora.
+{0} 有声音时压低 {1} dB	{0} {1} dB más bajito cuando hay sonido.
+{0} 条时间线{1} · 当前打开“{2}”	{0} {1} líneas de tiempo · Actualmente abierto “{2}”.
+{0} 条视频轨	{0} pistas de video
+{0} 条音频轨	{0} pistas de audio
+{0} 次 · 	{0,plural,one{# vez}other{# veces}} · 
+{0} 段：	{0} segmentos:
+{0} 比画面大：按原尺寸居中，裁去	{0} más grande que la imagen: centrado a la escala original, eliminado
+{0} 比画面小：按原尺寸居中，{1}	{0} más pequeño que la imagen: centrado a la escala original, {1}
+{0} 毫秒	{0} milisegundos
+{0} 电平	{0} nivel de volumen
+{0} 的声音逐采样原样写入，其他采样率的声音转换一次。	{0} sonido escaneado originalmente, otros sonidos convertidos a otra frecuencia.
+{0} 的轨道：{1}	{0} pista: {1}
+{0} 的输入色彩空间：	{0} espacio de color de entrada:
+{0} 秒	{0} segundos
+{0} 秒前	Hace {0} segundos
+{0} 调色	{0} etalonaje
+{0} 输出到{1}	{0} exportado a {1}
+{0} 输出到{1}，点按更改	{0} exportado a {1}, haga clic para cambiar
+{0} 需要“照片和视频”权限才能列出设备中的素材。	{0} requiere permisos de "Fotos y videos" para mostrar los materiales en el dispositivo.
+{0} 高于阈值时压低这条轨道，在推子之前	{0} se reduce a un nivel por debajo del umbral antes de la publicación.
+{0}\n导出时整体 {1} dB → {2} LUFS{3}	{0}\nAl exportar, el total de {1} dB → {2} LUFS{3}
+{0}{1}{2} · 频率 ×{3} · 长度和速度不变	{0}{1}{2} · frecuencia ×{3} · sin cambios en longitud y velocidad
+{0}×{1} · {2} · {3} 个片段	{0} clips × {1} · {2} · {3} clips
+{0}。{1}按「{2}」色调映射到 Rec.709	{0}. {1} mapado a Rec.709 según el tono «{2}»
+{0}。{1}按「{2}」色调映射到 Rec.709，母版峰值按 {3} nits	{0}. {1} mapado a Rec.709 según el tono «{2}», pico de la maqueta a {3} nits
+{0}。导出时按「{1}」色调映射到 Rec.709	{0}. Mapado a Rec.709 según el tono «{1}» al exportar
+{0}。导出时按「{1}」色调映射到 Rec.709，母版峰值按 {2} nits	{0}. Mapado a Rec.709 según el tono «{1}» al exportar, pico de la maqueta a {2} nits
+{0}。直接进入 {1} 时间线	{0}. Ir directamente a la línea de tiempo {1}
+{0}关键帧	{0} fotogramas clave
+{0}关键帧曲线：拖动关键帧改时间和数值，拖动控制点改快慢，点按空白处移动播放头	{0} curva de fotogramas clave: arrastre los fotogramas clave para cambiar el tiempo y los valores, arrastre los puntos de control para ajustar la velocidad, presione en el espacio para mover el cabezal de reproducción
+{0}到时间线	{0} a la línea de tiempo
+{0}到时间线播放头（{1}）	{0} al cabezal de reproducción de la línea de tiempo ({1})
+{0}名称不能为空	El nombre de {0} no puede estar vacío
+{0}名称最多 {1} 个字	El nombre de {0} puede contener hasta {1} caracteres
+{0}年{1}月{2}日	{2}/{1}/{0}
+{0}斜率 {1}	{0} Pendiente {1}
+{0}无法写进 LUT；当前片段没有其他调色	{0} No se puede escribir en la LUT; no hay otros ajustes de color para el clip actual.
+{0}时间线	{0} Línea de tiempo
+{0}曲线 {1}	{0} Curva {1}
+{0}月{1}日	{1}/{0}
+{0}月{1}日 {2}	{1}/{0} {2}
+{0}没有关键帧：把播放头移到片段内，点「添加关键帧」	{0} No hay fotogramas clave: mueva el cabezal de reproducción al clip y haga clic en "Añadir fotograma clave".
+{0}没有可以交换的片段	{0} No hay clips disponibles para intercambio.
+{0}的被抹平，更大的边缘和细节保留（8 位色阶）；	{0} Se ha suavizado, manteniendo bordes y detalles más detallados (escala de color de 8 bits).
+{0}色	{0} Color
+{0}色旗标	{0} Bandera de color
+{0}色旗标片段	{0} Clip con bandera de color
+{0}色片段	{0} Clip de color
+{0}超时：这台设备的编解码器没有响应	{0} Tiempo límite: el decodificador de este dispositivo no responde.
+{0}轨道已满，无法分解“{1}”	{0} La pista está llena, no se puede descomponer "{1}".
+{0}（{1}）	{0} ({1})
+{0}（备份 {1}）	{0} (Reserva {1})
+{0}（已删除）	{0} (Eliminado)
+{0}，{1}	{0}, {1}
+{0}，{1}{2}	{0}，{1}{2}
+{0}，{1}，{2}	{0}，{1}，{2}
+{0}，{1}，{2}{3}{4}	{0}，{1}，{2}{3}{4}
+{0}，从{1}平移到{2}	{0}，desplazado de {1} a {2}
+{0}，其中 {1} 个与画面尺寸不同	{0}，de los cuales {1} no tienen el mismo tamaño de imagen
+{0}，其中 {1} 个与画面比例不同	{0}，de los cuales {1} no tienen el mismo ratio de imagen
+{0}，再除以三者之和（{1}），灰色保持原来的亮度	{0}, dividido por la suma de los tres elementos ({1}), el color gris se mantiene con su brillo original.
+{0}，播放头 {1}	{0}，cabezal de reproducción {1}
+{0}，放大 {1}% 遮住边缘	{0}，ampliar {1}% para ocultar los bordes
+{0}，水平和垂直都在中间时画面不移动	{0}，la imagen no se mueve cuando tanto horizontal como vertical están en el centro
+{0}，边缘会露出	{0}，los bordes quedarán visibles
+{0}，都与画面尺寸相同	{0}，todos con el mismo tamaño de imagen
+{0}，都与画面比例相同	{0}，todos con el mismo ratio de imagen
+{0}：{1}	{0}：{1}
+{0}：声音目标轨道，再点恢复自动	{0}：pista de sonido objetivo, volver a activar automáticamente
+{0}：画面目标轨道	{0}：pista de imagen objetivo
+{0}；未保持亮度：三者之和不是 1 时画面变亮或变暗	{0}；no se mantiene el brillo: la imagen se ilumina o oscurece cuando la suma de los tres no es 1
+“{0}”不在媒体夹里	“{0}” no está en la carpeta de medios
+“{0}”不是复合片段	“{0}” no es un clip compuesto
+“{0}”不是多机位片段	“{0}” no es un clip de varios ángulos.
+“{0}”之后没有素材了，只能直接切换	Después de “{0}” no hay más material, solo se puede cambiar de clip.
+“{0}”之后的素材只够 {1}，交叉淡化按此长度进行	El material después de “{0}” solo es suficiente para {1}, la dilución cruzada se realizará según esta longitud.
+“{0}”从源入点起只有 {1}，	“{0}” tiene solo {1} desde el punto de entrada de la fuente.
+“{0}”在源播放头之前少了 {1}素材，填不满片段开头：把源播放头往后移	“{0}” falta {1} de material antes del cabezal de reproducción de la fuente, necesita más material para completar el inicio del clip: mueva el cabezal de reproducción hacia atrás.
+“{0}”在源播放头之后少了 {1}素材，填不满片段结尾：把源播放头往前移	“{0}” falta {1} de material después del cabezal de reproducción de la fuente, necesita más material para completar el final del clip: mueva el cabezal de reproducción hacia adelante.
+“{0}”已在“{1}”里	“{0}” ya está en “{1}”.
+“{0}”已经打开	“{0}” ya está activado.
+“{0}”没有代理	“{0}” no tiene proxy.
+“{0}”的时长	Duración de “{0}”.
+“{0}”的时长改为 {1}{2}	La duración de “{0}” se modifica a {1}{2}.
+“{0}”被复合片段使用，不能删除	“{0}” está siendo utilizado en un clip compuesto, no se puede eliminar.
+“{0}”里没有画面或声音	“{0}” no contiene imágenes ni sonido.
+“{0}”里面用到了当前时间线，不能放进来	“{0}” utiliza la línea de tiempo actual, no se puede agregar.
+−1 档	Nivel −1.
+−{0} 秒	−{0} segundos.
+。注意：{0} 个片段的素材离线，渲染时画面是黑场或没有声音	. Aviso: hay medios sin conexión ({0,plural,one{# clip}other{# clips}}). El resultado tendrá imagen negra o no tendrá sonido.
+「{0}」{1} {2} 秒	“{0}” {1} {2} segundos.
+「{0}」倒放，无法按声音对齐	「{0}」Se está invertiendo, no se puede alinear con el sonido.
+「{0}」变速了，无法按声音对齐	「{0}」Se ha cambiado la velocidad, no se puede alinear con el sonido.
+「{0}」找不到与参照相同的声音	「{0}」No se encuentra el mismo sonido que el referente.
+「{0}」改回使用自带的声音	「{0}」Volver a usar el sonido incluido.
+「{0}」没有声音	「{0}」No hay sonido.
+一个片段最多 {0} 个调色版本	Un clip puede tener hasta {0} versiones de etalonaje.
+一次只能交换一个片段	Solo se puede intercambiar un clip a la vez.
+一点	Un punto.
+一级校色	Primarios
+一级校色、曲线、LUT、窗口与限定器	Corrección de primer nivel, curvas, LUT, ventana y limitador.
+三全音	Tres notas musicales.
+上	Arriba.
+上一个{0}关键帧	Último {0} fotograma clave.
+上一个关键帧	Último fotograma clave.
+上一个片段	Último clip.
+上一个窗口关键帧	Último fotograma clave de la ventana.
+上一级时间线已不存在	La línea de tiempo de nivel superior ya no existe.
+上一编辑点	Último punto de edición.
+上下	Arriba/abajo.
+上下各 {0}%	{0}% arriba y abajo
+上下留黑边	Dejar margen negro arriba y abajo
+上弯 {0}%	Curva ascendente: {0}% arriba
+上弯：淡入更快到位，淡出保持更久再落下；下弯相反。也可以拖时间线上淡化中间的圆点。	Curva ascendente: entrada más rápida y desaparición más prolongada; la curva descendente es al revés. También se puede desvanecer el punto en medio en la línea de tiempo.
+上方	Arriba
+上浮	Subir
+上移	Mover hacia arriba
+上限	Límite superior
+上面的速度只改第 {0} 段（播放头所在），其余各段不变	La velocidad en la parte superior solo afecta al segmento {0} (donde se encuentra el cabezal de reproducción), los demás segmentos permanecen inmutables.
+下	Abajo
+下一个{0}关键帧	Próximo {0} fotograma clave
+下一个关键帧	Próximo fotograma clave
+下一个片段	Próximo clip
+下一个窗口关键帧	Próximo fotograma clave en la ventana
+下一条字幕	Próximo subtítulo
+下一编辑点	Próximo punto de edición
+下三分之一	Tres cuartos abajo
+下弯 {0}%	Curva descendente: {0}% abajo
+下方	Abajo
+下移	Desplazar hacia abajo
+下限	Límite inferior
+不导出音频	No exportar el audio
+不放入媒体夹	No incluir en la carpeta de medios
+不放大	No ampliar
+不映射	No mapear
+不是 FCPXML 文件	No es un archivo FCPXML
+不是有效的 .cube LUT：缺少 LUT_3D_SIZE 或 LUT_1D_SIZE	No es una .cube LUT válida: falta LUT_3D_SIZE o LUT_1D_SIZE
+不能把时间线放进它自己里面	No se puede colocar la línea de tiempo dentro de ella misma
+不能移动到该轨道	No se puede mover a esa pista
+不调整	No ajustar
+不透明度	Opacidad
+不限	Sin limitaciones
+不限（场记里的关键词）	Sin limitaciones (palabras clave en el guion de escena)
+与“{0}”之间直接切换；拖动可交叉淡化（等功率）	Cambio directo entre “{0}”; la desplazamiento permite una atenuación cruzada (con igual potencia)
+与下方轨道的画面混合	Mezclar con la imagen de la pista inferior
+与右侧片段交换	Intercambiar con el clip del lado derecho
+与左侧片段交换	Intercambiar con el clip del lado izquierdo
+两侧余量都不够，转场缩短为 {0} 秒（{1}）。	No hay suficiente espacio en ambos lados; la transición se acorta a {0} segundos ({1}).
+中	Medio
+中圈	Medio Círculo
+中心	Central
+中文	Chino
+中灰纯色	Medio Gris Puro
+中间调 Gamma	Medios Tónos de Intermedio
+中间调更柔和：皮肤、天空更平滑	Medios Tónos Más Suaves: Piel, Cielo Más Suave
+中间调的纹理更突出（降噪之后）	Textura de Medios Tónos Más Destacada (Después del Noise Reduction)
+中间调细节	Detalles de Medios Tónos
+中频	Medio Frecuencia
+中频 {0} @ {1} Hz	Medio Frecuencia {0} @ {1} Hz
+为 {0} 手动选择文件	Seleccionar archivos manualmente para {0}
+为全部视频生成代理	Generar proxies para todo el video
+主校色	Primario
+主输出	Máster
+主输出推子	Botón de Salida Principal
+主输出电平	Nivel de Salida Principal
+之后放到时间线的片段使用视频自带的声音	Los clips que se agregarán a la línea de tiempo usarán el sonido incluido en el video
+事件 {0}：{1} 通道没有对应的轨道	Evento {0}: No hay pista correspondiente para el canal {1}
+事件 {0}：与前面的片段重叠	Evento {0}: Superpone con el clip anterior
+事件 {0}：媒体池里没有“{1}”	Evento {0}: No hay "{{1}}" en el grupo de medios
+互换	Intercambio
+交付	Entrega
+交付时间线，{0}	Línea de tiempo de entrega, {0}
+交叉淡化	Desvanecimiento cruzado
+交叉溶解	Disolución cruzada
+交换{0}和{1}	Intercambio de {0} y {1}
+交换后链接的片段会和其他片段重叠	Los clips intercambiados se superpondrán con otros clips
+亮度	Luminancia
+亮度·饱和	Brillo·Saturación
+亮度对饱和度	Relación entre brillo y saturación
+亮度映射	Mapa de brillo
+亮度起伏约 {0} 级以内	Variación de brillo de aproximadamente {0} niveles
+亮度阈值	Umbral de brillo
+亮度阈值：明暗起伏多大以内算噪点；色度阈值：色彩斑点多大以内算噪点。半径越大越平滑，也越慢	Umbral de brillo: ¿Qué tan grande la variación de brillo se considera ruido? Umbral de colorimetría: ¿Qué tan grandes los puntos de color se consideran ruido? Cuanto mayor el radio, más suave, pero también más lento
+亮部 Gain	Ganancia en la parte brillante
+人声压缩	Compresión de voz
+人声清晰	Claridad de la voz
+人物 · 地点	Personas · Lugares
+仅右	Solo la derecha
+仅声音	Solo el sonido
+仅好条	Solo las buenas.
+仅好条：只收集场记里标为好条的素材	Solo se recogen los materiales que son considerados “buenos” en los marcadores de escena.
+仅左	Solo a la izquierda
+仅画面	Solo la imagen
+仅音频 · {0}	Solo audio · {0}
+今天 {0}	Hoy a las {0}
+从 LUT 库移除“{0}”？	¿Quitar «{0}» de la biblioteca de LUT?
+从 LUT 库移除…	Se elimina del banco de LUTs…
+从{0} {1}°	Desde {0} {1}°
+从{0}（{1}）拉远到全画面	Alejar desde {0} ({({1})}) hasta toda la pantalla.
+从“{0}”交叉淡化 {1}（等功率，前一段在切点后延续）	Desde “{0}” hasta {1} (con igual potencia; la continuidad se mantiene después del punto de intersección).
+从“{0}”粘贴到“{1}”：关键帧保持各自的时间。	Se han pegado los datos desde “{0}” hasta “{1}”. Los fotogramas clave se mantienen en sus respectivas fechas.
+从两侧合拢	Cerrar por los lados.
+从中心展开	Desplazarse desde el centro.
+从中间打开	Abra desde el centro.
+从全画面推近到{0}，{1}	Desplazando la vista hacia el centro de la pantalla hasta la posición {0}; {1}
+从右推入	Empujar desde la derecha
+从媒体池或素材库添加素材到时间线	Agregar materiales desde el grupo de medios o la biblioteca de materiales a la línea de tiempo
+从左推入	Empujar desde la izquierda
+从播放头 {0} 开始，录音时节目从这里播放	Comenzar desde la cabezal de reproducción {0}, donde se reproduce el programa durante la grabación
+从播放头向前、向后跟随窗口里的画面，沿途添加关键帧	Seguir la imagen en la ventana hacia adelante y hacia atrás, agregando fotogramas clave en el camino
+从播放头向前、向后跟随遮罩里的画面，沿途添加关键帧	Seguir la máscara en la ventana hacia adelante y hacia atrás, agregando fotogramas clave en el camino
+从片段第一帧到最后一帧平滑推近、拉远或平移，适合照片	Empujar suavemente desde el primer fotograma hasta el último, acercando, alejando o trasladando, adecuado para fotos
+从设备导入	Importar desde el dispositivo
+代理	Proxy
+代理 {0}×{1} · {2}	Proxy {0}×{1} · {2}
+代理：{0}，点按生成或删除代理	Proxy: {0}, tocar para generar o eliminar un proxy
+以最后点选的「{0}」为参照，按声音把其余片段移到同步的位置	Usar el último seleccionado "{{0}}" como referencia, para sincronizar los demás fragmentos con el sonido
+任意旗标	Marca arbitraria
+位深	Profundidad de bits
+位置	Posición
+位置 X	Posición X
+位置 Y	Posición Y
+位置、裁切、窗口和标题按画面的比例保存：换成竖屏或方形，版面跟着新画面走	Guardar la posición, el recorte, la ventana y el título en proporción a la imagen: cambiar a pantalla vertical o cuadrada, ajustando la disposición según la nueva imagen
+低于时间线（{0} fps）：每秒渲染 {1} 帧，按时刻取画面，舍去其余 {2} 帧	Menor que la línea de tiempo ({0} fps): Se renderizan {1} fotogramas por segundo, se toman imágenes en cada momento, y se descartan los otros {2} fotogramas.
+低切	Low Cut
+低切 {0} Hz	Low Cut {0} Hz
+低频	Baja frecuencia
+低频 {0}	Baja frecuencia {0}
+作用于输出到这条总线的所有轨道，在各轨道的处理之后	Aplica a todas las pistas que salen a esta bus, después del procesamiento de cada pista.
+作用于这条轨道上的全部字幕	Aplica a todos los subtítulos de esta pista.
+作用于这条轨道的所有片段	Aplica a todos los clips de esta pista.
+作用于这条轨道的所有片段，在均衡器之前	Aplica a todos los clips de esta pista, antes del ecualizador.
+作用于这条轨道的所有片段，在均衡器之后、推子之前	Aplica a todos los clips de esta pista, después del ecualizador y antes del empuje.
+作用于这条轨道的所有片段，在推子之前	Aplica a todos los clips de esta pista, antes del empuje.
+使用	Usar
+使用 {0} 次	Uso: {0,plural,one{# vez}other{# veces}}
+使用代理播放	Usar proxy para reproducción
+使用次数	Número de usos
+侧链	Cadena lateral
+侧链 {0}	Cadena lateral {0}
+侧链无声	Cadena lateral sin sonido
+侧链轨道 {0}	Pista lateral {0}
+保存	Guardar
+保存到相册失败：{0}	Error al guardar en el álbum: {0}
+保存失败 · 检查存储后可再次返回重试	Guardado fallido · Verifique la almacenamiento y vuelva a intentar
+保存静帧失败：{0}	Error al guardar fotogramas fijos: {0}
+保持	Mantener
+保持亮度	Mantener el brillo
+保持亮度：混合只改变颜色，不改变亮度	Mantener el brillo: Solo cambia el color, no el brillo
+保持色相	Mantener el tono
+保留整个画面，{0}留黑边	Conservar toda la imagen, {0} con bordes negros
+修剪	Cortar
+修剪开头到播放头	Cortar desde el inicio hasta el cabezal de reproducción
+修剪片段	Cortar el clip
+修剪结尾到播放头	Cortar desde el final hasta el cabezal de reproducción
+修改字号	Cambiar el tamaño del texto
+修改时间	Última modificación
+修改标题文字	Cambiar el texto del título
+倒放	Replay
+倒放失败	Replay fallido
+倒放生成中	Se está generando el replay
+倒放的片段不能检测场景剪切	El clip en replay no puede detectar el corte de escena
+倒放的片段不能添加变速点	No se pueden agregar puntos de cambio de velocidad a clips invertidos.
+倒放的片段不能添加变速点：先关闭倒放	No se pueden agregar puntos de cambio de velocidad a clips invertidos: desactive primero la inversión.
+倒放的片段不能稳定	Los clips invertidos no son estables.
+倒放的片段不能跟踪窗口	Los clips invertidos no pueden seguir una ventana.
+倒放的片段不能跟踪遮罩	Los clips invertidos no pueden seguir una máscara.
+倒放素材已生成：{0}	El material invertido ya se ha generado: {0}
+倒放素材生成失败：{0}。关闭再打开倒放可重试。	La generación del material invertido falló: {0}. Desactívelo y vuelva a intentarlo.
+倒放素材生成失败：{0}（{1}）	La generación del material invertido falló: {0} ({1})
+停在出点	Detener en el punto de salida.
+停止并保存	Detener y guardar
+停用 {0} 个片段	Desactivar {0} clips.
+停用全部	Desactivar todos.
+停用片段	Desactivar un clip.
+停用节点	Desactivar un nodo.
+停用节点 {0}	Desactivar el nodo {0}.
+停用节点 {0}（Ctrl+D）	Desactivar el nodo {0} (Ctrl+D).
+先为片段选择遮罩形状	Seleccionar primero la forma de la máscara para el clip.
+先吸取颜色建立限定器	Seleccionar el color para crear un limiter.
+先吸取颜色建立限定器，再精修它的选区。	Seleccionar el color para crear un limiter y luego ajustar su selección con más precisión.
+先在左侧媒体池中选择素材	Primero, seleccione los materiales en el grupo de medios de la izquierda.
+先在时间线上标记入点和出点	Primero, marque los puntos de entrada y salida en la línea del tiempo.
+先在时间线上选择一个声音片段	Primero, seleccione un fragmento de audio en la línea del tiempo.
+先在时间线上选择一个多机位片段	Primero, seleccione una escena con varios actores en la línea del tiempo.
+先在时间线上选择要修剪的片段	Primero, seleccione en la línea del tiempo los fragmentos que desea cortar.
+先在曲线上点选一个关键帧	Selecciona primero un fotograma clave en la curva
+先在画廊中选择一张静帧	Primero, seleccione una imagen estática en la galería.
+先在画廊里选一张静帧	Primero, seleccione una imagen estática en la galería.
+先开启动态缩放	Primero, active la escala dinámica.
+先开启抠像	Primero, iniciemos el proceso de selección de la imagen a eliminar.
+先开启稳定	Primero, activa la estabilidad.
+先抓取或选择一张静帧	Primero, seleccione o capture una imagen estática.
+先按 I / O 标记	Primero, haga clic en el marcador I/O.
+先标记入点和出点	Primero, marque los puntos de entrada y salida.
+先标记时间线入点和出点（I / O）	Primero, marque los puntos de entrada y salida en la línea del tiempo (I/O).
+先画一个窗口，再跟踪	Primero, dibuja una ventana; luego, sigue paso a paso.
+先选择{0}形状，再添加关键帧	Primero, seleccione la forma {0}. Luego, agregue los fotogramas clave.
+先选择一个片段	Primero, seleccione un fragmento de texto.
+先选择一个画面片段	Primero, seleccione un fragmento de imagen.
+光流	Flujo de luz
+入出点：用标记范围	Punto de entrada y salida: con rango de marcadores
+入场转场	Transición de entrada
+入点 	Punto de entrada 
+入点 {0}	Punto de entrada {0}
+入点 {0} · 出点 {1} · 	Punto de entrada {0} · Punto de salida {1} · 
+入点 {0} → 出点 {1}（{2}）	Punto de entrada {0} → Punto de salida {1} ({2})
+入点 {0} 至出点 {1}	Punto de entrada {0} hasta Punto de salida {1}
+入点到出点	De punto de entrada a punto de salida
+入点到出点之间没有画面	No hay imagen entre el punto de entrada y el punto de salida
+入点处已有另一个标记	Ya hay otro marcador en el punto de entrada
+入点必须早于出点	El punto de entrada debe ser anterior al punto de salida
+入点至出点	Del punto de entrada al punto de salida
+入点至出点之间和之后都没有片段	No hay clips entre y después del punto de entrada y el punto de salida
+入点至出点之间没有片段	No hay clips entre el punto de entrada y el punto de salida
+全屏	Pantalla completa
+全画面	Imagen completa
+全画面不需要跟踪：先选择圆形、矩形或渐变	No es necesario seguir la imagen completa: seleccione primero circular, rectangular o degradado
+全部	Todo
+全部时间线加入	Añadir toda la línea de tiempo
+全部时间线加入渲染队列	Añadir toda la línea de tiempo a la cola de renderizado
+全部添加	Añadir todo
+全部渲染	Renderizar todo
+全部片段	Todos los clips
+全部素材	Todos los medios
+全部重置	Reiniciar todo
+八度	Octava
+关	Apagar
+关于 {0}	Acerca de {0}
+关联的音频片段会与其他片段重叠	Los clips de audio asociados se superpondrán con otros clips
+关键帧	Fotograma clave
+关键帧 {0}/{1} · {2} · {3}	Fotograma clave {0}/{1} · {2} · {3}
+关键帧已不存在	El fotograma clave ya no existe
+关键帧斜率	Pendiente del fotograma clave
+关键帧曲线编辑器	Editor de curvas de fotogramas clave
+关键帧移到第 {0} 帧	Mover el fotograma clave al {0}er fotograma
+关键帧移到第 {0} 帧 · {1}	Mover el fotograma clave al {0}er fotograma · {1}
+关键帧缓动	Bucle de fotogramas clave
+关键帧缓动：{0}	Suavizador de fotogramas clave: {0}
+关键词	Palabras clave
+关键词“{0}”	Palabra clave “{0}”
+关键词包含	Palabras clave que incluyen
+关键词条件最多 {0} 个字	Número máximo de caracteres para palabras clave: {0}
+关键词用逗号或顿号隔开；媒体池搜索和智能媒体夹都会用到这些信息	Las palabras clave se separan con comas o puntos suspensivos; esta información se utilizará en la búsqueda de carpeta de medios y en los medios inteligentes
+关闭	Cerrar
+关闭低切	Apagar la reducción de tamaño
+关闭动态缩放	Apagar la escala dinámica
+关闭抠像	Apagar el recorte de luz
+关闭稳定	Apagar la estabilización
+关：把亮度或色度阈值调高即开启	Apagar: activa si aumentas los umbrales de brillo o saturación
+关：调高后，静止处的噪点按前后帧平均掉	Apagar: después de aumentar, la ruina en las partes quietas se distribuye entre fotogramas anteriores y posteriores
+其中 {0} 个素材回到媒体池	{0} medios regresan a la carpeta de medios
+其他轨道在这段空隙里有内容，删除它会让“{0}”和链接的片段错位	Otras pistas tienen contenido en este espacio; eliminarlo haría que los fotogramas vinculados con “{0}” se desalineen
+内圈	Interior
+再高 {0} dB 以上的声音不受影响	Sonidos por encima de {0} dB no se afectarán
+写入视频文件时出错：请确认设备还有空间后重试（{0}）。	Error al escribir en el archivo de video: verifica que el dispositivo tenga espacio y intenta de nuevo ({0}).
+净化白场	Purificación de zonas blancas
+净化黑场	Limpieza de fondo negro
+净化黑场去掉零星的弱选区，净化白场补满选区里的空洞，模糊半径柔化选区边缘。打开“显示选区”查看效果。	La limpieza de fondo negro elimina los seleccionados débiles dispersos y rellena los vacíos en los seleccionados con fondo blanco, suavizando los bordes de los seleccionados con un radio de difuminación. Abra "Mostrar selección" para ver el efecto.
+减弱嘶声	Reducción del chirrido
+减选	Selección reducida
+减选：点击画面中的颜色移出选区	Selección reducida: Haga clic en un color en la imagen para sacarlo del seleccionado
+出点 {0}	Punto de salida {0}
+出点不能在时间线开头	El punto de salida no puede estar al inicio de la línea de tiempo
+分割片段	División de clips
+分析失败：{0}	Análisis fallido: {0}
+分析摄像机的抖动，逐帧反向移动画面去掉它	Analizar el movimiento de la cámara, mover la imagen hacia atrás por fotograma para eliminarlo
+分解	Descomposición
+分解复合片段	Descomposición de clips compuestos
+分解复合片段 {0}	Descomposición de clips compuestos {0}
+分辨率	Resolución
+切换到此版本	Cambiar a esta versión
+切换到此版本（Shift+Alt+[ ]）	Cambiar a esta versión (Shift+Alt+[ ])
+切换时间线	Cambiar la línea de tiempo
+切换机位	Cambiar el ángulo
+切换特效	Cambiar los efectos especiales
+切换调色版本	Cambiar la versión de etalonaje
+划像	Selección de imágenes
+划像对比	Comparación de selecciones de imágenes
+列表	Lista
+刚刚	Ahora
+创建	Crear
+创建 {0} 个副本	Crear {0} copias
+创建副本	Crear copias
+创建项目	Crear proyecto
+删除	Eliminar
+删除 {0}	Eliminar {0}
+删除 {0} 个片段	Eliminar {0} clips
+删除{0}	Eliminar {0}
+删除{0}关键帧	Eliminar {0} fotogramas clave
+删除代理	Eliminar proxy
+删除入点至出点	Eliminar punto de entrada a punto de salida
+删除关键帧	Eliminar fotograma clave
+删除区间	Eliminar intervalo
+删除变速点	Eliminar punto de cambio de velocidad
+删除媒体夹	Eliminar carpeta de medios
+删除当前时间线	Eliminar la línea de tiempo actual
+删除当前版本	Eliminar la versión actual
+删除当前调色版本	Eliminar la versión de etalonaje actual
+删除总线	Eliminar el bus
+删除所有空隙	Eliminar todos los espacios vacíos
+删除控制点	Eliminar puntos de control
+删除时间线	Eliminar la línea de tiempo
+删除智能媒体夹	Eliminar la carpeta de medios inteligente
+删除曲线控制点	Eliminar puntos de control de curvas
+删除最近的	Eliminar el más reciente
+删除标记	Eliminar los marcadores
+删除片段	Eliminar los clips
+删除空隙	Eliminar los espacios vacíos
+删除空隙（{0}）	Eliminar los espacios vacíos ({0})
+删除节点	Eliminar nodos
+删除节点 {0}	Eliminar nodo {0}
+删除调色版本	Eliminar la versión de etalonaje
+删除轨道	Eliminar la pista
+删除轨道 {0}	Eliminar la pista {0}
+删除这个项目？	¿Eliminar este elemento?
+删除静帧	Eliminar el fotograma fijo
+到播放头	Ir al cabezal de reproducción
+前一个片段	Primer clip
+前一片段出点后余量不够，转场移向剪辑点前（{0}）。	Después del punto de salida del primer clip, no hay suficiente material; la transición se mueve hacia el punto de edición anterior ({0}).
+前一片段出点后只剩 {0} 秒素材，转场缩短为 {1} 秒。	Después del punto de salida del primer clip, solo quedan {0} segundos de material; la transición se acorta a {1} segundos.
+前一片段出点后和本片段入点前都没有余量素材，按硬切播放。	Después del punto de salida del primer clip y antes del punto de entrada de este clip, no hay material suficiente; reproducción por corte brusco.
+前一片段出点后没有余量素材，转场无法显现它，按硬切播放。	Después del punto de salida del primer clip, no hay material suficiente; la transición no puede mostrarse, reproducción por corte brusco.
+前一片段太短，无法过渡，按硬切播放。	El primer clip es demasiado corto para la transición; reproducción por corte brusco.
+前一片段太短，转场缩短为 {0} 秒（{1}）。	El primer clip es demasiado corto; la transición se acorta a {0} segundos ({1}).
+前移	Avanzar hacia adelante
+前第 {0} 个片段	El {0}º clip anterior
+前进	Proceder hacia adelante
+前面没有片段	No hay clips anteriores
+前面没有相邻片段，转场从下层画面（或黑场）显现。	No hay clips adyacentes; la transición se muestra desde la imagen inferior (o negro).
+前面没有相邻片段：转场从剪辑点开始，从下层画面（或黑场）显现。	No hay clips adyacentes: la transición comienza en el punto de edición, se muestra desde la imagen inferior (o negro).
+前面没有第 {0} 个片段	No hay el {0}º clip anterior
+前面没有紧挨着的声音片段，无法交叉淡化	No hay clips de sonido contiguos en la parte delantera, por lo que no es posible difuminarlos entre sí.
+剪切	Cortar
+剪切片段	Fragmento de corte
+剪贴板是空的	La pizarra está vacía
+剪贴板是空的：先复制一个片段	La pizarra está vacía: copie primero un clip
+剪辑	Edición
+剪辑点 	Punto de edición 
+剪辑点不能再往前了	El punto de edición no puede ir más hacia adelante
+剪辑点不能再往后了	El punto de edición no puede ir más hacia atrás
+剪辑点前	Antes del punto de edición
+剪辑点前 {0} 秒、后 {1} 秒	Antes del punto de edición {0} segundos, después de {1} segundos
+剪辑点后	Después del punto de edición
+剪辑点所在的轨道已锁定	La pista donde se encuentra el punto de edición está bloqueada
+加入渲染队列	Añadir a la cola
+加选	Selección adicional
+加选：点击画面中的颜色加入选区	Selección adicional: haga clic en el color en la imagen para seleccionar
+动态 {0}	Dinámico {0}
+动态 · {0}	Dinámico · {0}
+动态传输曲线	Curva de transmisión dinámica
+动态缩放	Zoom dinámico
+动态缩放幅度	Alcance del escalado dinámico
+动态缩放方向	Dirección del escalado dinámico
+动态缩放焦点	Foco del escalado dinámico
+动态缩放缓动	Escalado dinámico con movimiento
+动态缩放起止画面：	Imágenes de inicio y final del escalado dinámico:
+动态预设	Preconfiguraciones dinámicas
+动态预设：{0}	Preconfiguraciones dinámicas: {0}
+动态：{0}{1}	Dinámico: {0}{1}
+动态：关闭压缩器	Dinámico: Desactivar compresor
+动态：关闭门限	Dinámico: Desactivar límite
+动态：关闭限制器	Dinámico: Desactivar limitador
+动态：启用	Dinámico: Activar
+动态：开启压缩器	Dinámico: Activar compresor
+动态：开启门限	Dinámico: Activar límite
+动态：开启限制器	Dinámico: Activar limitador
+动态：旁通	Bypass
+动画	Animación
+匹配帧	Emparejamiento de fotogramas
+匹配帧：{0} {1}	Correspondencia de fotogramas: {0} {1}
+匹配静帧	Correspondencia de fotogramas fijos
+匹配静帧：按静帧的暗部、中间调和亮部调整当前片段	Correspondencia de fotogramas fijos: Ajustar el clip actual según el tono oscuro, medio y claro de los fotogramas fijos
+升序 ↑	Ascendente ↑
+升高	Aumentar
+半径	Radio
+半径 {0}：周围 {1} 像素	Radio {0}: {1} píxeles alrededor
+单个文件	Archivo único
+单声道	Mono
+单声道素材：左右两边本来就相同	Medio mono: Los lados izquierdo y derecho son ya iguales
+单独片段	Clips individuales
+单独的声音片段不能做成机位：先把它链接到一个画面	No se pueden convertir fragmentos de voz individuales en ángulos: Vincúlalos primero a una imagen
+单色	Monocromático
+单色：按灰度的混合输出黑白画面	Monocromático: Salida en blanco y negro según la mezcla de grados de gris
+历史记录	Historial
+压低 {0}	Bajada {0}
+压低量为 0：声音不变	Cantidad de bajada 0: El sonido no cambia
+压缩亮度后，超出的颜色降低饱和度：保持亮度和色相	Comprimir la luminosidad y reducir la saturación de los colores que sobresalen: Mantener la luminosidad y el tono
+压缩器	Compresor
+原位置：{0} · {1}	Posición original: {0} · {1}
+原位置：{0}{1}	Posición original: {0}{1}
+原尺寸	Tamaño original
+原文件已被移动或删除	El archivo original ha sido movido o eliminado
+原调：拖动以升高或降低音调，长度和速度不变	Tono original: Arrastre para aumentar o reducir el tono, manteniendo la longitud y velocidad
+去低频噪声	Eliminación de ruido de baja frecuencia
+去掉绿幕或蓝幕，露出下方轨道的画面	Eliminar la pantalla verde o azul, mostrando la imagen de la pista inferior
+去白	Eliminar el blanco
+去设置	Eliminar los ajustes
+去黑	Eliminar el negro
+参照片段「{0}」没有声音	La secuencia de referencia «{0}» no tiene sonido
+参考白（203 nits）对齐 SDR 白，更亮的部分直接裁切	Alinear el blanco de referencia (203 nits) con el blanco SDR, recortando las partes más brillantes
+及链接的片段	Y las secuencias vinculadas
+反转	Invertir
+反转窗口：调整窗口外	Ventana de invertir: Ajustar fuera de la ventana
+反转遮罩	Máscara de invertir
+反转遮罩：显示形状之外的画面	Máscara de invertir: Mostrar la imagen fuera de la forma
+反转限定器：调整未选中的颜色	Limitador de invertir: Ajustar los colores no seleccionados
+发光	Brillo
+取消	Cancelar
+取消同步	Cancelar sincronización
+取消同步音频	Cancelar sincronización de audio
+取消总线独奏	Cancelar solo de bus
+取消总线静音	Cancelar silencio de bus
+取消独奏	Cancelar solo
+取消跟踪	Cancelar seguimiento
+取消选择	Cancelar selección
+取消链接	Cancelar enlace
+取消静音	Cancelar silencio
+变亮	Aumentar
+变暗	Disminuir
+变速	Velocidad
+变速 	Cambio de velocidad 
+变速 {0}	Cambio de velocidad {0}
+变速后片段时长自动调整，后面的片段随之移动。	La duración del clip se ajusta automáticamente después del cambio de velocidad, lo que hace que el siguiente clip se mueva en consecuencia.
+变速处理	Proceso de cambio de velocidad
+变速处理：{0}	Proceso de cambio de velocidad: {0}
+变速点	Punto de cambio de velocidad
+叠加	Superposición
+只作用于这个片段，在轨道的均衡器之前	Aplica solo a este clip, antes del ecualizador de la pista
+只压缩亮度、保持比例：颜色更饱满，过亮的颜色会被裁切	Solo comprimir la luminosidad, manteniendo la proporción: los colores se vuelven más completos, los colores demasiado brillantes serán recortados
+只导出声音：AAC {0} kbps 立体声 .m4a，保存到“音乐/{1}”。	Exportar solo el sonido: AAC {0} kbps estéreo .m4a, guardar en "Música/{1}"
+只导出音频时不能关闭声音	No se puede desactivar el sonido al exportar solo el audio
+只有一个关键帧，没有变化可以缓动	Solo hay un fotograma clave, no hay cambios, se puede usar motion blur
+只有声音片段可以交叉淡化	Solo los clips de sonido pueden desvanecerse
+只有声音片段可以变调	Solo los clips de sonido pueden modificar el tono
+只有声音片段可以设置声道	Solo los clips de sonido pueden configurar los canales
+只有声音片段有均衡器	Solo los clips de sonido tienen ecualizador
+只有声音片段有声像	Solo los clips de sonido tienen panorama
+只有字幕轨有语言	Solo las pistas de subtítulos tienen idioma
+只有画面片段可以加遮罩	Solo los clips de imagen pueden tener máscaras
+只有画面片段可以抠像	Solo los clips de imagen pueden realizar desenfoque
+只有画面片段可以设置动态缩放	Solo los clips de imagen pueden configurar escala dinámica
+只有画面片段可以设置变速处理	Solo los clips de imagen pueden configurar procesamiento de velocidad
+只有画面片段可以设置合成模式	Solo los clips de imagen pueden configurar modo de síntesis
+只有画面片段可以设置画面布局	Solo los clips de imagen pueden configurar disposición de la imagen
+只有画面片段可以设置缩放方式	Solo los clips de imagen pueden configurar método de escala
+只有画面片段可以调色	Solo se puede etalonar clips de imagen.
+只有画面片段有调色版本	Solo los clips de imagen tienen una versión etalonada.
+只有视频片段可以检测场景剪切	Solo los clips de video pueden detectar cortes de escena.
+只有视频片段可以稳定	Solo los clips de video pueden estabilizarse.
+只有视频片段可以跟踪窗口	Solo los clips de video pueden rastrear ventanas.
+只有视频片段可以跟踪遮罩	Solo los clips de video pueden rastrear máscaras.
+只有视频素材可以同步音频	Solo los medios de video pueden sincronizar el audio.
+只有音频片段有音量线	Solo los clips de audio tienen una línea de volumen.
+只用右声道，两边都听到它（适合只录在右声道的领夹麦）	Solo la banda derecha, se escucha en ambos lados (ideal para micrófonos que solo graban en la banda derecha).
+只用左声道，两边都听到它（适合只录在左声道的领夹麦）	Solo la banda izquierda, se escucha en ambos lados (ideal para micrófonos que solo graban en la banda izquierda).
+只能为视频片段定格	Solo se puede detener un clip de video.
+只能把调色应用到画面片段	Solo se puede aplicar el etalonaje a clips de imagen.
+只能选择视频轨道作为画面目标	Solo se puede seleccionar una pista de video como destino de la imagen.
+只能选择音频轨道作为声音目标	Solo se puede seleccionar una pista de audio como destino del sonido.
+可用入出点设范围	Es posible establecer un rango con puntos de entrada y salida.
+右	Derecha.
+右 {0}	Derecha {0}.
+右上	Arriba derecha.
+右下	Abajo derecha.
+右侧	Derecha
+右移	Desplazar hacia la derecha
+合成模式	Modo de síntesis
+合成模式：{0}	Modo de síntesis: {0}
+同名，但时长或大小不同	De nombre igual, pero con duración o tamaño diferente
+同名，大小和时长一致	De nombre igual, con tamaño y duración coincidentes
+同名，时长一致	De nombre igual, con duración coincidente
+同时跟随	Seguir al mismo tiempo
+同步	Sincronizar
+同步的音频已不在媒体池中	El audio sincronizado ya no está en la pila de medios
+同步音频	Audio sincronizado
+同步音频：{0}，点按选择录音文件	Audio sincronizado: {0}, haga clic para seleccionar el archivo de grabación
+名称	Nombre
+名称不能为空	El nombre no puede estar vacío
+名称包含	El nombre contiene
+名称含“{0}”	El nombre contiene “{0}”
+名称最多 {0} 个字	El nombre puede contener hasta {0} caracteres
+名称条件最多 {0} 个字	Las condiciones del nombre pueden contener hasta {0} caracteres
+名称没有变化	El nombre no cambia
+后移	Rebajar
+后退	Retroceder
+后面的片段不动：加长到下一个片段为止，缩短留下空隙	Fragmento posterior sin cambios: Alargar hasta el siguiente fragmento, acortando para dejar espacio
+后面的片段跟着移动，不覆盖也不留空隙	Fragmento posterior que se mueve junto, sin cubrir ni dejar espacio
+向中心收拢	Acercar hacia el centro
+含 HDR 素材（{0}）：时间线为 {1}，导出时按「{2}」色调映射	Contenido HDR ({0}): Línea de tiempo {1}, mapa de tonos «{2}» al exportar
+启用	Activar
+启用 {0} 个片段	Activar {0} fragmentos
+启用全部	Activar todos
+启用动态：关闭即旁通	Activar dinámico: Desactivar significa bypass
+启用均衡器：关闭即旁通	Activar ecualizador: Desactivar significa bypass
+启用效果	Activar efectos
+启用混响	Activar reverberación
+启用片段	Activar fragmento
+启用节点	Activar nodo
+启用节点 {0}	Activar nodo {0}
+启用节点 {0}（Ctrl+D）	Activar nodo {0} (Ctrl+D)
+启用闪避：关闭即旁通	Activar evasión: Desactivar significa bypass
+启用降噪	Activar noise reduction
+启用齿音消除	Activar eliminación de sonidos dentales
+吸取	Absorber
+吸取幕布颜色	Color de la cortina de absorción
+吸取颜色	Color de absorción
+吸取：点击画面中幕布的颜色	Absorber: haga clic en el color de la cortina en la imagen
+吸管：点击画面中的颜色	Lápiz: haga clic en el color en la imagen
+吸附	Ajuste magnético
+吸附已关闭	Adsorción desactivada
+吸附已开启	Adsorción activada
+和	Y
+品红	Fucsia
+响度	Sonoridad
+响度已是 {0} LUFS	La sonoridad es ya {0} LUFS
+响度标准化	Normalización de sonoridad
+响度范围 {0}	Rango de sonoridad {0}
+响度范围 {0}，真峰值 {1}	Rango de sonoridad {0}, pico real {1}
+响度还在测量中	La sonoridad todavía está siendo medida
+噪声底来自“{0}”（{1}）：每个文件各自测量，压低的是接近它的声音	El fondo de ruido proviene de “{0}” ({1}): cada archivo se mide por separado, el sonido que se baja es el más cercano a él
+噪声谱：噪声底和阈值线	Espectro de ruido: el fondo de ruido y la línea de umbral
+噪声谱：还没有测量	Espectro de ruido: aún no se ha medido
+四周留黑边	Dejar bordes negros alrededor
+图片	Imagen
+图片 · 5 秒	Imagen · 5 segundos
+图片和标题没有可以变速的画面	La imagen y el título no tienen imágenes con cambio de velocidad
+图片无需代理	La imagen no necesita proxy
+图片本身就是静帧，无需定格	La imagen es un fotograma fijo, no se necesita congelación
+图片没有可以变速的画面	La imagen no tiene imágenes con cambio de velocidad
+图片没有可以补出的中间帧	La imagen no tiene fotogramas intermedios que se puedan extraer
+图片素材固定为 5 秒，无需标记入出点	El material de la imagen es fijo en 5 segundos, no se necesita marcar puntos de entrada y salida
+圆形	Redondo
+圆形划像	Trazado circular
+在 {0} 	En {0} 
+在 {0} 把{1}切到{2}（{3}）	En {0} cortar {1} a {2} ({3})
+在剪辑页把视频加到时间线后，可以在这里逐个调色。	En la página de edición, después de agregar el video a la línea de tiempo, se puede ajustar el etalonaje uno por uno.
+在右侧“媒体夹”中把选中的素材放进来。	En el "carpeta de medios" de la derecha, coloque el material seleccionado.
+在左侧“特效”库选择效果，然后点“应用到所选片段”。	En la "biblioteca de efectos especiales" de la izquierda, seleccione un efecto y luego haga clic en "Aplicar a los clips seleccionados".
+在推子和声像之后；片段后面有空隙时，尾音延续进去（最长 {0} 秒，素材要有余量）	Después de la proyección y el panorama; cuando hay espacio detrás del clip, continúe el sonido allí (máximo {0} segundos, el material debe tener suficiente espacio)
+在播放头处分割	Dividir en el cabezal de reproducción
+在播放头处定格 2 秒	Detenga la reproducción durante 2 segundos.
+在播放头处添加	Añadir en el marco de visualización.
+在播放头处添加变速点，把片段分成几段，各段可以设置自己的速度	Se pueden agregar puntos de cambio de velocidad en el inicio del video, de modo que el segmento se divida en varias partes, y cada parte pueda tener su propia velocidad.
+在播放头标记入点（I）	Indicar el punto de inicio en la cabeza de reproducción (I).
+在播放头标记出点（O）	Se marcan puntos (O) en la cabeza de la reproducción.
+在播放头添加标记	Añadir marcadores en la cabecera de la reproducción
+在时间线上选择一个片段以调整属性；长按片段可剪切、复制、粘贴；按住 Ctrl / Cmd 点按或开启「多选」可选择多个片段。	Seleccione un segmento en la línea del tiempo para modificar sus propiedades. Puede presionar el botón durante un tiempo para cortar, copiar o pegar ese segmento. También puede seleccionar varios segmentos al presionar la tecla Ctrl/Cmd y activar la opción “Múltiples selecciones”.
+在时间线上选择一个片段，这里显示它的关键帧曲线：缩放、位置、旋转、不透明度、裁切、特效强度或音量随时间的变化	Selecciona un segmento en la línea del tiempo. A continuación, se mostrará la curva de los fotogramas clave relacionados con esa selección: escala, posición, rotación, opacidad, cortes, intensidad de efectos especiales o volumen, etc., en función del tiempo.
+在此输入字幕	Aquí se puede ingresar el subtítulo.
+在监视器上拖动可移动遮罩 · 点菱形按钮添加关键帧，让遮罩随时间移动	Desplaza el botón en forma de rombo en el monitor para agregar fotogramas clave, de modo que el marco se mueva a lo largo del tiempo.
+在相册中查看	Consulte el álbum de fotos.
+在素材库中选择一个媒体，或在时间线上选择片段	Seleccione un medio de comunicación en la biblioteca de materiales, o bien, elija un fragmento en la línea del tiempo.
+场 {0}	Sala {0}
+场次	Cantidades
+场次、镜头、条次各最多 {0} 个字	Se pueden utilizar hasta {0} caracteres para el número de escena, toma y segmento.
+场记	Notas de escena.
+场记 · {0}	Notas de escena · {0}.
+场记没有变化	No hay cambios en las notas de escena.
+场记：{0}，点按编辑场次、镜头、条次、关键词和备注	Notas de escena: {0}, haga clic para editar el número de escena, toma, segmento, palabras clave y notas.
+均衡器	Ecualizador
+均衡器 {0}	Ecualizador {0}.
+均衡器 · {0}	Ecualizador · {0}.
+均衡器曲线：拖动编号点调整频段	Curvas de ecualizador: arrastre los puntos numéricos para ajustar las bandas.
+均衡器预设	Ajustes predeterminados del ecualizador.
+均衡器预设：{0}	Ajustes predeterminados del ecualizador: {0}.
+均衡器：{0}	Ecualizador: {0}.
+均衡器：{0}{1}	Ecualizador: {0}{1}.
+均衡器：关闭低切	Ecualizador: Desactivar el corte bajo.
+均衡器：启用	Ecualizador: Activar.
+均衡器：开启低切	Ecualizador: Activar el corte bajo.
+均衡器：旁通	Ecualizador: Pasarela.
+垂直	Vertical.
+垂直位置	Posición vertical.
+填不满时间线入出点（{0}）	No se pueden llenar los puntos de entrada y salida en la línea de tiempo ({0})
+填充	Llenar
+增益	Ganancia
+增益已到极限：{0} LUFS（目标 {1}）	La ganancia ha alcanzado el límite: {0} LUFS (Objetivo: {1})
+增益衰减	Desaceleración de la ganancia
+声像	Panorama
+声像 {0}	Panorama {0}
+声像关键帧	Fotogramas clave de panorama
+声道	Canales
+声道：{0}	Canal: {0}
+声音	Sonido
+声音 {0}	Sonido {0}
+声音将落在 {0}	El sonido se ubicará en {0}
+声音目标改为自动：视频的原声到 A1，纯音频到音乐轨 A2	El objetivo del sonido se cambia a automático: el sonido original del video a A1, audio puro a pista musical A2
+声音落在的音频轨道（自动：原声到 A1，音乐到 A2）	El sonido se ubicará en la pista de audio correspondiente (automático: sonido original a A1, música a A2)
+声音：机位 {0}	Sonido: Ángulo {0}
+处理声音时出错：请重试；如果反复出现，试着关掉部分音频效果（{0}）。	Error al procesar el sonido: inténtelo de nuevo; si el problema persiste, intente desactivar algunos efectos de audio ({0}).
+处理画面时出错：请重试；如果反复出现，试着关掉部分特效或降低分辨率（{0}）。	Error al procesar la imagen: inténtelo de nuevo; si el problema persiste, intente desactivar algunos efectos especiales o reducir la resolución ({0}).
+备份失败：存储空间不足或不可写	Fallo en la copia: falta espacio de almacenamiento o el espacio no es escritible.
+备注	Notas
+备注最多 {0} 个字	Las notas deben tener un máximo de {0} caracteres
+备注（可选）	Notas (opcional)
+复制	Copiar
+复制当前时间线	Copiar la línea de tiempo actual
+复制当前版本的调色，另试一种（Ctrl+Shift+N）	Copiar el etalonaje actual y probar otro (Ctrl+Shift+N)
+复制时间线	Copiar la línea de tiempo
+复制的片段不能把这项给到这个片段	El clip copiado no puede asignar esta función al clip original
+复制的片段没有可以粘贴到所选片段的属性	El clip copiado no tiene atributos que puedan ser pegados al clip seleccionado
+复制调色	Copiar el etalonaje
+复合片段	Clip compuesto
+复合片段 {0}	Clip compuesto {0}
+复合片段 · 	Clip compuesto · 
+复合片段 · {0}	Clip compuesto · {0}
+复合片段不能倒放：打开后为里面的片段倒放	Los clips compuestos no pueden invertirse: se puede invertir el contenido dentro del clip una vez abierto
+复合片段不能变速：打开后为里面的片段变速	Los clips compuestos no pueden cambiar de velocidad: se puede cambiar la velocidad dentro del clip una vez abierto
+复合片段和多机位片段不能做成机位	Los clips compuestos y los de múltiples ángulos no pueden convertirse en ángulos
+复合片段的时间线不能在这里删除：回到上一级后删除复合片段	La línea de tiempo del clip compuesto no puede eliminarse aquí: se debe eliminar el clip compuesto al volver al nivel anterior
+复合片段的时间线不能复制：回到上一级后复制复合片段	La línea de tiempo del clip compuesto no puede ser copiada: se debe copiar el clip compuesto al volver al nivel anterior
+外圈	Perímetro exterior
+多层画面需要约 {0} GB 临时空间来逐层合成，设备只剩 {1} GB。请清理空间，或缩短渲染范围后重试。	Para la síntesis de múltiples imágenes, se necesita aproximadamente {0} GB de espacio temporal. El dispositivo solo tiene {1} GB disponible. Por favor, limpie el espacio o intente nuevamente reduciendo el alcance de la renderización.
+多机位	Múltiples ángulos
+多机位 {0}	Múltiples ángulos {0}
+多机位 · {0}	Múltiples ángulos · {0}
+多机位 · 机位 {0}	Múltiples ángulos · Ángulo {0}
+多机位片段	Fragmentos de múltiples ángulos
+多选	Selección múltiple
+多选已关闭	Selección múltiple desactivada
+多选已开启：点按片段加入或移出选择，在空白处拖动可框选	Selección múltiple activada: Haga clic en el fragmento para agregarlo o eliminarlo de la selección. Arrastre por el espacio vacío para seleccionar más elementos.
+多选：点按片段加入或移出选择，在空白处拖动可框选	Selección múltiple: Haga clic en el fragmento para agregarlo o eliminarlo de la selección. Arrastre por el espacio vacío para seleccionar más elementos.
+夜景，跑步	Noche, corriendo
+夜空渐变	Transición de color del cielo nocturno
+大	Grande
+大七度	Septante grande
+大三度	Tercio grande
+大二度	Segundo grande
+大六度	Sexto grande
+大厅	Salón
+大小	Tamaño
+失败	Error
+失败：{0}	Error: {0}
+好条	Buena línea
+好条：标记为可用的一条	Buena línea: línea marcada como disponible
+如 1:00、+15、-1:00:00	Como 1:00, +15, -1:00:00
+如 2A	Como 2A
+如 3	Como 3
+如 4	Como 4
+媒体	Medios
+媒体夹	Carpeta de medios
+媒体夹 {0}	Carpeta de medios {0}
+媒体夹 {0}，{1} 个素材，长按重命名或删除	Carpeta de medios {0}, {1} materiales, presione y mantenga el botón para renombrar o eliminar
+媒体夹不存在	La carpeta de medios no existe
+媒体夹是空的	La carpeta de medios está vacía
+媒体夹里的素材仍在媒体池中；删除媒体夹不会删除素材	Los materiales en la carpeta de medios todavía están en la pila de medios; eliminar la carpeta de medios no eliminará los materiales
+媒体夹：{0}，点按放入其他媒体夹	Carpeta de medios: {0}, haga clic para colocar en otra carpeta de medios
+媒体已保存，字幕文件未保存：{0}	El medio se ha guardado, pero el archivo de subtítulos no se ha guardado: {0}
+媒体池	Biblioteca de medios
+媒体池是空的	La biblioteca de medios está vacía
+媒体池视图	Vista del conjunto de medios
+媒体池里没有音频文件：先导入录音	No hay archivos de audio en la pila de medios: por favor, importa los grabaciones de audio primero.
+媒体池里的视频都已有代理	Todos los videos en el “pool de medios” ya tienen un agente asignado.
+媒体池里还没有素材	Todavía no tenemos material en el pool de medios.
+字号	Tamaño de los caracteres
+字幕	Subtítulos
+字幕{0}	Subtítulos {0}
+字幕文件	Archivo de subtítulos
+字幕文字	Texto de los subtítulos
+字幕显示在画面底部；导出时会烧录进画面，也可另存 SRT。	Los subtítulos se muestran en la parte inferior de la pantalla. Al exportar los datos, los subtítulos se graban dentro de la imagen; también es posible guardarlos en formato SRT.
+字幕样式：{0}	Estilo de subtítulos: {0}
+字幕样式：颜色	Estilo de los subtítulos: Color
+字幕的样式在轨道样式里调整	El estilo de los subtítulos se ajusta en la sección de estilos de la pista.
+字幕语言：{0}	Idioma de los subtítulos: {0}
+字幕轨上的 {0} 条字幕（可用“导出字幕”）	En el track de subtítulos, hay {0} subtítulos disponibles para exportación.
+字幕轨上的字幕不能放进复合片段	Los subtítulos en el track de subtítulos no pueden ser incluidos en los segmentos compuestos.
+字幕轨道不存在	La pista de subtítulos no existe.
+字幕轨道不能作为编辑目标	La pista de subtítulos no puede ser utilizada como destino de edición.
+字幕随对白出现和消失，没有淡入淡出	Subtítulos que aparecen y desaparecen con el diálogo, sin efecto de transición
+字幕颜色 {0}	Color de los subtítulos {0}
+字幕：{0}	Subtítulos: {0}
+字重	Grado de negritura
+定格 · {0}	Captura de imagen · {0}
+定格 · {0} · {1}	Captura de imagen · {0} · {1}
+定格帧	Framas de captura
+实线：中低频 {0} 秒衰减 60 dB · 虚线：8 kHz {1} 秒	Línea continua: Decadencia de frecuencias medias y bajas {0} segundos, 60 dB · Línea discontinua: 8 kHz, {1} segundos
+宽	Ancho
+宽高比	Relación de aspecto
+对开门	Puertas opuestas
+对比度	Contraste
+对白	Diálogo
+对白字幕	Subtítulos de diálogo
+对白门限	Límite de diálogo
+对齐	Alineación
+对齐后「{0}」会与「{1}」重叠：先挪开它	Después de la alineación, «{0}» se superpondrá con «{1}»: mueva primero
+对齐后「{0}」会完全移出时间线开头	Después de la alineación, «{0}» se moverá completamente al inicio de la línea de tiempo
+导入	Importación
+导入 EDL	Importar EDL
+导入 EDL…	Importar EDL…
+导入 FCPXML	Importar FCPXML
+导入 FCPXML…	Importar FCPXML…
+导入 LUT…	Importar LUT…
+导入 LUT（.cube 文件）	Importar LUT (archivo .cube)
+导入 {0} 个素材	Importar {0} materiales
+导入失败：无法读取所选文件	Error de importación: no se puede leer el archivo seleccionado
+导入媒体	Importar medios
+导入字幕	Importar subtítulos
+导入的 EDL	EDL importado
+导入的 FCPXML	FCPXML importado
+导入的 LUT {0}（{1}）	LUT importado {0} ({1})
+导入设备里的视频、音频和图片，它们会出现在这里。	Importar videos, audio e imágenes del dispositivo; estos aparecerán aquí.
+导入顺序	Orden de importación
+导出 EDL…	Exportar EDL…
+导出 FCPXML…	Exportar FCPXML…
+导出字幕文件	Exportar subtítulos
+导出当前帧	Exportar fotograma actual
+导出时	Al exportar
+导出画面	Exportar vídeo
+导出音频	Exportar audio
+导演	Director
+导演 · 剪辑	Director · Edición
+将永久删除“{0}”的时间线、调色、混音设置和全部项目备份。设备上的原始素材会保留。	Se eliminarán permanentemente la línea de tiempo, el etalonaje, la mezcla y todas las copias de los proyectos que contengan {0}. Los materiales originales en el dispositivo se conservarán.
+将链接到 {0}{1} · {2}	Vincular a {0}{1} · {2}
+小	Pequeño
+小七度	Siete grados pequeños
+小三度	Tres grados pequeños
+小二度	Dos grados pequeños
+小六度	Seis grados pequeños
+小房间	Habitación pequeña
+尚未保存	No guardado
+居中	Centrar
+居中大标题	Título centrado
+展平	Plano
+展平多机位片段	Plano de varios ángulos
+展平多机位片段 {0}	Plano de varios ángulos {0}
+峰值限制	Limitación de pico
+嵌套时间线	Línea de tiempo anidada
+嵌套时间线 · 	Línea de tiempo anidada · 
+左	Izquierda
+左 {0}	Izquierda {0}
+左上	Superior izquierda
+左下	Inferior izquierda
+左侧	Izquierda
+左右	Izquierda y derecha
+左右互换：左声道放到右边，右声道放到左边	Intercambiar izquierda y derecha: colocar el canal izquierdo en el lado derecho y el canal derecho en el lado izquierdo
+左右各 {0}%	{0}% en cada lado izquierda y derecha
+左右声道保持原样	Mantener los canales izquierdo y derecho sin cambiar
+左右声道混合为一路，两边相同，各为原来的一半	Mezclar los canales izquierdo y derecho en un solo canal, manteniendo la misma cantidad en ambos lados, cada uno la mitad de lo original
+左右留黑边	Dejar bordes negros en izquierda y derecha
+左移	Desplazar hacia la izquierda
+差值	Diferencia
+已	Ya
+已{0}添加 {1}	Ya {0} agregado {1}
+已为 {0} 个素材加上{1}色旗标	Se ha agregado la bandera {1} a {0} materiales
+已为{0}添加关键帧 · 共 {1} 个	Se han agregado fotogramas clave para {0} · Total de {1} fotogramas clave
+已为“{0}”应用转场：{1}	Se ha aplicado una transición a “{0}”: {1}
+已为素材加上{0}色旗标	Se ha agregado una bandera de color {0} al material
+已从 EDL 导入 {0} 个片段，{1}{2}	Se han importado {0} clips de EDL, {1}{2}
+已从 FCPXML 导入 {0} 个片段，{1}{2}	Se han importado {0} clips de FCPXML, {1}{2}
+已从 LUT 库移除“{0}”	“{0}” ha sido eliminado de la biblioteca de LUT
+已使用	Utilizado
+已保存 {0} 个字幕文件到 Download/{1}	Archivos de subtítulos guardados en Download/{1}: {0}
+已保存 {0} 个视频到 Movies/{1}	Vídeos guardados en Movies/{1}: {0}
+已保存 {0} 个音频文件到 Music/{1}	Archivos de audio guardados en Music/{1}: {0}
+已修剪“{0}”，时长 {1}	Se ha cortado “{0}”, duración {1}
+已停用	Desactivado
+已停用 {0} 个片段：不播放、不渲染	Se han desactivado {0} clips: no se reproducirán, no se renderizarán
+已停用 · 画面跳过	Desactivado · Salto de imagen
+已停用“{0}”{1}：不播放、不渲染	“{0}”{1} está desactivado: no se reproducirá, no se renderizará
+已停用节点 {0}：画面跳过这个节点，设置保留	Se ha desactivado el nodo {0}: salte este nodo en la imagen, configurar para mantener
+已停用：画面跳过这个节点，设置保留	Desactivado: La imagen pasa por este nodo, se mantiene la configuración
+已关闭缓入	Desactivado el retraso de entrada
+已关闭缓出	Desactivado el retraso de salida
+已减选：选区不再包含这个颜色	Eliminado: La selección ya no contiene este color
+已分解“{0}”：放回 {1} 个片段	Descomponer “{0}”: Restaurar {1} clips
+已切换到{0}	Cambiado a {0}
+已切换到“{0}”	Cambiado a “{0}”
+已创建 {0} 个片段的副本（{1}）	Se han creado {0} copias de los clips ({({1})})
+已创建副本：{0}	Copias creadas: {0}
+已创建副本：“{0}”（{1}）	Copias creadas: “{0}” ({({1}))}
+已删除 {0} 个片段，保留空隙	Se han eliminado {0} clips, se mantienen los espacios vacíos
+已删除 {0} 处空隙，共 {1} 秒	Se han eliminado los espacios vacíos en {0} lugar(s), en total {1} segundos
+已删除 {0} 的内容，留下空隙	Se ha eliminado el contenido de {0}, quedando los espacios vacíos
+已删除 {0} 秒空隙，后面的片段前移{1}	Se han eliminado los espacios vacíos de {0} segundos, los clips posteriores se mueven hacia adelante {1}
+已删除{0}	Eliminado {0}
+已删除{0}{1}	Eliminado {0}{1}
+已删除{0}关键帧 · 还剩 {1} 个	Se han eliminado {0} fotogramas clave · quedan {1} por eliminar
+已删除{0}关键帧，{1}不再移动	Se han eliminado {0} fotogramas clave, {1} ya no se moverá
+已删除{0}的关键帧 · 还剩 {1} 个	Se han eliminado {0} fotogramas clave · quedan {1} por eliminar
+已删除{0}的关键帧，{1}不再变化	Se eliminaron los fotogramas clave de {0}, {1} ya no cambia.
+已删除{0}的关键帧，强度不再变化	Se eliminaron los fotogramas clave de {0}, la intensidad ya no cambia.
+已删除{0}，显示{1}	Se eliminó {0}, se mostrará {1}.
+已删除“{0}”	Se eliminó “{0}”.
+已删除“{0}”及链接的片段，保留空隙	Se eliminaron los clips relacionados con “{0}”, se mantienen los espacios vacíos.
+已删除“{0}”的代理	Se eliminó el proxy de “{0}”.
+已删除“{0}”，保留空隙	Se eliminó “{0}”, se mantienen los espacios vacíos.
+已删除“{0}”，打开“{1}”	Se eliminó “{0}”, se abrirá “{1}”.
+已删除“{0}”，部分备份未能清理	Se eliminó “{0}”, se ha perdido parte de la copia.
+已删除关键帧 · 还剩 {0} 个	Se eliminaron los fotogramas clave · quedan {0} por eliminar.
+已删除关键帧，{0}不再变化	Se eliminaron los fotogramas clave, {0} ya no cambia.
+已删除关键帧，片段不再有动画	Se eliminaron los fotogramas clave, el clip ya no tiene animación.
+已删除变速点 · 还剩 {0} 个	Se eliminaron los puntos de cambio de velocidad · quedan {0} por eliminar.
+已删除变速点，片段恢复匀速	Se eliminaron los puntos de cambio de velocidad, el clip recupera la velocidad uniforme.
+已删除声像关键帧 · 还剩 {0} 个	Se eliminaron los fotogramas clave del panorama · quedan {0} por eliminar.
+已删除声像关键帧，声像不再变化	Se eliminaron los fotogramas clave del panorama, el panorama ya no cambia.
+已删除媒体夹“{0}”{1}	Se eliminó la carpeta de medios “{0}” {1}.
+已删除智能媒体夹“{0}”，素材仍在媒体池中	Se eliminó la carpeta inteligente de medios “{0}”, los materiales todavía están en la pila de medios.
+已删除节点 {0}	Nodo {0} eliminado
+已删除调色关键帧 · 还剩 {0} 个	Fotogramas clave de etalonaje eliminados · quedan {0} restantes
+已删除调色关键帧，调色不再变化	Fotogramas clave de etalonaje eliminados, el etalonaje ya no cambiará
+已删除轨道 {0}	Pista {0} eliminada
+已删除轨道 {0} 及其中 {1} 个片段	Pista {0} y sus {1} clips eliminados
+已删除音量关键帧 · 还剩 {0} 个	Fotogramas clave de volumen eliminados · quedan {0} restantes
+已删除音量关键帧，音量不再变化	Fotogramas clave de volumen eliminados, el volumen ya no cambiará
+已剪切 {0} 个片段	{0} clips eliminados
+已剪切“{0}”	" {0} " eliminado
+已加入渲染队列：{0}	Añadido a la cola de renderizado: {0}
+已加入渲染队列：{0}{1}	Añadido a la cola de renderizado: {0}{1}
+已加选：选区扩大到包含这个颜色	Selección ampliada para incluir este color
+已匹配到静帧：暗部、中间调、亮部按通道对齐	Asegurado con fotogramas fijos: sombras, medios tonos, luces alineados por canal
+已反转遮罩：显示形状之外的画面	Invertida la máscara: mostrar la imagen fuera de la forma
+已取消	Cancelado
+已取消 {0} 组链接	{0} grupo de enlaces cancelado
+已取消录音	Grabación cancelada
+已取消链接：画面和声音可以分别移动和修剪	Enlace cancelado: la imagen y el sonido pueden moverse y cortarse por separado
+已叠加“{0}”到 {1} · {2}（{3}）	Superpuesto " {0} " a {1} · {2} ({3})
+已同步「{0}」：两者同时开始	Se ha sincronizado con «{0}»: ambos comienzan al mismo tiempo.
+已同步「{0}」：录音比画面早开始 {1} 秒	Se ha sincronizado con «{0}»: la grabación comienza {1} segundos antes que la imagen.
+已同步「{0}」：录音比画面晚开始 {1} 秒	Se ha sincronizado con «{0}»: la grabación comienza {1} segundos después que la imagen.
+已启用 {0} 个片段	Se han activado {0} clips.
+已启用“{0}”{1}	Se ha activado «{0}» {1}.
+已启用节点 {0}	Se han activado los nodos {0}.
+已在 {0} {1}“{2}”（{3}）	Se ha definido en {0} {1} «{2}» ({3}).
+已在 {0} 分割 {1} 个片段	Se han dividido {0} clips en {1} fragmentos.
+已在 {0} 定格 {1}，后面的片段顺延	Se ha detenido {0} en {1}, y los fragmentos posteriores se han retrasado.
+已在 {0} 波纹覆盖“{1}”（{2}，原为 {3}）	En {0} se ha cubierto con desplazamiento «{1}» ({2}, originalmente {3}).
+已在 {0} 添加{1}	En {0} se ha añadido {1}.
+已在 {0} 添加下一条字幕	En {0} se ha añadido el siguiente subtítulo.
+已在媒体池	En el grupo de medios.
+已在第 {0} 帧添加关键帧 · 共 {1} 个	En el {0} fotograma se ha añadido un fotograma clave · Total de {1} fotogramas clave.
+已备份“{0}”	Se ha realizado la copia de «{0}».
+已复制 {0} 个片段	Se han copiado {0} clips.
+已复制“{0}”	Se ha copiado «{0}».
+已复制“{0}”及链接的片段	Se han copiado «{0}» y los clips vinculados.
+已复制“{0}”的调色	Copiado el etalonaje de “{0}”
+已复制为“{0}”	Copiado como “{0}”
+已完成	Completado
+已导入	Importado
+已导入 LUT：{0}（{1}）{2}	Importado LUT: {0} ({1}) {2}
+已导入 {0} 个素材	Importados {0} materiales
+已导入 {0} 个素材，{1} 个无法读取	Importados {0} materiales, {1} no pudieron leerse
+已导入 {0} 条{1}字幕（{2}）	Se han importado {0} subtítulos de {1} palabras (con un total de {2})
+已导出 EDL（{0} 个事件）到 {1}{2}	Exportado EDL ({0} eventos) a {1}{2}
+已导出 FCPXML（{0} 个片段）到 {1}{2}	Exportado FCPXML ({0} clips) a {1}{2}
+已导出当前帧：{0}.png，保存在“图片/{1}”	Exportado fotograma actual: {0}.png, guardado en “Imágenes/{1}”
+已将 {0} 个片段{1} {2} 条轨道{3}	Se han importado {0} clips, {1} {2} pistas, {3}
+已将 {0} 个片段标为{1}色	Se han marcado {0} clips con el color {1}
+已将 {0} 个片段的{1}修剪到播放头	Se ha recortado el {1} de {0} clips hasta el cabezal de reproducción
+已将 {0} 个片段的{1}波纹修剪到播放头，后面的片段前移 {2}	Se ha recortado el desplazamiento de {1} de los {0} clips hasta el cabezal de reproducción, los clips posteriores se han desplazado hacia adelante por {2}
+已将“{0}”与{1}的“{2}”交换	Se ha intercambiado “{0}” con “{2}” de {1}
+已将“{0}”放入“{1}”	“{0}” se ha colocado en “{1}”
+已将“{0}”的{1}粘贴到 {2} 个片段	Los {1} de “{0}” se han pegado a {2} clips
+已将“{0}”的{1}粘贴到“{2}”	Los {1} de “{0}” se han pegado a “{2}”
+已将“{0}”的转场换成：{1}	La transición de “{0}” se ha cambiado por: {1}
+已将“{0}”移出媒体夹	“{0}” se ha eliminado de la carpeta
+已将“{0}”移到 {1}	“{0}” se ha movido a {1}
+已将“{0}”重命名为“{1}”	“{0}” se ha renombrado a “{1}”
+已将片段标为{0}色	Los clips se han marcado con el color {0}
+已展平“{0}”：换成所选机位的 {1} 个片段	“{0}” se ha planificado: se han cambiado a {1} clips en los ángulos seleccionados
+已应用{0}“{1}”的调色	Se ha aplicado el etalonaje de “{1}” a {0}
+已应用特效：{0}	Se ha aplicado el efecto: {0}
+已开启代理播放：{0} 个视频用代理，渲染仍用原片	Se ha activado la reproducción por proxy: {0} videos utilizan proxy, la renderización sigue utilizando la versión original
+已开启代理播放：还没有代理，在媒体页为素材生成	Se ha activado la reproducción por proxy: aún no hay proxy, se genera en la página de medios
+已开启缓入 · 到达此关键帧时逐渐减速	Se ha activado la desaceleración gradual al llegar a este fotograma clave
+已开启缓出 · 离开此关键帧时逐渐加速	Se ha activado la aceleración gradual al salir de este fotograma clave
+已开：{0} / {1} 个视频用代理播放，渲染始终用原片	Abiertos: {0} / {1} videos se están reproduciendo con proxy, el renderizado siempre se realiza con la versión original.
+已开：播完从头再放	Abiertos: Reproducción desde el principio después de terminar la transmisión.
+已录制“{0}”（{1}），放在 {2} 的 {3}	Grabado " {0} "( {1} ), guardado en {2} de {3}.
+已恢复为新项目：{0}	Restaurado como nuevo proyecto: {0}.
+已恢复标准布局	Restaurado al diseño estándar.
+已手动设为 {0}（文件标记：{1}）	Configurado manualmente como {0} (Marcador de archivo: {1}).
+已打开	Abiertos.
+已打开{0}“{1}”{2}	Abiertos {0} " {1} " {2}.
+已把 {0} 个片段加入渲染队列，每个片段一个文件	Se añadió a la cola de renderizado: {0,plural,one{# clip}other{# clips}}. Un archivo por clip.
+已把 {0} 个片段加入渲染队列，每个片段一个文件{1}	Se añadió a la cola de renderizado: {0,plural,one{# clip}other{# clips}}. Un archivo por clip{1}
+已把 {0} 个片段收进复合片段“{1}”	{0} clips han sido agregados al fragmento compuesto " {1}".
+已把 {0} 条时间线加入渲染队列	{0} líneas de tiempo han sido agregadas a la cola de renderizado.
+已把{0}{1}到 {2}	{0}{1} hasta {2}.
+已把{0}的调色应用到“{1}”	El etalonaje de {0} se ha aplicado a " {1}".
+已把“{0}”（{1}）以 {2} 	" {0} "( {1} ) se ha marcado como {2}. 
+已抓取{0}：{1} · {2}	Grabado {0}: {1} · {2}.
+已按{0}建立限定器：节点 2 的调色只作用于这些颜色	Se ha establecido un limitador según {0}: el etalonaje del nodo 2 solo afecta a estos colores.
+已按“{0}”标记入出点 {1} → {2}	Se ha marcado " {0} " en el punto de salida {1} → {2}.
+已按吸取的颜色 {0} 抠像	Selección de color {0} realizada
+已按波形对齐：{0}	Ajuste por onda realizado: {0}
+已插入粘贴 {0} 个片段到 {1}，后面的片段后移 {2}	Se han insertado {0} clips en {1}, los siguientes clips se han desplazado hacia atrás de {2}
+已撤销 {0} 步，回到“{1}”之前	Se ha deshecho {0} pasos, volviendo al estado anterior a “{1}”
+已撤销：{0}	Deshecho: {0}
+已改回原始素材播放	Se ha vuelto al reproducción original del material
+已新建{0}	Se ha creado un nuevo {0}
+已新建{0}（复制自{1}）	Se ha creado un nuevo {0} (copiado de {1})
+已新建“{0}”	Se ha creado “{0}”
+已新建并打开“{0}”	Se ha creado y abierto “{0}”
+已新建智能媒体夹“{0}”（{1} 个素材）	Se ha creado una carpeta inteligente “{0}” (con {1} materiales)
+已旁通	Se ha desconectado
+已是片段条中的最后一个片段	Es el último clip en la lista de clips
+已是片段条中的第一个片段	Es el primer clip en la lista de clips
+已更新“{0}”的场记	Se ha actualizado la transcripción de “{0}”
+已更新智能媒体夹“{0}”（{1} 个素材）	Se ha actualizado la carpeta inteligente “{0}” (con {1} materiales)
+已有{0}字幕轨	Ya hay {0} pistas de subtítulos
+已有同名的媒体夹	Ya hay carpetas con nombres iguales
+已有同名的智能媒体夹	Ya hay carpetas inteligentes con nombres iguales
+已有名为“{0}”的轨道	Ya existe una pista llamada “{0}”.
+已柔化减选：这个颜色移出了选区的柔和边缘	Se ha suavizado la selección: este color ha eliminado los bordes suaves de la selección.
+已柔化加选：这个颜色约一半被选中，选区边缘更柔和	Se ha suavizado la selección: aproximadamente la mitad del color está seleccionado, y los bordes de la selección son más suaves.
+已标准化到 {0} LUFS · 增益 {1} dB	Se ha estandarizado a {0} LUFS · Ganancia {1} dB.
+已标旗标片段	Se han marcado los clips con banderas.
+已标记入点 {0}	Se han marcado los puntos de entrada {0}.
+已标记出点 {0}	Se han marcado los puntos de salida {0}.
+已标记时间线入点 {0}	Se han marcado los puntos de entrada en la línea de tiempo {0}.
+已标记时间线出点 {0}	Se han marcado los puntos de salida en la línea de tiempo {0}.
+已标记源入点 {0}	Se han marcado los puntos de entrada de la fuente {0}.
+已标记源出点 {0}	Se han marcado los puntos de salida de la fuente {0}.
+已框选 {0} 个片段	Se han seleccionado {0} clips.
+已波纹删除 {0} 个片段，后续片段最多前移 {1}	Se han eliminado {0} clips con desplazamiento, y los clips posteriores se moverán hacia adelante en un máximo de {1}.
+已波纹删除 {0}，后面的片段前移 {1}	Se han eliminado {0} clips con desplazamiento, y los clips posteriores se moverán hacia adelante en {1}.
+已波纹删除“{0}”，后续片段前移 {1}	Se ha eliminado “{0}” con desplazamiento, y los clips posteriores se moverán hacia adelante en {1}.
+已波纹剪切{0}，后面的片段前移	Se ha cortado {0} con desplazamiento, y los clips posteriores se moverán hacia adelante.
+已添加{0}关键帧 · 共 {1} 个	Se han añadido {0} fotogramas clave · Un total de {1} fotogramas clave.
+已添加{0}窗口：节点 2 的调色只作用于窗口内	Se ha agregado la ventana {0}: El etalonaje de la nodo 2 solo afecta dentro de la ventana.
+已添加{0}遮罩：形状之外露出下层轨道	Se ha agregado la máscara {0}: Deja visible la pista inferior más allá de la forma.
+已添加{0}，{1} 输出到它	Se ha agregado {0}, {1} para salir a él.
+已添加{0}：{1}	Se ha agregado {0}: {1}.
+已添加{0}：在轨道的名称上选择输出到它	Se ha agregado {0}: Seleccionar salir a él en el nombre de la pista.
+已添加关键帧 · 共 {0} 个	Se han agregado fotogramas clave · en total {0}.
+已添加到时间线：{0}（{1}）	Se ha añadido a la línea de tiempo: {0} ({1}).
+已添加变速点 · 片段分为 {0} 段	Se han agregado puntos de cambio de velocidad · el clip está dividido en {0} segmentos.
+已添加声像关键帧 · 共 {0} 个	Se han agregado fotogramas de panorama · en total {0}.
+已添加字幕轨 {0}（{1}），显示在画面上	Se ha agregado un tramo de subtítulos {0} ({1}), visible en la imagen.
+已添加节点 {0}：调整整个画面，在前面的节点之后	Se ha agregado la nodo {0}: Ajustar toda la imagen, después de la nodo anterior.
+已添加调色关键帧 · 共 {0} 个	Se han agregado fotogramas de etalonaje · en total {0}.
+已添加调色关键帧：再到别处调整，调色会随时间变化	Se han agregado fotogramas de etalonaje: Ajustarlos en otro lugar, el etalonaje cambiará con el tiempo.
+已添加轨道 {0}	Se ha agregado la pista {0}.
+已添加音量关键帧 · 共 {0} 个	Se han agregado fotogramas de volumen · en total {0}.
+已清除 {0} 个片段的颜色	Se ha eliminado el color de {0} clips.
+已清除 {0} 个素材的旗标	Se ha eliminado la marca de {0} medios.
+已清除 {0} 条渲染记录，已导出的文件保留在原位置	Se han eliminado {0} registros de renderizado; los archivos exportados se mantienen en su posición original.
+已清除“{0}”的场记	Se ha eliminado la nota de campo “{0}”.
+已清除变速点，片段恢复 1×，时长 {0}	Se han borrado los puntos de velocidad. El clip vuelve a 1× y dura {0}.
+已清除旗标	Se ha eliminado la marca.
+已清除时间线入出点	Se han eliminado los puntos de entrada y salida de la línea de tiempo.
+已清除源片段入出点	Se han eliminado los puntos de entrada y salida de los clips originales.
+已清除片段颜色	Se ha eliminado el color del clip.
+已生成 LUT“{0}”（{1}）：已加入 LUT 库{2}{3}	Se ha generado el LUT “{0}” ({1}): el LUT se ha agregado a la biblioteca {2}{3}.
+已用 {0} 个机位新建多机位片段“{1}”：在检查器里点按机位即可切换	Se han utilizado {0} posiciones para crear el segmento con múltiples posiciones “{1}”. Para cambiar entre posiciones, basta con hacer clic en ellas en el visor.
+已用“{0}”替换 {1} 上的“{2}”（{3}）	“{0}” ha reemplazado “{2}” ({3}) en {1}.
+已移动 {0} 个片段 {1}{2}	Se han movido {0} clips a {1}{2}.
+已移动“{0}”到 {1}	“{0}” se ha movido a {1}.
+已移除{0}{1}色旗标	Se ha eliminado la marca de color {0}{1}.
+已移除特效：{0}	Se ha eliminado el efecto: {0}.
+已移除窗口	Se ha eliminado la ventana.
+已移除窗口，限定器保留在全画面	Ventana eliminada, el limitador se mantiene en toda la imagen
+已移除转场：{0}	Transición eliminada: {0}
+已移除遮罩	Máscara eliminada
+已移除限定器	Limitador eliminado
+已粘贴 {0} 个片段到 {1}	Se han pegado {0} clips en {1}
+已经在最上面的轨道	Ya en la pista superior
+已经在最下面的轨道	Ya en la pista inferior
+已经是{0}	Ya es {0}
+已经是最后一个调色版本	Ya es la última versión de etalonaje
+已经是第一个调色版本	Ya es la primera versión de etalonaje
+已自动保存 · {0}	Guardado automático · {0}
+已自动调色：黑位 {0} → 0，白位 {1} → 100	Etnalaje automático: Negro de {0} a 0, Blanco de {1} a 100
+已设为倒放	Configurado para retroceso
+已设为倒放：正在后台生成倒放素材，完成后预览自动更新	Configurado para retroceso: Se está generando material de retroceso en segundo plano, la vista previa se actualizará automáticamente una vez terminado
+已调色	Etalonaje realizado
+已调色片段	Clip etalonado
+已跟踪窗口：{0} 个关键帧，最多移动画面的 {1}%	Ventanas rastreadas: {0} fotogramas clave. El máximo movimiento de la imagen es del {1}% del total.
+已跟踪窗口：{0} 个关键帧，最多移动画面的 {1}%{2}	Seguimiento de ventana: {0,plural,one{# fotograma clave}other{# fotogramas clave}}, desplazamiento máximo del {1} % de la imagen{2}
+已跟踪遮罩：{0} 个关键帧，最多移动画面的 {1}%	Seguimiento de máscara: {0,plural,one{# fotograma clave}other{# fotogramas clave}}, desplazamiento máximo del {1} % de la imagen
+已跟踪遮罩：{0} 个关键帧，最多移动画面的 {1}%{2}	Seguimiento de máscara: {0,plural,one{# fotograma clave}other{# fotogramas clave}}, desplazamiento máximo del {1} % de la imagen{2}
+已返回“{0}”	Regresado a “{0}”
+已选择 {0} 个{1}色片段	Se han seleccionado {0} clips de {1} colores
+已选择 {0} 个片段	Se han seleccionado {0} clips.
+已选择 {0} 项 · {1}	Se han seleccionado {0} elementos · {1}.
+已重做 {0} 步，到“{1}”之后	Se han rehecho {0} pasos, hasta “{1}”.
+已重做：{0}	Rehecho: {0}.
+已重新加入队列	Reincorporados a la cola.
+已重新链接 {0} 个素材	Se han vuelto a conectar {0} medios.
+已重新链接“{0}”（{1}）	Se ha vuelto a conectar “{0}” ({1}).
+已链接片段：画面和声音一起移动和修剪	Clips conectados: imagen y sonido se mueven y se cortan juntos.
+帧混合	Mezcla de fotogramas.
+帧率	Fotogramas por segundo
+常规	Opciones generales.
+幅度	Amplitud.
+幕布	Cortina de opacidad.
+干湿比	Relación de humedad.
+干湿比为 0：声音不变	Relación de humedad 0: sonido sin cambios.
+干湿比为 0：声音不变；调高后听到房间的回响	Relación de humedad 0: sonido sin cambios; se escucha el eco de la habitación después de aumentar la intensidad.
+平滑	Suavizado.
+平滑变速	Cambio de velocidad suave.
+平滑过渡	Transición suave.
+平直	Planitud
+平直：不改变声音	Planitud: no cambia el sonido
+平移	Desplazamiento
+广播	Emisión
+应用	Aplicación
+应用{0}的调色	Aplicación del etalonaje de {0}
+应用到所选片段	Aplicar al clip seleccionado
+应用前一片段的调色	Aplicar el etalonaje del clip anterior
+应用前一片段的调色（=）	Aplicar el etalonaje del clip anterior (=)
+应用前两个片段的调色	Aplicar el etalonaje de los dos primeros clips
+应用前两个片段的调色（−）	Aplicar el etalonaje de los dos primeros clips (−)
+应用特效	Aplicar efectos especiales
+应用调色	Aplicar etalonaje
+应用转场	Aplicar transición
+应用转场到所选片段	Aplicar transición al clip seleccionado
+底噪压低 {0} dB	Bajar el ruido de fondo {0} dB
+底部	Parte inferior
+开	Encendido
+开启低切	Activar el corte bajo
+开启动态缩放	Iniciar escala dinámica
+开启抠像	Activar desenfoque
+开启稳定	Activar estabilización
+开启闪避后显示侧链电平与压低曲线	Activar visualización de niveles de gancho y curvas de compresión después de la evasión
+开头	Inicio
+开头 {0} 秒渐显{1}	Aparición gradual durante {0} segundos al inicio {1}
+开头 {0} 秒由小放大{1}	Aumento gradual desde pequeño durante {0} segundos {1}
+开头 {0} 秒自下而上浮现{1}	Aparecimiento desde abajo hacia arriba durante {0} segundos {1}
+开始为 {0} 个视频生成代理，一次生成一个	Generar proxies para {0} videos, uno a la vez
+开始为“{0}”生成代理（{1}）	Generar proxies para “{0}” ({1})
+开始录音	Iniciar grabación
+开源软件许可	Licencias de código abierto
+强光	Luz intensa
+强力压缩	Compresión intensa
+强度	Intensidad
+强度 50%	Intensidad 50%
+强度为 0：声音不变	Intensidad 0: sonido sin cambios
+归零	Rebajar a cero
+当前 {0}	Actual {0}
+当前片段没有调色，无需生成 LUT	El clip actual no tiene etalonaje, no es necesario generar un LUT.
+当前环境无法生成倒放素材	El entorno actual no permite generar material invertido.
+当前画面	Imagen actual.
+当前语言	Idioma actual
+录制旁白	Grabar voz en off
+录制旁白：对着播放的节目录一段解说	Voz en off de grabación: diálogo para el programa en reproducción.
+录成不压缩的 WAV 文件（48 kHz · 16 位 · 单声道），和画面逐帧对齐	Grabación como archivo WAV sin compresión (48 kHz · 16 bits · monoaural), alineado con cada fotograma de la imagen.
+录音 · {0}	Grabación · {0}
+录音太短，没有保存	La grabación es demasiado corta, no se ha guardado.
+录音太短，没有可以放上时间线的声音	La grabación es demasiado corta, no hay sonido para añadir a la línea de tiempo.
+录音时播放节目声音	Sonido del programa durante la grabación.
+形状之外变为透明，露出下层轨道；遮罩随画面移动和缩放	La forma se vuelve transparente, revelando la pista inferior; la máscara se mueve y se ajusta a la imagen.
+循环	Repetición.
+循环播放	Reproducción en ciclo.
+循环播放（Ctrl+/）	Reproducción en ciclo (Ctrl+/).
+循环播放：关	Repetición: apagada.
+循环播放：开	Repetición: encendida.
+循环播放：开（Ctrl+/）	Repetición: encendida (Ctrl+/).
+微移片段	Movimiento micro del clip.
+总线	Bus
+总线 {0}	Bus {0}
+总线推子	Desplazador del bus
+总线独奏	Solista del bus
+总线静音	Silencioso del bus
+恒定 {0} fps，与时间线相同；慢放和低帧率素材重复前一帧补齐	Fps constante {0}, igual que en la línea de tiempo; los materiales en cámara lenta y con bajas resoluciones reemplazan los fotogramas faltantes con los anteriores para que el movimiento sea más coherente.
+恢复为新项目	Restaurar como nuevo proyecto
+恢复会创建一个新项目，原文件会保留。	La restauración creará un nuevo proyecto, y el archivo original se conservará.
+恢复标准布局	Restaurar a la disposición estándar
+慢放和低帧率素材缺的帧由前后两帧按时间混合，动作更连贯	Los fotogramas faltantes en los materiales en cámara lenta y con bajas resoluciones se mezclan con los fotogramas anteriores para que el movimiento sea más coherente.
+慢放和低帧率素材缺的帧重复前一帧	Los fotogramas faltantes en los materiales en cámara lenta y con bajas resoluciones se reemplazan con el fotograma anterior.
+成片缺少素材：{0}	Materiales faltantes en el montaje: {0}
+我的媒体夹	Mi carpeta de medios
+戴耳机时再打开：外放的声音会被麦克风录进去	Abrir de nuevo con los auriculares: el sonido que se escucha en el exterior se graba con el micrófono.
+房间	Habitación
+所有轨道都已锁定	Todas las pistas están bloqueadas.
+所有项目里用到它的调色都会显示 LUT 缺失，画面不再套用它；重新导入同一个 .cube 文件即可恢复。	En todos los proyectos, si se utiliza el etalonaje, se mostrará una falta de LUT, y la imagen ya no se utilizará con ese etalonaje; basta con importar el mismo archivo .cube para restaurar la configuración.
+所选 {0} 个片段{1} {2}	{0} de los clips seleccionados {1} {2}
+所选位置	Posición seleccionada
+所选文件：{0}{1} · {2}	Archivos seleccionados: {0}{1} · {2}
+所选片段不是标题	El clip seleccionado no es un título
+所选片段后面没有紧邻的片段，无法滚动剪辑点	No hay clips adyacentes detrás del clip seleccionado, por lo que no se puede mover el punto de edición
+所选片段在已锁定的轨道上	El clip seleccionado está en una pista bloqueada
+所选片段没有素材，无法标记旗标	El clip seleccionado no tiene medio, por lo que no se puede marcar con una bandera
+所选片段没有转场	El clip seleccionado no tiene transición
+所选片段没有音频	El clip seleccionado no tiene audio
+所选片段没有音频。	El clip seleccionado no tiene audio.
+所选片段的两端没有紧挨着的片段，无法添加转场	No hay clips adyacentes en los extremos del clip seleccionado, por lo que no se puede agregar una transición
+所选片段都不能接受这些属性	Los clips seleccionados no aceptan estas propiedades
+所选的灰色	Los clips seleccionados son de color gris
+所选素材已在媒体池中	Los medios seleccionados ya están en la pila de medios
+所选素材没有旗标	Los medios seleccionados no tienen banderas
+所选音频轨已锁定，先解锁再录音	La pista de audio seleccionada está bloqueada, por lo que primero debe desbloquearse antes de grabar
+所选颜色（色相 {0}°）	El color seleccionado (tono {0}°)
+打不开这个文件：它可能已被移动或删除，或是之前安装的 {0} 渲染的	No se puede abrir este archivo: puede haber sido movido o eliminado, o puede ser el resultado de la renderización de {0} instalada anteriormente
+打开	Abrir
+打开后可以剪辑里面的片段、调色和调整声音，改动会用到每个使用它的片段；分解把里面的片段放回时间线，替换它。	Después de abrir, se pueden editar los clips, ajustar el tono y el sonido. Los cambios se aplicarán a cada clip que los utilice; al descomponer, los clips se devuelven a la línea de tiempo y se reemplazan.
+打开复合片段	Abrir el clip compuesto
+打开复合片段 {0}	Abrir el clip compuesto {0}
+打开多机位片段	Abrir un clip de múltiples ángulos
+打开多机位片段 {0}：调整机位对齐	Abrir el clip de múltiples ángulos {0}: Ajustar la alineación de los ángulos
+打开项目	Abrir el proyecto
+扩展器 / 门限	Expansor / Límite
+扭曲器	Distorsor
+找不到「{0}」与「{1}」相同的声音：确认它们是同一条录制	No se encontró el sonido que coincide con "{{0}}" y "{{1}}": Asegúrese de que se trate de la misma grabación
+找不到复合片段“{0}”的内容	No se encontró el contenido del clip compuesto "{{0}}"
+找不到片段的素材	No se encontraron los materiales del clip
+找不到这个片段的素材	No se encontraron los materiales de este clip
+找不到这条时间线	No se encontró esta línea de tiempo
+找不到这条轨道	No se encontró esta pista
+找不到这条音频轨	No se encontró esta pista de audio
+找到 {0} / {1} 个素材的文件。素材在时间线上的片段、旗标、媒体夹和场记都会保留。	Se encontraron {0} / {1} materiales. Los materiales se conservarán en la línea de tiempo, los marcadores, la carpeta de medios y el guion de escena.
+找到 {0} 个项目 · 共 {1} 个	Se encontraron {0} proyectos · en total {1}
+找到同名文件，但时长或大小不同：请确认后从候选中选择	Se encontraron archivos con el mismo nombre, pero con diferencias en duración o tamaño: Por favor, confirme y elija entre los candidatos
+把 {0} 设为声音目标轨道	Establecer {0} como pista objetivo de audio
+把 {0} 设为画面目标轨道	Establecer {0} como pista objetivo de imagen
+把所选片段新建为复合片段	Crear el clip seleccionado como un clip compuesto
+把所选片段新建为多机位片段	Crear un nuevo clip con los fragmentos seleccionados.
+把所选的 {0} 组片段收进一个复合片段，放在原来的位置	Combinar los {0} grupos de clips en un único clip y colocarlo en su posición original.
+把播放头移到关键帧上，再设置缓入缓出	Mover el cabezal de reproducción a los fotogramas clave y configurar la entrada y salida lenta.
+把播放头移到所选片段上，再在画面上吸取幕布颜色	Mover el cabezal de reproducción al clip seleccionado y capturar el color de la pantalla.
+把播放头移到片段内（不在首尾），再添加变速点	Mover el cabezal de reproducción dentro del clip (no al principio ni al final) y agregar puntos de cambio de velocidad.
+把播放头移到片段内，再添加{0}关键帧	Mover la punta de reproducción hacia dentro del segmento, y luego agregar los fotogramas clave {0}.
+把播放头移到片段内，再添加关键帧	Mover el cabezal de reproducción dentro del clip y agregar fotogramas clave.
+把播放头移到片段内，再添加声像关键帧	Mover el cabezal de reproducción dentro del clip y agregar fotogramas clave de panorama.
+把播放头移到片段内，再添加特效关键帧	Mover el cabezal de reproducción dentro del clip y agregar fotogramas clave de efectos especiales.
+把播放头移到片段内，再添加调色关键帧	Mover el cabezal de reproducción dentro del clip y agregar fotogramas clave de etalonaje.
+把播放头移到片段内，再添加音量关键帧	Mover el cabezal de reproducción dentro del clip y agregar fotogramas clave de volumen.
+把播放头移到片段内，再调整关键帧	Mover el cabezal de reproducción dentro del clip y ajustar los fotogramas clave.
+把播放头移到片段内，再调整声像关键帧	Mover el cabezal de reproducción dentro del clip y ajustar los fotogramas clave de panorama.
+把播放头移到片段内，再调整特效关键帧	Mover el cabezal de reproducción dentro del clip y ajustar los fotogramas clave de efectos especiales.
+把播放头移到片段内，再调整音量关键帧	Mover el cabezal de reproducción hacia el clip, luego ajustar el fotograma clave de volumen.
+把播放头移到窗口关键帧上，再设置缓入缓出	Mover el cabezal de reproducción hacia el fotograma clave de la ventana, luego configurar la entrada y salida lenta.
+把播放头移到调色关键帧上，再设置缓入缓出	Mover el cabezal de reproducción hacia el fotograma clave de etalonaje, luego configurar la entrada y salida lenta.
+把播放头移到音量关键帧上，再设置缓入缓出	Mover el cabezal de reproducción hacia el fotograma clave de volumen, luego configurar la entrada y salida lenta.
+抓取静帧	Capturar fotogramas fijos.
+抓取静帧：播放头处的画面和调色	Capturar fotogramas fijos: la imagen en el cabezal de reproducción y el etalonaje.
+抖音	Douyin
+抖音竖屏	Douyin vertical
+抠像	Desenfoque.
+抠像颜色 {0}	Color de desenfoque: {0}.
+抠像：{0}	Desenfoque: {0}.
+抠像：吸取颜色	Desenfoque: capturar color.
+拉伸	Estiramiento.
+拉远	Alejamiento.
+拖动其中任一片段可一起移动或换轨道，, 和 . 键一起微移，Ctrl+↑ / ↓ 一起上下换轨；按住 Ctrl / Cmd 点按片段，或开启时间线的「多选」，可加入或移出选择；多选时在空白处拖动可框选。	Al arrastrar cualquiera de los clips, se puede mover o cambiar de pista. Utilice las teclas de flecha para mover ligeramente, Ctrl+↑ / ↓ para cambiar de pista. Mantenga presionada la tecla Ctrl / Cmd mientras se hace clic en un clip, o active la opción "Más de un elemento" en la línea de tiempo para agregar o eliminar selección. Al usar la opción "Más de un elemento", arrastre por el espacio en blanco para seleccionar.
+拖动网格上的点：沿圆周改变附近颜色的色相，向内外改变饱和度；亮度不变，灰色不受影响。	Arrastrar por los puntos de la cuadrícula: cambiar el tono de los colores cercanos a lo largo del círculo, cambiar la saturación hacia dentro y fuera. El brillo permanece constante, el gris no se afecta.
+按 1920×1080 画面的像素裁去各边，被裁去的部分露出下层轨道	Recortar los bordes a los píxeles de la imagen de 1920×1080, dejando al descubierto las pistas inferiores.
+按{0} {1}	Según {0} {1}
+按{0}排序	Ordenar según {0}
+按亮度	Seleccionar por luminosidad
+按前后两帧之间的运动补出中间帧：运动的物体清晰不重影；遮挡处改为混合	Crear fotogramas intermedios a partir de la movimiento entre dos fotogramas: los objetos en movimiento deben ser claros y sin superposiciones; los lugares ocultos deben ser combinados.
+按播放头处的调色	Realizar el etalonaje según el cabezal de reproducción.
+按文件标记（{0}）	Seleccionar por marcador de archivo ({0})
+按文件标记：{0}	Marcador de archivo: {0}
+按条件自动收集：{0}	Recolectar automáticamente según condiciones: {0}
+按波形对齐	Alinear según la onda
+按波形对齐后使用它的声音	Utilizar el sonido después de alinear la onda
+按波形自动对齐所选片段	Alinear automáticamente los clips seleccionados según la onda
+按源文件名匹配媒体池，生成一条新时间线	Hacer coincidir el nombre del archivo con el grupo de medios para generar una nueva pista de tiempo
+按片段标记入出点	Marcar el punto de salida según el marcador del clip
+按项目	Según el proyecto
+按项目设置（{0}）：{1}	Configuraciones del proyecto ({0}): {1}
+换个关键词或分类试试。	Prueba cambiando la palabra clave o categoría.
+换个关键词试试，或清空搜索查看全部项目。	Prueba cambiando la palabra clave, o limpia la búsqueda para ver todos los proyectos.
+换成其他转场，时长和样式不变	Cambia a otro tipo de transición, manteniendo la duración y el estilo.
+授予权限	Otorgar permisos
+排序	Ordenar
+排序：{0}，点按更改	Ordenar: {0}, toque para cambiar
+排队中	En espera
+排队时的导出范围超出当前时间线，请重新标记范围并加入队列	El rango de exportación durante la espera excede la línea de tiempo actual, por favor marque nuevamente el rango y agréguelo a la cola
+排除	Excluir
+推入	Empujar hacia adentro
+推子	Empujador
+推子 {0}	Empujador {0}
+推近	Acercar
+描边	Bordear
+描边色	Color de bordear
+描边颜色	Color del borde
+插入	Insertar
+插入 / 覆盖 / 叠加到时间线入点 {0}，替换在播放头	Insertar / Sobreponer / Superponer en el punto de entrada de la línea de tiempo {0}, reemplazar en el cabezal de reproducción
+插入 / 覆盖 / 叠加到时间线出点 {0} 之前，替换在播放头	Insertar / Sobreponer / Superponer en el punto de salida de la línea de tiempo {0} antes, reemplazar en el cabezal de reproducción
+插入 / 覆盖 / 波纹覆盖 / 替换 / 叠加到时间线播放头 {0}	Insertar / Sobreponer / Desplazamiento de borde / Reemplazar / Superponer en el cabezal de reproducción de la línea de tiempo {0}
+插入 / 覆盖 / 波纹覆盖 / 适配填充 / 叠加到时间线入点 {0} → 出点 {1}（{2}），替换在播放头	Insertar / Sobreponer / Desplazamiento de borde / Ajuste de relleno / Superponer en el punto de entrada de la línea de tiempo {0} → punto de salida {1} ({2}), reemplazar en el cabezal de reproducción
+插入粘贴	Insertar y pegar
+搜索素材	Buscar medios
+搜索项目	Buscar proyectos
+撤销	Deshacer
+撤销 {0} 步	Deshacer {0} pasos
+撤销：{0}	Deshacer: {0}
+播完从头再放（入点到出点或整条时间线）	Reproducir desde el principio (punto de entrada al punto de salida o toda la línea de tiempo)
+播客人声	Reproducir voz
+播客垫乐	Soporte de reproducción
+播放	Reproducir
+播放{0}	Reproducir {0}
+播放头	Cabezal de reproducción
+播放头{0} {1}，到 {2}	Cabezal de reproducción {0} {1}, hasta {2}
+播放头下没有可分割的片段	No hay clips dividibles debajo del cabezal de reproducción
+播放头下没有片段	No hay clips debajo del cabezal de reproducción
+播放头下的片段都在已锁定的轨道上	Todos los clips debajo del cabezal de reproducción están en pistas bloqueadas
+播放头不在任何片段上	El cabezal de reproducción no se encuentra en ningún clip
+播放头不在片段内：移进片段再调整{0}	El cabezal de reproducción no está dentro del clip: mover el cabezal de reproducción y ajustar {0}
+播放头不在片段内：移进片段再调整动画	El cabezal de reproducción no está dentro del clip: mover el cabezal de reproducción y ajustar la animación
+播放头不在片段内：移进片段再调整声像	El cabezal de reproducción no está dentro del clip: mover el cabezal de reproducción y ajustar el panorama
+播放头不在片段内：移进片段再调整窗口	El cabezal de reproducción no está dentro del clip: mueva el clip y ajuste la ventana.
+播放头不在片段内：移进片段再调整遮罩	El cabezal de reproducción no está dentro del clip: mueva el clip y ajuste la máscara.
+播放头不在片段内：移进片段再调整音量	El cabezal de reproducción no está dentro del clip: mueva el clip y ajuste el volumen.
+播放头不在片段内：移进片段再调色	El cabezal de reproducción no está dentro del clip: mueva el clip y ajuste el etalonaje.
+播放头不在片段内：移进片段，速度改的是播放头所在的一段	Mueva el clip y cambie la velocidad en el segmento donde se encuentra el cabezal de reproducción.
+播放头不在这个多机位片段上：点按机位会切换整段（{0}）	El cabezal de reproducción no está en este clip con varios ángulos: toque el ángulo para cambiar todo el segmento ({0}).
+播放头之后没有片段	No hay clip después del cabezal de reproducción.
+播放头前后 2 秒	2 segundos antes y después del cabezal de reproducción.
+播放头前后 {0} 秒	{0} segundos antes y después del cabezal de reproducción.
+播放头处没有可以匹配的片段	No hay clip disponible para coincidir con el cabezal de reproducción.
+播放头处的 {0} 上没有片段可替换	No hay clip disponible para reemplazar el {0} en el cabezal de reproducción.
+播放头处的 {0} 上没有片段可波纹覆盖	No hay clip disponible para cubrir el {0} con desplazamiento.
+播放头所在的片段	El clip donde se encuentra el cabezal de reproducción.
+播放头跳到 {0}	El cabezal de reproducción salta al {0}.
+播放或拖动播放头查看响度	Reproducir o desplazar el cabezal de reproducción para ver el volumen.
+播放控制	Control de reproducción.
+播放选项	Opciones de reproducción.
+播放速度	Velocidad de reproducción
+播放速度 {0}，片段时长 {1}	Velocidad de reproducción {0}, duración del clip {1}.
+播放速度、倒放和变速处理；素材范围不变，时长随之变化，后面的片段跟着移动	Velocidad de reproducción, retroceso y cambio de velocidad; el rango del medio no cambia, pero la duración se ajusta para que los clips posteriores se muevan con él.
+播放音频	Reproducción de audio.
+支点	Pivote
+改过名，大小和时长一致	Cambiar el nombre, tamaño y duración.
+放入媒体夹	Agregar a la carpeta.
+放到	Colocar en.
+放在 {0} 上：录音覆盖这条轨在这段时间里原有的声音	Colocar en {0}: la grabación cubre el sonido original durante este tiempo.
+放在新建的音频轨上，不影响已有的声音	Colocar en un nuevo canal de audio, sin afectar el sonido existente.
+放大	Ampliar.
+放大 {0}%	Ampliar {0}%.
+放弃这段	Dejar de reproducir este segmento.
+效果	Efectos.
+效果 {0}	Efecto {0}.
+效果 {0}：{1} 个在起作用	Efecto {0}: {1} efectos en funcionamiento.
+效果强度	Intensidad del efecto.
+教堂	Iglesia.
+数字从右往左按帧、秒、分、时填，如 15、1:00、+15、-1:00:00	Escribir los números de derecha a izquierda en fotogramas, segundos, minutos y horas, como 15, 1:00, +15, -1:00:00.
+数据行数过多：应为 {0} 行	Demasiadas líneas de datos: deberían ser {0} líneas.
+整个画面	Imagen completa.
+整个画面 · 动态	Imagen completa · Dinámica
+整体 I	Índice general I
+整体 Offset	Índice general Offset
+整体 {0} LUFS	Índice general {0} LUFS
+整条时间线	Toda la línea de tiempo
+整段{0}切到{1}（{2}）	El segmento completo {0} se corta en {1} ({2})
+整段切换	Cambio de segmento completo
+整段切换：不剪切，播放头所在的整段换机位	Cambio de segmento completo: sin corte, cambio de ángulo de cámara en el segmento donde se encuentra el cabezal de reproducción
+文件	Archivo
+文件名	Nombre de archivo
+文件过大：{0}	Archivo demasiado grande: {0}
+文件里没有可以识别的 EDL 事件	No hay eventos EDL reconocibles en el archivo
+文件里没有可倒放的画面或声音	No hay imágenes o sonidos que puedan ser invertidos en el archivo
+文件里没有可识别的字幕	No hay subtítulos reconocibles en el archivo
+新建一个项目，导入设备里的视频，开始第一次剪辑。	Crear un proyecto nuevo, importar videos del dispositivo y comenzar la primera edición.
+新建复合片段	Crear un clip compuesto
+新建多机位片段	Crear un clip con múltiples ángulos de cámara
+新建媒体夹	Crear una carpeta de medios
+新建字幕轨（另一种语言）	Crear un canal de subtítulos en otro idioma
+新建总线并输出到它	Crear un nuevo bus y exportarlo
+新建时间线	Crear una nueva línea de tiempo
+新建智能媒体夹	Crear una nueva carpeta de medios inteligentes
+新建版本	Crear una nueva versión
+新建调色版本	Crear una nueva versión de etalonaje
+新建调色版本（Ctrl+Shift+N）	Crear una nueva versión de etalonaje (Ctrl+Shift+N)
+新建音轨	Crear una nueva pista de audio
+新建项目	Nuevo proyecto
+方向	Dirección
+方形	Cuadrado
+旁白	Voz en off
+旁白 {0}	Voz en off {0}
+旁白 {0}.wav	Voz en off {0}.wav
+旁白已保存到素材库：{0}	La voz se ha guardado en la biblioteca de medios: {0}
+旁白放到哪条音轨	¿En qué pista de audio colocar la voz?
+旁通	Bypass
+旋转	Rotación
+旗标	Marcador
+旗标、使用情况变了或导入新素材后，这里会自动更新。	El marcador se actualizará automáticamente si cambia el estado de uso o se importan nuevos medios.
+旗标条件：{0}，点按更改	Condiciones de la bandera: {0}, presione para cambiar
+旗标：	Banderas:
+无	Ninguna
+无代理	Sin proxy
+无场次	Sin escenas
+无损 PCM 立体声 .wav，每分钟约 {0} MB，保存到“音乐/{1}”。	Sonido estéreo PCM sin pérdida .wav, aproximadamente {0} MB por minuto, guardar en "Música/{1}".
+无旗标	Sin bandera
+无法以 {0}×{1} 编码倒放画面（{2}）	No se puede rebobinar la imagen con {0}×{1} de codificación ({2})
+无法使用麦克风：请检查麦克风权限，或麦克风是否被占用	No se puede usar el micrófono: verifique los permisos del micrófono o si está ocupado.
+无法保存 LUT：存储空间不足或不可写	No se puede guardar la LUT: espacio de almacenamiento insuficiente o no escribible.
+无法保存代理文件	No se puede guardar el archivo proxy.
+无法保存倒放素材	No se puede guardar el material rebobinado.
+无法保存场记	No se puede guardar las notas de escena.
+无法保存录音，请检查设备存储空间后重试。	No se puede guardar la grabación; verifique el espacio de almacenamiento del dispositivo y vuelva a intentar.
+无法保存静帧：存储空间不足或不可写	No se puede guardar los fotogramas fijos: espacio de almacenamiento insuficiente o no escribible.
+无法修剪	No se puede recortar.
+无法修改	No se puede modificar.
+无法修改关键帧	No se pueden modificar los fotogramas clave.
+无法修改均衡器	No se puede modificar el ecualizador.
+无法修改总线	No se puede modificar el bus.
+无法修改时间线设置	No se pueden modificar los ajustes de la línea de tiempo.
+无法修改标记	No se pueden modificar los marcadores.
+无法修改淡化	No se puede modificar la atenuación.
+无法修改轨道	No se puede modificar la pista.
+无法修改遮罩	No se puede modificar la máscara.
+无法写入图片库，请检查存储空间。	No se puede guardar en la galería de imágenes, por favor verifique el espacio de almacenamiento.
+无法写入相册，请检查存储空间。	No se puede guardar en el álbum, por favor verifique el espacio de almacenamiento.
+无法分解复合片段	No se puede descomponer el clip compuesto.
+无法切换时间线	No se puede cambiar la línea de tiempo.
+无法切换机位	No se puede cambiar el ángulo.
+无法创建副本，请检查存储空间后重试	No se puede crear una copia, por favor verifique el espacio de almacenamiento y vuelva a intentar.
+无法创建项目，请检查存储空间后重试	No se puede crear un proyecto, por favor verifique el espacio de almacenamiento y vuelva a intentar.
+无法删除“{0}”，项目和备份均已保留	No se puede eliminar el “{0}”, ya que tanto el proyecto como las copias están guardados.
+无法删除标记	No se puede eliminar el marcador.
+无法取消同步	No se puede cancelar la sincronización.
+无法变速	No se puede cambiar la velocidad.
+无法同步	No se puede sincronizar.
+无法复制	No se puede copiar.
+无法完成	No se puede completar
+无法完成编辑	No se puede editar
+无法定格	No se puede detener
+无法对齐	No se puede alinear
+无法导入 EDL	No se puede importar EDL
+无法导入 FCPXML	No se puede importar FCPXML
+无法导入 LUT：{0}	No se puede importar LUT: {0}
+无法导出当前帧	No se puede exportar el fotograma actual
+无法平滑变速	No se puede cambiar la velocidad suavemente
+无法恢复备份，请检查存储空间后重试	No se puede restaurar la copia; verifique el espacio de almacenamiento y inténtelo de nuevo
+无法打开时间线	No se puede abrir la línea de tiempo
+无法打开项目：文件已损坏或不存在	No se puede abrir el proyecto: el archivo está dañado o no existe
+无法播放	No se puede reproducir
+无法放上时间线	No se puede colocar la línea de tiempo
+无法放入这条时间线	No se puede insertar esta línea de tiempo
+无法新建复合片段	No se puede crear un clip compuesto nuevo
+无法新建多机位片段	No se puede crear un clip con múltiples ángulos
+无法更换语言	No se puede cambiar el idioma
+无法标准化	No se puede estandarizar
+无法标记入出点	No se puede marcar el punto de salida.
+无法标记旗标	No se pueden marcar los marcadores.
+无法检测场景剪切：读取画面时出错	No se puede detectar la corta de escenas: error al leer la imagen.
+无法添加到时间线	No se puede agregar a la línea de tiempo.
+无法添加生成器	No se pueden agregar generadores.
+无法生成{0}	No se puede generar {0}.
+无法生成倒放素材：{0}	No se puede generar material invertido: {0}.
+无法移动	No se puede mover.
+无法移动标记	No se pueden mover los marcadores.
+无法粘贴属性	No se pueden pegar atributos.
+无法编码倒放的声音	No se puede codificar el sonido invertido.
+无法解码这段声音	No se puede decodificar este sonido.
+无法设置编辑目标	No se puede establecer el destino de edición.
+无法读取 FCPXML：文件不是有效的 XML	No se puede leer FCPXML: el archivo no es un XML válido.
+无法读取所选文件	No se puede leer el archivo seleccionado.
+无法读取所选文件：请选择视频、音频或图片	No se puede leer el archivo seleccionado: seleccione un video, audio o imagen.
+无法读取文件	No se puede leer el archivo.
+无法读取文件：{0}	No se puede leer el archivo: {0}.
+无法读取渲染出的画面。	No se puede leer la imagen renderizada.
+无法读取画面	No se puede leer la imagen.
+无法读取设备媒体	No se puede leer el medio del dispositivo.
+无法读取这一帧	No se puede leer este fotograma.
+无法读取这一帧的画面	No se puede leer la imagen de este fotograma.
+无法读取这一帧的颜色	No se puede leer el color de este fotograma.
+无法读取这个视频的画面	No se puede leer la imagen de este video.
+无法读取音频	No se puede leer el audio.
+无法读取项目备份	No se puede leer la copia del proyecto.
+无法读取项目库	No se puede leer la biblioteca de proyectos.
+无法读取项目，副本未创建	No se puede leer el proyecto, la copia no se ha creado.
+无法读取项目，未备份	No se puede leer el proyecto, no se ha realizado la copia.
+无法调整淡化	No se puede ajustar el desvanecimiento.
+无法调整淡化曲线	No se puede ajustar la curva de desvanecimiento.
+无法调整转场	No se puede ajustar la transición.
+无法调整音量	No se puede ajustar el volumen.
+无法跟踪：读取画面时出错	No se puede seguir: hubo un error al leer la imagen.
+无法重新链接	No se puede volver a conectar.
+无画面	No hay imagen.
+无音频	No hay audio.
+无（字幕轨都已隐藏）	Sin (todos los tracks de subtítulos están ocultos)
+日	Día
+日本語	日本語
+时域降噪	Noise reduction en tiempo
+时钟划像	Proyección de reloj
+时长	Duración
+时长 0.5 秒	Duración de 0.5 segundos
+时长没有变化	Duración sin cambios
+时间码	Código de tiempo
+时间码 {0}，点按输入	Código de tiempo {0}, presione para ingresar
+时间线	Línea de tiempo
+时间线 1	Línea de tiempo 1
+时间线 {0}	Línea de tiempo {0}
+时间线“{0}”已删除	La línea de tiempo “{0}” está eliminada
+时间线上没有{0}色的片段	No hay clips de color {0} en la línea de tiempo
+时间线上没有入出点	No hay puntos de entrada o salida en la línea de tiempo
+时间线上没有入出点，将渲染整条时间线：在剪辑页按 I / O 或用飞梭台的入点、出点键标记	No hay puntos de entrada o salida en la línea de tiempo, se renderizará toda la línea de tiempo: marque con I/O en la página de edición o utilice las teclas de punto de entrada y punto de salida del dispositivo de desplazamiento
+时间线上没有剪辑点，无法添加转场	No hay puntos de edición en la línea de tiempo, por lo que no se pueden agregar transiciones
+时间线上没有可以写进 FCPXML 的片段	No hay clips en la línea de tiempo que puedan ser escritos en FCPXML
+时间线上没有可以删除的空隙	En la línea de tiempo no hay espacios que se puedan eliminar.
+时间线上没有声音	En la línea de tiempo no hay sonido.
+时间线上还没有片段	En la línea de tiempo aún no hay clips.
+时间线上还没有画面片段	En la línea de tiempo aún no hay imágenes.
+时间线上还没有音频片段	En la línea de tiempo aún no hay fragmentos de audio.
+时间线为空	La línea de tiempo está vacía
+时间线为空，无法加入渲染队列	La línea de tiempo está vacía y no se puede agregar a la cola de renderizado.
+时间线为空，暂无可渲染内容	La línea de tiempo está vacía y no hay contenido para renderizar.
+时间线为空，没有可导出的画面	La línea de tiempo está vacía y no hay imágenes que se puedan exportar.
+时间线为空，没有可渲染的内容。	La línea de tiempo está vacía y no hay contenido para renderizar.
+时间线出点之前放不下“{0}”（需要 {1}）	No se puede colocar “{0}” antes del punto de salida en la línea de tiempo (se necesita {1}).
+时间线可以插入、覆盖或追加到时间线上	La línea de tiempo se puede insertar, superponer o agregar a la misma.
+时间线名称	Nombre de la línea de tiempo.
+时间线名称不能为空	El nombre de la línea de tiempo no puede estar vacío.
+时间线改为 {0}×{1} {2}	La línea de tiempo se cambia a {0}×{1}{2}.
+时间线改名为“{0}”	El nombre de la línea de tiempo se cambia a “{0}”.
+时间线是空的	La línea de tiempo está vacía.
+时间线格式	Formato de la línea de tiempo
+时间线画面	Imágenes de la línea de tiempo.
+时间线的 V1、A1、A2 上没有可以写进 EDL 的片段	En las vías V1, A1 y A2 de la línea de tiempo no hay clips que se puedan incluir en el EDL.
+时间线缩放	Ajuste de la escala de la línea de tiempo.
+时间线设置	Configuración de la línea de tiempo.
+时间线设置没有变化	La configuración de la línea de tiempo no ha cambiado.
+时间线都是空的，没有可渲染的内容	La línea de tiempo está vacía, sin contenido para renderizar.
+时间线：{0}，点按切换、新建或复制	Línea de tiempo: {0}, presionar para cambiar, crear o copiar.
+明亮	Brightness.
+明度	Saturation.
+昨天 {0}	Ayer a las {0}
+显示形状之外的画面	Mostrar imágenes fuera de las formas.
+显示轨道	Mostrar pistas.
+显示选区	Mostrar selección de imágenes.
+显示选区：选中部分保留颜色，其余显示为灰色	Selección de imágenes: la parte seleccionada se mantiene en color, el resto se muestra en gris.
+智能媒体夹	Carpeta inteligente de medios.
+智能媒体夹 {0}	Carpeta inteligente de medios {0}.
+智能媒体夹 {0}，{1}，{2} 个素材，长按编辑条件或删除	Carpeta inteligente de medios {0}, {1} y {2} materiales; presionar por más tiempo para editar o eliminar.
+智能媒体夹不存在	La carpeta inteligente de medios no existe.
+智能媒体夹名称	Nombre de la carpeta inteligente de medios.
+暂不支持同时含 1D 和 3D 表的 LUT	No se admite la utilización de LUT que contenga tanto tablas 1D como 3D al mismo tiempo.
+暂不支持这种声音格式的倒放	No se admite la reproducción inversa de este formato de sonido.
+暂不支持这种视频格式的倒放（例如 10 位 HDR）	No se admite la reproducción inversa de este formato de video (por ejemplo, 10 bits HDR).
+暂不链接	No se ha vinculado por el momento.
+暂停	Pausar
+暂无画面	Sin imagen por el momento.
+暖色褪色	Desvanecimiento de colores cálidos.
+暖阳渐变	Transición de colores del sol cálido.
+暗角	Ángulo oscuro.
+暗部 Lift	Levantamiento de la parte oscura.
+曝光	Exposición.
+曲线	Curvas
+曲线：{0}	Curvas: {0}.
+更改时长…	Cambiar la duración…
+更改片段时长	Cambiar la duración del clip.
+更改选择	Cambiar la selección.
+替换	Reemplazar.
+替换四项设置，保留侧链；未开启时一并开启	Reemplazar las cuatro configuraciones, mantener las vinculaciones secundarias; activar todas las veces que no estén activas.
+替换时间线播放头处的片段（{0}）：源播放头对齐时间线播放头，片段长度不变	Se está reemplazando el segmento en la cabeza de reproducción de la línea de tiempo ({0}): La cabeza de reproducción de la fuente se alinea con la cabeza de reproducción de la línea de tiempo: la longitud del segmento no cambia.
+替换片段	Reemplazar el clip.
+最上面的轨道上已有选中的片段	En la pista superior ya hay clips seleccionados.
+最下面的轨道上已有选中的片段	En la pista inferior ya hay clips seleccionados.
+最佳	Lo mejor.
+最后一个关键帧之后没有变化，无需缓出	No hay cambios después del último fotograma clave, no es necesario retrasar la salida.
+最后点选的「{0}」没有声音：最后点选一个有声音的片段作参照	El último " {0} " no tiene sonido: seleccione un clip con sonido como referencia.
+最多 {0} 个关键词	Hasta {0} palabras clave.
+最多 {0} 个媒体夹	Hasta {0} carpetas de medios.
+最多 {0} 个字，不能与其他媒体夹同名	Hasta {0} palabras, no pueden tener el mismo nombre que otras carpetas de medios.
+最多 {0} 个字，不能与其他轨道同名	Hasta {0} palabras, no pueden tener el mismo nombre que otras pistas.
+最多 {0} 个字，时间线上的片段标签显示这个名称	Hasta {0} palabras; la etiqueta del clip en la línea de tiempo mostrará este nombre.
+最多 {0} 个智能媒体夹	Hasta {0} carpetas inteligentes de medios.
+最多 {0} 个机位	Hasta {0} ángulos.
+最多 {0} 个节点：节点 01、02 和串行节点 03–0{1}	Hasta {0} nodos: nodo 01, 02 y nodo en serie 03–0{1}.
+最多 {0} 条{1}轨道	Hasta {0} pistas {1}.
+最多 {0} 条字幕轨（每种语言一条）	Hasta {0} pistas de subtítulos (una para cada idioma).
+最多 {0} 条总线	Hasta {0} buses.
+最短	El más corto.
+最近 30 秒的短期响度	Sonoridad de los últimos 30 segundos.
+最近帧	El fotograma más reciente.
+最近的第 {0} 个变速点两侧速度相同（{1}），不需要平滑过渡	En el último punto de cambio de velocidad {0}, la velocidad es la misma en ambos lados ({1}), no se requiere transición suave.
+最近的第 {0} 个变速点（{1}）立即变速；拖动滑块，让速度在一段时间内平滑过渡	El último punto de cambio de velocidad {0} ({1}) cambia de velocidad de inmediato; arrastre el deslizador para que la velocidad transite de manera suave durante un período de tiempo.
+有关键帧的数值调整后记在播放头处，其余数值整段改变	Los ajustes de valores en fotogramas clave se registran en el cabezal de reproducción; los demás valores cambian en toda la secuencia.
+有关键帧的数值调整后记在此处 · 可设缓入缓出	Los ajustes de valores en fotogramas clave se registran aquí · se puede configurar la entrada y salida lenta.
+有变速点的片段不能倒放：先清除变速点	Los clips con puntos de cambio de velocidad no pueden reproducirse en orden inverso: elimine primero los puntos de cambio de velocidad.
+有变速点的片段不能检测场景剪切	Los clips con puntos de cambio de velocidad no pueden detectar cortes de escena.
+有素材无法读取，请检查原文件是否仍在设备上。	Hay material que no se puede leer, verifique si el archivo original todavía está en el dispositivo.
+有素材的编码格式无法解码，请替换该素材后重试。	El formato de codificación del material no se puede decodificar, reintente después de reemplazar el material.
+未使用	No utilizado
+未压低	No reducido
+未同步：使用视频自带的声音	No sincronizado: utiliza el sonido incluido en el video
+未启用：只压低齿音频段	No activado: solo reduce el audio de dientes
+未启用：打开后只压低齿音频段，人声主体不受影响	No activado: al abrir, solo reduce el audio de dientes, el cuerpo vocal no se ve afectado
+未启用：打开后声音带上房间的回响，片段后面有空隙时尾音延续到空隙里	No activado: Al abrir, el eco de la habitación se añade al sonido, y si hay espacio detrás del clip, el eco se extiende hasta ese espacio.
+未启用：给声音加上房间的回响	No activado: Añade eco a la habitación al sonido.
+未命名	No nombrado
+未命名项目	Proyecto sin título
+未填写	No rellenado
+未开启：另一条轨道有声音时自动压低本轨	No activado: Baja automáticamente esta pista cuando hay sonido en otra pista.
+未开启：打开后按每个文件自己的噪声底压低噪声	No activado: Al abrir, baja el nivel de ruido de cada archivo según su propio rango.
+未开启：打开后，侧链轨道发声时这条轨道自动压低	No activado: Al abrir, baja automáticamente esta pista cuando una pista lateral se activa.
+未开启：打开门限、压缩器或限制器	No activado: Aplica umbral, compresor o limitador.
+未开启：按测得的底噪逐频段压低噪声	No activado: Baja el nivel de ruido por banda según el nivel de ruido medido.
+未放入媒体夹	No guardado en la carpeta de medios.
+未标记入出点：编辑时使用整段素材。按 I / O 标记源片段	No marcado en el punto de salida: Utiliza un clip completo durante la edición. Marca el clip de origen con I/O.
+未标记（按 Rec.709）	No marcado (según Rec.709)
+未知错误	Error desconocido
+未能保存 EDL 到“下载”文件夹	No se pudo guardar el EDL en la carpeta "Descargas".
+未能保存 FCPXML 到“下载”文件夹	No se pudo guardar el FCPXML en la carpeta "Descargas".
+未调色片段	No se ha etalonado el clip.
+未选择	No seleccionado.
+未选择素材	No se han seleccionado los medios.
+本片段入点前余量不够，转场移向剪辑点后（{0}）。	El espacio antes del punto de entrada de este clip es insuficiente, la transición se moverá después del punto de edición ({0}).
+本片段入点前只剩 {0} 秒可用，转场缩短为 {1} 秒。	Solo quedan {0} segundos antes del punto de entrada de este clip, la transición se acortará a {1} segundos.
+本片段入点前没有余量素材，转场无法提前开始，按硬切播放。	No hay material suficiente antes del punto de entrada de este clip, la transición no puede comenzar de forma anticipada, se reproducirá con un corte brusco.
+机位 {0}	Ángulo {0}
+机位切换内容	Contenido de cambio de ángulo
+条 {0}	Banda {0}
+条件没有变化	Las condiciones no han cambiado
+条次	Número de vueltas
+板式	Patrón
+柔光	Luz suave
+柔化	Suavizado
+柔化：加选、减选改为调整选区的柔和边缘	Suavizado: Cambiar "Seleccionar adicional" y "Seleccionar reducido" por ajustar el borde suave de la zona seleccionada
+柔和压缩	Compresión suave
+查看备份	Ver copia de seguridad
+查看抠像遮罩	Ver marcador de selección
+查看遮罩	Ver máscara de selección
+标准	Estándar
+标准化	Normalización
+标记	Marcadores
+标记 	Marcador 
+标记 {0}	Marcador {0}
+标记为可用的一条	Marcador como disponible
+标记为可用的一条（Resolve 的 Good Take）	Marcador como disponible (Resolución de Buenas Tomas)
+标记入点	Marcador punto de entrada
+标记出点	Marcador punto de salida
+标记名称	Nombre del marcador
+标记名称不能为空	El nombre del marcador no puede estar vacío
+标记备注	Notas del marcador
+标记已删除	El marcador ha sido eliminado
+标记时长	Duración del marcador
+标记时长 {0} 秒	Duración del marcador {0} segundos
+标记时间线入点（I）	Punto de entrada de la línea de tiempo del marcador (I)
+标记时间线出点（O）	Punto de salida de la línea de tiempo del marcador (O)
+标记范围：用入出点	Rango del marcador: con punto de entrada y punto de salida
+标记颜色	Color del marcador
+标记颜色：{0}	Color del marcador: {0}
+标题	Título
+标题{0}	Título {0}
+标题和字幕不能做成机位	Títulos y subtítulos no pueden ser ángulos.
+标题文字	Texto del título.
+标题样式	Estilo del título.
+标题样式：{0}	Estilo del título: {0}.
+标题样式：动画	Estilo del título: Animación.
+标题样式：字重	Estilo del título: Grado de negritud.
+标题样式：背景	Estilo del título: Fondo.
+标题样式：颜色	Estilo del título: Color.
+标题没有可滑移的素材	El título no tiene material para deslizar.
+标题没有源素材	El título no tiene material de origen.
+标题片段不能倒放	Los clips del título no pueden invertirse.
+标题片段不能变速	Los clips del título no pueden cambiar de velocidad.
+标题片段不能替换为素材	Los clips del título no pueden reemplazarse por material.
+标题颜色：{0}	Color del título: {0}.
+校色	Corrección de color.
+框内没有可加入的片段	No hay clips disponibles para agregar dentro del cuadro.
+检测到 {0} 处场景剪切，已切成 {1} 段	Se detectaron {0} cortes de escena, divididos en {1} segmentos.
+检测场景剪切	Detección de cortes de escena.
+棕	Marrón.
+模糊、锐化、暗角等片段特效，以及抠像	Efectos especiales de fragmentos como desenfocado, agudez y ángulos oscuros, así como el desenfoque
+模糊半径	Radio de desenfoque
+模糊溶解	Disolución del desenfoque
+横向拉宽	Agrandar horizontalmente
+横屏	Horizontal
+橙	Naranja
+正值让纹理更突出，负值让中间调更柔和	Valores positivos hacen que la textura resalte, valores negativos hacen que los medios tonos sean más suaves
+正在使用 · 点按重新比较	En uso · Haga clic para comparar nuevamente
+正在保存…	Guardando…
+正在分析 {0} 的响度…	Analizando la sonoridad de {0}…
+正在分析摄像机运动 {0}%	Analizando el movimiento de la cámara {0}%
+正在匹配…	Procesando la correspondencia…
+正在对齐…	Ajustando…
+正在导入 LUT	Importando la LUT
+正在导入…	Importando…
+正在导出…	Exportando…
+正在导出当前帧，完成后再渲染队列	Exportando el fotograma actual, luego en la cola de renderizado
+正在抓取…	Grabando…
+正在播放{0}	Reproduciendo {0}
+正在显示	Mostrando
+正在查找…	Buscando…
+正在检测「{0}」的场景剪切…	Detectando la escena de corte de «{0}»…
+正在比较声音…	Comparando el sonido…
+正在测量“{0}”的噪声底…	Mediendo el nivel de ruido de «{0}»…
+正在测量响度…	Mediendo la sonoridad…
+正在测量节目响度…	Mediendo la sonoridad del programa…
+正在渲染，完成后再导出当前帧	En proceso de renderizado, exportará las fotogramas actuales una vez completado.
+正在渲染，新加入的任务会接着渲染	En proceso de renderizado, las tareas nuevas continuarán en el proceso.
+正在生成…	Generando…
+正在生成倒放素材… {0}%	Generando material al revés… {0}%
+正在生成定格帧…	Generando fotogramas de detalle…
+正在设备中按文件名查找…	Buscando por nombre de archivo en el dispositivo…
+正在读取声音并比较…	Leyendo el sonido y comparándolo…
+正在读取画面 0%	Leyendo la imagen 0%
+正在读取画面 {0}%	Leyendo la imagen {0}%
+正在跟踪 {0}%	Rastreando {0}…
+正常	Normal
+正片叠底	Superposición de capas
+此项目没有可用备份	Este proyecto no tiene backups disponibles.
+母版	Maqueta.
+母版 H.265	Maqueta H.265.
+每个关键词最多 {0} 个字	Un máximo de {0} palabras para cada palabra clave.
+每个机位最多带一条声音	Un máximo de un sonido por cada ángulo.
+每项数值的关键帧各自独立：移动时间或改缓动只影响这条曲线	Los fotogramas de cada valor son independientes: el tiempo de movimiento o el ralentí solo afectan a ese fotograma.
+比例不同的素材	Medios con diferentes proporciones.
+比例不同的素材{0}	Medios con diferentes proporciones {0}.
+比噪声底高 {0} dB 以内的声音压低 {1} dB，	Una reducción de {1} dB en el volumen de los sonidos con una diferencia de bajísima de {0} dB.
+比率	Razón de proporción.
+比较声音中…	Comparar sonidos…
+水平	Horizontal.
+水平位置	Posición horizontal.
+没有{0}片段	Sin {0} clip.
+没有{0}，可在筛选中改回全部片段	Sin {0}, se puede volver a seleccionar todos los clips en la filtración.
+没有匹配的素材	Sin material correspondiente.
+没有匹配的项目	Ningún proyecto coincide
+没有可以对齐的片段	Sin clips que se puedan alinear.
+没有可以粘贴到这个片段的属性	Sin atributos que se puedan pegar a este clip.
+没有可以返回的上一级时间线	No hay línea de tiempo superior a la que se pueda regresar.
+没有可播放视频的应用，可在系统文件管理器的 Movies 目录查找	No hay aplicaciones que puedan reproducir videos; busque en el directorio Movies del gestor de archivos del sistema.
+没有可播放音频的应用，可在系统文件管理器的 Music 目录查找	No hay aplicaciones que puedan reproducir audio; busque en el directorio Music del gestor de archivos del sistema.
+没有可替换的轨道	No hay pistas que se puedan reemplazar.
+没有可波纹覆盖的轨道	No hay pistas que se puedan sobreescribir con desplazamientos.
+没有声音	No hay sonido.
+没有找到可以重新链接的文件	No se encontraron archivos que se puedan vincular nuevamente.
+没有找到场景剪切	No se encontraron cortes de escenas.
+没有找到场景剪切：片段是一个连续的镜头	No se encontraron cortes de escenas: el clip es una toma continua.
+没有按项目设置缩放的片段：检查器的缩放方式选“按项目”的片段才会按这里显示	No hay clips que se hayan escalado según el proyecto: solo se mostrarán los clips cuyo método de escalado sea "según el proyecto".
+没有机位 {0}	No hay ángulos {0}.
+没有离线素材	No hay materiales en línea.
+没有空闲的视频轨道可以叠加	No hay pistas de video disponibles para superposición.
+没有空闲的音频轨道可以叠加	No hay pistas de audio disponibles para superposición.
+没有符合条件的素材	No hay materiales que cumplan con los criterios.
+没有获得访问{0}的权限，这里不会列出它们	No se obtuvo permiso para acceder a {0}; no se listarán.
+没有解码出任何画面或声音	No se decodificaron imágenes ni sonido.
+没有轨道	No hay pistas.
+没有这个调色版本	No existe esta versión de etalonaje.
+没有这种颜色的片段	Clips sin este color
+没有需要去掉的抖动	No hay necesidad de eliminar el ruido
+波形	Onda de forma
+波纹	Desplazamiento
+波纹修剪	Recorte con desplazamiento
+波纹删除	Eliminar con desplazamiento
+波纹删除入点至出点	Eliminación de desplazamiento desde el punto de entrada hasta el punto de salida
+波纹删除区间	Intervalo de eliminación de desplazamiento
+波纹剪切	Cortar con desplazamiento
+波纹覆盖	Sobreposición de desplazamiento
+波纹覆盖要用时间线的入点和出点：再标记一个点，或清除标记后替换播放头处的片段	Sobreposición de desplazamiento utilizando los puntos de entrada y salida de la línea de tiempo: marcar otro punto o reemplazar el clip en el cabezal de reproducción después de eliminar el marcador
+波纹覆盖（{0}）：源片段的入点到出点替换时间线播放头处的片段（或时间线入点到出点），后面的片段随长度变化前后移动	Sobreposición de desplazamiento ({0}): reemplazar el clip en el cabezal de reproducción de la línea de tiempo con los puntos de entrada y salida del clip fuente (o con los puntos de entrada y salida de la línea de tiempo), los clips posteriores se mueven hacia adelante o atrás según la longitud
+测试图 · 75% 彩条	Imagen de prueba · 75% de barras de color
+淡入	Entrada suave
+淡入曲线	Curva de entrada suave
+淡入淡出	Entrada y salida suaves
+淡出	Salida suave
+淡出曲线	Curva de salida suave
+深度	Profundidad
+深度为 0：声音不变	Profundidad 0: Sonido constante
+深度压低	Profundidad reducida
+混合器	Mezclador
+混响	Reverberación
+混响 · {0}	Reverberación · {0}
+混响房间：{0}	Sala de reverberación: {0}
+混响时间	Tiempo de reverberación
+混响衰减曲线：{0} 秒衰减 60 dB	Curva de decaimiento de la reverberación: {0} segundos, decaimiento de 60 dB
+混响：{0}	Reverberación: {0}
+混响：关闭	Reverberación: Desactivado
+混响：干湿比	Reverberación: Relación húmedo-seco
+混响：开启	Reverberación: Activado
+混响：混响时间	Reverberación: Tiempo de reverberación
+混响：预延迟	Reverberación: Retraso previo
+混响：高频衰减	Reverberación: Decaimiento de frecuencias altas
+添加{0}	Añadir {0}
+添加{0}关键帧	Añadir {0} fotogramas clave
+添加串行节点：调整整个画面，在最后一个节点之后	Añadir nodo en serie: Ajustar toda la imagen, después del último nodo
+添加关键帧	Añadir fotograma clave
+添加关键帧后，窗口可以随时间移动，跟住移动的主体	Al agregar fotogramas clave, la ventana puede moverse a lo largo del tiempo, siguiendo el objeto que se mueve.
+添加关键帧后，调色可以随时间变化，跟上光线	Anima el etalonaje para seguir los cambios de luz.
+添加关键帧后，音量可以随时间变化	Al agregar fotogramas clave, el volumen puede cambiar con el tiempo.
+添加到播放头处	Agregar al cabezal de reproducción.
+添加到时间线	Agregar a la línea de tiempo.
+添加变速点	Agregar puntos de cambio de velocidad.
+添加字幕	Agregar subtítulos.
+添加总线	Agregar un bus.
+添加控制点	Agregar puntos de control.
+添加曲线控制点	Agregar puntos de control de curva.
+添加标记	Añadir marcador
+添加标题	Agregar títulos.
+添加标题到时间线	Agregar títulos a la línea de tiempo.
+添加生成器	Agregar un generador.
+添加窗口	Agregar una ventana.
+添加节点 {0}	Agregar nodo {0}.
+添加视频轨	Agregar una pista de video.
+添加轨道	Agregar una pista.
+添加转场	Añadir transición
+添加音频轨	Agregar pista de audio
+清空搜索	Borrar búsqueda
+清除	Eliminar
+清除入出点	Eliminar puntos de salida y punto de entrada
+清除变速点	Eliminar puntos de cambio de velocidad
+清除已完成	Borrar completados
+清除旗标	Eliminar señales
+清除片段颜色	Eliminar color de clip
+渐变	Gradiente
+渐变 · 橙到紫	Gradiente: naranja a púrpura
+渐变 · 深蓝到黑	Gradiente: azul oscuro a negro
+渐显	Aparición gradual
+温暖	Calidez
+渲染 {0} → {1}（{2}，{3}）	Renderizar {0} → {1} ({2}, {3})
+渲染中	En proceso de renderización
+渲染中 {0}%	{0}% en proceso de renderización
+渲染大约需要 {0} GB 空间（临时文件和存进相册的文件各一份），设备只剩 {1} GB。请清理空间，或缩短渲染范围后重试。	La renderización requerirá aproximadamente {0} GB de espacio (una copia para archivos temporales y otra para guardar en el álbum). Solo quedan {1} GB de espacio en el dispositivo. Por favor, libera espacio o reduce el alcance de la renderización antes de intentarlo de nuevo.
+渲染失败（{0}），请重试。	Renderización fallida ({0}). Por favor, intente de nuevo.
+渲染失败，请重试（{0}）。	Renderización fallida. Por favor, intente de nuevo ({0}).
+渲染方式	Modo de renderizado
+渲染范围	Intervalo de renderizado
+渲染范围内没有声音，无法只导出音频。	No hay sonido en el rango de renderizado, por lo que no se puede exportar solo el audio.
+渲染范围里没有{0}片段	No hay fragmentos {0} en el rango de renderizado.
+渲染范围里没有片段	No hay fragmentos en el rango de renderizado.
+渲染进度 {0}%	Progreso de renderizado {0}%
+渲染队列	Cola de renderizado
+渲染预设	Preajuste de renderizado
+源 	Fuente 
+源片段	Fragmentos de fuente
+源片段刮擦条	Barra de deslizamiento de fragmentos de fuente
+溢色抑制	Supresión de color excesivo
+滑动	Deslizamiento
+滑动 {0} 帧	Deslizamiento de {0} fotogramas
+滑动片段	Fragmentos de deslizamiento
+滑移	Deslizamiento
+滑移 {0} 帧	Deslizamiento de {0} fotogramas
+滚动	Desplazamiento
+滚动剪辑点	Punto de edición de desplazamiento
+滚动剪辑点 {0} 帧	Desplazar punto de edición {0} fotogramas
+滚动字幕	Desplazar subtítulos
+滤色	Filtro de color
+漂白旁路	Blanqueo en segundo plano
+灰度	Grayscale
+灰度 = {0}·R + {1}·G + {2}·B	Grayscale = {0}·R + {1}·G + {2}·B
+灰色没有色相可以柔化，请用加选	El gris sin tono puede ser suavizado, utilice la opción de adición
+点“吸取颜色”，再点画面里要调整的颜色：节点 2 的调色将只作用于相近的颜色。	Haga clic en "Tomar color" y luego en la imagen donde desea ajustar el color: el ajuste de color en el nodo 2 solo afectará los colores cercanos.
+点击柔和边缘里的颜色，把它移出边缘	Haga clic en el color en "Bordes suaves" para moverlo fuera del borde.
+点击画面中的颜色，让它落在选区的柔和边缘里	Haga clic en el color en la imagen para que quede dentro del borde suave del área seleccionada.
+点击画面中要加入选区的颜色	Haga clic en el color en la imagen que se va a incluir en el área seleccionada.
+点击画面中要移出选区的颜色	Haga clic en el color en la imagen que se va a eliminar del área seleccionada.
+点击画面中要调整的颜色	Haga clic en el color en la imagen que desea ajustar.
+点按加点，两侧自动加锚点 · 双击删除	Haga clic en el punto para agregar anclajes automáticos en ambos lados; doble clic para eliminar.
+点按机位：在播放头处剪切，之后切到该机位（{0}）；播放时也可以点按	Haga clic en el ángulo: cortar en el cabezal de reproducción y luego cambiar al ángulo correspondiente ({0}); también se puede hacer al reproducir.
+点按机位：播放头所在的整段切到该机位（{0}）	Haga clic en el ángulo: cortar toda la sección donde se encuentra el cabezal de reproducción y luego cambiar al ángulo correspondiente ({0}).
+点按添加窗口	Haga clic en "Añadir ventana".
+点按生成或删除代理	Haga clic en "Generar" o "Eliminar proxy".
+点按编辑场次、镜头、条次、关键词和备注	Haga clic en editar escenas, tomas, etiquetas clave, palabras clave y notas.
+点按选择录音文件	Haga clic para seleccionar archivos de grabación.
+点数值右侧的关键帧按钮，让这一项随时间变化；全部添加则一次记下所有数值	Haga clic en el botón de fotograma clave a la derecha del valor, para que este cambie con el tiempo; si se agregan todos los valores, se registran todos los valores de una vez.
+点曲线上的关键帧选中它：拖动改时间和数值，拖动两侧的控制点改快慢	Haga clic en el fotograma clave en la curva: arrastre el tiempo y el valor, y arrastre los puntos de control a ambos lados para ajustar la velocidad.
+然后回到播放头	Luego vuelva al cabezal de reproducción.
+照片	Foto.
+照片和视频的访问范围受限。	El acceso a fotos y videos está limitado.
+片尾字幕	Subtítulos de la conclusión.
+片段	Clip
+片段 {0} {1}	Clip {0} {1}.
+片段 · {0}	Clip · {0}.
+片段不能再往前滑了	El clip no puede deslizarse hacia adelante más.
+片段不能再往后滑了	El clip no puede deslizarse hacia atrás más.
+片段几乎无声	El clip es casi silencioso.
+片段几乎无声，无法标准化	El clip es casi silencioso y no se puede estandarizar.
+片段只有一个调色版本	El clip tiene solo una versión de etalonaje.
+片段均衡器	EQ del clip
+片段均衡器：{0}	Ecualizador de clip: {0}.
+片段增益	Ganancia del clip
+片段太短，无法测量响度（至少 0.4 秒）	El clip es demasiado corto para medir la sonoridad (al menos 0.4 segundos).
+片段太短，无法测量（至少 0.4 秒）	El clip es demasiado corto para medir (al menos 0.4 segundos).
+片段太长：先切短再检测	El clip es demasiado largo: corta primero y luego mide.
+片段太长：先切短再跟踪	El clip es demasiado largo: corta primero y luego sigue.
+片段已不在时间线上	El clip ya no está en la línea de tiempo.
+片段已停用：不播放、不渲染（按 D 切换）	El clip está desactivado: no se reproduce ni se renderiza (gire con D).
+片段已经无法再修剪	El clip ya no se puede cortar más.
+片段已重命名为“{0}”	El clip ha sido renombrado a "{0}".
+片段或所在轨道已停用，启用后可重试	El clip o la pista en la que está está desactivada; puede volver a intentar después de activarla.
+片段按帧排在时间线上，帧率在新建项目时确定	El clip se coloca en la línea de tiempo por fotogramas; la tasa de fotogramas se determina en el nuevo proyecto.
+片段无法再加长：素材或后面的片段挡住了	El clip ya no se puede alargar más: el material o los clips posteriores lo bloquean.
+片段无法再缩短	El clip ya no se puede acortar más.
+片段时长	Duración del clip.
+片段条中没有片段	No hay clips en la barra de clips.
+片段没有变速点	El clip no tiene puntos de cambio de velocidad.
+片段没有可测量的音频	El clip no tiene audio medible.
+片段的变调（半音），长度不变	El clip tiene cambio de tono (semitonos), pero la duración no cambia.
+片段筛选：{0}	Filtrado de clips: {0}.
+片段自己的均衡器	Ecualizador del clip.
+片段至少 {0} 帧	Clip debe tener al menos {0} fotogramas.
+片段音量和声像，含关键帧	Volumen del clip y panorama, incluyendo fotogramas clave.
+片段音量，含音量关键帧	Volumen del clip, incluyendo fotogramas clave de volumen.
+片段颜色	Color del clip.
+片段颜色：{0}	Color del clip: {0}.
+版本	Versión.
+版本 1	Versión 1.
+版本 {0}	Versión {0}.
+特效	Efectos
+特效不存在	No hay efectos especiales.
+特效关键帧	Fotogramas clave de efectos especiales.
+特效只能应用到画面片段	Efectos especiales solo aplicables a clips de imagen.
+特效强度	Intensidad de los efectos especiales.
+特粗	Efecto grueso.
+独奏	Solista.
+独奏 {0}	Solista {0}.
+琥珀	Ámbar.
+生成	Generadores
+生成 LUT	Generar LUT.
+生成中 {0}%	En proceso de generación {0}%
+生成代理	Generando el proxy
+生成器的尺寸与时间线不符	El tamaño del generador no coincide con el de la línea de tiempo
+生成失败	Generación fallida
+用入出点	Usar punto de salida
+用当前片段的调色生成 LUT（33³）	Generar un LUT con el etalonaje del clip actual (33³)
+电平表	Medidor de nivel
+电话音	Sonido telefónico
+画廊	Galería
+画质	Calidad de vídeo
+画面	Imagen
+画面 {0}	Imagen {0}
+画面+声音	Imagen + sonido
+画面变换	Cambio de imagen
+画面和声音	Imagen y sonido
+画面和声音的淡入、淡出时长	Duración de entrada y salida de imagen y sonido
+画面太平或几乎是单色，无法匹配	Imagen demasiado plana o casi monocromática, no se puede ajustar
+画面太平或几乎是单色，无法自动调色	Imagen demasiado plana o casi monocromática, no se puede ajustar automáticamente
+画面将落在 {0}	La imagen caerá en {0}
+画面布局	Disposición de imágenes
+画面布局：{0}	Disposición de imágenes: {0}
+画面是黑场	La imagen es en blanco
+画面是黑场、没有声音	La imagen es en blanco y sin sonido
+画面最多移动 {0}	La imagen puede moverse hasta un máximo de {0}
+画面比例与时间线不同时：适应留黑边，填充裁去多出的部分，拉伸会变形，原尺寸不缩放	Cuando la proporción de la imagen es diferente a la de la línea de tiempo: se mantienen los bordes en blanco, se elimina el exceso de parte, la distorsión se debe a la distorsión, no se ajusta el tamaño original
+画面淡入	Entrada de imagen
+画面淡入曲线	Curva de entrada de imagen
+画面淡出	Salida de imagen
+画面淡出曲线	Curva de salida de imagen
+画面烧录：	Grabación de imagen:
+画面落在的视频轨道	La imagen se coloca en la pista de video correspondiente
+画面静止处平均前后几帧的噪点，运动处保持原样	En los puntos estáticos de la imagen, se mantienen los ruidos de las imágenes anteriores y posteriores, mientras que en los puntos en movimiento se mantienen los mismos
+画面：机位 {0}	Imagen: ángulo {0}
+界面语言	Idioma de la interfaz
+界面语言：{0}	Idioma de la interfaz: {0}
+白	Blanco
+白场闪白	Parpadeo blanco en el blanco
+白色保留，黑色被抠掉	Se mantiene el color blanco, se elimina el negro
+白色纯色	Color blanco puro
+监视器和导出都	Para monitores y exportación
+目标	Destino
+目标 {0}	Destino {0}
+目标位置已被占用	Destino ocupado
+目标响度	Sonoridad del destino
+目标轨道已锁定	Pista del destino bloqueada
+直接出现，直接消失	Aparecer y desaparecer directamente
+直方图	Histograma
+相似度	Similaridad
+相加	Sumar
+真峰值 {0}	Pico real {0}
+瞬时 M	M instantáneo
+瞬时 {0}	{0} instantáneo
+矢量示波器	Osciloscopio vectorial
+矩形	Retículo
+短期 S	Corto plazo S
+短期 {0}	{0} corto plazo
+短边 540 像素，只含画面；渲染始终用原片	Lado corto 540 píxeles, solo imagen; renderizado siempre con la versión original
+确定	Confirmar
+示波器：{0}	Osciloscopio: {0}
+离开	Salir
+离开音频页或关闭窗口时，会保存已录的旁白。	Al salir de la página de audio o cerrar la ventana, se guardará el diálogo grabado.
+离线	Sin conexión
+秒	Segundos
+移到 {0}	Mover a {0}
+移动	Mover
+移动关键帧	Mover fotogramas clave
+移动到其他轨道	Mover a otra pista
+移动或调整窗口，会在播放头处添加关键帧	Mover o ajustar la ventana, se agregarán fotogramas clave en el cabezal de reproducción
+移动标记	Mover marcadores
+移动片段	Mover clips
+移动窗口	Mover ventanas
+移动遮罩	Mover máscaras
+移除	Eliminar
+移除效果	Eliminar efectos
+移除特效	Eliminar efectos especiales
+移除窗口	Eliminar ventanas
+移除转场	Quitar transición
+移除遮罩	Eliminar máscara
+移除限定器	Eliminar limitador
+稳定	Estabilización
+稳定平滑度	Nivel de suavidad de estabilización
+稳定强度	Intensidad de estabilización
+稳定时放大遮住边缘	Aumentar para ocultar los bordes durante la estabilización
+稳定路径：	Ruta de estabilización:
+稳定：不放大	Estabilización: sin aumento
+稳定：放大遮边	Estabilización: aumentar los bordes
+空间降噪	Noise reduction espacial
+窄	Estrecho
+窗口	Ventana
+窗口 · {0}	Ventana · {0}
+窗口 · 限定器	Ventana · Limitador
+窗口关键帧	Fotogramas de la ventana
+窗口关键帧：缓入	Fotogramas de la ventana: entrada lenta
+窗口关键帧：缓出	Fotogramas de la ventana: salida lenta
+窗口内	Dentro de la ventana
+窗口只作用于画面的一部分，未写入	Ventana: Solo afecta una parte de la imagen, no se graba.
+窗口外	Fuera de la ventana.
+窗口形状：{0}	Forma de la ventana: {0}
+窗口跟踪	Seguimiento de la ventana.
+窗口：{0}	Ventana: {0}
+窗口：反转	Ventana: Invertir.
+窗口：取消反转	Ventana: Cancelar invertir.
+窗口：拖动以移动	Ventana: Arrastrar para mover.
+立体声	Estéreo.
+立即	Inmediatamente.
+立即备份	Realizar copia de seguridad inmediatamente.
+竖屏	Vertical
+符合条件：{0} 个素材	Condiciones cumplidas: {0} medios.
+第 {0} 个变速点两侧速度相同，不需要平滑过渡	El {0} punto de cambio de velocidad tiene velocidad igual en ambos lados, no se requiere transición suave.
+第 {0} 个变速点在 {1} 秒内平滑过渡	El {0} punto de cambio de velocidad tiene transición suave en {1} segundos.
+第 {0} 个变速点改为立即变速	El {0} punto de cambio de velocidad se convierte en cambio de velocidad inmediato.
+第 {0} 个变速点（{1}）的过渡有一部分在片段之外，剪短前的画面不变	El {0} punto de cambio de velocidad ({1}) tiene parte de la transición fuera del clip, la imagen antes de cortar se mantiene sin cambios.
+第 {0} 个变速点（{1}）：速度在 {2} 秒内平滑过渡，变速点在过渡中间，片段时长不变	El {0} punto de cambio de velocidad ({1}): La velocidad tiene transición suave en {2} segundos, el punto de cambio de velocidad está en medio de la transición, la duración del clip se mantiene sin cambios.
+第 {0} 段速度 {1}，片段时长 {2}	La velocidad del {0} punto es {1}, la duración del clip es {2}.
+第 {0} 行不是三个数值：{1}	En la línea {0} no hay tres valores: {1}
+第 {0} 行应有 {1} 个数值	En la línea {0} deberían haber {1} valores
+第 {0} 行：LUT_1D_SIZE 不是整数	En la línea {0}: LUT_1D_SIZE no es un número entero
+第 {0} 行：LUT_3D_SIZE 不是整数	En la línea {0}: LUT_3D_SIZE no es un número entero
+第 {0} 行：数据之后不能再有设置项	En la línea {0}: No se pueden agregar más opciones de configuración después de los datos
+第一个关键帧之前没有变化，无需缓入	No hay cambios antes del primer fotograma clave, no es necesario aplicar la función de retraso
+简中	Sencillo
+简体	Simplificado
+简体中文	简体中文
+简单	Simple
+类型	Tipo
+类型不同：“{0}”是{1}，所选文件是{2}	Tipo diferente: “{0}” es {1}, el archivo seleccionado es {2}
+类型不同：原素材是{0}，所选文件是{1}	Tipo diferente: El material original es {0}, el archivo seleccionado es {1}
+粉	Rosa
+粉色旗标	Bandera rosa
+粗	Gráfico
+粗体	En negrita
+粘贴	Pegar
+粘贴{0}	Pegar {0}
+粘贴属性	Pegar atributos
+粘贴属性…	Pegar atributos…
+粘贴片段	Pegar clip
+粘贴调色	Pegar etalonaje
+精修	Mejorar
+素材 {0}×{1}	Medio {0}×{1}
+素材 {0}×{1} 比画面{2}：	Medio {0}×{1} comparado con imagen{2}:
+素材与时间线同为 {0}×{1}，原尺寸正好铺满画面	El medio y la línea de tiempo tienen {0}×{1}, y el tamaño original llena perfectamente la imagen
+素材与时间线的画面比例相同，适应、填充、拉伸看起来一样	La proporción de la imagen del medio y la línea de tiempo es la misma, se adapta, se rellena y se estira de la misma manera
+素材仍在媒体池中	El medio todavía está en la pila de medios
+素材前面没有更多内容	Se ha alcanzado el inicio del medio.
+素材后面没有更多内容	No hay más contenido después del medio
+素材已不在媒体池中	El medio ya no está en la pila de medios
+素材已不存在	El medio ya no existe
+素材或后面的片段只够	El medio o el clip posterior son suficientes
+素材离线	El medio está desconectado
+素材离线，无法匹配	El medio está desconectado y no se puede emparejar
+素材离线，无法匹配帧	El medio está desconectado y no se pueden emparejar fotogramas
+素材离线，无法同步	El medio está desconectado y no se puede sincronizar
+素材离线，无法吸取颜色	El material está fuera de línea, no se puede extraer color.
+素材离线，无法定格	El material está fuera de línea, no se puede detener.
+素材离线，无法抓取静帧	El material está fuera de línea, no se puede capturar fotogramas fijos.
+素材离线，无法测量	El material está fuera de línea, no se puede medir.
+素材离线，无法添加：{0}	El material está fuera de línea, no se puede agregar: {0}.
+素材离线，无法自动调色	El material está fuera de línea, no se puede calibrar automáticamente.
+素材离线：原文件已被移动或删除	El material está fuera de línea: el archivo original ha sido movido o eliminado.
+索引	Índice
+紫	Púrpura
+紫色旗标	Bandera púrpura
+繁中	Chino tradicional
+繁体	Chino tradicional
+繁體	Chino tradicional
+繁體中文	繁體中文
+红	Rojo
+红 ⇄ 绿	Rojo ⇄ Verde
+红 ⇄ 蓝	Rojo ⇄ Azul
+红绿蓝各自压缩高光：最稳妥，很亮的颜色会自然褪白	Compresión de altas luces para rojo, verde y azul: lo más seguro, los colores muy brillantes se desvanecerán naturalmente.
+红色旗标	Bandera roja
+红色输出	Salida en rojo
+纯五度	Cinco grados puros
+纯四度	Cuatro grados puros
+纯色 · 18% 灰	Color puro · 18% gris
+纯色 · 抠像测试	Color puro · Prueba de eliminación de fondo
+纯色 · 文字背景	Color puro · Fondo de texto
+纯色 · 白场、闪白	Color puro · Campo blanco, flash blanco
+纯色 · 黑场、垫底	Color puro · Campo negro, fondo inferior
+纵向拉高	Ajuste vertical
+线性	Lineal
+细	Finas
+细线是摄像机的路径，粗线是稳定后画面走的路径；上为水平，下为垂直	Las líneas finas representan el camino del cámara, las gruesas representan el camino que sigue la imagen después de estabilizarse; arriba es horizontal, abajo es vertical
+细节	Detalles
+结尾	Final
+绿	Verde
+绿 ⇄ 蓝	Verde ⇄ Azul
+绿幕	Pantalla verde
+绿框是第一帧的画面，红框是最后一帧的	El cuadro verde es la primera imagen, el cuadro rojo es la última imagen
+绿色旗标	Bandera verde
+绿色纯色	Color verde puro
+绿色输出	Salida en verde
+缓入	Suavizar inicio
+缓入缓出	Entrada y salida lenta
+缓出	Suavizar fin
+缓动	Animación lenta
+编码	Códec
+编码器不支持 {0} {1} {2} fps，请降低分辨率或帧率后重试。	El codificador no soporta {0} {1} {2} fps, por favor reduzca la resolución o la frecuencia de fotogramas y vuelva a intentar.
+编码器不支持 {0}，请降低分辨率或帧率后重试。	El codificador no soporta {0}, por favor reduzca la resolución o la frecuencia de fotogramas y vuelva a intentar.
+编码器没有给出画面格式	El codificador no proporcionó el formato de imagen
+编码视频时出错：请重试；如果反复出现，试着降低分辨率或换用 H.264（{0}）。	Error al codificar video: inténtelo de nuevo; si el problema persiste, intente reducir la resolución o utilice H.264 ({0}).
+编辑	Editar
+编辑场记	Grabación de notas de edición
+编辑时每 10 分钟自动备份一次；保留最近 1 小时的全部备份、24 小时内每小时一份、7 天内每天一份	Realice una copia automática cada 10 minutos durante la edición; mantenga todas las copias de la última hora, una por cada hora en los 24 últimos horas, y una por cada día en los 7 últimos días.
+编辑智能媒体夹	Edición de carpetas de medios inteligentes
+编辑条件	Condiciones de edición
+编辑条件…	Condiciones de edición…
+编辑片段均衡器	Editar el EQ del clip
+缩放	Zoom
+缩放方式	Métodos de escala
+缩放方式、缩放、位置、旋转、不透明度、合成模式、裁切、动态缩放，含关键帧	Métodos de escala, escala, posición, rotación, opacidad, modo de composición, recorte, escala dinámica, con fotogramas clave
+缩放方式：{0}	Método de escala: {0}
+缩放模糊	Efecto de distorsión en la escala
+缩略图	Miniaturas
+背景	Fondo
+背景框	Cuadro de fondo
+胶片 2383	Película 2383
+胶片颗粒	Partículas en la película
+自动	Auto
+自动对齐	Alineación automática
+自动调色	Efecto de color automático
+自动调色（Shift+Alt+C）：按画面的黑位、白位设定暗部与亮部，并校正偏色	Efecto de color automático (Shift+Alt+C): Ajusta los tonos oscuros y claros según los puntos negros y blancos de la imagen, y corrige el desequilibrio de color
+自定义	Personalizado
+自带声音	Sonido incluido
+色差	Desviación de color
+色度阈值	Umbral de color
+色彩	Color
+色彩增强	Realce de color
+色彩扭曲器网格：拖动点改变色相和饱和度	Rejilla del distorsionador de color: Arrastrar para cambiar el tono y la saturación
+色彩扭曲器：{0}	Distorsionador de color: {0}
+色彩扭曲器：重置{0}	Distorsionador de color: Reiniciar {0}
+色彩斑点约 {0} 级以内	Puntos de color aproximadamente {0} niveles
+色温	Temperatura
+色相	Tono
+色相 {0}°	Tono {0}°
+色相·亮度	Tono y brillo
+色相·色相	Tono y tono
+色相·饱和	Tono y saturación
+色相对亮度	Tono y brillo
+色相对色相	Tono y tono
+色相对饱和度	Tono y saturación
+色相范围	Rango de tonos
+色调	Tonalidad
+色调映射	Mapeo tonal
+色调映射：{0}	Mapa de tonalidad: {0}
+节点	Nodo
+节点 01 之前 · 对比视图左侧是降噪前	Nodo 01 antes · Vista comparativa a la izquierda es antes del noise reduction
+节点 01 关键帧 · 调色	Nodo 01 Fotograma clave · Etanalaje
+节点 01、02 不能停用：可以重置它们的调色	Nodos 01, 02 No se pueden desactivar: se puede restablecer su etanalaje
+节点 02 关键帧 · 窗口位置	Nodo 02 Posición de la ventana
+节点 02 的窗口只作用于画面的一部分，无法写进 LUT；节点 01 没有调色	La ventana del nodo 02 solo afecta a una parte de la imagen, no se puede escribir en la LUT; el nodo 01 no tiene etanalaje
+节点 {0} {1}	Nodo {0} {1}
+节点 {0} {1}，{2}{3}	Nodos {0} {1}, {2}{3}
+节点 {0} · {1}	Nodo {0} · {1}
+节点关键帧：{0}	Nodo Fotograma clave: {0}
+节目几乎无声	Programa casi silencioso
+节目响度	Sonoridad del programa
+节目响度 {0} LUFS · 真峰值 ≤ {1} dBTP	Sonoridad del programa {0} LUFS · Pico real ≤ {1} dBTP
+节目响度 · LUFS	Sonoridad del programa · LUFS
+节目响度：瞬时 {0}，短期 {1}，整体 {2} LUFS，	Sonoridad del programa: Instantáneo {0}, a corto plazo {1}, general {2} LUFS,
+范围	Rango
+范围内的 {0} 个片段各存一个文件（共 {1}）：只含片段本身和链接的声音，文件名后加片段名	Rango: {0,plural,one{# clip}other{# clips}}, un archivo por clip ({1} en total). Cada archivo contiene solo el clip y su audio vinculado. El nombre del clip se añade al del archivo.
+范围：{0} → {1}（时间线入点到出点）	Rango: {0} → {1} (posición de entrada a salida en la línea de tiempo)
+蓝	Azul
+蓝幕	Pantalla azul
+蓝色旗标	Bandera azul
+蓝色纯色	Color azul puro
+蓝色输出	Salida azul
+藏青	Azul oscuro
+补偿	Ganancia de compensación
+衰减	Atenuación
+裁切	Recorte
+裁切 上	Corte arriba
+裁切 下	Corte abajo
+裁切 右	Corte derecha
+裁切 左	Corte izquierda
+裁切{0}	Corte {0}
+裁切柔化	Suavizado del corte
+要以 {0} 播放才能填满入出点，超出 {1}–{2} 的范围	Necesita reproducirse con {0} para llenar los puntos de entrada y salida, excediendo los rangos {1}–{2}
+覆盖	Sobreexplotación
+视频	Vídeo
+视频 · {0}	Vídeo · {0}
+视频尺寸无效	Tamaño de vídeo no válido
+视频转场	Transición de vídeo
+视频里没有可解码的关键帧	No hay fotogramas clave decodificables en el vídeo
+角	Ángulo
+角度	Ángulo
+解码	Descomposición
+解码或编码出错	Error en la descomposición o codificación
+解码素材时出错：请重试；如果反复出现，试着替换出错的素材（{0}）。	Error al descomponer el medio: intente nuevamente. Si el problema persiste, intente reemplazar el medio con errores ({0}).
+解锁轨道	Desbloquear pista
+设为入出点	Establecer como punto de entrada y salida
+设备上还没有视频、音频或图片。	No hay videos, audio o imágenes en el dispositivo.
+设备中没有找到这个文件，可以手动选择	No se encontró el archivo en el dispositivo; puede seleccionarlo manualmente.
+设备处理过慢，渲染中断。请关闭其他应用，或降低分辨率后重试。	El dispositivo procesa demasiado lento, interrumpe la renderización. Cierre otras aplicaciones y intente nuevamente con una resolución más baja.
+该位置已有标记	Ya hay un marcador en esta posición.
+请先在时间线上选择标题	Seleccione el título en la línea de tiempo primero.
+请先在时间线上选择片段	Seleccione el clip en la línea de tiempo primero.
+请先在时间线上选择片段，或标记入点和出点	Seleccione el clip en la línea de tiempo primero, o los puntos de entrada y salida del marcador.
+请先在时间线上选择要粘贴到的片段	Seleccione el clip al que desea pegar en la línea de tiempo primero.
+请先在时间线上选择视频片段	Seleccione el clip de video en la línea de tiempo primero.
+请先填写文件名	Complete el nombre del archivo primero.
+请先点选时间线上的空隙	Seleccione los espacios en la línea de tiempo primero.
+请先选择一个画面片段	Seleccione un clip de imagen primero.
+请先选择一条字幕	Seleccione un subtítulo primero.
+请先选择多机位片段	Por favor, seleccione primero un clip de varios ángulos.
+请先选择片段	Por favor, seleccione primero el clip.
+请先选择素材	Por favor, seleccione primero el medio.
+请先选择视频	Por favor, seleccione primero el video.
+请先选择音频片段	Por favor, seleccione primero el clip de audio.
+请在系统设置的应用权限里允许 {0} 访问	Permite el acceso a {0} en los permisos de aplicaciones de los ajustes del sistema
+请恢复读取权限或在媒体页重新链接后重试。	Por favor, restaure los permisos de lectura o intente nuevamente después de vincular de nuevo en la página de medios.
+请把播放头移到所选片段上	Por favor, mueva el cabezal de reproducción al clip seleccionado.
+请检查设备存储后重试。	Por favor, intente nuevamente después de verificar el almacenamiento del dispositivo.
+请点在画面上	Por favor, haga clic en la imagen.
+请至少设置一个条件	Por favor, establezca al menos una condición.
+读不出参照片段的声音	No se puede leer el sonido del clip.
+读取素材或写入文件时出错：请确认素材仍在设备上、设备还有空间，然后重试（{0}）。	Hubo un error al leer el medio o al escribir el archivo: asegúrese de que el medio todavía esté en el dispositivo y que haya espacio en el dispositivo, luego intente nuevamente ({0}).
+读取设备媒体时出错：{0}	Hubo un error al leer los medios del dispositivo: {0}
+调整会记录在此关键帧 · 可设缓入缓出	El ajuste se registrará en este fotograma clave · Se puede configurar la entrada y salida lenta.
+调整整个画面，接在前一个节点之后 · 不设关键帧	Ajuste toda la imagen, seguido del nodo anterior · No se establece un fotograma clave.
+调整曲线	Ajuste la curva.
+调整节点 01，会在播放头处添加关键帧	Ajuste el nodo 01, se agregarán fotogramas clave en el cabezal de reproducción.
+调整音量	Ajuste el volumen.
+调整音量关键帧	Ajuste de volumen en fotogramas clave
+调色	Color
+调色关键帧	Fotogramas clave para efectos de color
+调色关键帧：缓入	Fotogramas clave para efectos de color: entrada lenta
+调色关键帧：缓出	Fotogramas clave para efectos de color: salida lenta
+调色前	Antes del efecto de color
+调色前后对比	Comparación antes y después del efecto de color
+调色后	Después del efecto de color
+调色版本：{0}，共 {1} 个，点按切换、新建或删除	Versión de efecto de color: {0}, un total de {1} fotogramas clave, haga clic para cambiar, crear o eliminar
+调色：{0}	Efectos de color: {0}
+调音台	Estereofónica
+调音台视图	Vista de estereofónica
+调高强度后，“嘶”“丝”这类齿音会被压低	Después de aumentar la intensidad, los sonidos como "sí" y "zí" se reducirán
+起点 	Punto de inicio 
+起音	Ataque
+超宽布局：时间轴铺满加宽的窗口	Disposición ultralarga: eje de tiempo llenando la ventana ampliada
+超宽布局：窗口加宽到 2700 dp，时间轴铺满底部，上方并排两个监视器	Disposición ultralarga: ventana ampliada hasta 2700 dp, eje de tiempo llenando la parte inferior, con dos monitores alineados en la parte superior
+距底	Distancia desde el fondo
+跟踪	Seguimiento
+跟踪时大小跟随画面缩放	Seguir el tamaño al escalar la imagen.
+跟踪时角度跟随画面旋转	Seguir el ángulo al rotar la imagen.
+跟踪窗口	Ventana de seguimiento.
+跟踪窗口：从播放头向前和向后跟随画面	Ventana de seguimiento: Seguir la imagen hacia adelante y hacia atrás desde el cabezal de reproducción.
+跟踪遮罩	Máscara de seguimiento.
+跟踪遮罩：从播放头向前和向后跟随画面	Máscara de seguimiento: Seguir la imagen hacia adelante y hacia atrás desde el cabezal de reproducción.
+跟随系统	Usar idioma del sistema
+跳到入点	Saltar al punto de entrada.
+跳到出点	Saltar al punto de salida.
+跳转	Salto.
+轨道	Pista
+轨道 {0} 已重命名为“{1}”	La órbita {0} ha sido renombrada a “{1}”.
+轨道上的第一个片段	El primer clip de la pista.
+轨道不存在	La pista no existe.
+轨道声音 {0}	Sonido de la pista {0}.
+轨道已锁定	La pista está bloqueada.
+轨道显示 {0}	Visualización de la pista {0}.
+轨道样式 · {0}	Estilo de la pista · {0}.
+轨道输出	Salida de la pista.
+转场	Transiciones
+转场 {0} 秒	Transición {0} segundos
+转场{0}	Transición {0}
+转场只能应用到画面片段	La transición solo se puede aplicar a fragmentos de imagen
+转场对齐	Alineación de la transición
+转场已经是{0}	La transición ya es {0}
+转场描边	Borde de la transición
+转场改为：{0}	Cambiar la transición a: {0}
+转场方向	Dirección de la transición
+转场时长	Duración de la transición
+转场柔化	Suavización de la transición
+转场类型	Tipo de transición
+转场类型：{0}	Tipo de transición: {0}
+转场缓动	Efecto de suavización en la transición
+转场角度	Ángulo de la transición
+转场颜色	Color de la transición
+轻微	Levemente
+输入字幕	Introducir subtítulos
+输入时间码	Introducir código de tiempo
+输入时间码（如 00:00:03:00 或 3:00）或秒数（如 2.5）	Introducir código de tiempo (por ejemplo, 00:00:03:00 o 3:00) o número de segundos (por ejemplo, 2.5)
+输入标题文字	Introducir texto de título
+输入色彩空间	Introducir espacio de color
+返回“{0}”（{1} 里的复合片段）	Regresar a “{0}” (clip compuesto en {1})
+返回上一级	Regresar al nivel superior
+返回列表	Volver a la lista
+返回项目库	Volver a los proyectos
+还有 {0} 个视频没有代理，一次生成一个	Todavía hay {0} videos sin proxy, genere uno al mismo tiempo
+还没有“{0}”的噪声底：打开降噪后会自动测量	Todavía no hay fondo de ruido de “{0}”: se medirá automáticamente después de activar el noise reduction
+还没有备份：打开项目编辑时会自动备份，或点“立即备份”	Todavía no hay copia: se realizará una copia automática al editar el proyecto, o seleccione “Copia ahora”
+还没有总线：点「添加总线」，再在轨道视图里点轨道名称，把对白、音乐等轨道输出到同一条总线，一个推子一起调。	Todavía no hay bus: seleccione “Añadir bus”, luego seleccione el nombre de la pista en la vista de pista para exportar pistas como diálogos y música a la misma bus, y ajustar todo juntos con un solo botón
+还没有标记：按 M 或下方按钮在播放头处添加	Todavía no hay marcador: agregue uno con M o el botón inferior en el cabezal de reproducción
+还没有读到画面，稍后再试	Todavía no hay imagen: intente de nuevo más tarde
+还没有静帧：在播放头处抓取一张，用来对比镜头、复用调色	Todavía no hay fotograma fijo: capture uno en el cabezal de reproducción para comparar con las escenas y realizar el etalonaje
+还没有项目	Aún no hay proyectos
+这一段已经是 {0}	Este segmento ya es {0}.
+这个备份已无法读取	Esta copia ya no se puede leer.
+这个多机位片段没有声音部分	Este segmento de múltiples ángulos no tiene parte sonora.
+这个多机位片段没有画面部分	Este segmento de múltiples ángulos no tiene parte de imagen.
+这个标记没有范围：先设置时长或用入出点	Este marcador no tiene rango: configure la duración primero o utilice puntos de salida.
+这个片段没有可以做关键帧的属性	Este segmento no tiene atributos para crear fotogramas clave.
+这个片段没有这条曲线	Este segmento no tiene esta curva.
+这个视频没有自带声音，无法按波形同步	Este video no tiene sonido incorporado y no se puede sincronizar por forma de onda.
+这个颜色不在选区里	Este color no está dentro de la selección.
+这个颜色在选区正中，无法只减去它	Este color está en el centro de la selección, no se puede eliminar solo.
+这个颜色在选区的核心里，请用减选	Este color está en el núcleo de la selección, utilice la función de selección negativa.
+这个颜色已在选区的柔和边缘里	Este color ya está en los bordes suaves de la selección.
+这个颜色已在选区里	Este color ya está dentro de la selección.
+这个颜色无法加入选区	Este color no se puede agregar a la selección.
+这个颜色离选区太远，柔化够不到它，请用加选	Este color está demasiado lejos de la selección, no se puede suavizar, utilice la función de selección positiva.
+这台设备无法读取解码后的画面	Este dispositivo no puede leer la imagen descodificada.
+这台设备的编码器不支持通用 YUV 输入	El codificador de este dispositivo no soporta entradas YUV universales.
+这条总线已不存在	Este bus ya no existe.
+这条素材的说明	La descripción de este material
+这条轨道上还没有声音片段	En este track aún no hay ningún fragmento de audio.
+这里不能导出静帧。	No es posible exportar imágenes estáticas desde este lugar.
+这里已有关键帧	Aquí hay un fotograma clave.
+这里已经有变速点	Ya hay puntos de cambio de velocidad aquí.
+这里的剪辑点已经有转场	Los puntos de edición aquí ya están preparados para el cambio de escena.
+进入	Entrar
+迷你时间线	Minicronograma
+追加	Adiciones
+追加到时间线末尾（Shift+F12）	Añadir al final de la línea temporal (Shift+F12)
+适应	Adaptación
+适配全片	Adaptación completa de toda la película
+适配填充	Relleno de adaptación
+适配填充到 {0} → {1}	Se está adaptando el contenido al rango de {0} a {1}.
+适配填充要先在时间线上标记入点和出点	Para el relleno de adaptación, es necesario marcar los puntos de entrada y salida en la línea del tiempo.
+适配填充（{0}）：源片段的入点到出点变速，正好填满时间线的入点到出点	Relleno adaptativo ({0}): La velocidad de transición del punto de entrada al punto de salida del segmento fuente se ajusta para llenar completamente el intervalo de tiempo entre esos puntos.
+逆时针	En contra del sentido de las agujas del reloj
+选一个房间，或调高干湿比	Elija una habitación, o aumente la proporción entre húmedo y seco.
+选一个预设替换整条曲线，再按需微调	Seleccione una opción predefinida para reemplazar toda la curva, y luego ajuste los parámetros según sea necesario.
+选一个预设替换门限、压缩器和限制器的设置，再按需微调	Seleccione los ajustes predeterminados para el umbral de reemplazo, el compresor y el limitador. Luego, realice los ajustes adicionales según sea necesario.
+选中的片段没有链接	El clip seleccionado no tiene enlace.
+选择一个声音片段	Seleccione un clip de sonido.
+选择一个画面片段和一个声音片段来链接	Seleccione un clip de imagen y un clip de sonido para vincularlos.
+选择一个素材进行预览	Seleccione un medio para realizar una vista previa.
+选择全部{0}色片段	Seleccione todos los clips de {0} colores.
+选择全部片段	Seleccione todos los clips.
+选择右侧全部片段	Seleccione todos los clips del lado derecho.
+选择形状后，片段只在形状内显示，形状外露出下层轨道	Después de seleccionar una forma, el clip se mostrará solo dentro de la forma, con la pista inferior visible fuera de ella.
+选择文件…	Seleccione el archivo…
+选择片段后滑动	Deslice el dedo después de seleccionar el clip.
+选择片段后滑移	Desplace el dedo después de seleccionar el clip.
+选择片段后滚动	Despliegue el dedo después de seleccionar el clip.
+选择窗口形状后，可以添加关键帧	Después de seleccionar la forma de la ventana, se pueden agregar fotogramas clave.
+选择至少两个片段：最后点选的片段作为参照	Seleccione al menos dos clips: el último seleccionado servirá como referencia.
+选择至少两个画面片段：每个是一个机位（先对齐）	Seleccione al menos dos clips de imagen: cada uno será un ángulo (alineados primero).
+选择要导入的视频、音频或图片。素材以引用方式加入媒体池，不会复制文件。	Seleccione el video, audio o imagen que desea importar. El medio se agregará al conjunto de medios de forma referencial, sin duplicar el archivo.
+选择音频片段后测量响度	Mida la sonoridad después de seleccionar el clip de audio.
+选择项目	Seleccione el proyecto.
+选段 {0}	Sección {0}
+选色以外	Selección de colores adicionales
+逐字	Palabra por palabra
+逐字打出，{0} 个字 {1} 秒打完{2}	Seleccionar caracteres uno por uno: {0} caracteres en {1} s{2}
+遮住画面移动时露出的边缘	Ocultar bordes que se dejan al mover la imagen
+遮罩	Máscara
+遮罩{0}	Máscara {0}
+遮罩关键帧	Máscara de fotogramas clave
+遮罩形状	Forma de la máscara
+遮罩形状：{0}	Forma de máscara: {0}
+遮罩恢复为显示形状之内的画面	Restaurar la máscara a la imagen dentro de la forma
+遮罩模糊	Máscara desenfocada
+遮罩精修	Mejoramiento de la máscara
+遮罩跟踪	Seguimiento de máscara
+遮罩需要一个形状	La máscara requiere una forma
+遮罩：拖动以移动	Máscara: arrastrar para mover
+那里已有另一个标记	Ya hay otro marcador allí
+部分完成	Parte completada
+部分片段在已锁定的轨道上：会改动它们的编辑将被拒绝	Algunos clips están en pistas bloqueadas: cualquier cambio en su edición será rechazado
+采样率	Frecuencia de muestreo
+释放	Liberación
+释放空间；需要时可以再生成	Liberar espacio; se puede generar nuevamente si es necesario
+重做	Rehacer
+重做 {0} 步	Rehacer {0} pasos
+重做：{0}	Rehacer: {0}
+重命名	Cambiar nombre
+重命名…	Renombrar…
+重命名媒体夹	Renombrar carpeta de medios
+重命名标记	Renombrar marcador
+重命名片段	Renombrar clip
+重命名轨道	Renombrar pista
+重命名轨道 {0}	Renombrar pista {0}
+重新分析	Reanalizar
+重新分析摄像机运动	Reanalizar movimiento de cámara
+重新授权	Reautorizar
+重新渲染	Rerenderizar
+重新生成代理	Generar nuevo proxy
+重新读取	Volver a cargar
+重新链接	Reenlazar
+重新链接 {0} 个	Vuelve a vincular {0} elementos
+重新链接…	Vuelve a vincular…
+重新链接离线素材	Vuelve a vincular materiales en modo offline
+重新链接离线素材：在设备中查找或手动选择文件	Vuelve a vincular materiales en modo offline: busca o selecciona los archivos en el dispositivo
+重新链接素材	Vuelve a vincular materiales
+重置	Restablecer
+重置 RGB 混合器	Restablecer el mezclador RGB
+重置动态	Restablecer dinámica
+重置均衡器	Restablecer el ecualizador
+重置字幕样式	Restablecer el estilo de subtítulos
+重置曲线	Restablecer la curva
+重置标题样式	Restablecer el estilo de títulos
+重置此点	Restablecer este punto
+重置混响	Restablecer la reverberación
+重置色彩扭曲器	Restablecer el distorsionador de color
+重置裁切	Restablecer el recorte
+重置调色	Restablecer el etalonaje
+重置闪避	Restablecer el desvío
+重置降噪	Restablecer el noise reduction
+重置齿音消除	Reconfigurar eliminación de sonidos dentales
+重试	Reintentar
+铺满画面，{0} {1} 倍	Llenar la imagen, {0} {1} veces
+铺满画面，裁去{0}各 {1}%	Llenar la imagen, eliminar {0} del {1}%
+链接到 {0}	Vincular a {0}
+链接片段	Vincular clip
+链接的片段在已锁定的轨道上	El clip vinculado está en una pista bloqueada
+锁定轨道	Bloquear pista
+锁定轨道 {0}	Bloquear pista {0}
+锐化	Agudizar
+键轨道已不存在：不起作用	La pista clave ya no existe: no funciona
+镜 {0}	Lente {0}
+镜像	Mirroring
+镜头	Lente
+镜头匹配	Ajuste de lente
+长按编辑条件或删除	Pulsar largo para editar o eliminar
+长按重命名或删除	Pulsar largo para renombrar o eliminar
+门限	Puerta de ruido
+闪避	Evasión
+闪避 · {0}	Evasión · {0}
+闪避曲线	Curva de evasión
+闪避预设	Preset de evasión
+闪避预设：{0}	Preset de evasión: {0}
+闪避：{0}	Evasión: {0}
+闪避：侧链 {0}	Evasión: Cadena lateral {0}
+闪避：关闭	Evasión: Desactivada
+闪避：开启	Evasión: Activada
+阈值	Umbral
+阈值 {0}	Umbral {0}
+队列为空。设置好参数后点“加入渲染队列”。	La cola está vacía. Configura los parámetros y luego haz clic en "Añadir a la cola de renderizado".
+队列里没有等待渲染的任务，先点“加入渲染队列”	No hay tareas en la cola esperando renderizado. Primero, haz clic en "Añadir a la cola de renderizado".
+阴影	Sombras
+降低	Reducir
+降噪	Desensibilización
+降噪 · {0}	Desensibilización · {0}
+降噪半径	Radio de desensibilización
+降噪半径：{0}	Radio de desensibilización: {0}
+降噪量	Cantidad de desensibilización
+降噪量为 0：声音不变	Nivel de noise reduction: 0: Sonido sin cambios
+降噪量：噪声压低多少；阈值：比噪声底高多少以内算噪声	Nivel de noise reduction: Cantidad de ruido reducido; Umbral: Rango de ruido considerado como ruido inferior al umbral
+降噪：{0}	Noise reduction: {0}
+降噪：关闭	Noise reduction: Desactivado
+降噪：开启	Noise reduction: Activado
+降序 ↓	Orden descendente ↓
+限制器	Limitador
+限定器	Cualificador
+限定器页面	Página del restrictor
+限定器：{0}	Restrictor: {0}
+限定器：{0}{1}	Restrictor: {0}{1}
+限定器：减选颜色	Restrictor: Eliminación de colores
+限定器：加选颜色	Restrictor: Añadido de colores
+限定器：反转	Restrictor: Inversión
+限定器：取消反转	Restrictor: Cancelar inversión
+限定器：柔化减选	Restrictor: Suavización de eliminación de colores
+限定器：柔化加选	Restrictor: Suavización de añadido de colores
+隐藏轨道	Opciones ocultas de pistas
+需要“照片和视频”和“音乐和音频”权限才能在设备中查找文件；也可以逐个手动选择文件。	Se necesita permisos de "Fotos y videos" y "Música y audio" para buscar archivos en el dispositivo; también se pueden seleccionar archivos uno por uno.
+需要另一条音频轨道作为侧链	Necesito otra pista de audio como secuencia adicional.
+需要麦克风权限才能录制旁白：请在系统设置里允许 {0} 使用麦克风	Se necesita permiso del micrófono para grabar la voz en off: por favor, permita a {0} usar el micrófono en los ajustes del sistema.
+霓虹夜	Noche neón
+青	Azul
+青柠	Limón azul
+青橙电影	Película azul
+青色旗标	Bandera azul
+静帧	Fotograma fijo
+静帧 {0}	Fotograma fijo {0}
+静帧图片缺失：{0}	Foto del fotograma fijo faltante: {0}
+静帧太平或几乎是单色，无法匹配	Fotograma fijo demasiado tranquilo o casi monocromático, no se puede emparejar.
+静帧已删除	Fotograma fijo eliminado.
+静帧的图片已丢失，无法匹配	La imagen del fotograma fijo se ha perdido, no se puede emparejar.
+静帧缺少素材：{0}	Fotograma fijo falta material: {0}
+静态图片没有可滑移的素材	La imagen estática no tiene material para deslizar.
+静音	Silencio
+静音 {0}	Silencio {0}
+韩	Corea
+音乐和音频	Música y audio
+音乐整合	Integración de música
+音调	Tono
+音调 	Tono 
+音调归零	Reajuste de tono
+音调（半音）	Tono (semítico)
+音轨 · 拖动片段两端的淡化手柄调整淡入淡出	Pistas de audio · Ajuste de atenuación con los controladores en los extremos del clip para configurar fade-in y fade-out
+音量	Volumen
+音量 {0}	Volumen {0}
+音量与声像	Volumen y panorama
+音量关键帧	Keyframes de volumen
+音量变化：调整会记录在播放头处的关键帧	Cambio de volumen: Ajustes registrados en los keyframes en la línea de tiempo
+音量变化：调整会记录在此关键帧 · 可设缓入缓出	Cambio de volumen: Registrado en este keyframe · Se puede configurar fade-in y fade-out
+音量缓入	Fade-in de volumen
+音量缓出	Fade-out de volumen
+音频	Audio
+音频 · {0}	Audio · {0}
+音频交叉淡化	Atenuación cruzada de audio
+音频无需代理	Audio sin necesidad de proxy
+音频时间线	Línea de tiempo de audio
+音频格式	Formato de audio
+音频片段没有画面	Clip de audio sin imagen
+音频片段没有画面属性	Clip de audio sin atributos de imagen
+音频片段没有画面属性。	Clip de audio sin atributos de imagen.
+音频素材无法读取：{0}	El material de audio no se puede leer: {0}
+音频素材：{0}	Material de audio: {0}
+音频轨已满：请选一条已有的音频轨	La pista de audio está llena: seleccione una pista de audio ya existente
+顶部	Parte superior
+项目名称	Nombre del proyecto
+项目备份 · {0}	Copia del proyecto · {0}
+项目备份…	Copia del proyecto…
+项目库	Biblioteca de proyectos
+项目文件无法读取	El archivo del proyecto no se puede leer
+项目至少要有一条时间线	El proyecto debe tener al menos una línea de tiempo
+项目里已有名为“{0}”的时间线	Ya hay una línea de tiempo llamada “{0}” en el proyecto
+项目里没有需要代理的视频	No hay videos que requieran proxy en el proyecto
+顺时针	Horario de las manecillas del reloj
+预延迟	Retraso previo
+预览为近似效果 · 画中画与转场在导出时精确合成	La vista previa es una aproximación · La transición y el overlay se combinan con precisión al exportar
+预览出错：{0}	Error en la vista previa: {0}
+预计 {0} · {1} · 	Previsión de {0} · {1} · 
+预计 {0} · {1} · 仅音频 {2}	Previsión de {0} · {1} · Solo audio {2}
+预设	Presets
+预设 {0}	Preset {0}
+预设：{0}	Preset: {0}
+频段	Banda de frecuencias
+频率	Frecuencia
+颜色	Color
+颜色、字重、描边、阴影、背景与入场动画	Color, grosor de fuente, borde, sombras, fondo y animación de entrada
+颜色减淡	Difuminar color
+颜色加深	Oscurecer color
+颜色过渡	Transición de colores
+飞梭 {0}	Desplazamiento rápido {0}
+飞梭模式	Modo de desplazamiento rápido
+饱和度	Saturación
+马赛克	Mosaico
+高	Alto
+高于时间线（{0} fps）：每秒渲染 {1} 帧，素材帧不够时重复前一帧	Más alto que la línea de tiempo ({0} fps): Renderizar {1} fotogramas por segundo, se repite el fotograma anterior si hay suficientes fotogramas del material
+高光	Altas luces
+高斯模糊	Desenfocado gaussiano
+高频	Frecuencia alta
+高频 {0}	Frecuencia alta {0}
+高频衰减	Atenuación de frecuencia alta
+麦克风电平	Nivel del micrófono
+黄	Amarillo
+黄色旗标	Bandera amarilla
+黑	Negro
+黑场过渡	Transición de negro
+黑白	Blanco y negro
+黑色纯色	Color negro puro
+齿音消除	Eliminación de dentaduras
+齿音消除 · {0}	Eliminación de dentaduras · {0}
+齿音消除：关闭	Eliminación de dentaduras: Desactivado
+齿音消除：开启	Eliminación de dentaduras: Activado
+齿音消除：强度	Eliminación de dentaduras: Intensidad
+齿音消除：频段 {0}	Frecuencia de eliminación de dentaduras {0}
+齿音频段	Frecuencia de eliminación de dentaduras
+（	（
+（{0} {1}）	（{0} {1}）
+（{0} 个不适用或已锁定，未改动）	({0} no aplicable o bloqueado, sin cambios）
+（{0} 在这段有内容，保持不动）	({0} tiene contenido en este segmento, se mantiene sin cambios）
+（{0}）	({0}）
+（已标）	（Marcado）
+（当前）	（Actual）
+（循环）	（Ciclo）
+（新建轨道 {0}）	（Nueva pista {0}）
+（未能保存到“下载”文件夹）	（No se pudo guardar en la carpeta “Descargas”）
+（比片段用到的短 {0}）	（Más corto que el clip {0}）
+（空）	（Vacío）
+＋ 新建媒体夹	+ Crear carpeta nueva
+＋ 新建智能媒体夹	+ Crear carpeta inteligente
+，	，
+，PQ 母版峰值按 {0} nits	，La plantilla PQ tiene un valor máximo de {0} nits
+，{0}	，{0}
+，{0} 回到主输出	，{0} regresa al resultado principal
+，{0}{1}	，{0}{1}
+，{0}色	, {0} colores
+，使用 {0} 次	, Utilizado {0} veces
+，偏色较重，已尽量校正	, El desvío de color es considerable, pero se ha corregido al máximo
+，其中 {0} 个比片段用到的短	, De ellos, {0} son más cortos que el clip
+，其中 {0} 个素材回到媒体池	, De ellos, {0} materiales han sido devueltos al pool de medios
+，其他轨道剪去了同样长度	, Otras pistas han sido cortadas por la misma longitud
+，原入点不在它之前，已清除	, El punto de entrada original no está antes de este, ya eliminado
+，原出点不在它之后，已清除	, El punto de salida original no está después de este, ya eliminado
+，各一个 .{0}	, Cada uno con un .{0}
+，后面的片段前移 {0}	, Los clips posteriores se mueven hacia adelante {0}
+，后面的片段后移	, Los clips posteriores se mueven hacia atrás
+，后面的片段后移 {0}	, Los clips posteriores se mueven hacia atrás {0}
+，声音一并替换	, El sonido se ha reemplazado
+，大小最多变化 {0}%	, El cambio de tamaño máximo es {0}%
+，字幕轨已满：放在 {0}（{1}）	, El track de subtítulos está lleno: colocado en {0} ({1})
+，已在媒体池	, Ya está en el pool de medios
+，已应用到“{0}”	, Se ha aplicado a “{0}”
+，已打开	, Está activado
+，已调色	, Ha sido etalonajeado
+，并保存到 {0}	, y guardado en {0}
+，并校正了偏色	, y corregido el desvanecimiento del color
+，按时间线入出点放置	, colocado según los puntos de entrada y salida de la línea de tiempo
+，按时间线入出点替换	, reemplazado según los puntos de entrada y salida de la línea de tiempo
+，改动会用到全部 {0} 个使用它的片段	, los cambios utilizarán todos los {0} clips que lo utilizan
+，新建字幕轨 {0}	, nuevo track de subtítulos {0}
+，新素材没有声音，原声保留	, el nuevo medio no tiene sonido, el original se mantiene
+，旗标：	, marcadores:
+，替换了原有 {0} 条	, reemplazado por los originales {0} puntos
+，最多转动 {0}°	, rotación máxima de {0}°
+，未使用	, no utilizado
+，正在播放{0}	, se está reproduciendo {0}
+，没有空闲音频轨道，未放置声音	, no hay pistas de audio disponibles, no se ha colocado sonido
+，渲染入点至出点	, renderizado desde el punto de entrada hasta el punto de salida
+，渲染整条时间线	, renderizado toda la línea de tiempo
+，真峰值可达 {0} dBTP，超过 -1 dBTP 可能削波	, el valor máximo puede alcanzar {0} dBTP, se puede desaguar por debajo de -1 dBTP
+，素材离线	, el medio está desconectado
+，结尾 {0} 秒渐隐	, desvanecimiento al final de {0} segundos
+，覆盖了原有内容	, se ha cubierto el contenido original
+，覆盖了原有声音	, cubriendo el sonido original
+，部分差异超出色轮范围，已尽量接近	, algunas diferencias van más allá del rango de las ruedas de color, se ha intentado acercar al máximo
+，长度相同，后面的片段不动	, de la misma longitud, el clip posterior no se moverá
+：媒体池里没有“{0}”	: No hay " {0} " en el pool de medios
+：循环播放已开	: Reproducción en ciclo activada
+；	;
+；{0}	;{0}
+；{0} 个文件无法读取	;No se pueden leer {0} archivos
+；{0} 个未导入	;{0} archivos no importados
+；之后放到时间线的片段会使用它	;Los clips que se agreguen a la línea de tiempo utilizarán esto
+；保留 {0}% 原画面	;Retiene {0}% de la imagen original
+；字幕文件：	;Archivos de subtítulos:
+；当前片段的调色显示 LUT 缺失	;El etalonaje del clip actual muestra que falta la LUT
+；打开「字幕文件」可把 {0} 种语言各存一个文件	; activa «Archivos de subtítulos» para guardar un archivo por cada uno de los {0} idiomas
+；未包含：	;No incluye:
+；未导入：	;No importado:
+；注意：新文件比片段用到的短 {0}，超出的部分没有画面和声音	; aviso: el nuevo archivo es {0} más corto que el tramo utilizado. La parte restante no tendrá imagen ni sonido.
+；还有 {0} 个离线	;Quedan {0} archivos sin conectar

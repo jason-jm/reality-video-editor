@@ -1,5 +1,6 @@
 package com.example.prismstudio.p40b43a88.ui.workspace.components
 
+import com.example.prismstudio.p40b43a88.ui.components.projectDisplayName
 import androidx.compose.foundation.layout.Arrangement
 import com.example.prismstudio.p40b43a88.ui.components.LanguageMenuButton
 import com.example.prismstudio.p40b43a88.domain.i18n.AppLanguage
@@ -80,7 +81,7 @@ fun WorkspaceTitleBar(
                 verticalAlignment = Alignment.Bottom,
             ) {
                 Text(
-                    projectName,
+                    projectDisplayName(projectName), translate = false,
                     style = PrismType.title,
                     color = PicoTheme.colorScheme.labelPrimary,
                     maxLines = 1,

@@ -24,7 +24,7 @@ class ExampleInstrumentedTest {
         val activity = app.packageManager.getActivityInfo(requireNotNull(launch.component), 0)
         val expected = "Reality Video Editor"
         assertEquals(expected, BuildConfig.PRODUCT_NAME)
-        for (tag in listOf("zh-Hans", "zh-Hant-TW", "zh-HK", "en", "fr", "ja", "ar")) {
+        for (tag in com.example.prismstudio.p40b43a88.domain.i18n.AppLanguage.selectable.map { it.tag } + listOf("zh-Hant-TW", "zh-HK", "ar")) {
             val config = Configuration(app.resources.configuration).apply { setLocale(Locale.forLanguageTag(tag)) }
             val resources = app.createConfigurationContext(config).resources
             assertEquals(tag, expected, resources.getString(app.applicationInfo.labelRes))

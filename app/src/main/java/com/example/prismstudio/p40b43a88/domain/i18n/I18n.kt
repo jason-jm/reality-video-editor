@@ -1,30 +1,7 @@
 package com.example.prismstudio.p40b43a88.domain.i18n
 
 import com.example.prismstudio.p40b43a88.BuildConfig.PRODUCT_NAME
-import java.util.Locale
 import java.util.concurrent.ConcurrentHashMap
-
-/**
- * The languages the studio speaks. Simplified Chinese is the source: the code says everything in it, and the other
- * languages translate it at display time ([I18n.translate]). Right-to-left scripts are out of scope.
- */
-enum class AppLanguage(val tag: String, val nativeName: String) {
-    ZH_HANS("zh-Hans", "简体中文"),
-    EN("en", "English"),
-
-    /** QA only (debug builds): English, accented and a third longer, so cut-off and untranslated text stand out. */
-    PSEUDO("x-pseudo", "Ƥšéûđö");
-
-    companion object {
-        /** The languages a user can pick (QA's pseudo-locale apart). */
-        val selectable: List<AppLanguage> get() = entries.filter { it != PSEUDO }
-
-        fun fromTag(tag: String?): AppLanguage? = entries.firstOrNull { it.tag == tag }
-
-        /** The language closest to the system's [locale]: Chinese for any Chinese, else English. */
-        fun forLocale(locale: Locale): AppLanguage = if (locale.language == "zh") ZH_HANS else EN
-    }
-}
 
 /**
  * One language's translations: source templates (Chinese, `{0}`-style placeholders where the code fills in values) to
@@ -67,7 +44,11 @@ class Catalog(entries: Map<String, String>) {
         val literalLength = literals.sumOf { it.length }
 
         /** Placeholders a line break sets apart ("{0}\n导出时整体 …"): whatever they hold is a message of its own. */
-        val ownLine: Set<Int> = order.filterIndexed { i, _ -> '\n' in literals[i] || '\n' in literals[i + 1] }.toSet()
+        val messages: Set<Int> = order.filterIndexed { i, _ -> '\n' in literals[i] || '\n' in literals[i + 1] }.toSet() +
+            if (source == "失败：{0}") setOf(0) else emptySet()
+
+        // Imported caption names consist of a localized prefix and the user's original subtitle line.
+        val verbatim: Set<Int> = if (source == "字幕：{0}") setOf(0) else emptySet()
         val firstChar: Char? = literals.first().firstOrNull()
         // A place at the very end may be empty: the code appends optional text there ("…LUFS$clipping").
         private val regex by lazy {
@@ -167,8 +148,9 @@ object I18n {
         val cache = caches.getOrPut(language) { ConcurrentHashMap() }
         cache[text]?.let { return it }
         val base = if (language == AppLanguage.PSEUDO) AppLanguage.EN else language
-        var result = translateIn(text, catalog(base), depth = 0)
-        if (HAN.containsMatchIn(result)) missing += text
+        val translation = translateIn(text, catalog(base), base, depth = 0)
+        if (!translation.complete) missing += text
+        var result = translation.text
         if (language == AppLanguage.PSEUDO) result = pseudo(result)
         if (cache.size > CACHE_LIMIT) cache.clear()
         cache[text] = result
@@ -195,93 +177,110 @@ object I18n {
     fun stored(edited: String, original: String, language: AppLanguage = this.language): String =
         if (edited.trim() == translate(original, language).trim()) original else edited
 
+    /** Only the default name and the suffix added by Duplicate belong to the interface. */
+    fun projectName(text: String, language: AppLanguage = this.language): String = when {
+        text == "未命名项目" -> translate(text, language)
+        text.endsWith(" 副本") -> format("{0} 副本", projectName(text.removeSuffix(" 副本"), language), language = language)
+        else -> text
+    }
+
     /** [template] (a source template) with [args] in its places, in [language]: for names the app makes (stored as shown). */
     fun format(template: String, vararg args: Any?, language: AppLanguage = this.language): String {
         val base = if (language == AppLanguage.PSEUDO) AppLanguage.EN else language
         val target = if (language == AppLanguage.ZH_HANS) template else catalog(base).targets[template] ?: template
-        return fill(target, args.withIndex().associate { (i, v) -> i to v.toString() })
+        return fill(target, args.withIndex().associate { (i, v) -> i to v.toString() }, base)
     }
 
-    private fun translateIn(text: String, catalog: Catalog, depth: Int): String {
-        catalog.exact[text]?.let { return it }
-        if (depth > MAX_DEPTH) return text
-        // Surrounding blanks are layout, not words.
+    // A translated Japanese or Traditional Chinese string may contain the exact same Han characters as the source.
+    // Track whether each source phrase was resolved, independently of the script of the translated result.
+    private data class Translation(val text: String, val complete: Boolean = true)
+
+    private fun translateIn(text: String, catalog: Catalog, language: AppLanguage, depth: Int): Translation {
+        if (!HAN.containsMatchIn(text)) return Translation(text)
+        catalog.exact[text]?.let { return Translation(it) }
+        if (depth > MAX_DEPTH) return Translation(text, false)
         val trimmed = text.trim()
-        if (trimmed.length != text.length && trimmed.isNotEmpty()) {
-            return text.substring(0, text.indexOf(trimmed)) + translateIn(trimmed, catalog, depth + 1) + text.substring(text.indexOf(trimmed) + trimmed.length)
+        if (trimmed != text) {
+            val result = translateIn(trimmed, catalog, language, depth + 1)
+            return result.copy(text = text.replaceRange(text.indexOf(trimmed), text.indexOf(trimmed) + trimmed.length, result.text))
         }
-        var partial: String? = null
+        var partial: Translation? = null
         for (template in catalog.candidates(text)) {
             val values = template.match(text) ?: continue
-            // A value holding phrase separators the template does not have may be several phrases glued together ("已停用
-            // · 离线 · 调色" is not "{0} 调色"): those are translated phrase by phrase below...
-            // ...unless the value is itself a whole phrase the table knows (a sentence with its own commas).
             val glued = values.any { (n, v) ->
-                n !in template.ownLine && GLUE.any { it in v && it !in template.source } && catalog.exact[v.trim()] == null
+                n !in template.messages && n !in template.verbatim && GLUE.any { it in v && it !in template.source } && catalog.exact[v.trim()] == null
             }
             if (glued) continue
-            val translated = values.mapValues { (_, v) -> if (HAN.containsMatchIn(v)) translateIn(v, catalog, depth + 1) else v }
-            val filled = fill(template.target, translated)
-            if (!HAN.containsMatchIn(filled)) return filled
-            // A value left Chinese: the user's own words ("字幕：夜跑开始了"), or the wrong template ("{0}色" on "01
-            // 主校色"). Kept in case nothing below does better.
-            if (partial == null) partial = filled
+            val translated = values.mapValues { (n, v) ->
+                if (n in template.verbatim) Translation(v) else translateIn(v, catalog, language, depth + 1)
+            }
+            val filled = fill(template.target, translated.mapValues { it.value.text }, language)
+            if (translated.values.all { it.complete }) return Translation(filled)
+            // Keep a partially resolved template for an unknown value such as a user's clip name.
+            if (partial == null) partial = Translation(filled, false)
         }
-        val fallback = fallbacks(text, catalog, depth)
-        return if (partial != null && HAN.containsMatchIn(fallback)) partial else fallback
+        // A media filename can itself be a dictionary word ("调色.mp4"). Never translate its basename.
+        if (partial == null && MEDIA_FILENAME.matches(text)) return Translation(text)
+        val fallback = fallbacks(text, catalog, language, depth)
+        return if (fallback.complete) fallback else partial ?: fallback
     }
 
-    /** Composed text no template matches whole. */
-    private fun fallbacks(text: String, catalog: Catalog, depth: Int): String {
-        // Lines are said apart ("节目响度 … dBTP\n导出时整体 …"): each on its own.
-        if ('\n' in text) return text.split('\n').joinToString("\n") { if (HAN.containsMatchIn(it)) translateIn(it, catalog, depth + 1) else it }
-        // A number or name the code put before the words ("03  定格 · …", "01 主校色").
+    private fun fallbacks(text: String, catalog: Catalog, language: AppLanguage, depth: Int): Translation {
+        if ('\n' in text) {
+            val lines = text.split('\n').map { translateIn(it, catalog, language, depth + 1) }
+            return Translation(lines.joinToString("\n") { it.text }, lines.all { it.complete })
+        }
         LEAD.find(text)?.let { lead ->
             val rest = text.substring(lead.value.length)
-            val translated = translateIn(rest, catalog, depth + 1)
-            if (translated != rest) return lead.value + translated
+            val translated = translateIn(rest, catalog, language, depth + 1)
+            if (translated.complete || translated.text != rest) return translated.copy(text = lead.value + translated.text)
         }
-        val glued = segments(text, catalog, depth)
-        return if (glued != text) glued else runs(text, catalog, depth)
+        segments(text, catalog, language, depth)?.let { return it }
+        var complete = true
+        val replaced = RUN.replace(text) { match ->
+            val translated = catalog.exact[match.value]?.let { Translation(it) }
+                ?: if (match.value.length < text.length) translateIn(match.value, catalog, language, depth + 1)
+                else Translation(match.value, false)
+            if (!translated.complete) complete = false
+            translated.text
+        }
+        return Translation(replaced, complete)
     }
 
-    /** The last resort: each run of Chinese in mixed text ("1920×1080 横屏") translated on its own where it can be. */
-    private fun runs(text: String, catalog: Catalog, depth: Int): String {
-        var changed = false
-        val out = RUN.replace(text) { m ->
-            val t = catalog.exact[m.value] ?: if (m.value.length < text.length) translateIn(m.value, catalog, depth + 1) else m.value
-            if (t != m.value) changed = true
-            t
-        }
-        return if (changed) out else text
-    }
-
-    /** Text glued from phrases ("圆形 · 窗口外", "片段：3"): each phrase translated, the punctuation made Latin. */
-    private fun segments(text: String, catalog: Catalog, depth: Int): String {
+    private fun segments(text: String, catalog: Catalog, language: AppLanguage, depth: Int): Translation? {
         val parts = SEPARATORS.split(text)
-        if (parts.size < 2) return text
-        val seps = SEPARATORS.findAll(text).map { it.value }.toList()
+        if (parts.size < 2) return null
+        val separators = SEPARATORS.findAll(text).map { it.value }.toList()
         val out = StringBuilder()
-        var changed = false
+        var resolved = false
+        var complete = true
         parts.forEachIndexed { i, part ->
-            // A phrase the table has with its punctuation ("画面烧录：") is said with the table's.
-            val withSeparator = if (i < seps.size) catalog.exact[part + seps[i]] else null
+            val separator = separators.getOrNull(i)
+            val withSeparator = separator?.let { catalog.exact[part + it] }
             if (withSeparator != null) {
-                changed = true
+                resolved = true
                 out.append(withSeparator)
-                if (!withSeparator.last().isWhitespace()) out.append(' ')
-                return@forEachIndexed
+                if (!language.fullWidthPunctuation && !withSeparator.last().isWhitespace()) out.append(' ')
+            } else {
+                val translated = translateIn(part, catalog, language, depth + 1)
+                if ((translated.complete && HAN.containsMatchIn(part)) || translated.text != part) resolved = true
+                if (!translated.complete) complete = false
+                out.append(translated.text)
+                if (separator != null) out.append(when {
+                    separator == "：" -> language.colon
+                    separator == "，" -> language.comma
+                    language.fullWidthPunctuation -> separator
+                    else -> LATIN_PUNCTUATION[separator] ?: separator
+                })
             }
-            val t = if (HAN.containsMatchIn(part)) translateIn(part, catalog, depth + 1) else part
-            if (t != part) changed = true
-            out.append(t)
-            if (i < seps.size) out.append(LATIN_PUNCTUATION[seps[i]] ?: seps[i])
         }
-        return if (changed) out.toString().replace(Regex(" {2,}"), " ").replace(SPACE_BEFORE_PUNCTUATION, "$1").trim() else text
+        if (!resolved) return null
+        val result = out.toString().replace(Regex(" {2,}"), " ").replace(SPACE_BEFORE_PUNCTUATION, "$1").trim()
+        return Translation(result, complete)
     }
 
     /** [target] with its places filled from [values] (by number), plural forms `{n,plural,one{…}other{…}}` resolved. */
-    internal fun fill(target: String, values: Map<Int, String>): String {
+    private fun fill(target: String, values: Map<Int, String>, language: AppLanguage): String {
         val out = StringBuilder()
         var i = 0
         while (i < target.length) {
@@ -298,7 +297,7 @@ object I18n {
                         continue
                     }
                     if (n != null && inner.substringAfter(',').trimStart().startsWith("plural")) {
-                        out.append(plural(inner.substringAfter("plural").trimStart(',', ' '), values[n] ?: ""))
+                        out.append(plural(inner.substringAfter("plural").trimStart(',', ' '), values[n] ?: "", language))
                         i = end + 1
                         continue
                     }
@@ -310,7 +309,7 @@ object I18n {
         return out.toString()
     }
 
-    private fun plural(forms: String, value: String): String {
+    private fun plural(forms: String, value: String, language: AppLanguage): String {
         val choices = HashMap<String, String>()
         var i = 0
         while (i < forms.length) {
@@ -322,8 +321,7 @@ object I18n {
             choices[key] = forms.substring(open + 1, close)
             i = close + 1
         }
-        val number = value.replace(",", "").toDoubleOrNull()
-        val form = if (number == 1.0) choices["one"] ?: choices["other"] else choices["other"]
+        val form = choices[language.pluralCategory(value)] ?: choices["other"]
         return (form ?: value).replace("#", value)
     }
 
@@ -348,6 +346,7 @@ object I18n {
     }
 
     val HAN = Regex("[\\u3400-\\u9fff]")
+    private val MEDIA_FILENAME = Regex("""[^/\\\n：；，·“”]+(?<!\s)\.(?:mp4|m4v|mov|mkv|avi|webm|mxf|mp3|m4a|wav|flac|aac|ogg|png|jpe?g|heic|webp|gif|srt|vtt|cube)""", RegexOption.IGNORE_CASE)
     private val RUN = Regex("[\\u3400-\\u9fff]+")
     private val SPACE_BEFORE_PUNCTUATION = Regex(" +([;:,!?]|\\.(?=\\s|$))")
     private val LEAD = Regex("^[^\\u3400-\\u9fff]*?[0-9A-Za-z][^\\u3400-\\u9fff]*?\\s+(?=[\\u3400-\\u9fff])")
@@ -365,17 +364,11 @@ object I18n {
 /** This text in the language shown (for code outside composition, such as canvas drawing; composables use `tr`). */
 fun String.localized(): String = I18n.translate(this)
 
-/**
- * Accessibility descriptions said part by part (release round R8): every part already in the language shown, so one
- * part's words — a clip's or a bin's name — never decide how the next is read.
- */
-private val saidInChinese get() = I18n.language == AppLanguage.ZH_HANS
-
 /** [parts] said one after another, joined by the shown language's comma; empty parts left out. */
-fun spoken(vararg parts: String): String = parts.filter { it.isNotEmpty() }.joinToString(if (saidInChinese) "，" else ", ")
+fun spoken(vararg parts: String): String = parts.filter { it.isNotEmpty() }.joinToString(I18n.language.comma)
 
 /** "[label]：[value]" in the shown language's punctuation. */
-fun labelled(label: String, value: String): String = if (saidInChinese) "$label：$value" else "$label: $value"
+fun labelled(label: String, value: String): String = label + I18n.language.colon + value
 
 /** [items] listed ("红色、蓝色" / "Red, Blue"). */
-fun listed(items: List<String>): String = items.joinToString(if (saidInChinese) "、" else ", ")
+fun listed(items: List<String>): String = items.joinToString(if (I18n.language.fullWidthPunctuation) "、" else ", ")

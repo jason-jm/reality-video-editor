@@ -65,11 +65,11 @@ fun NewProjectSheet(
                     placeholder = { Text("未命名项目") },
                     singleLine = true,
                     clearable = true,
-                    modifier = Modifier.width(480.dp).tabMovesFocus(),
+                    modifier = Modifier.width(584.dp).tabMovesFocus(),
                 )
             }
             FormRow("时间线格式") {
-                SegmentControl(Modifier.width(480.dp)) {
+                SegmentControl(Modifier.width(584.dp)) {
                     form.formats.forEachIndexed { index, preset ->
                         SegmentItem(
                             selected = index == form.formatIndex,
@@ -81,7 +81,7 @@ fun NewProjectSheet(
                 }
             }
             FormRow("帧率") {
-                SegmentControl(Modifier.width(480.dp)) {
+                SegmentControl(Modifier.width(584.dp)) {
                     form.frameRates.forEachIndexed { index, fps ->
                         SegmentItem(
                             selected = index == form.fpsIndex,

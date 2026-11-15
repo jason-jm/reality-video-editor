@@ -197,7 +197,7 @@ private fun DeviceTile(tile: DeviceTileUi, enabled: Boolean, onClick: () -> Unit
             if (tile.imported) PosterBadge("已导入", error = false, modifier = Modifier.align(Alignment.TopStart).padding(4.dp))
         }
         Text(
-            tile.name,
+            tile.name, translate = false,
             style = PrismType.caption,
             color = PicoTheme.colorScheme.labelPrimary,
             maxLines = 1,

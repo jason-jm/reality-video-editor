@@ -1,5 +1,6 @@
 package com.example.prismstudio.p40b43a88.ui.projects.components
 
+import com.example.prismstudio.p40b43a88.ui.components.projectDisplayName
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.FlowRow
@@ -35,7 +36,7 @@ fun ProjectDetailPanel(
     Column(modifier.verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(16.dp)) {
         PosterArt(detail.poster, detail.frame, radius = 16.dp, modifier = Modifier.fillMaxWidth().aspectRatio(1.778f))
         Text(
-            detail.name,
+            projectDisplayName(detail.name), translate = false,
             style = PrismType.headline,
             color = PicoTheme.colorScheme.labelPrimary,
             maxLines = 2,

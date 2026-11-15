@@ -1,5 +1,6 @@
 package com.example.prismstudio.p40b43a88.ui.projects.components
 
+import com.example.prismstudio.p40b43a88.ui.components.projectDisplayName
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -97,12 +98,12 @@ private fun ProjectCard(card: ProjectCardUi, selected: Boolean, onSelect: () -> 
             .semantics { this.selected = selected }
             .drawBehind { drawRect(fill) }
             .padding(12.dp)
-            .semantics { contentDescription = spoken(card.name.localized(), card.meta.localized(), card.modified.localized()) },
+            .semantics { contentDescription = spoken(com.example.prismstudio.p40b43a88.domain.i18n.I18n.projectName(card.name), card.meta.localized(), card.modified.localized()) },
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
         PosterArt(card.poster, card.frame, radius = 16.dp, modifier = Modifier.fillMaxWidth().aspectRatio(1.778f))
         Text(
-            card.name,
+            projectDisplayName(card.name), translate = false,
             style = PrismType.body,
             color = PicoTheme.colorScheme.labelPrimary,
             maxLines = 1,

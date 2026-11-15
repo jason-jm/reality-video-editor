@@ -205,7 +205,7 @@ private fun SettingRow(label: String, control: @Composable () -> Unit) {
         verticalAlignment = Alignment.CenterVertically,
     ) {
         // Fixed label column: segment controls fill their slot and would squeeze a weighted label.
-        Text(label, style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary, maxLines = 1, modifier = Modifier.width(72.dp), fit = true)
+        Text(label, style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary, maxLines = 1, modifier = Modifier.width(98.dp), fit = true, fitLines = 2)
         Box(Modifier.weight(1f), contentAlignment = Alignment.CenterEnd) { control() }
     }
 }

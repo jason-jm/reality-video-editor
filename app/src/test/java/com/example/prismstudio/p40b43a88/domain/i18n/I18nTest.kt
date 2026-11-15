@@ -26,7 +26,7 @@ class I18nTest {
     @After
     fun reset() {
         I18n.language = AppLanguage.ZH_HANS
-        I18n.install(AppLanguage.EN, I18n.catalog(AppLanguage.EN).let { Catalog.parse("") })
+        I18n.install(AppLanguage.EN, Catalog.parse(requireNotNull(javaClass.getResource("/i18n/en.tsv")).readText()))
     }
 
     private fun en(text: String): String {

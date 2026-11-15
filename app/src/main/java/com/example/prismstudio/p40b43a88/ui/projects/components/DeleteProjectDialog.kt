@@ -1,5 +1,7 @@
 package com.example.prismstudio.p40b43a88.ui.projects.components
 
+import com.example.prismstudio.p40b43a88.ui.components.trFormat
+import com.example.prismstudio.p40b43a88.ui.components.projectDisplayName
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -23,7 +25,7 @@ fun DeleteProjectDialog(projectName: String, onConfirm: () -> Unit, onDismiss: (
         onDismissRequest = onDismiss,
         title = { Text("删除这个项目？") },
         content = {
-            Text("将永久删除“$projectName”的时间线、调色、混音设置和全部项目备份。设备上的原始素材会保留。")
+            Text(trFormat("将永久删除“{0}”的时间线、调色、混音设置和全部项目备份。设备上的原始素材会保留。", projectDisplayName(projectName)), translate = false)
         },
         buttons = {
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {

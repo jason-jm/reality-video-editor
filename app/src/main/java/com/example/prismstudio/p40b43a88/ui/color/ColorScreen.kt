@@ -131,7 +131,7 @@ fun ColorContent(
                 )
                 ScopesPanel(state.scopeMode, state.scope, { onEvent(ColorEvent.Scope(it)) }, Modifier.weight(1f).fillMaxHeight())
             }
-            Row(Modifier.fillMaxWidth().height(104.dp), horizontalArrangement = Arrangement.spacedBy(24.dp)) {
+            Row(Modifier.fillMaxWidth().height(134.dp), horizontalArrangement = Arrangement.spacedBy(24.dp)) {
                 ClipStripPanel(
                     clips = state.stripClips,
                     selectedId = state.selectedClipId,
@@ -170,7 +170,7 @@ fun ColorContent(
                     enabled = state.hasClip,
                     onToggle = { onEvent(ColorEvent.ToggleNode(serialNode.node)) },
                     onDelete = { onEvent(ColorEvent.DeleteNode(serialNode.node)) },
-                    modifier = Modifier.width(360.dp).fillMaxHeight().padding(vertical = 4.dp),
+                    modifier = Modifier.width(462.dp).fillMaxHeight().padding(vertical = 4.dp),
                 ) else NodeKeyframes(
                     title = if (windowNode) "节点 02 关键帧 · 窗口位置" else "节点 01 关键帧 · 调色",
                     keys = if (windowNode) state.windowKeys else state.gradeKeys,
@@ -186,7 +186,7 @@ fun ColorContent(
                             },
                         )
                     },
-                    modifier = Modifier.width(360.dp).fillMaxHeight().padding(vertical = 4.dp),
+                    modifier = Modifier.width(462.dp).fillMaxHeight().padding(vertical = 4.dp),
                 )
             }
             // Resolve's mini timeline under the thumbnails: the whole program, every picture track, the playhead.

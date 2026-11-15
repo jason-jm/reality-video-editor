@@ -153,8 +153,8 @@ private fun AddNodeCard(enabled: Boolean, onClick: () -> Unit) {
     }
 }
 
-private val SERIAL_CARD = 120.dp
-private val MAIN_CARD = 136.dp
+private val SERIAL_CARD = 148.dp
+private val MAIN_CARD = 168.dp
 private val GAP = 12.dp
 
 /** Where node 2 corrects: inside / outside the shape, and the qualifier's colours. */
@@ -211,12 +211,12 @@ private fun NodeCard(
             .padding(12.dp),
     ) {
         Column(Modifier.alpha(if (dimmed) DIMMED else 1f), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-            // A small glyph: the 136 dp card (120 dp for a serial node) keeps "01 主校色" whole.
+            // Keep the label beside the glyph; the strip can scroll as more cards are added.
             Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
                 Canvas(Modifier.size(28.dp, 18.dp)) { glyph(lit, edge) }
-                Text("$index $title", style = PrismType.label, color = PicoTheme.colorScheme.labelPrimary, maxLines = 1, softWrap = false)
+                Text("$index $title", style = PrismType.label, color = PicoTheme.colorScheme.labelPrimary, fit = true)
             }
-            Text(summary, style = PrismType.caption, color = PicoTheme.colorScheme.labelTertiary, maxLines = 1, overflow = TextOverflow.Ellipsis)
+            Text(summary, style = PrismType.caption, color = PicoTheme.colorScheme.labelTertiary, maxLines = 3, overflow = TextOverflow.Ellipsis)
         }
         if (graded) {
             Canvas(Modifier.align(Alignment.TopEnd).size(8.dp)) { drawCircle(PrismColors.MarkerFlag) }
