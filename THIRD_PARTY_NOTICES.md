@@ -2,7 +2,9 @@
 
 ## Film in the GitHub screenshots
 
-The English interface screenshots and cover poster on the project pages show selected frames from *Big Buck Bunny*, © 2008 Blender Foundation / [www.bigbuckbunny.org](https://peach.blender.org/). The film is licensed under [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/); see the [filmmakers’ attribution instructions](https://peach.blender.org/about/). The demonstration project trims and arranges film excerpts and adjusts the color of selected shots. The poster frames and interface details are cropped from captures of the running app on a PICO OS 6.2 emulator. The film is not bundled with the app and is not covered by the project’s MIT license.
+The cover and feature images show excerpts from *Big Buck Bunny*, © 2008 Blender Foundation / [www.bigbuckbunny.org](https://peach.blender.org/). The film is licensed under [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/). See the [filmmakers’ attribution instructions](https://peach.blender.org/about/).
+
+The demo project trims, rearranges and color grades selected shots. The interface details come from the running editor’s windows and PICO OS 6.2 emulator captures. The delivery image includes a frame from the finished 1080p export. The cover uses a generated optical-glass background. The film remains under its own license and is used here only in the project gallery.
 
 ## PICO icons
 

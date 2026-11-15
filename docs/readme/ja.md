@@ -4,7 +4,12 @@
 
 **PICO Space Pro のための動画編集アプリです。** ヘッドセットをかぶってラフカットを開き、次のカットをほんの少し早めてみる。目の前でシーンの印象が変わります。素材の読み込みから書き出しまでヘッドセットだけで完結。パソコンもアカウントも、インターネット接続も必要ありません。
 
-![PICO Space Pro 向け Reality Video Editor の編集画面とカラー画面に映る森のワンシーン](../images/reality-video-editor.png)
+<a href="../images/reality-video-editor.png">
+  <picture>
+    <source media="(max-width: 640px)" srcset="../images/showcase/narrow/cover.webp">
+    <img src="../images/reality-video-editor.png" alt="PICO Space Pro 向けの Reality Video Editor。編集画面には小川のカット、カラー画面には草地のウサギが映っている">
+  </picture>
+</a>
 
 [オープンソース](../../LICENSE) · [ビルドとインストール](../building.md)
 
@@ -12,13 +17,23 @@
 
 メディア画面では、サムネイルを見ながら素材をプレビューできます。気に入ったテイクにフラグやキーワードを付ければ、スマートビンが条件に合う素材を自動でまとめてくれます。使用済みのショットだけを集めて、どれを本編に入れたか確認することもできます。
 
-![森の4カットと2つの音素材、使用済み素材を集めた「In the cut」スマートビン](../images/showcase/media.webp)
+<a href="../images/showcase/media.webp">
+  <picture>
+    <source media="(max-width: 640px)" srcset="../images/showcase/narrow/media.webp">
+    <img src="../images/showcase/media.webp" alt="「Meadow Morning」のメディアプールと、選択中の小川のカットのプレビュー">
+  </picture>
+</a>
 
 ## 目の前に、広い編集スペースを
 
 ウルトラワイド表示では、元の映像と編集中の映像を並べて確認できます。使いたい部分だけをタイムラインに置き、ひとつ前のカットから再生してつながりを確かめてみましょう。大きなファイルは軽いプロキシで編集でき、書き出しには元の素材が使われます。
 
-![ウルトラワイド表示の左に林の素材、右にウサギのいる編集映像が並ぶ](../images/showcase/workspace.webp)
+<a href="../images/showcase/workspace.webp">
+  <picture>
+    <source media="(max-width: 640px)" srcset="../images/showcase/narrow/workspace.webp">
+    <img src="../images/showcase/workspace.webp" alt="ソースモニターには花が咲く小川、タイムラインモニターには草地のウサギが映っている">
+  </picture>
+</a>
 
 ## 切り替える瞬間を探す
 
@@ -26,25 +41,45 @@
 
 映像と音声はそれぞれ最大8トラック。複数台で撮影した素材は、別録りの音声を波形で同期し、タイムライン上でカメラを切り替えられます。
 
-![映像、音声、英語字幕を重ねたタイムラインの拡大図](../images/showcase/timeline.webp)
+<a href="../images/showcase/timeline.webp">
+  <picture>
+    <source media="(max-width: 640px)" srcset="../images/showcase/narrow/timeline.webp">
+    <img src="../images/showcase/timeline.webp" alt="「Meadow Morning」のタイムラインに並ぶ映像クリップ、英語字幕、2本のオーディオトラック">
+  </picture>
+</a>
 
 ## 違う光のカットを、ひとつのシーンに
 
 日なたの草地から木陰の小川へ。シャドウ・中間調・ハイライトをカラーホイールで整え、波形とRGBパレードでカット間の違いを確かめます。基準にしたい画をスチルとして残して次のカットと比較したり、お気に入りの .cube LUT を読み込んだりできます。
 
-![4つのカラーホイールと、草地のショットから得られた赤・緑・青のRGBパレード](../images/showcase/color.webp)
+<a href="../images/showcase/color.webp">
+  <picture>
+    <source media="(max-width: 640px)" srcset="../images/showcase/narrow/color.webp">
+    <img src="../images/showcase/color.webp" alt="カラー調整後の草地のカットと、そのフレームのRGBパレード、4つのカラーホイール">
+  </picture>
+</a>
 
 ## 声がきちんと届くミックスに
 
 ナレーションを音声トラックへ直接録音。声のこもりをEQで整え、話している間だけBGMを自動で下げられます。細部はトラックをソロにして聴き、書き出す前にLUFSメーターで作品全体のラウドネスを確認できます。
 
-![森の環境音と劇伴の2本の波形、その横にA1トラックの4点のEQカーブ](../images/showcase/audio.webp)
+<a href="../images/showcase/audio.webp">
+  <picture>
+    <source media="(max-width: 640px)" srcset="../images/showcase/narrow/audio.webp">
+    <img src="../images/showcase/audio.webp" alt="森の環境音と音楽の波形、およびA1トラックの4点のEQカーブ">
+  </picture>
+</a>
 
 ## 一本のタイムラインから、必要な形で書き出す
 
 作品全体、イン点とアウト点で指定した区間、あるいは個別のクリップをキューに追加。H.264・H.265の動画、静止画、音声作業用のWAVを書き出せます。字幕は映像に焼き込むことも、SRTやWebVTTで別に渡すこともできます。利用できる解像度とコーデックはヘッドセットのエンコーダーによって異なります。
 
-![レンダーキューにH.264・1080p・30fpsで書き出し済みの「Meadow Morning.mp4」が表示されている](../images/showcase/deliver.webp)
+<a href="../images/showcase/deliver.webp">
+  <picture>
+    <source media="(max-width: 640px)" srcset="../images/showcase/narrow/deliver.webp">
+    <img src="../images/showcase/deliver.webp" alt="書き出した「Meadow Morning.mp4」の1フレームと、H.264・1080p・30fpsの書き出し完了を示すレンダーキュー">
+  </picture>
+</a>
 
 ## Reality Video Editor を使ってみる
 
