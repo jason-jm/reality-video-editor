@@ -28,7 +28,6 @@ LANGUAGES = ("zh-Hans", "zh-Hant", "en", "ja", "ko", "fr", "de", "es", "ru")
 STAGES = {"media": ("媒体池",), "edit": ("时间线设置",),
           "color": ("一级校色",), "audio": ("录制旁白",),
           "deliver": ("渲染队列",)}
-PACKAGE = "com.example.prismstudio.p40b43a88"
 
 
 def table(tag):
@@ -124,10 +123,12 @@ def main():
     parser.add_argument("--device", required=True)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--languages", nargs="+", choices=LANGUAGES, default=LANGUAGES)
-    parser.add_argument("--package", default=PACKAGE)
+    parser.add_argument("--package", help="Android application ID (defaults to the project setting)")
     parser.add_argument("--adb", default=shutil.which("adb"))
     args = parser.parse_args()
-    app = DebugApp(args.adb, args.device, args.package)
+    package = args.package or subprocess.check_output(
+        ["zsh", str(ROOT / "devtools/tools/appid.sh")], text=True).strip()
+    app = DebugApp(args.adb, args.device, package)
     prior = initial_language(app)
     args.output.mkdir(parents=True, exist_ok=True)
     summary = {}

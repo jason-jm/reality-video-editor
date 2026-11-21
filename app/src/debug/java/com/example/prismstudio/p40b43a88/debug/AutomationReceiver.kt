@@ -8,7 +8,7 @@ import com.example.prismstudio.p40b43a88.data.automation.AutomationBridge
 
 /**
  * Debug-only QA hook: `adb shell am broadcast -a com.example.prismstudio.AUTOMATION
- * -p com.example.prismstudio.p40b43a88 --es cmd "key KEYCODE_2"`. `tap X Y` and
+ * -p "$(zsh devtools/tools/appid.sh)" --es cmd "key KEYCODE_2"`. `tap X Y` and
  * `drag X1 Y1 X2 Y2 [ms] [holdMs]` inject touches in window pixels, `bounds [text]` logs labelled nodes' bounds
  * (PrismBounds), `i18n-missing` logs untranslated text seen (PrismI18n), `controls` logs every control with its state
  * (PrismClick), `toasts` the messages shown since the last call (PrismToast), `frame` how long the next frame takes

@@ -12,7 +12,7 @@ These instructions build a debug APK for an ARM64 PICO device or a compatible PI
    ./gradlew :app:assembleDebug
    ```
 
-The APK is at `app/build/outputs/apk/debug/app-debug.apk`. On Windows use `gradlew.bat` in place of `./gradlew`. The app targets Android API 37 and requires API 35 or later.
+The APK is at `app/build/outputs/apk/debug/app-debug.apk`. On Windows use `gradlew.bat` in place of `./gradlew`. The app targets Android API 37 and requires API 35 or later. Its Android application ID is `com.therealityteam.realityvideoeditor`.
 
 ## Install and open
 

@@ -30,7 +30,7 @@ android {
     buildToolsVersion = "37.0.0"
 
     defaultConfig {
-        applicationId = "com.example.prismstudio.p40b43a88"
+        applicationId = "com.therealityteam.realityvideoeditor"
         resValue("string", "app_name", productName)
         buildConfigField("String", "PRODUCT_NAME", "\"$productName\"")
         minSdk = 35
