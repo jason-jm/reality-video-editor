@@ -9,6 +9,20 @@ plugins {
 val APP_VERSION = listOf(1, 0, 0)
 val productName = "Reality Video Editor"
 
+abstract class CopyPrivacyPolicy : DefaultTask() {
+    @get:InputFile
+    @get:PathSensitive(PathSensitivity.NONE)
+    abstract val policy: RegularFileProperty
+
+    @get:OutputDirectory
+    abstract val outputDirectory: DirectoryProperty
+
+    @TaskAction
+    fun copyPolicy() {
+        policy.get().asFile.copyTo(outputDirectory.file("PRIVACY.md").get().asFile, overwrite = true)
+    }
+}
+
 /**
  * Release signing (release round R9), read from `keystore.properties` beside settings.gradle.kts: storeFile (relative to
  * the project folder), storePassword, keyAlias, keyPassword. The file and the keystore stay with their owner — never in
@@ -98,6 +112,13 @@ android {
         // ViewModels touch android.graphics types only as opaque values in JVM tests.
         unitTests.isReturnDefaultValues = true
     }
+}
+
+androidComponents.onVariants { variant ->
+    val policyResources = tasks.register<CopyPrivacyPolicy>("prepare${variant.name.replaceFirstChar(Char::uppercaseChar)}PrivacyPolicy") {
+        policy.set(rootProject.layout.projectDirectory.file("PRIVACY.md"))
+    }
+    variant.sources.resources?.addGeneratedSourceDirectory(policyResources, CopyPrivacyPolicy::outputDirectory)
 }
 
 dependencies {

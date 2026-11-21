@@ -14,12 +14,18 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.prismstudio.p40b43a88.data.repository.PrivacyPolicy
 import com.example.prismstudio.p40b43a88.domain.model.OssLicense
 import com.example.prismstudio.p40b43a88.ui.components.Button
 import com.example.prismstudio.p40b43a88.ui.components.CountsAsOpenSheet
+import com.example.prismstudio.p40b43a88.ui.components.LocalAppLanguage
 import com.example.prismstudio.p40b43a88.ui.components.Text
 import com.example.prismstudio.p40b43a88.ui.projects.AboutUi
 import com.example.prismstudio.p40b43a88.ui.theme.PrismType
@@ -36,6 +42,10 @@ import com.pico.spatial.ui.design.windows.Sheet
  */
 @Composable
 fun AboutSheet(ui: AboutUi, onShowLicense: (OssLicense?) -> Unit, onClose: () -> Unit) {
+    val privacyPolicy = PrivacyPolicy.forLanguage(LocalAppLanguage.current)
+    var showPrivacy by rememberSaveable { mutableStateOf(false) }
+    val documentTitle = if (showPrivacy) privacyPolicy.title else ui.licenseTitle
+    val documentBody = if (showPrivacy) privacyPolicy.body else ui.licenseText
     val quiet = ButtonDefaults.buttonColors(
         containerColor = PicoTheme.colorScheme.fillTertiary,
         contentColor = PicoTheme.colorScheme.labelPrimary,
@@ -45,28 +55,35 @@ fun AboutSheet(ui: AboutUi, onShowLicense: (OssLicense?) -> Unit, onClose: () ->
         properties = BackDismissSheet,
         modifier = Modifier.fillMaxWidth(),
         onDismissRequest = onClose,
-        title = { if (ui.showingText) Text(ui.licenseTitle.orEmpty(), translate = false) else Text("关于 ${PRODUCT_NAME}") },
+        title = { if (documentBody != null) Text(documentTitle.orEmpty(), translate = false) else Text("关于 ${PRODUCT_NAME}") },
     ) {
         Column(Modifier.width(640.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            if (ui.showingText) {
-                // `about-license-text`
+            if (documentBody != null) {
+                // `about-license-text` also presents the offline privacy policy.
                 Column(Modifier.fillMaxWidth().heightIn(max = 440.dp).verticalScroll(rememberScrollState())) {
-                    Text(ui.licenseText.orEmpty(), style = PrismType.caption, color = PicoTheme.colorScheme.labelSecondary, translate = false)
+                    Text(documentBody, style = if (showPrivacy) PrismType.body else PrismType.caption, color = PicoTheme.colorScheme.labelSecondary, translate = false)
                 }
                 androidx.compose.foundation.layout.FlowRow(
                     Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.End),
                     verticalArrangement = Arrangement.spacedBy(6.dp),
                 ) {
-                    Button(onClick = { onShowLicense(null) }, size = ButtonDefaults.Regular, colors = quiet) { Text("返回列表") }
+                    Button(onClick = {
+                        if (showPrivacy) showPrivacy = false else onShowLicense(null)
+                    }, size = ButtonDefaults.Regular, colors = quiet) { Text("返回列表") }
                     Button(onClick = onClose, size = ButtonDefaults.Regular, colors = quiet) { Text("关闭") }
                 }
             } else {
                 // `about-app-row`
-                Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                    Text(stringResource(R.string.app_name), style = PrismType.title, color = PicoTheme.colorScheme.labelPrimary, translate = false)
-                    Text("版本 ${ui.version}", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary)
-                    Text("PICO 上的视频剪辑、调色与后期软件", style = PrismType.caption, color = PicoTheme.colorScheme.labelTertiary)
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                        Text(stringResource(R.string.app_name), style = PrismType.title, color = PicoTheme.colorScheme.labelPrimary, translate = false)
+                        Text("版本 ${ui.version}", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary)
+                        Text("PICO 上的视频剪辑、调色与后期软件", style = PrismType.caption, color = PicoTheme.colorScheme.labelTertiary)
+                    }
+                    Button(onClick = { showPrivacy = true }, size = ButtonDefaults.Regular, colors = quiet) {
+                        Text(privacyPolicy.title, translate = false)
+                    }
                 }
                 HorizontalDivider()
                 Text("开源软件许可", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary)

@@ -84,6 +84,7 @@ actual=$(echo "$TREE" | awk '/android:name\([^)]*\)="pico\.spatial\.sdk_version_
 if [[ -n $expected && $actual == $expected ]]; then ok "PICO Spatial SDK $actual"; else bad "PICO SDK expected '$expected', found '$actual'"; fi
 # The open-source notices travel with the app.
 if unzip -p "$APK" licenses/libraries.tsv | cmp -s - "$ROOT/app/src/main/resources/licenses/libraries.tsv"; then ok "open-source notices match the release inventory"; else bad "missing or stale licenses/libraries.tsv"; fi
+if unzip -p "$APK" PRIVACY.md | cmp -s - "$ROOT/PRIVACY.md"; then ok "in-app privacy policy matches the published document"; else bad "missing or stale in-app privacy policy"; fi
 # Identity and signing: placeholders are fine for the qa build only.
 if certs=$("$B/apksigner" verify --print-certs "$APK" 2>/dev/null); then
     CERT=$(echo "$certs" | grep "certificate DN" | head -1)
