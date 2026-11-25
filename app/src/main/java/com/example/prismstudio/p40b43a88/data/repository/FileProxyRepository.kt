@@ -4,6 +4,7 @@ import android.content.Context
 import android.net.Uri
 import android.util.Log
 import androidx.annotation.OptIn
+import androidx.media3.common.C
 import androidx.media3.common.MediaItem
 import androidx.media3.common.MimeTypes
 import androidx.media3.common.util.UnstableApi
@@ -11,6 +12,7 @@ import androidx.media3.effect.Presentation
 import androidx.media3.transformer.Composition
 import androidx.media3.transformer.DefaultEncoderFactory
 import androidx.media3.transformer.EditedMediaItem
+import androidx.media3.transformer.EditedMediaItemSequence
 import androidx.media3.transformer.Effects
 import androidx.media3.transformer.ExportException
 import androidx.media3.transformer.ExportResult
@@ -72,10 +74,14 @@ class FileProxyRepository(
             when (val current = state.value[asset.id]) {
                 is ProxyStatus.Making -> continue
                 // A proxy of another file (the media was relinked) is forgotten: this file's own proxy, if any, takes its place.
-                is ProxyStatus.Ready -> if (current.uri == Uri.fromFile(file).toString()) continue else state.update { it - asset.id }
+                is ProxyStatus.Ready -> if (current.uri == Uri.fromFile(file).toString() && file.isFile) continue else state.update { it - asset.id }
                 else -> Unit
             }
-            if (file.exists()) set(listOf(asset), ready(asset, file))
+            if (file.isFile) set(listOf(asset), ready(asset, file))
+            else if (asset.color.isHdr && state.value[asset.id] == null && fileFor(keyOf(asset, FORMAT_VERSION)).isFile) {
+                // An existing v1 HDR proxy can be HEVC or have a baked-in device tone map. Rebuild it on first use.
+                request(listOf(asset))
+            }
         }
     }
 
@@ -102,8 +108,12 @@ class FileProxyRepository(
         val key = keyOf(asset)
         val sharing = queue.remove(key).orEmpty() + asset
         making?.takeIf { it.first == key }?.second?.cancel()
-        fileFor(key).delete()
-        state.update { m -> m - sharing.map { it.id }.toSet() }
+        val file = fileFor(key)
+        file.delete()
+        if (asset.color.isHdr) fileFor(keyOf(asset, FORMAT_VERSION)).delete()
+        val removedUri = Uri.fromFile(file).toString()
+        val ids = sharing.map { it.id }.toSet()
+        state.update { statuses -> statuses.filterNot { (id, status) -> id in ids || (status is ProxyStatus.Ready && status.uri == removedUri) } }
     }
 
     private suspend fun drain() {
@@ -128,7 +138,10 @@ class FileProxyRepository(
         return try {
             withContext(Dispatchers.IO) { dir.mkdirs() }
             transform(asset, partial, onProgress)
-            withContext(Dispatchers.IO) { if (!partial.renameTo(target)) throw IOException("无法保存代理文件") }
+            withContext(Dispatchers.IO) {
+                if (!partial.renameTo(target)) throw IOException("无法保存代理文件")
+                if (asset.color.isHdr) fileFor(keyOf(asset, FORMAT_VERSION)).delete()
+            }
             ready(asset, target)
         } catch (e: CancellationException) {
             partial.delete()
@@ -149,8 +162,14 @@ class FileProxyRepository(
             .setRemoveAudio(true)
             .setEffects(Effects(emptyList(), effects))
             .build()
+        // Keep the source signal in an 8-bit H.264 working copy. The monitor applies the current project's
+        // transfer and tone map to an HDR proxy exactly as it does to the original.
+        val sequence = EditedMediaItemSequence.Builder(setOf(C.TRACK_TYPE_VIDEO)).addItem(item).build()
+        val composition = Composition.Builder(sequence)
+            .setHdrMode(Composition.HDR_MODE_EXPERIMENTAL_FORCE_INTERPRET_HDR_AS_SDR)
+            .build()
         val encoders = DefaultEncoderFactory.Builder(app)
-            .setEnableFallback(true)
+            .setEnableFallback(false)
             .setRequestedVideoEncoderSettings(VideoEncoderSettings.Builder().setBitrate(ProxyMediaUseCase.BITRATE).build())
             .build()
         val transformer = Transformer.Builder(app).setVideoMimeType(MimeTypes.VIDEO_H264).setEncoderFactory(encoders).build()
@@ -165,14 +184,16 @@ class FileProxyRepository(
             suspendCancellableCoroutine { cont ->
                 transformer.addListener(object : Transformer.Listener {
                     override fun onCompleted(composition: Composition, exportResult: ExportResult) {
-                        if (cont.isActive) cont.resume(Unit)
+                        if (!cont.isActive) return
+                        if (exportResult.videoMimeType == MimeTypes.VIDEO_H264) cont.resume(Unit)
+                        else cont.resumeWithException(IllegalStateException("Unexpected proxy codec: ${exportResult.videoMimeType}"))
                     }
 
                     override fun onError(composition: Composition, exportResult: ExportResult, exportException: ExportException) {
                         if (cont.isActive) cont.resumeWithException(exportException)
                     }
                 })
-                transformer.start(item, file.path)
+                transformer.start(composition, file.path)
                 cont.invokeOnCancellation { transformer.cancel() }
             }
         } finally {
@@ -192,8 +213,8 @@ class FileProxyRepository(
 
     private fun fileFor(key: String) = File(dir, "proxy-$key.mp4")
 
-    private fun keyOf(asset: MediaAsset): String {
-        val digest = MessageDigest.getInstance("SHA-1").digest("${asset.uri}|${asset.durationMs}|$FORMAT_VERSION".toByteArray())
+    private fun keyOf(asset: MediaAsset, version: Int = if (asset.color.isHdr) HDR_SIGNAL_VERSION else FORMAT_VERSION): String {
+        val digest = MessageDigest.getInstance("SHA-1").digest("${asset.uri}|${asset.durationMs}|$version".toByteArray())
         return digest.take(10).joinToString("") { "%02x".format(it) }
     }
 
@@ -201,6 +222,7 @@ class FileProxyRepository(
         const val TAG = "PrismProxy"
         /** Bump when the proxy format changes so stale proxies are made again. */
         const val FORMAT_VERSION = 1
+        const val HDR_SIGNAL_VERSION = 2
         const val PROGRESS_MS = 300L
     }
 }

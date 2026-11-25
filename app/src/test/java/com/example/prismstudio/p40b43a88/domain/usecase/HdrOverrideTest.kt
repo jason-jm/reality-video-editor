@@ -44,14 +44,13 @@ class HdrOverrideTest {
     }
 
     @Test
-    fun `renders tone map every HDR picture, the monitor only HDR by the override`() {
-        assertTrue(CompositionFactory.toneMaps(overridden, render = false, color = color))
-        assertTrue(CompositionFactory.toneMaps(overridden, render = true, color = color))
-        assertTrue(CompositionFactory.toneMaps(tagged, render = true, color = color))
-        assertFalse("Media3 handles a tagged file in the monitor", CompositionFactory.toneMaps(tagged, render = false, color = color))
-        assertFalse(CompositionFactory.toneMaps(plain, render = true, color = color))
-        assertFalse("no colour management, no tone map", CompositionFactory.toneMaps(overridden, render = false, color = null))
-        assertFalse("pictures only", CompositionFactory.toneMaps(overridden.copy(kind = MediaKind.IMAGE), render = true, color = color))
+    fun `preview and render tone map tagged and manually identified HDR pictures`() {
+        assertTrue(CompositionFactory.toneMaps(overridden, color))
+        assertTrue(CompositionFactory.toneMaps(tagged, color))
+        assertFalse(CompositionFactory.toneMaps(tagged.copy(inputColor = InputColorSpace.REC709), color))
+        assertFalse(CompositionFactory.toneMaps(plain, color))
+        assertFalse("no colour management, no tone map", CompositionFactory.toneMaps(overridden, null))
+        assertFalse("pictures only", CompositionFactory.toneMaps(overridden.copy(kind = MediaKind.IMAGE), color))
     }
 
     @Test
@@ -73,7 +72,7 @@ class HdrOverrideTest {
     }
 
     @Test
-    fun `a freeze frame of HDR by the override keeps the override, of a tagged file it does not`() {
+    fun `a freeze frame preserves the source transfer from the override or file tag`() {
         val freeze = FreezeFrameUseCase(SequentialIds())
         fun stillOf(asset: com.example.prismstudio.p40b43a88.domain.model.MediaAsset): com.example.prismstudio.p40b43a88.domain.model.MediaAsset {
             val doc = projectOf(timelineOf(clipOf("A", 0, 90, assetId = "v")), media = listOf(asset))
@@ -83,7 +82,8 @@ class HdrOverrideTest {
         }
         assertEquals(InputColorSpace.HLG, stillOf(overridden).inputColor)
         assertTrue(stillOf(overridden).hdrByOverride)
-        assertEquals(InputColorSpace.AUTO, stillOf(tagged).inputColor)
+        assertEquals(InputColorSpace.HLG, stillOf(tagged).inputColor)
+        assertEquals(InputColorSpace.PQ, stillOf(tagged.copy(color = SourceColor(transfer = ColorTransfer.PQ))).inputColor)
         assertEquals(InputColorSpace.AUTO, stillOf(plain).inputColor)
     }
 }

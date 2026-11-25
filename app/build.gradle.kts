@@ -6,7 +6,7 @@ plugins {
 }
 
 /** The release version, MAJOR.MINOR.PATCH (see versionCode below). */
-val APP_VERSION = listOf(1, 0, 0)
+val APP_VERSION = listOf(1, 0, 1)
 val productName = "Reality Video Editor"
 
 abstract class CopyPrivacyPolicy : DefaultTask() {
@@ -83,6 +83,8 @@ android {
         // Release testing with the debug automation: `-Pr8` shrinks the debug build as R8 shrinks the release one, so the
         // emulator scripts can drive shrunk code through every page.
         getByName("debug") {
+            // Device regressions can run beside a user's signed store install and its saved projects.
+            if (providers.gradleProperty("isolatedDeviceTests").isPresent) applicationIdSuffix = ".devtest"
             if (project.hasProperty("r8")) {
                 isMinifyEnabled = true
                 proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")

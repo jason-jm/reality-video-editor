@@ -3,7 +3,7 @@ package com.example.prismstudio.p40b43a88.ui.color
 import com.example.prismstudio.p40b43a88.domain.model.ColorManagement
 import com.example.prismstudio.p40b43a88.domain.model.effectiveTransfer
 import com.example.prismstudio.p40b43a88.domain.model.toneMapped
-import com.example.prismstudio.p40b43a88.domain.model.hdrByOverride
+import com.example.prismstudio.p40b43a88.ui.components.timelineLookKey
 import com.example.prismstudio.p40b43a88.domain.usecase.PriorGradeUseCase
 import com.example.prismstudio.p40b43a88.domain.usecase.TrackMotion
 import com.example.prismstudio.p40b43a88.ui.components.WindowOverlayUi
@@ -142,13 +142,13 @@ class ColorViewModel(
     private val thumbSources = mutableMapOf<String, FramePixels>()
     /** Strip pictures by file and second, shared by the clips that start there, and the clips waiting for one being read. */
     private val sharedThumbs = mutableMapOf<String, FramePixels>()
-    private val waitingThumbs = mutableMapOf<String, MutableList<String>>()
+    private val waitingThumbs = mutableMapOf<String, MutableSet<String>>()
     /** Gallery tile pictures by still id (null: unreadable), and those being read. */
     private val stillThumbs = mutableMapOf<String, FramePixels?>()
     private val stillsRequested = mutableSetOf<String>()
     /** Graded strip thumbnails by clip, with the grade and scaling they were made for. */
     private val gradedThumbs = mutableMapOf<String, Pair<Pair<ColorGrade, Framing?>, FramePixels>>()
-    private val requested = mutableSetOf<String>()
+    private val clipThumbKeys = mutableMapOf<String, String>()
 
     init {
         viewModelScope.launch {
@@ -479,7 +479,7 @@ class ColorViewModel(
                     val framing = document.framingOf(clip, raw.width.toFloat() / raw.height.coerceAtLeast(1))
                     val picture = withContext(compute) {
                         // The part the frame shows, placed as the viewer shows it (Resolve's Scaling).
-                        val framed = scopes.framed(raw, framing)
+                        val framed = scopes.framed(raw.toneMapped(asset.effectiveTransfer, document.colorManagement), framing)
                         val shown = framing?.inFrame
                         GalleryUseCase.fitted(scopes.grade(framed, clip.grade.windowAt(local), aspect, local.toFloat(), shown), width, height, shown)
                     }
@@ -858,17 +858,19 @@ class ColorViewModel(
         val asset = document.asset(clip.assetId)?.takeUnless { it.offline }
             ?: return _state.update { it.copy(toast = "素材离线，无法自动调色") }
         if (_state.value.node != GradeNode.PRIMARY) selectNode(GradeNode.PRIMARY)
+        val playhead = _state.value.playheadFrame
         viewModelScope.launch {
             val fps = document.format.fps
-            val offset = (_state.value.playheadFrame - clip.start).coerceIn(0, clip.durationFrames - 1)
+            val offset = (playhead - clip.start).coerceIn(0, clip.durationFrames - 1)
             val picture = previews.framePixels(asset.uri, asset.kind, clip.sourceMsAt(offset, fps), FRAME_WIDTH, exact = true)
                 ?: return@launch _state.update { it.copy(toast = "无法读取这一帧的画面") }
             val result = try {
-                withContext(compute) { autoColors.analyse(picture) }
+                withContext(compute) { autoColors.analyse(picture.toneMapped(asset.effectiveTransfer, document.colorManagement)) }
             } catch (e: EditRejected) {
                 return@launch _state.update { it.copy(toast = e.message) }
             }
-            val before = selectedClip()?.grade
+            if (!sameGradeTarget(document, clip, playhead)) return@launch
+            val before = clip.grade
             grade("自动调色", null) { g -> result.applyTo(g) }
             // A keyed node 1 with the playhead outside the clip refuses, and says why.
             if (selectedClip()?.grade != before) _state.update { it.copy(toast = result.message) }
@@ -890,17 +892,21 @@ class ColorViewModel(
         if (_state.value.matching) return
         if (_state.value.node != GradeNode.PRIMARY) selectNode(GradeNode.PRIMARY)
         _state.update { it.copy(matching = true) }
+        val playhead = _state.value.playheadFrame
         viewModelScope.launch {
             try {
                 val fps = document.format.fps
-                val offset = (_state.value.playheadFrame - clip.start).coerceIn(0, clip.durationFrames - 1)
+                val offset = (playhead - clip.start).coerceIn(0, clip.durationFrames - 1)
                 val picture = previews.framePixels(asset.uri, asset.kind, clip.sourceMsAt(offset, fps), FRAME_WIDTH, exact = true)
                     ?: return@launch _state.update { it.copy(toast = "无法读取这一帧的画面") }
                 val reference = gallery.load(document.id, still.image, MATCH_WIDTH)
                     ?: return@launch _state.update { it.copy(toast = "静帧的图片已丢失，无法匹配") }
                 val node1 = clip.grade.at(offset).primary
-                val result = withContext(compute) { shots.match(picture, reference, node1) }
-                val before = selectedClip()?.grade
+                val result = withContext(compute) {
+                    shots.match(picture.toneMapped(asset.effectiveTransfer, document.colorManagement), reference, node1)
+                }
+                if (!sameGradeTarget(document, clip, playhead) || _state.value.selectedStillId != still.id) return@launch
+                val before = clip.grade
                 grade("镜头匹配", null) { g ->
                     val m = result.grade
                     g.copy(offset = m.offset, lift = m.lift, gamma = m.gamma, gain = m.gain, temperature = m.temperature, tint = m.tint)
@@ -913,6 +919,14 @@ class ColorViewModel(
                 _state.update { it.copy(matching = false) }
             }
         }
+    }
+
+    private fun sameGradeTarget(document: ProjectDocument, clip: Clip, playhead: Int): Boolean {
+        val current = doc ?: return false
+        return current.id == document.id && current.timelineId == document.timelineId &&
+            current.asset(clip.assetId) == document.asset(clip.assetId) && current.colorManagement == document.colorManagement &&
+            selectedClip() == clip && _state.value.node == GradeNode.PRIMARY &&
+            (clip.grade.keyframes.isEmpty() || _state.value.playheadFrame == playhead)
     }
 
     /** Resolve's Add Serial Node (Alt+S): a neutral whole-picture node after the last, selected for grading. */
@@ -1241,29 +1255,34 @@ class ColorViewModel(
 
     private fun requestThumb(clip: Clip) {
         val asset = doc?.asset(clip.assetId) ?: return
-        // The asset's file is part of the key: a replace keeps the clip's id but changes its media, a relink its file.
-        val key = "${clip.id}@${asset.uri}@${clip.sourceInMs / 500}"
-        if (!requested.add(key)) return
-        // One picture per file and second, shared by every clip starting there: a long timeline cut from a few files kept
-        // a 128-px picture per clip, 26–44 MB on a 30-minute, 900-shot timeline (R21).
-        val at = clip.sourceInMs / THUMB_SHARE_MS * THUMB_SHARE_MS
-        val shared = "${asset.uri}@$at@${asset.hdrByOverride}"
-        sharedThumbs[shared]?.let { picture ->
-            thumbSources[clip.id] = picture
+        if (asset.offline) {
+            clipThumbKeys.remove(clip.id)
+            thumbSources.remove(clip.id)
             gradedThumbs.remove(clip.id)
             return
         }
-        val waiting = waitingThumbs.getOrPut(shared) { mutableListOf() }
-        waiting += clip.id
-        if (waiting.size > 1) return
+        val color = doc?.colorManagement ?: ColorManagement.DEFAULT
+        val look = timelineLookKey(asset, color)
+        // One picture per file and second, shared by every clip starting there: a long timeline cut from a few files kept
+        // a 128-px picture per clip, 26–44 MB on a 30-minute, 900-shot timeline (R21).
+        val at = clip.sourceInMs / THUMB_SHARE_MS * THUMB_SHARE_MS
+        val shared = "${asset.uri}@$at@$look"
+        if (clipThumbKeys.put(clip.id, shared) == shared) return
+        thumbSources.remove(clip.id)
+        gradedThumbs.remove(clip.id)
+        sharedThumbs[shared]?.let { picture ->
+            thumbSources[clip.id] = picture
+            return
+        }
+        waitingThumbs[shared]?.let { waiting -> waiting += clip.id; return }
+        waitingThumbs[shared] = mutableSetOf(clip.id)
         viewModelScope.launch {
             val raw = previews.framePixels(asset.uri, asset.kind, at + 200, THUMB_WIDTH, exact = false)
             val clips = waitingThumbs.remove(shared).orEmpty()
             raw ?: return@launch
-            val color = doc?.colorManagement ?: ColorManagement.DEFAULT
-            val picture = if (asset.hdrByOverride) raw.toneMapped(asset.effectiveTransfer, color) else raw
+            val picture = raw.toneMapped(asset.effectiveTransfer, color)
             sharedThumbs[shared] = picture
-            clips.forEach { id ->
+            clips.filter { clipThumbKeys[it] == shared }.forEach { id ->
                 thumbSources[id] = picture
                 gradedThumbs.remove(id)
             }
@@ -1317,7 +1336,7 @@ class ColorViewModel(
             val (scope, looks) = withContext(compute) {
                 // The scopes read what the viewer shows: of a filled clip, or one larger than the frame, the middle only — HDR
                 // by the input colour override tone mapped into the timeline first, as the monitor shows it.
-                val source = if (asset.hdrByOverride) raw.toneMapped(asset.effectiveTransfer, document.colorManagement) else raw
+                val source = raw.toneMapped(asset.effectiveTransfer, document.colorManagement)
                 val shown = scopes.framed(source, framing)
                 val scopeData = scopes(scopes.grade(shown, grade, aspect, offset.toFloat(), inFrame), mode)
                 val small = downsample(shown, 2)

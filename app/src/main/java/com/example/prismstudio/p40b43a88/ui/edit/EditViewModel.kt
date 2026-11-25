@@ -76,6 +76,8 @@ import com.example.prismstudio.p40b43a88.domain.model.FormatPreset
 import com.example.prismstudio.p40b43a88.domain.model.IdGenerator
 import com.example.prismstudio.p40b43a88.domain.model.LibraryTab
 import com.example.prismstudio.p40b43a88.domain.model.MediaAsset
+import com.example.prismstudio.p40b43a88.domain.model.effectiveTransfer
+import com.example.prismstudio.p40b43a88.domain.model.toneMapped
 import com.example.prismstudio.p40b43a88.domain.model.MediaKind
 import com.example.prismstudio.p40b43a88.domain.model.Placement
 import com.example.prismstudio.p40b43a88.domain.model.PlaybackSpeed
@@ -84,6 +86,7 @@ import com.example.prismstudio.p40b43a88.domain.model.ProjectDocument
 import com.example.prismstudio.p40b43a88.domain.model.SubtitleStyle
 import com.example.prismstudio.p40b43a88.domain.model.Timecode
 import com.example.prismstudio.p40b43a88.domain.model.Timeline
+import com.example.prismstudio.p40b43a88.domain.model.TimelineMarks
 import com.example.prismstudio.p40b43a88.domain.model.AudioChannels
 import com.example.prismstudio.p40b43a88.domain.model.TitleTemplate
 import com.example.prismstudio.p40b43a88.domain.model.Track
@@ -352,6 +355,7 @@ class EditViewModel(
                 publish()
             }
             EditEvent.ApplyLibraryItem -> if (_state.value.libraryTab == LibraryTab.MARKERS) addMarkerHere() else applyLibraryItem()
+            is EditEvent.DropLibraryMedia -> dropLibraryMedia(event)
             is EditEvent.EditFromSource -> sourceEdit(event.mode)
             is EditEvent.ToggleTarget -> retarget(event.trackId)
             // I / O / Alt+X mark the viewer that shows: the source's media, or the timeline (Resolve).
@@ -1619,7 +1623,10 @@ class EditViewModel(
             val offset = (_state.value.playheadFrame - clip.start).coerceIn(0, clip.durationFrames - 1)
             val picture = previews.framePixels(asset.uri, asset.kind, clip.sourceMsAt(offset, fps), KEY_PICK_WIDTH, exact = true)
             val aspect = document.format.width.toFloat() / document.format.height.coerceAtLeast(1)
-            val pixel = picture?.let { sourcePixelAt(it, u, v, aspect, document.framingOf(clip, it.width.toFloat() / it.height.coerceAtLeast(1))) }
+            val pixel = picture?.let { raw -> withContext(compute) {
+                val frame = raw.toneMapped(asset.effectiveTransfer, document.colorManagement)
+                sourcePixelAt(frame, u, v, aspect, document.framingOf(clip, frame.width.toFloat() / frame.height.coerceAtLeast(1)))
+            } }
             if (pixel == null) return@launch toast(if (picture == null) "无法读取这一帧的颜色" else "请点在画面上")
             val rgb = pixel and 0xFFFFFF
             inspect("抠像：吸取颜色", null) { t, id -> props.chromaKey(t, id) { (it ?: ChromaKey()).copy(color = rgb) } }
@@ -1864,6 +1871,26 @@ class EditViewModel(
             }
         }
         publish()
+    }
+
+    private fun dropLibraryMedia(event: EditEvent.DropLibraryMedia) {
+        val document = doc ?: return
+        val asset = document.asset(event.assetId) ?: return
+        val sourceMarks = session.sourceMarks.value[asset.id]?.takeIf { asset.kind != MediaKind.IMAGE }
+        val inserted = apply("添加到时间线") { d ->
+            val tl = d.timeline
+            val target = if (asset.kind == MediaKind.AUDIO) destinations.audio(tl, event.trackId) else destinations.video(tl, event.trackId)
+            val result = sourceEdits(target.timeline.copy(marks = TimelineMarks()), asset, sourceMarks?.inMs ?: 0,
+                sourceMarks?.outMs ?: asset.durationMs, event.frame, SourceEdit.INSERT, d.format.fps)
+            synced(d, result.copy(timeline = result.timeline.copy(targets = tl.targets, marks = tl.marks)))
+        }
+        if (inserted) {
+            source.pause()
+            program.pause()
+            _state.update { it.copy(viewerMode = EditUiState.VIEWER_TIMELINE, libraryItemId = asset.id) }
+            program.setProject(doc)
+            seek(event.frame)
+        }
     }
 
     private fun applyLibraryItem() {
@@ -2776,7 +2803,8 @@ class EditViewModel(
 
     private fun libraryItems(tab: LibraryTab, document: ProjectDocument): List<LibraryItemUi> = when (tab) {
         LibraryTab.MEDIA -> document.media.map { asset ->
-            LibraryItemUi(asset.id, asset.name, if (asset.offline) "素材离线" else assetSubtitle(asset), asset.poster, assetFrames[asset.id], null, asset.flags)
+            LibraryItemUi(asset.id, asset.name, if (asset.offline) "素材离线" else assetSubtitle(asset), asset.poster, assetFrames[asset.id], null, asset.flags,
+                dropTrackKind = if (asset.offline) null else if (asset.kind == MediaKind.AUDIO) TrackKind.AUDIO else TrackKind.VIDEO)
         } + timelineItems(document)
         LibraryTab.TRANSITIONS -> TransitionType.entries.map {
             LibraryItemUi("transition:${it.name}", it.label, "时长 0.5 秒", PosterColors.NEUTRAL, null, null, art = it.art())

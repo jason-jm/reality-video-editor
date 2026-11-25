@@ -8,7 +8,7 @@ import androidx.media3.common.Effect
 import com.example.prismstudio.p40b43a88.data.engine.HdrToneMapEffect
 import com.example.prismstudio.p40b43a88.domain.model.ColorManagement
 import com.example.prismstudio.p40b43a88.domain.model.effectiveTransfer
-import com.example.prismstudio.p40b43a88.domain.model.hdrByOverride
+import com.example.prismstudio.p40b43a88.data.engine.HdrPreviewInput
 import com.example.prismstudio.p40b43a88.domain.usecase.ProxyMediaUseCase
 
 import com.example.prismstudio.p40b43a88.data.engine.StillColors
@@ -24,6 +24,7 @@ import androidx.media3.common.util.ExperimentalApi
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
+import androidx.media3.exoplayer.source.MediaSource
 import androidx.media3.exoplayer.SeekParameters
 import androidx.media3.transformer.Composition
 import androidx.media3.transformer.CompositionPlayer
@@ -31,6 +32,8 @@ import com.example.prismstudio.p40b43a88.R
 import com.example.prismstudio.p40b43a88.data.engine.AlphaMode
 import com.example.prismstudio.p40b43a88.data.engine.CompositionFactory
 import com.example.prismstudio.p40b43a88.data.engine.CompositionPlayerLeaks
+import androidx.media3.exoplayer.image.ExternallyLoadedImageDecoder
+import com.google.common.util.concurrent.Futures
 import com.example.prismstudio.p40b43a88.data.engine.FirstAudioTrackExtractorsFactory
 import com.example.prismstudio.p40b43a88.data.engine.LiveLookRegistry
 import com.example.prismstudio.p40b43a88.domain.model.MediaAsset
@@ -58,6 +61,18 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 
+/** Only tagged HDR media takes the raw-input path. SDR clips sharing a decoder can still start and switch normally. */
+@UnstableApi
+private fun previewSources(context: Context): MediaSource.Factory {
+    val ordinary = DefaultMediaSourceFactory(context, FirstAudioTrackExtractorsFactory())
+        .setExternalImageLoader { Futures.immediateVoidFuture() }
+    val hdr = DefaultMediaSourceFactory(context, FirstAudioTrackExtractorsFactory(readHdrAsSdr = true))
+    return object : MediaSource.Factory by ordinary {
+        override fun createMediaSource(mediaItem: MediaItem): MediaSource =
+            (if (mediaItem.localConfiguration?.tag === HdrPreviewInput) hdr else ordinary).createMediaSource(mediaItem)
+    }
+}
+
 /** Shared transport plumbing: player listener, position ticking and surface routing. Main thread only. */
 @UnstableApi
 abstract class PlayerMonitor : MonitorPlayback {
@@ -79,6 +94,7 @@ abstract class PlayerMonitor : MonitorPlayback {
         override fun onPlaybackStateChanged(playbackState: Int) {
             mutable.update { it.copy(ready = playbackState == Player.STATE_READY || playbackState == Player.STATE_ENDED) }
             if (playbackState == Player.STATE_ENDED) {
+                onPlaybackEnded()
                 activePlayer?.playWhenReady = false
                 mutable.update { it.copy(playing = false, positionMs = it.durationMs) }
             }
@@ -90,8 +106,15 @@ abstract class PlayerMonitor : MonitorPlayback {
         }
     }
 
-    private fun startTicking() {
+    protected open fun onPlaybackEnded() {}
+
+    protected fun stopTicking() {
         ticker?.cancel()
+        ticker = null
+    }
+
+    private fun startTicking() {
+        stopTicking()
         ticker = scope.launch {
             while (isActive) {
                 publishPosition()
@@ -102,17 +125,20 @@ abstract class PlayerMonitor : MonitorPlayback {
 
     protected fun publishPosition() {
         val p = activePlayer ?: return
-        mutable.update { it.copy(positionMs = p.currentPosition.coerceIn(0, maxOf(it.durationMs, 0))) }
-        if (!p.isPlaying) {
-            ticker?.cancel()
-            ticker = null
+        // A container's reported duration can differ from its last decoded timestamp.
+        // Keep the completed transport at the endpoint even when the final isPlaying callback arrives.
+        mutable.update { state ->
+            val position = if (p.playbackState == Player.STATE_ENDED) state.durationMs
+                else p.currentPosition.coerceIn(0, state.durationMs.coerceAtLeast(0))
+            state.copy(positionMs = position)
         }
+        if (!p.isPlaying) stopTicking()
     }
 
     override fun play() {
         val p = activePlayer ?: return
         val s = mutable.value
-        if (s.durationMs > 0 && s.positionMs >= s.durationMs - 40) seekTo(0)
+        if (s.durationMs > 0 && s.positionMs >= s.durationMs) seekTo(0)
         p.play()
     }
 
@@ -176,12 +202,9 @@ class Media3ProgramPlaybackRepository(
     }
 
     private val factory = CompositionFactory(registry, priming::delayUs, noiseProfile = noiseProfiles::profile)
+    private val imageLoader = StillColors.bitmapLoader(context)
 
-    /**
-     * The filler for an overlay layer's gaps ([CompositionFactory.Output.fillerUri]). Media3 1.9.3 can leave a
-     * paused player BUFFERING for good when it is seeked from a gap (or an image) into the video clip after it,
-     * so an overlay whose clip starts later in the timeline showed nothing; a sequence of video only does not.
-     */
+    /** A decodable transparent frame for gaps in the overlay players. */
     private val fillerUri = "android.resource://${context.packageName}/${R.raw.prism_filler}"
     private val layers = mutableListOf<Layer>()
     private val surfaces = mutableMapOf<Int, Pair<Surface, Size>>()
@@ -192,6 +215,8 @@ class Media3ProgramPlaybackRepository(
     /** Edit structure whose preview was already restarted on fresh players after a failure. */
     private var restartedSignature: List<Any?>? = null
     private var recoverJob: Job? = null
+    /** A press during the edit debounce, buffering or player replacement still belongs to this timeline. */
+    private var playRequested = false
     private var lastDocument: ProjectDocument? = null
     private var lastPreview: Pair<Int, Int>? = null
     private val prepareQueue = ArrayDeque<Int>()
@@ -233,15 +258,22 @@ class Media3ProgramPlaybackRepository(
     override fun setProject(document: ProjectDocument?) = show(document?.let(CompoundClipUseCase::expanded))
 
     private fun show(document: ProjectDocument?) {
+        val changedProject = current?.id != document?.id
         current = document
-        if (document == null) {
+        if (changedProject || document == null || document.durationFrames == 0) {
             rebuildJob?.cancel()
             recoverJob?.cancel()
+            playRequested = false
+            generation++
             signature = null
+            restartedSignature = null
+            flattenedSignature = null
+            lastDocument = null
+            lastPreview = null
             releaseLayers()
             mutable.value = PlaybackState()
-            return
         }
+        if (document == null) return
         // Stabilized clips follow their files' camera paths: the missing ones are analysed in the background.
         stabilization.request(stabilizer.wanted(document))
         registry.setStabilization(stabilization.paths())
@@ -254,6 +286,7 @@ class Media3ProgramPlaybackRepository(
         val ready = reverseCopies.copies.value.readyUris().filterKeys { it in reversedIds }
         priming.request(document.media)
         proxies.refresh(proxyRules.candidates(document))
+        if (plan.isEmpty) return
         val proxied = proxyRules.previewUris(document, proxies.proxies.value)
         // HDR by the input colour override is tone mapped in the monitor too: a change of it, or of the method, rebuilds.
         val toneMapped = toneMappedMedia(document)
@@ -277,9 +310,9 @@ class Media3ProgramPlaybackRepository(
 
 
     /** The encoder delays read so far of [document]'s files. */
-    /** HDR by the input colour override, tone mapped in the monitor too: a change of it, or of the method, rebuilds. */
+    /** Changing an HDR input's interpretation or the timeline's tone map rebuilds its preview. */
     private fun toneMappedMedia(document: ProjectDocument) =
-        document.media.filter { it.hdrByOverride }.associate { it.id to it.effectiveTransfer }
+        document.media.filter { it.effectiveTransfer != ColorTransfer.SDR }.associate { it.id to it.effectiveTransfer }
             .takeIf { it.isNotEmpty() }?.let { it to document.colorManagement }
 
     private fun delays(document: ProjectDocument): List<Long> = document.media.map { priming.delayUs(it) }
@@ -340,9 +373,8 @@ class Media3ProgramPlaybackRepository(
         if (plan.layers.size < full.layers.size) Log.w(TAG, "Preview stacks ${full.layers.size} layers in ${plan.layers.size}${if (approximate) ", approximate" else ", exactly"}")
         val durationMs = plan.durationFrames * 1000L / plan.fps
         val count = plan.layers.size.coerceAtLeast(1)
-        val wasPlaying = activePlayer?.isPlaying == true
         val position = mutable.value.positionMs.coerceIn(0, (durationMs - 1).coerceAtLeast(0))
-        if (wasPlaying) layers.forEach { it.player.pause() }
+        if (playRequested) layers.forEach { it.player.pause() }
         resize(count)
         generation++
         prepareQueue.clear()
@@ -358,7 +390,7 @@ class Media3ProgramPlaybackRepository(
             val layer = layers[view]
             // Only the bottom layer plays the sound, so only it follows the encoder delays and the noise reduction.
             val layerSignature = layerPlan.structureSignature() +
-                listOf(preview, alpha, assets.keys, reversedUris, if (view == 0) delays(document) else null, if (view == 0) noise else null, proxied, toneMapped)
+                listOf(preview, alpha, document.media.map { it.id to it.uri }, reversedUris, if (view == 0) delays(document) else null, if (view == 0) noise else null, proxied, toneMapped)
             if (layerSignature == layer.signature) {
                 layer.seekTo(position)
                 // Still waiting to load from an earlier rebuild (whose queue was just cleared).
@@ -367,7 +399,6 @@ class Media3ProgramPlaybackRepository(
             }
             layer.signature = layerSignature
             layer.pending = runCatching {
-                // Overlays play video only: their gaps are filled with the transparent filler clip.
                 val output = CompositionFactory.Output(
                     preview.first, preview.second, alphaMode = alpha, fillerUri = if (view > 0) fillerUri else null,
                     colorManagement = document.colorManagement,
@@ -382,7 +413,7 @@ class Media3ProgramPlaybackRepository(
             it.copy(durationMs = durationMs, positionMs = position, error = null, layers = count, approximate = approximate, layerComposites = composites)
         }
         prepareNext()
-        if (wasPlaying) play()
+        if (playRequested) play()
     }
 
     /**
@@ -402,6 +433,7 @@ class Media3ProgramPlaybackRepository(
             // A failure reported from inside setComposition has already scheduled a recovery.
             if (pass != generation) return
             layer.player.prepare()
+            layer.player.playWhenReady = playRequested
         } catch (e: Exception) {
             Log.w(TAG, "Cannot load layer $view", e)
             if (!recover()) mutable.update { it.copy(error = "预览出错：${e.message ?: e.javaClass.simpleName}") }
@@ -462,7 +494,8 @@ class Media3ProgramPlaybackRepository(
             // The replayable cache lets a paused frame be re-rendered when a grade or effect changes.
             // Stills show with their own values, as renders give them (StillColors).
             val player = CompositionPlayer.Builder(context).experimentalSetEnableReplayableCache(true)
-                .setMediaSourceFactory(DefaultMediaSourceFactory(context, FirstAudioTrackExtractorsFactory()))
+                .setMediaSourceFactory(previewSources(context))
+                .setImageDecoderFactory(ExternallyLoadedImageDecoder.Factory { request -> imageLoader.loadBitmap(request.uri) })
                 .setVideoGraphFactory(StillColors.previewGraph()).build()
             if (monitorMuted) player.volume = 0f
             val layerListener = object : Player.Listener {
@@ -485,6 +518,7 @@ class Media3ProgramPlaybackRepository(
 
     private fun releaseLayers() {
         syncJob?.cancel()
+        stopTicking()
         prepareQueue.clear()
         layers.forEachIndexed { view, layer ->
             layer.player.removeListener(layer.listener)
@@ -495,14 +529,17 @@ class Media3ProgramPlaybackRepository(
     }
 
     override fun play() {
-        if (layers.isEmpty()) return
+        val duration = timelineDurationMs()
+        if (duration == 0L) return
+        playRequested = true
         val s = mutable.value
-        if (s.durationMs > 0 && s.positionMs >= s.durationMs - 40) seekTo(0)
-        layers.forEach { it.player.play() }
+        if (s.positionMs >= duration) seekTo(0)
+        layers.filter { it.loaded }.forEach { it.player.play() }
         startSync()
     }
 
     override fun pause() {
+        playRequested = false
         layers.forEach { it.player.pause() }
         publishPosition()
         // Stop on exactly the same frame in every layer.
@@ -510,9 +547,14 @@ class Media3ProgramPlaybackRepository(
         layers.drop(1).forEach { it.seekTo(at) }
     }
 
+    override fun onPlaybackEnded() { playRequested = false }
+
+    private fun timelineDurationMs(): Long = current?.let { it.durationFrames * 1000L / it.format.fps } ?: 0
+
     override fun seekTo(positionMs: Long) {
-        val target = positionMs.coerceIn(0, maxOf(mutable.value.durationMs, 0))
-        layers.forEach { it.seekTo(target) }
+        val target = positionMs.coerceIn(0, timelineDurationMs())
+        // A drop can seek into the newly inserted clip before the longer timeline has finished preparing.
+        if (target <= mutable.value.durationMs) layers.forEach { it.seekTo(target) }
         mutable.update { it.copy(positionMs = target) }
     }
 
@@ -631,7 +673,7 @@ class ExoSourcePlaybackRepository(private val context: Context) : PlayerMonitor(
     private fun ensurePlayer(effects: List<Effect>): ExoPlayer {
         player?.let { if (effects == playerEffects) return it }
         player?.release()
-        return ExoPlayer.Builder(context, DefaultMediaSourceFactory(context, FirstAudioTrackExtractorsFactory())).build().also {
+        return ExoPlayer.Builder(context, previewSources(context)).build().also {
             it.addListener(listener)
             it.setSeekParameters(SeekParameters.EXACT)
             if (effects.isNotEmpty()) it.setVideoEffects(effects)
@@ -665,15 +707,14 @@ class ExoSourcePlaybackRepository(private val context: Context) : PlayerMonitor(
             mutable.value = PlaybackState(durationMs = asset?.durationMs ?: 0, ready = asset != null && !asset.offline)
             return
         }
-        // HDR by the input colour override: the player reads it as SDR, so the timeline's tone map runs on its frames.
-        val toneMap = if (asset.hdrByOverride) Triple(asset.effectiveTransfer, color.toneMapping, color.pqPeakNits) else null
-        val key = "${asset.uri}|$toneMap"
+        val toneMap = if (CompositionFactory.toneMaps(asset, color)) Triple(asset.effectiveTransfer, color.toneMapping, color.pqPeakNits) else null
+        val key = "${asset.uri}|${asset.color.isHdr}|$toneMap"
         if (key == loadedUri) return
         loadedUri = key
         if (toneMap != null) Log.w(TAG, "Source monitor tone maps ${asset.name} as ${toneMap.first}")
         val p = ensurePlayer(toneMapEffects(toneMap))
         mutable.value = PlaybackState(durationMs = asset.durationMs)
-        p.setMediaItem(MediaItem.fromUri(asset.uri))
+        p.setMediaItem(MediaItem.Builder().setUri(asset.uri).apply { if (asset.color.isHdr) setTag(HdrPreviewInput) }.build())
         p.prepare()
     }
 

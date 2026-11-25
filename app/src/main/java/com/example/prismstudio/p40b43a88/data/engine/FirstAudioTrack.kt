@@ -2,6 +2,8 @@ package com.example.prismstudio.p40b43a88.data.engine
 
 import android.net.Uri
 import androidx.media3.common.C
+import androidx.media3.common.ColorInfo
+import androidx.media3.common.Format
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.extractor.DefaultExtractorsFactory
 import androidx.media3.extractor.DiscardingTrackOutput
@@ -22,11 +24,16 @@ import androidx.media3.extractor.text.SubtitleParser
  * the previews and renders now hear that same track, whatever the language.
  */
 @UnstableApi
-class FirstAudioTrackExtractorsFactory(private val base: ExtractorsFactory = DefaultExtractorsFactory()) : ExtractorsFactory {
-    override fun createExtractors(): Array<Extractor> = base.createExtractors().map(::FirstAudioTrackExtractor).toTypedArray()
+class FirstAudioTrackExtractorsFactory(
+    private val base: ExtractorsFactory = DefaultExtractorsFactory(),
+    private val readHdrAsSdr: Boolean = false,
+) : ExtractorsFactory {
+    private fun wrap(extractor: Extractor): Extractor = FirstAudioTrackExtractor(extractor, readHdrAsSdr)
+
+    override fun createExtractors(): Array<Extractor> = base.createExtractors().map(::wrap).toTypedArray()
 
     override fun createExtractors(uri: Uri, responseHeaders: Map<String, List<String>>): Array<Extractor> =
-        base.createExtractors(uri, responseHeaders).map(::FirstAudioTrackExtractor).toTypedArray()
+        base.createExtractors(uri, responseHeaders).map(::wrap).toTypedArray()
 
     override fun experimentalSetTextTrackTranscodingEnabled(textTrackTranscodingEnabled: Boolean): ExtractorsFactory =
         apply { base.experimentalSetTextTrackTranscodingEnabled(textTrackTranscodingEnabled) }
@@ -39,12 +46,12 @@ class FirstAudioTrackExtractorsFactory(private val base: ExtractorsFactory = Def
 }
 
 @UnstableApi
-private class FirstAudioTrackExtractor(private val base: Extractor) : Extractor {
+private class FirstAudioTrackExtractor(private val base: Extractor, private val readHdrAsSdr: Boolean) : Extractor {
     override fun sniff(input: ExtractorInput): Boolean = base.sniff(input)
 
     override fun getSniffFailureDetails(): List<SniffFailure> = base.sniffFailureDetails
 
-    override fun init(output: ExtractorOutput) = base.init(FirstAudioTrackOutput(output))
+    override fun init(output: ExtractorOutput) = base.init(FirstAudioTrackOutput(output, readHdrAsSdr))
 
     override fun read(input: ExtractorInput, seekPosition: PositionHolder): Int = base.read(input, seekPosition)
 
@@ -58,7 +65,7 @@ private class FirstAudioTrackExtractor(private val base: Extractor) : Extractor 
 
 /** Hands [base] the first sound track the extractor declares; the samples of any later one are read and dropped. */
 @UnstableApi
-internal class FirstAudioTrackOutput(private val base: ExtractorOutput) : ExtractorOutput {
+internal class FirstAudioTrackOutput(private val base: ExtractorOutput, private val readHdrAsSdr: Boolean = false) : ExtractorOutput {
     private var audioId: Int? = null
     private val dropped = HashMap<Int, TrackOutput>()
 
@@ -67,7 +74,16 @@ internal class FirstAudioTrackOutput(private val base: ExtractorOutput) : Extrac
             val first = audioId ?: id.also { audioId = it }
             if (id != first) return dropped.getOrPut(id) { DiscardingTrackOutput() }
         }
-        return base.track(id, type)
+        val output = base.track(id, type)
+        if (type != C.TRACK_TYPE_VIDEO || !readHdrAsSdr) return output
+        // The clip shader maps its HLG/PQ samples into the SDR edit. Keep that input out of the player's HDR GL path.
+        return object : TrackOutput by output {
+            override fun format(format: Format) {
+                output.format(if (ColorInfo.isTransferHdr(format.colorInfo)) {
+                    format.buildUpon().setColorInfo(ColorInfo.SDR_BT709_LIMITED).build()
+                } else format)
+            }
+        }
     }
 
     override fun endTracks() = base.endTracks()

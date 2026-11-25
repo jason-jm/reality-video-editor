@@ -1,6 +1,8 @@
 package com.example.prismstudio.p40b43a88.domain.usecase
 
-import com.example.prismstudio.p40b43a88.domain.model.hdrByOverride
+import com.example.prismstudio.p40b43a88.domain.model.ColorTransfer
+import com.example.prismstudio.p40b43a88.domain.model.InputColorSpace
+import com.example.prismstudio.p40b43a88.domain.model.effectiveTransfer
 import com.example.prismstudio.p40b43a88.domain.model.Clip
 import com.example.prismstudio.p40b43a88.domain.model.ClipKind
 import com.example.prismstudio.p40b43a88.domain.model.EditRejected
@@ -46,9 +48,12 @@ class FreezeFrameUseCase(private val ids: IdGenerator) {
 
     /** [captured] (the captured frame) held for [holdFrames] at [atFrame] in the requested clip. */
     fun insert(doc: ProjectDocument, request: Request, captured: MediaAsset, atFrame: Int, holdFrames: Int): Result {
-        // A frame of HDR-by-override media holds the same code values: it takes the clip's input colour, so it is tone
-        // mapped as the clip around it is.
-        val still = if (request.asset.hdrByOverride) captured.copy(inputColor = request.asset.inputColor) else captured
+        // A captured H.264 still contains the source code values. Carry the transfer across the cut.
+        val still = when (request.asset.effectiveTransfer) {
+            ColorTransfer.HLG -> captured.copy(inputColor = InputColorSpace.HLG)
+            ColorTransfer.PQ -> captured.copy(inputColor = InputColorSpace.PQ)
+            ColorTransfer.SDR -> captured
+        }
         val timeline = doc.timeline
         // The project may have changed while the frame was being captured.
         val clip = timeline.clip(request.clip.id) ?: throw EditRejected("片段已不在时间线上")

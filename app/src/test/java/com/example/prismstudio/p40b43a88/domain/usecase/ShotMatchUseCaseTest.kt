@@ -102,6 +102,12 @@ class ShotMatchUseCaseTest {
     }
 
     @Test
+    fun `saturated correction targets return finite wheels`() {
+        val (lift, gain, gamma) = ShotMatchUseCase.channel(0.32f, 0.61f, 0.92f, 1f, 0.9f, 1f)
+        assertTrue(listOf(lift, gain, gamma).all { it.isFinite() })
+    }
+
+    @Test
     fun `one channel's three points land where they are aimed`() {
         val (l, g, a) = ShotMatchUseCase.channel(0.1f, 0.4f, 0.8f, 0.02f, 0.5f, 0.95f)
         fun map(c: Float) = ((c + l * (1f - c)) * g).pow(1f / (1f + a))

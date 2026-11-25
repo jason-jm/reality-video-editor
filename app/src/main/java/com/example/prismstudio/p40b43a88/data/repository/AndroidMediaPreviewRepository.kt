@@ -12,6 +12,7 @@ import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.SeekParameters
 import androidx.media3.inspector.FrameExtractor
 import com.example.prismstudio.p40b43a88.data.engine.AudioPcmReader
+import com.example.prismstudio.p40b43a88.data.engine.HdrFrameReader
 import com.example.prismstudio.p40b43a88.domain.model.FramePixels
 import com.example.prismstudio.p40b43a88.domain.model.MediaKind
 import com.example.prismstudio.p40b43a88.domain.model.Waveform
@@ -55,6 +56,7 @@ class AndroidMediaPreviewRepository(
     private val waveDir = File(context.cacheDir, "waveforms").apply { mkdirs() }
     private val pcm = AudioPcmReader(context)
     private val extractorLock = Mutex()
+    private val hdrFrames = HdrFrameReader(context)
     private val extractors = LinkedHashMap<String, FrameExtractor>(4, 0.75f, true)
 
     override suspend fun thumbnail(uri: String, kind: MediaKind, timeMs: Long, widthPx: Int): Bitmap? {
@@ -84,6 +86,22 @@ class AndroidMediaPreviewRepository(
      * (callers show their placeholder, and nothing black gets cached).
      */
     private suspend fun decodeAny(uri: String, kind: MediaKind, timeMs: Long, widthPx: Int, exact: Boolean): Bitmap? {
+        if (kind == MediaKind.VIDEO) {
+            val hdr = withContext(frameDispatcher) { hdrFrames.source(uri) }
+            if (hdr != null) {
+                val key = "hdr:$uri@$timeMs@$widthPx"
+                return extractorLock.withLock {
+                    thumbnails.get(key) ?: try {
+                        hdrFrames.frame(uri, hdr, timeMs, widthPx)?.also { thumbnails.put(key, it) }
+                    } catch (e: CancellationException) {
+                        throw e
+                    } catch (e: Exception) {
+                        Log.w(TAG, "Cannot sample HDR frame at $timeMs", e)
+                        null
+                    }
+                }
+            }
+        }
         val platform = withContext(frameDispatcher) { decode(uri, kind, timeMs, widthPx, exact) }
         if (platform != null && (kind != MediaKind.VIDEO || !isBlank(platform))) return platform
         if (kind != MediaKind.VIDEO) return null

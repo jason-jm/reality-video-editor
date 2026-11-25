@@ -5,7 +5,7 @@ import android.content.ContentUris
 import android.content.Context
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
+import android.graphics.ImageDecoder
 import android.media.MediaCodecInfo
 import android.media.MediaExtractor
 import com.example.prismstudio.p40b43a88.domain.model.SourceColor
@@ -130,14 +130,18 @@ class MediaStoreDeviceMediaRepository(
         var color = SourceColor.UNKNOWN
         if (item.kind == MediaKind.IMAGE) {
             durationMs = MediaAsset.IMAGE_DEFAULT_DURATION_MS
-            var decoded = false
-            runCatching {
-                context.contentResolver.openInputStream(uri)?.use { stream ->
-                    val options = BitmapFactory.Options().apply { inSampleSize = 16 }
-                    BitmapFactory.decodeStream(stream, null, options)?.let { poster = posterOf(it); it.recycle(); decoded = true }
+            try {
+                val bitmap = ImageDecoder.decodeBitmap(ImageDecoder.createSource(context.contentResolver, uri)) { decoder, info, _ ->
+                    width = info.size.width
+                    height = info.size.height
+                    // Read the oriented source dimensions, then decode only enough pixels for the three poster bands.
+                    decoder.setTargetSampleSize((maxOf(width, height) / 64).coerceAtLeast(1))
+                    decoder.allocator = ImageDecoder.ALLOCATOR_SOFTWARE
                 }
+                try { poster = posterOf(bitmap) } finally { bitmap.recycle() }
+            } catch (e: Exception) {
+                throw UnreadableMediaException(item.name).apply { initCause(e) }
             }
-            if (!decoded) throw UnreadableMediaException(item.name)
         } else {
             val retriever = MediaMetadataRetriever()
             try {
@@ -274,14 +278,14 @@ class MediaStoreDeviceMediaRepository(
     private fun posterOf(bitmap: Bitmap): PosterColors {
         fun band(from: Int, to: Int): Long {
             var r = 0L; var g = 0L; var b = 0L; var n = 0L
-            for (y in from until to) for (x in 0 until bitmap.width) {
+            for (y in from until maxOf(from + 1, to)) for (x in 0 until bitmap.width) {
                 val p = bitmap.getPixel(x, y)
                 r += (p shr 16) and 0xFF; g += (p shr 8) and 0xFF; b += p and 0xFF; n++
             }
             if (n == 0L) return 0xFF22252EL
             return (0xFFL shl 24) or ((r / n) shl 16) or ((g / n) shl 8) or (b / n)
         }
-        val h = bitmap.height.coerceAtLeast(3)
+        val h = bitmap.height
         return PosterColors(band(0, h / 3), band(h / 3, 2 * h / 3), band(2 * h / 3, bitmap.height))
     }
 

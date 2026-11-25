@@ -40,6 +40,7 @@ import com.example.prismstudio.p40b43a88.ui.edit.components.TimelineMenu
 import com.example.prismstudio.p40b43a88.ui.edit.components.TimelineSettingsSheet
 import com.example.prismstudio.p40b43a88.ui.edit.components.InspectorPanel
 import com.example.prismstudio.p40b43a88.ui.edit.components.TimelinePanel
+import com.example.prismstudio.p40b43a88.ui.components.TimelineMediaDrop
 import com.example.prismstudio.p40b43a88.ui.edit.components.ViewerColumn
 
 /** The Edit stage page (state wiring and toasts). */
@@ -70,6 +71,7 @@ fun EditContent(
     proxyNote: String = "",
 ) {
     val dispatch by rememberUpdatedState(onEvent)
+    val mediaDrop = remember { TimelineMediaDrop { id, track, frame -> dispatch(EditEvent.DropLibraryMedia(id, track, frame)) } }
     // The system document picker for 导入字幕; a cancelled pick changes nothing.
     val edlPicker = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
         if (uri != null) dispatch(EditEvent.ImportEdl(uri.toString()))
@@ -184,6 +186,7 @@ fun EditContent(
                         onTab = { onEvent(EditEvent.SelectLibraryTab(it)) },
                         onSelect = { onEvent(EditEvent.SelectLibraryItem(it)) },
                         onApply = { onEvent(EditEvent.ApplyLibraryItem) },
+                        mediaDrop = mediaDrop,
                         onNeedPreview = { onEvent(EditEvent.RequestLibraryPreview(it)) },
                         modifier = Modifier.width(360.dp).fillMaxHeight(),
                         markers = state.markers,
@@ -232,6 +235,7 @@ fun EditContent(
                 )
             }
             TimelinePanel(
+                mediaDrop = mediaDrop,
                 timeline = state.timeline,
                 playheadFrame = state.playheadFrame,
                 summary = state.summary,

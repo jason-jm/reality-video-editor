@@ -1,6 +1,5 @@
 package com.example.prismstudio.p40b43a88.ui.media
 
-import com.example.prismstudio.p40b43a88.domain.model.hdrByOverride
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.ensureActive
@@ -175,7 +174,7 @@ class MediaViewModel(
             }
             MediaEvent.NewSmartBin -> doc?.let { d -> openSmartSheet(null, SmartBinsUseCase.Rules(smart.suggestedName(d))) }
             is MediaEvent.EditSmartBin -> doc?.smartBins?.firstOrNull { it.id == event.id }?.let { b -> openSmartSheet(b.id, SmartBinsUseCase.Rules.of(b)) }
-            is MediaEvent.SmartRules -> _state.value.smartSheet?.let { sheet -> openSmartSheet(sheet.editingId, event.rules) }
+            is MediaEvent.SmartRules -> _state.value.smartSheet?.let { sheet -> openSmartSheet(sheet.editingId, event.edit(sheet.rules)) }
             MediaEvent.ConfirmSmartBin -> confirmSmartBin()
             MediaEvent.CloseSmartBin -> _state.update { it.copy(smartSheet = null) }
             is MediaEvent.SelectSmartBin -> {
@@ -229,10 +228,12 @@ class MediaViewModel(
             } ?: toast("请先选择素材")
             is MediaEvent.MetadataDraft -> _state.value.selected?.let { a ->
                 _state.update { s ->
-                    s.copy(metadataSheet = s.metadataSheet?.copy(
-                        draft = event.draft,
-                        problem = clipMeta.problem(event.draft),
-                        changed = clipMeta.metadata(event.draft) != a.metadata,
+                    val sheet = s.metadataSheet ?: return@update s
+                    val draft = event.edit(sheet.draft)
+                    s.copy(metadataSheet = sheet.copy(
+                        draft = draft,
+                        problem = clipMeta.problem(draft),
+                        changed = clipMeta.metadata(draft) != a.metadata,
                     ))
                 }
             }
@@ -934,12 +935,10 @@ class MediaViewModel(
         return when (asset.effectiveTransfer) {
             ColorTransfer.SDR -> "$source。直接进入 ${ColorManagement.TIMELINE_LABEL} 时间线"
             // HDR by the override is tone mapped in the monitors too; a tagged file is shown there as the system decodes it.
-            ColorTransfer.HLG -> "$source。${where(asset)}按「${color.toneMapping.label}」色调映射到 Rec.709"
-            ColorTransfer.PQ -> "$source。${where(asset)}按「${color.toneMapping.label}」色调映射到 Rec.709，母版峰值按 ${color.pqPeakNits} nits"
+            ColorTransfer.HLG -> "$source。监视器和导出都按「${color.toneMapping.label}」色调映射到 Rec.709"
+            ColorTransfer.PQ -> "$source。监视器和导出都按「${color.toneMapping.label}」色调映射到 Rec.709，母版峰值按 ${color.pqPeakNits} nits"
         }
     }
-
-    private fun where(asset: MediaAsset) = if (asset.hdrByOverride) "监视器和导出都" else "导出时"
 
     private fun toast(message: String) = _state.update { it.copy(toast = message) }
 

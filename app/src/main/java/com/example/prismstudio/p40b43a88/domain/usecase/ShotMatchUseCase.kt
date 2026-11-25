@@ -156,8 +156,10 @@ class ShotMatchUseCase(private val engine: BuildGradeLutUseCase = BuildGradeLutU
             var g = 1f
             repeat(ROUNDS) {
                 val e = 1f + a
-                val lo = tb.coerceAtLeast(0f).pow(e)
-                val hi = tw.coerceIn(lo + 1e-3f, 1f).pow(e)
+                // Iteration can push even the shadow target to white. Reserve room for a distinct
+                // highlight after applying the same exponent to both targets.
+                val lo = tb.coerceIn(0f, 1f).pow(e).coerceAtMost(1f - 1e-3f)
+                val hi = tw.coerceIn(0f, 1f).pow(e).coerceIn(lo + 1e-3f, 1f)
                 val r = lo / hi
                 val denominator = 1f - b - r + r * w
                 l = if (abs(denominator) < 1e-6f) 0f else ((r * w - b) / denominator).coerceIn(-0.5f, 0.5f)

@@ -36,6 +36,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.prismstudio.p40b43a88.domain.model.LibraryTab
 import com.example.prismstudio.p40b43a88.ui.components.FlagMarks
+import com.example.prismstudio.p40b43a88.ui.components.TimelineMediaDrop
+import com.example.prismstudio.p40b43a88.ui.components.mediaDragSource
 import com.example.prismstudio.p40b43a88.ui.components.PosterArt
 import com.example.prismstudio.p40b43a88.ui.edit.LibraryItemUi
 import com.example.prismstudio.p40b43a88.ui.theme.PrismType
@@ -82,6 +84,7 @@ fun AssetLibrary(
     indexFilter: EditIndexFilter = EditIndexFilter.ALL,
     onIndexFilter: (EditIndexFilter) -> Unit = {},
     onPickIndexRow: (String) -> Unit = {},
+    mediaDrop: TimelineMediaDrop? = null,
 ) {
     Column(modifier, verticalArrangement = Arrangement.spacedBy(12.dp)) {
         SegmentControl(Modifier.fillMaxWidth()) {
@@ -133,7 +136,7 @@ fun AssetLibrary(
             ) {
                 items(items, key = { it.id }) { item ->
                     if (tab == LibraryTab.MEDIA) LaunchedEffect(item.id) { onNeedPreview(item.id) }
-                    LibraryTile(item, selected = item.id == selectedId, onClick = { onSelect(item.id) })
+                    LibraryTile(item, selected = item.id == selectedId, onClick = { onSelect(item.id) }, mediaDrop = mediaDrop)
                 }
             }
         }
@@ -147,7 +150,7 @@ fun AssetLibrary(
 }
 
 @Composable
-private fun LibraryTile(item: LibraryItemUi, selected: Boolean, onClick: () -> Unit) {
+private fun LibraryTile(item: LibraryItemUi, selected: Boolean, onClick: () -> Unit, mediaDrop: TimelineMediaDrop?) {
     val shape = RoundedCornerShape(16.dp)
     val fill = if (selected) PicoTheme.colorScheme.fillSecondary else PicoTheme.colorScheme.fillTertiary
     Column(
@@ -156,6 +159,7 @@ private fun LibraryTile(item: LibraryItemUi, selected: Boolean, onClick: () -> U
             .offset(z = if (selected) 12.dp else 0.dp)
             .clip(shape)
             .spatialHoverEffect()
+            .mediaDragSource(item.id, item.dropTrackKind, mediaDrop)
             .clickable(onClick = onClick)
             .semantics { this.selected = selected }
             .drawBehind { drawRect(fill) }

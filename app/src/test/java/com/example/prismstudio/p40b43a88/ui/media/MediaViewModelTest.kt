@@ -137,7 +137,7 @@ class MediaViewModelTest {
         assertEquals("智能媒体夹 1", blank.rules.name)
         assertEquals("符合条件：3 个素材 · 请至少设置一个条件", blank.status)
         assertFalse(blank.canConfirm)
-        model.onEvent(MediaEvent.SmartRules(blank.rules.copy(name = "未用视频", kind = MediaKind.VIDEO, usage = UsageRule.UNUSED)))
+        model.onEvent(MediaEvent.SmartRules { it.copy(name = "未用视频", kind = MediaKind.VIDEO, usage = UsageRule.UNUSED) })
         assertEquals("符合条件：1 个素材", model.state.value.smartSheet!!.status)
         model.onEvent(MediaEvent.ConfirmSmartBin)
         val id = session.document.value!!.smartBins.single().id
@@ -156,7 +156,7 @@ class MediaViewModelTest {
         assertEquals("没有符合条件的素材", model.state.value.emptyTitle)
 
         model.onEvent(MediaEvent.EditSmartBin(id))
-        model.onEvent(MediaEvent.SmartRules(model.state.value.smartSheet!!.rules.copy(name = "已用视频", usage = UsageRule.USED)))
+        model.onEvent(MediaEvent.SmartRules { it.copy(name = "已用视频", usage = UsageRule.USED) })
         model.onEvent(MediaEvent.ConfirmSmartBin)
         assertEquals("已更新智能媒体夹“已用视频”（1 个素材）", model.state.value.toast)
         assertEquals(listOf("v1"), model.state.value.items.map { it.id })
@@ -177,9 +177,9 @@ class MediaViewModelTest {
         val sheet = model.state.value.metadataSheet!!
         assertEquals("Beach Walk.mp4", sheet.assetName)
         assertFalse(sheet.canConfirm)
-        model.onEvent(MediaEvent.MetadataDraft(sheet.draft.copy(take = "1".repeat(13))))
+        model.onEvent(MediaEvent.MetadataDraft { it.copy(take = "1".repeat(13)) })
         assertEquals("场次、镜头、条次各最多 12 个字", model.state.value.metadataSheet!!.hint)
-        model.onEvent(MediaEvent.MetadataDraft(sheet.draft.copy(scene = "3", take = "4", keywords = "sunset, drone", goodTake = true)))
+        model.onEvent(MediaEvent.MetadataDraft { it.copy(scene = "3", take = "4", keywords = "sunset, drone", goodTake = true) })
         assertTrue(model.state.value.metadataSheet!!.canConfirm)
         model.onEvent(MediaEvent.ConfirmMetadata)
         assertNull(model.state.value.metadataSheet)
@@ -869,7 +869,7 @@ class MediaViewModelTest {
         assertTrue(state.items.first { it.id == hlg.id }.hdr)
         assertEquals("Rec.2100 HLG · 10 位", state.metadata.toMap()["色彩"])
         assertEquals(InputColorSpace.AUTO, state.inputColor)
-        assertEquals("按文件标记：Rec.2100 HLG · 10 位。导出时按「亮度映射」色调映射到 Rec.709", state.colorNote)
+        assertEquals("按文件标记：Rec.2100 HLG · 10 位。监视器和导出都按「亮度映射」色调映射到 Rec.709", state.colorNote)
         // Read as SDR by hand: no badge, no tone mapping.
         model.onEvent(MediaEvent.InputColor(InputColorSpace.REC709))
         state = model.state.value

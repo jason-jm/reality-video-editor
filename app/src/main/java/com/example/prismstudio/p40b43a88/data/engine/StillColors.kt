@@ -1,7 +1,12 @@
 package com.example.prismstudio.p40b43a88.data.engine
 
+import android.content.Context
+import android.graphics.BitmapFactory
+import android.graphics.ColorSpace
 import androidx.media3.common.VideoFrameProcessor
+import androidx.media3.common.util.BitmapLoader
 import androidx.media3.common.util.UnstableApi
+import androidx.media3.datasource.DataSourceBitmapLoader
 import androidx.media3.effect.DefaultGlObjectsProvider
 import androidx.media3.effect.DefaultVideoFrameProcessor
 import androidx.media3.effect.SingleInputVideoGraph
@@ -16,6 +21,19 @@ import androidx.media3.effect.SingleInputVideoGraph
  */
 @UnstableApi
 object StillColors {
+
+    /** Preview and export decode the same oriented first frame, including from GIF and extensionless content URIs. */
+    fun bitmapLoader(context: Context): BitmapLoader {
+        val loader = DataSourceBitmapLoader.Builder(context)
+            .setBitmapFactoryOptions(BitmapFactory.Options().apply { inPreferredColorSpace = ColorSpace.get(ColorSpace.Named.SRGB) })
+            .setMaximumOutputDimension(4096)
+            .build()
+        return object : BitmapLoader by loader {
+            // The pool already decoded this still at import. Its persisted URI may have no extension or MIME.
+            // BitmapFactory reads the actual bytes, including the first frame of an animated GIF.
+            override fun supportsMimeType(mimeType: String): Boolean = mimeType == "image/*" || loader.supportsMimeType(mimeType)
+        }
+    }
 
     /** A frame processor factory working in each SDR input's own colour space; [replayable] for the monitor's redraws. */
     fun frameProcessors(replayable: Boolean = false): VideoFrameProcessor.Factory =

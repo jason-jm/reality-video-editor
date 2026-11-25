@@ -4,12 +4,11 @@ import com.example.prismstudio.p40b43a88.BuildConfig.PRODUCT_NAME
 import com.example.prismstudio.p40b43a88.domain.usecase.FileNames
 import com.example.prismstudio.p40b43a88.domain.usecase.RenderErrorText
 import com.example.prismstudio.p40b43a88.data.engine.FirstAudioTrackExtractorsFactory
+import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import com.example.prismstudio.p40b43a88.data.engine.StillColors
 import android.content.ContentValues
 import android.content.Context
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.graphics.ColorSpace
 import android.net.Uri
 import android.os.Environment
 import android.provider.MediaStore
@@ -17,8 +16,6 @@ import android.util.Log
 import androidx.media3.common.MimeTypes
 import androidx.media3.common.util.Clock
 import androidx.media3.common.util.UnstableApi
-import androidx.media3.datasource.DataSourceBitmapLoader
-import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import androidx.media3.transformer.AssetLoader
 import androidx.media3.transformer.AudioEncoderSettings
 import androidx.media3.transformer.Composition
@@ -68,12 +65,6 @@ import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
-
-/**
- * The largest side a still is decoded at: Media3's own limit (GlUtil.MAX_BITMAP_DECODING_SIZE in 1.9, library-internal so
- * not to be referenced from the app).
- */
-private const val MAX_BITMAP_DECODING_SIZE = 4096
 
 /** Exports with Media3 [Transformer] and publishes the file to `Movies/Reality Video Editor`. */
 @UnstableApi
@@ -254,8 +245,18 @@ class Media3RenderRepository(
                 // stacked picture keeps the quality of a single render.
                 val mimeType = if (last) settings.codec.mimeType else MimeTypes.VIDEO_H264
                 val began = System.nanoTime()
-                withContext(Dispatchers.Main) {
+                val encoded = withContext(Dispatchers.Main) {
                     export(composition, target, settings, mimeType, if (last) bitrate else stackBitrate) { onProgress(prepareShare + (index + it) * share) }
+                }
+                if (encoded.width != width || encoded.height != height || encoded.videoMimeType != mimeType) {
+                    val actual = "${encoded.videoMimeType} ${encoded.width}x${encoded.height}"
+                    val wanted = "$mimeType ${width}x$height"
+                    val failure = ExportException.createForCodec(
+                        IllegalStateException("Requested $wanted, received $actual"),
+                        ExportException.ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED,
+                        ExportException.CodecInfo(wanted, true, false, encoded.videoEncoderName),
+                    )
+                    throw RenderFailure(describe(failure, settings), failure)
                 }
                 Log.i(TAG, "Pass ${index + 1}/${passes.size} (${pass.layers.singleOrNull()?.id ?: "empty"}): ${(System.nanoTime() - began) / 1_000_000} ms")
                 under?.delete()
@@ -371,8 +372,10 @@ class Media3RenderRepository(
         /** The mix alone as WAV: PCM through [WavEncoderFactory] into [WavMuxer] at the settings' rate and depth. */
         wav: Boolean = false,
         onProgress: (Float) -> Unit,
-    ) = coroutineScope {
-        val encoders = DefaultEncoderFactory.Builder(context).setEnableFallback(true)
+    ): ExportResult = coroutineScope {
+        // Video jobs must keep the requested codec and dimensions. On unsupported devices the default
+        // fallback can silently deliver a 512-pixel movie for a 720p job. Audio-only exports keep their fallback.
+        val encoders = DefaultEncoderFactory.Builder(context).setEnableFallback(bitrate == 0)
         if (bitrate > 0) encoders.setRequestedVideoEncoderSettings(VideoEncoderSettings.Builder().setBitrate(bitrate).build())
         audioBitrate?.let { encoders.setRequestedAudioEncoderSettings(AudioEncoderSettings.Builder().setBitrate(it).build()) }
         val baseEncoders = AacDelayEncoderFactory(encoders.build())
@@ -400,10 +403,10 @@ class Media3RenderRepository(
             }
         }
         try {
-            suspendCancellableCoroutine { cont ->
+            val result = suspendCancellableCoroutine { cont ->
                 transformer.addListener(object : Transformer.Listener {
                     override fun onCompleted(composition: Composition, exportResult: ExportResult) {
-                        if (cont.isActive) cont.resume(Unit)
+                        if (cont.isActive) cont.resume(exportResult)
                     }
 
                     override fun onError(composition: Composition, exportResult: ExportResult, exportException: ExportException) {
@@ -414,6 +417,7 @@ class Media3RenderRepository(
                 transformer.start(composition, file.path)
             }
             onProgress(1f)
+            result
         } catch (cancelled: CancellationException) {
             // This scope runs on the encoder's main looper. Finish cancellation before releasing its working files.
             transformer.cancel()
@@ -558,17 +562,12 @@ class Media3RenderRepository(
      * come from [RenderSourceFactory] (every frame before a cut, exact item lengths, speed without audio).
      */
     private fun assetLoaderFactory(): AssetLoader.Factory {
-        val bitmapOptions = BitmapFactory.Options().apply { inPreferredColorSpace = ColorSpace.get(ColorSpace.Named.SRGB) }
-        val bitmapLoader = DataSourceBitmapLoader.Builder(context)
-            .setBitmapFactoryOptions(bitmapOptions)
-            .setMaximumOutputDimension(MAX_BITMAP_DECODING_SIZE)
-            .build()
         return DefaultAssetLoaderFactory(
             context,
             DefaultDecoderFactory.Builder(context).build(),
             Clock.DEFAULT,
             RenderSourceFactory(DefaultMediaSourceFactory(context, FirstAudioTrackExtractorsFactory()), audioStarts = audioStarts),
-            bitmapLoader,
+            StillColors.bitmapLoader(context),
         )
     }
 

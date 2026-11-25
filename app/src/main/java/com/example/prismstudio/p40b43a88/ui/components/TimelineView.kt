@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.getValue
@@ -41,6 +42,8 @@ import androidx.compose.ui.input.pointer.isMetaPressed
 import androidx.compose.ui.input.pointer.isShiftPressed
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.layout.LayoutCoordinates
+import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -222,6 +225,7 @@ fun TimelineView(
      * with it); null keeps every lane where it is.
      */
     laneScroll: ScrollState? = null,
+    mediaDrop: TimelineMediaDrop? = null,
 ) {
     val density = LocalDensity.current
     val measurer = rememberTextMeasurer()
@@ -289,6 +293,21 @@ fun TimelineView(
     fun lanesNow(): LaneGeometry = LaneGeometry.of(rulerPx, geometry.third, (laneScroll?.value ?: 0).toFloat(), viewHeightPx, latestUi.tracks.size)
 
     fun laneAt(y: Float): Int = lanesNow().laneAt(y)
+
+    var canvasCoordinates by remember { mutableStateOf<LayoutCoordinates?>(null) }
+    if (mediaDrop != null) {
+        DisposableEffect(mediaDrop, rulerPx) {
+            mediaDrop.locate = locate@{ windowPosition, kind ->
+                val canvas = canvasCoordinates?.takeIf { it.isAttached } ?: return@locate null
+                val p = canvas.windowToLocal(windowPosition)
+                if (p.x < 0 || p.x >= canvas.size.width || p.y < rulerPx || p.y >= canvas.size.height) return@locate null
+                val track = latestUi.tracks.getOrNull(laneAt(p.y)) ?: return@locate null
+                if (track.locked || track.kind != kind) return@locate null
+                TimelineMediaDrop.Destination(track.id, frameAt(p.x))
+            }
+            onDispose { mediaDrop.locate = null; mediaDrop.destination = null }
+        }
+    }
 
     /** The lanes scrolled by [delta] px (down positive), kept within what they need. */
     fun scrollLanes(delta: Float) {
@@ -413,6 +432,7 @@ fun TimelineView(
     Box(
         modifier = modifier
             .clipToBounds()
+            .then(if (mediaDrop != null) Modifier.onGloballyPositioned { canvasCoordinates = it } else Modifier)
             .onSizeChanged {
                 viewportPx = it.width.toFloat()
                 viewHeightPx = it.height.toFloat()
@@ -704,6 +724,14 @@ fun TimelineView(
                 drawLine(color, Offset(x, rulerPx), Offset(x, size.height), strokeWidth = if (picked) 2.dp.toPx() else 1f, alpha = 0.45f)
             }
             drawMarks(ui.marks, pxPerFrame, scroll, rulerPx)
+            mediaDrop?.destination?.let { drop ->
+                val lane = ui.tracks.indexOfFirst { it.id == drop.trackId }
+                if (lane >= 0) {
+                    val x = drop.frame * pxPerFrame - scroll
+                    val top = lanes.top(lane)
+                    drawLine(palette.marquee, Offset(x, maxOf(rulerPx, top)), Offset(x, top + trackPx), strokeWidth = 4.dp.toPx())
+                }
+            }
             box?.let {
                 val left = min(it.x0, it.x1) - scroll
                 val top = max(lanes.toScreen(min(it.y0, it.y1)), rulerPx)

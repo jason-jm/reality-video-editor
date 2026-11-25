@@ -78,6 +78,7 @@ data class LibraryItemUi(
      * it is (复合片段 / 时间线); null for media.
      */
     val miniature: MiniatureUi? = null,
+    val dropTrackKind: TrackKind? = null,
 )
 
 /** A timeline drawn small ([com.example.prismstudio.p40b43a88.ui.components.TimelineMiniature]) with its badge. */
@@ -448,6 +449,7 @@ sealed interface EditEvent {
     data class SelectLibraryTab(val index: Int) : EditEvent
     data class SelectLibraryItem(val id: String) : EditEvent
     data object ApplyLibraryItem : EditEvent
+    data class DropLibraryMedia(val assetId: String, val trackId: String, val frame: Int) : EditEvent
     /**
      * The selected media-pool item, whole, onto the timeline at the playhead (F9 / F10 / F12) or its end, or
      * in place of the clip there (F11).

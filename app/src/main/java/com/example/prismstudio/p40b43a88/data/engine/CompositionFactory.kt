@@ -1,12 +1,12 @@
 package com.example.prismstudio.p40b43a88.data.engine
 
 import androidx.media3.common.audio.ToInt16PcmAudioProcessor
-import com.example.prismstudio.p40b43a88.domain.model.hdrByOverride
 import android.graphics.Matrix
 import androidx.media3.common.C
 import androidx.media3.common.audio.SonicAudioProcessor
 import androidx.media3.common.Effect
 import androidx.media3.common.MediaItem
+import androidx.media3.common.MimeTypes
 import androidx.media3.common.audio.SpeedProvider
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.effect.AlphaScale
@@ -35,6 +35,9 @@ import com.example.prismstudio.p40b43a88.domain.model.SOURCE_EDGE_MS
 import com.example.prismstudio.p40b43a88.domain.model.VideoLayer
 import com.example.prismstudio.p40b43a88.domain.model.VideoSegment
 import kotlin.math.ceil
+
+/** A source whose tagged HDR signal is tone mapped by the clip shader in the preview. */
+internal object HdrPreviewInput
 
 /** Maps a [RenderPlan] onto a Media3 [Composition] used for both preview and export. */
 @UnstableApi
@@ -74,9 +77,8 @@ class CompositionFactory(
         val clearFrameUri: String? = null,
         /**
          * A silent black clip, [FILLER_DURATION_US] long, that fills the layer's gaps drawn fully transparent
-         * (and black under [AlphaMode.OPAQUE]), so the layer's sequence holds video only. A preview overlay
-         * needs it: Media3 1.9.3 can leave a paused player buffering for good after a seek from a gap or an
-         * image into the video after it. Null keeps Media3's gaps (or [clearFrameUri]).
+         * (and black under [AlphaMode.OPAQUE]). A Media3 1.9.3 preview can stay buffering at the boundary
+         * between a native gap and the next picture. Null keeps Media3's gaps (or [clearFrameUri]).
          */
         val fillerUri: String? = null,
         /**
@@ -119,13 +121,13 @@ class CompositionFactory(
         val layer = plan.layers.singleOrNull() ?: VideoLayer("v1", listOf(VideoSegment(null, null, false, 0, plan.durationFrames, 0, 1f, null)))
         // A proxy stands in for the picture only: the sound (and a reversed copy) still read the original.
         val pictures = if (proxyUris.isEmpty() || output.renderClips) assets
-        else assets.mapValues { (id, a) -> proxyUris[id]?.let { a.copy(uri = it) } ?: a }
+        else assets.mapValues { (id, asset) -> proxyUris[id]?.let { asset.copy(uri = it) } ?: asset }
         sequences += videoSequence(layer, pictures, reversedUris, output, fps, targetFps, alphaMode)
         if (output.includeAudio) {
             plan.audio.forEach { lane -> audioLane(lane, assets, reversedUris, fps, align = output.renderClips)?.let(sequences::add) }
             if (sequences.size == 1 && output.keepAudioClock) {
                 sequences += EditedMediaItemSequence.Builder(setOf(C.TRACK_TYPE_AUDIO))
-                    .addGap(framesToUs(plan.durationFrames, fps))
+                    .addGap(timelineBoundaryUs(plan.durationFrames, fps, output.renderClips))
                     .build()
             }
         }
@@ -145,8 +147,8 @@ class CompositionFactory(
         if (plan.titles.isNotEmpty()) compositionEffects += OverlayEffect(listOf(TitleOverlay(plan.titles, fps, registry)))
         // Not Media3's FrameDropEffect: it holds the newest frame back and drops it at the end of every item.
         if (output.conformFrameRate || targetFps < fps) compositionEffects += FrameRateEffect(targetFps)
-        // A render reads HDR files as SDR and tone maps them itself (HdrToneMapEffect): Media3's HDR input needs a GPU
-        // extension some devices lack. The monitor keeps Media3's own handling.
+        // Export and preview both map HDR in the clip shader. Preview requests the raw signal per media item
+        // so the decoder for an ordinary SDR clip on the same timeline is left in its normal mode.
         return Composition.Builder(sequences).setEffects(Effects(emptyList(), compositionEffects))
             .apply { if (output.renderClips) setHdrMode(Composition.HDR_MODE_EXPERIMENTAL_FORCE_INTERPRET_HDR_AS_SDR) }
             .build()
@@ -206,7 +208,8 @@ class CompositionFactory(
         val sequence = EditedMediaItemSequence.Builder(setOf(C.TRACK_TYPE_VIDEO))
         for (segment in layer.segments) {
             val startUs = framesToUs(segment.startFrame, fps)
-            val durationUs = framesToUs(segment.endFrame, fps) - startUs
+            val durationUs = timelineBoundaryUs(segment.endFrame, fps, output.renderClips) -
+                timelineBoundaryUs(segment.startFrame, fps, output.renderClips)
             val asset = segment.assetId?.let(assets::get)
             if (asset == null || segment.clipId == null) {
                 val clear = output.clearFrameUri
@@ -272,14 +275,14 @@ class CompositionFactory(
         }
         // Resolve's Temporal NR before the grade, on frames in timeline order at the output's size.
         val temporal = if (segment.temporalNr) TemporalNrEffect(segment.clipId!!, registry) else null
-        // An HDR clip comes into the Rec.709 timeline first (Resolve's colour management), before anything else sees it: in
-        // a render every one (read as SDR), in the monitor those whose file says SDR (HDR by the input colour override;
-        // a tagged file keeps Media3's handling there, and its proxy is SDR already).
+        // Convert the clip to the project's Rec.709 timeline before grading, effects and compositing.
         val color = output.colorManagement
-        val toneMap = if (color != null && toneMaps(asset, render, color)) HdrToneMapEffect(asset.effectiveTransfer, color.toneMapping, color.pqPeakNits) else null
+        val toneMap = if (color != null && toneMaps(asset, color)) HdrToneMapEffect(asset.effectiveTransfer, color.toneMapping, color.pqPeakNits) else null
         val effects = listOfNotNull(toneMap, fit, native, timing, temporal, look)
         return if (asset.kind == MediaKind.IMAGE) {
-            val item = MediaItem.Builder().setUri(asset.uri).setImageDurationMs(durationUs / 1000).build()
+            val item = MediaItem.Builder().setUri(asset.uri).setImageDurationMs(durationUs / 1000)
+                .setMimeType(if (render) "image/*" else MimeTypes.APPLICATION_EXTERNALLY_LOADED_IMAGE)
+                .build()
             EditedMediaItem.Builder(item)
                 .setDurationUs(durationUs)
                 .setFrameRate(if (render) targetFps else fps)
@@ -345,7 +348,7 @@ class CompositionFactory(
         // The lane's reverb rings on from one item into the next where they meet.
         val reverbLink = ReverbLink()
         for ((index, segment) in lane.segments.withIndex()) {
-            val durationUs = framesToUs(segment.endFrame, fps) - framesToUs(segment.startFrame, fps)
+            val durationUs = timelineBoundaryUs(segment.endFrame, fps, align) - timelineBoundaryUs(segment.startFrame, fps, align)
             val asset = segment.assetId?.let(assets::get)
             if (asset == null || asset.kind == MediaKind.IMAGE || segment.clipId == null) {
                 builder.addGap(durationUs)
@@ -451,7 +454,10 @@ class CompositionFactory(
         return MediaItem.Builder()
             .setUri(uri)
             .setClippingConfiguration(window.build())
-            .apply { if (render != null) setTag(render) }
+            .apply {
+                if (render != null) setTag(render)
+                else if (!audio && asset.color.isHdr) setTag(HdrPreviewInput)
+            }
             .build()
     }
 
@@ -493,12 +499,14 @@ class CompositionFactory(
     }
 
     companion object {
-        /**
-         * Whether [asset]'s clips are tone mapped into the timeline by [color]: an HDR picture in a render (every one, read
-         * as SDR); in the monitor only HDR by the input colour override (its file says SDR, so Media3 reads it as SDR).
-         */
-        internal fun toneMaps(asset: MediaAsset, render: Boolean, color: ColorManagement?): Boolean =
-            color != null && asset.kind == MediaKind.VIDEO && asset.effectiveTransfer != ColorTransfer.SDR && (render || asset.hdrByOverride)
+        /** A seek to an edit uses whole milliseconds in both preview lanes. Render keeps the full frame precision. */
+        private fun timelineBoundaryUs(frame: Int, fps: Int, render: Boolean): Long {
+            val us = framesToUs(frame, fps)
+            return if (render) us else us / 1000 * 1000
+        }
+
+        internal fun toneMaps(asset: MediaAsset, color: ColorManagement?): Boolean =
+            color != null && asset.kind == MediaKind.VIDEO && asset.effectiveTransfer != ColorTransfer.SDR
 
         /** Sonic shifting a sound's pitch by [cents] at its own length and speed; none for 0. */
         internal fun pitchShifter(cents: Int): SonicAudioProcessor? =

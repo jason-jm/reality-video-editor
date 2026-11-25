@@ -25,6 +25,9 @@ import com.example.prismstudio.p40b43a88.domain.model.ClipFilter
 import com.example.prismstudio.p40b43a88.domain.model.ClipKind
 import com.example.prismstudio.p40b43a88.domain.model.ClipTransform
 import com.example.prismstudio.p40b43a88.domain.model.ColorGrade
+import com.example.prismstudio.p40b43a88.domain.model.ColorTransfer
+import com.example.prismstudio.p40b43a88.domain.model.ToneMapping
+import com.example.prismstudio.p40b43a88.domain.model.toneMapped
 import com.example.prismstudio.p40b43a88.domain.model.CurveChannel
 import com.example.prismstudio.p40b43a88.domain.model.HueCurve
 import com.example.prismstudio.p40b43a88.domain.model.CurvePoint
@@ -166,6 +169,55 @@ class ColorViewModelTest {
         assertEquals("镜头匹配", session.history.value.undoLabel)
         assertTrue(model.state.value.toast!!, model.state.value.toast!!.startsWith("已匹配到静帧 1："))
         assertFalse(model.state.value.matching)
+    }
+
+    @Test
+    fun `an HDR shot match and its thumbnail follow the project tone map including undo`() = runTest {
+        previews.frame = FramePixels(64, 36, IntArray(64 * 36) { i ->
+            val level = 72 + i % 64 * 2
+            (0xFF shl 24) or (level shl 16) or ((level - 8) shl 8) or (level - 16)
+        })
+        val gallery = InMemoryGalleryRepository()
+        val shot = second.copy(color = second.color.copy(transfer = ColorTransfer.PQ))
+        val (session, model) = colorStage(project(listOf(first, shot)), gallery = gallery)
+        fun thumb() = model.state.value.clips.single { it.id == "c2" }.pixels!!.pixels.toList()
+        val before = thumb()
+        session.edit("tone map") { d ->
+            val method = if (d.colorManagement.toneMapping == ToneMapping.NONE) ToneMapping.SIMPLE else ToneMapping.NONE
+            d.copy(colorManagement = d.colorManagement.copy(toneMapping = method))
+        }
+        advanceUntilIdle()
+        assertFalse("thumbnail reflects the changed tone map", before == thumb())
+        session.undo()
+        advanceUntilIdle()
+        assertTrue("undo restores the first tone map on the strip", before == thumb())
+        model.onEvent(ColorEvent.GrabStill)
+        advanceUntilIdle()
+        val document = session.document.value!!
+        val reference = gallery.load(document.id, document.stills.single().image, 320)!!
+        val expected = ShotMatchUseCase(BuildGradeLutUseCase()).match(
+            previews.frame!!.toneMapped(ColorTransfer.PQ, document.colorManagement), reference, ColorGrade.NEUTRAL).grade
+        model.onEvent(ColorEvent.SelectClip("c2"))
+        model.onEvent(ColorEvent.MatchStill)
+        advanceUntilIdle()
+        assertEquals("match uses the same source values as the HDR monitor", expected, session.grade("c2"))
+    }
+
+    @Test
+    fun `a pending automatic grade never changes the next selected shot`() = runTest {
+        val (session, model) = colorStage()
+        previews.frame = FramePixels(128, 1, IntArray(128) { x ->
+            val v = 64 + x
+            (0xFF shl 24) or ((v + 16) shl 16) or (v shl 8) or (v - 11)
+        })
+        model.onEvent(ColorEvent.AutoColor)
+        model.onEvent(ColorEvent.SelectClip("c2"))
+        advanceUntilIdle()
+        assertEquals("c2", model.state.value.selectedClipId)
+        assertEquals(ColorGrade.NEUTRAL, session.grade("c2"))
+        model.onEvent(ColorEvent.AutoColor)
+        advanceUntilIdle()
+        assertFalse("the same input actually changes a grade when requested on c2", session.grade("c2") == ColorGrade.NEUTRAL)
     }
 
     @Test

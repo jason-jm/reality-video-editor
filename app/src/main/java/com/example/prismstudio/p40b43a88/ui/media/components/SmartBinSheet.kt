@@ -54,7 +54,7 @@ import com.pico.spatial.ui.design.windows.popup.VerticalPlacement
 @Composable
 fun SmartBinSheet(
     ui: SmartBinSheetUi,
-    onRules: (SmartBinsUseCase.Rules) -> Unit,
+    onRules: ((SmartBinsUseCase.Rules) -> SmartBinsUseCase.Rules) -> Unit,
     onConfirm: () -> Unit,
     onClose: () -> Unit,
 ) {
@@ -70,7 +70,7 @@ fun SmartBinSheet(
             RuleRow("名称") {
                 TextField(
                     value = rules.name,
-                    onValueChange = { onRules(rules.copy(name = it)) },
+                    onValueChange = { value -> onRules { it.copy(name = value) } },
                     placeholder = { Text("智能媒体夹") },
                     singleLine = true,
                     clearable = true,
@@ -82,7 +82,7 @@ fun SmartBinSheet(
                     SmartBinSheetUi.KINDS.forEachIndexed { index, kind ->
                         SegmentItem(
                             selected = index == ui.kindIndex,
-                            onClick = { onRules(rules.copy(kind = kind)) },
+                            onClick = { onRules { it.copy(kind = kind) } },
                             title = { Text(SmartBinSheetUi.KIND_LABELS[index]) },
                             modifier = Modifier.weight(1f),
                         )
@@ -109,7 +109,7 @@ fun SmartBinSheet(
                             SmartBinSheetUi.FLAGS.forEach { flag ->
                                 MenuItem(
                                     title = { Text(flag.label) },
-                                    onClick = { open = false; onRules(rules.copy(flag = flag)) },
+                                    onClick = { open = false; onRules { it.copy(flag = flag) } },
                                     contentColors = if (flag == rules.flag) picked else plain,
                                 )
                             }
@@ -120,7 +120,7 @@ fun SmartBinSheet(
                 ToggleableChip(
                     label = { Text("仅好条") },
                     isToggleOn = rules.goodTake,
-                    onClick = { onRules(rules.copy(goodTake = !rules.goodTake)) },
+                    onClick = { onRules { it.copy(goodTake = !it.goodTake) } },
                     chipSize = ChipsDefaults.Small,
                     modifier = Modifier.semantics { contentDescription = "仅好条：只收集场记里标为好条的素材".localized() },
                 )
@@ -130,7 +130,7 @@ fun SmartBinSheet(
                     SmartBinSheetUi.USAGES.forEach { usage ->
                         SegmentItem(
                             selected = usage.ordinal == ui.usageIndex,
-                            onClick = { onRules(rules.copy(usage = usage)) },
+                            onClick = { onRules { it.copy(usage = usage) } },
                             title = { Text(usage.label) },
                             modifier = Modifier.weight(1f),
                         )
@@ -140,7 +140,7 @@ fun SmartBinSheet(
             RuleRow("名称包含") {
                 TextField(
                     value = rules.nameContains,
-                    onValueChange = { onRules(rules.copy(nameContains = it)) },
+                    onValueChange = { value -> onRules { it.copy(nameContains = value) } },
                     placeholder = { Text("不限") },
                     singleLine = true,
                     clearable = true,
@@ -150,7 +150,7 @@ fun SmartBinSheet(
             RuleRow("关键词") {
                 TextField(
                     value = rules.keyword,
-                    onValueChange = { onRules(rules.copy(keyword = it)) },
+                    onValueChange = { value -> onRules { it.copy(keyword = value) } },
                     placeholder = { Text("不限（场记里的关键词）") },
                     singleLine = true,
                     clearable = true,

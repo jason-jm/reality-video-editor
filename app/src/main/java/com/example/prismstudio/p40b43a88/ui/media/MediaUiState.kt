@@ -313,7 +313,7 @@ sealed interface MediaEvent {
     /** Smart bins (Resolve's Smart Bins): the sheet for a new one or [id]'s rules, its edits, show one, delete one. */
     data object NewSmartBin : MediaEvent
     data class EditSmartBin(val id: String) : MediaEvent
-    data class SmartRules(val rules: SmartBinsUseCase.Rules) : MediaEvent
+    class SmartRules(val edit: (SmartBinsUseCase.Rules) -> SmartBinsUseCase.Rules) : MediaEvent
     data object ConfirmSmartBin : MediaEvent
     data object CloseSmartBin : MediaEvent
     data class SelectSmartBin(val id: String) : MediaEvent
@@ -334,7 +334,7 @@ sealed interface MediaEvent {
     data object ClearAudioSync : MediaEvent
     data object DeleteProxy : MediaEvent
     data object OpenMetadata : MediaEvent
-    data class MetadataDraft(val draft: MediaMetadataUseCase.Draft) : MediaEvent
+    class MetadataDraft(val edit: (MediaMetadataUseCase.Draft) -> MediaMetadataUseCase.Draft) : MediaEvent
     data object ConfirmMetadata : MediaEvent
     data object CloseMetadata : MediaEvent
     data class Query(val text: String) : MediaEvent

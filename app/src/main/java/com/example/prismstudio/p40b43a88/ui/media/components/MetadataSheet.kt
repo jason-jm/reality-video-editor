@@ -35,7 +35,7 @@ import com.pico.spatial.ui.design.windows.Sheet
 @Composable
 fun MetadataSheet(
     ui: MetadataSheetUi,
-    onDraft: (MediaMetadataUseCase.Draft) -> Unit,
+    onDraft: ((MediaMetadataUseCase.Draft) -> MediaMetadataUseCase.Draft) -> Unit,
     onConfirm: () -> Unit,
     onClose: () -> Unit,
 ) {
@@ -49,16 +49,16 @@ fun MetadataSheet(
     ) {
         Column(Modifier.width(600.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             MetaRow("场次") {
-                SlateField(d.scene, "场次", "如 3") { onDraft(d.copy(scene = it)) }
+                SlateField(d.scene, "场次", "如 3") { value -> onDraft { it.copy(scene = value) } }
                 Text("镜头", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary)
-                SlateField(d.shot, "镜头", "如 2A") { onDraft(d.copy(shot = it)) }
+                SlateField(d.shot, "镜头", "如 2A") { value -> onDraft { it.copy(shot = value) } }
                 Text("条次", style = PrismType.label, color = PicoTheme.colorScheme.labelSecondary)
-                SlateField(d.take, "条次", "如 4") { onDraft(d.copy(take = it)) }
+                SlateField(d.take, "条次", "如 4") { value -> onDraft { it.copy(take = value) } }
             }
             MetaRow("关键词") {
                 TextField(
                     value = d.keywords,
-                    onValueChange = { onDraft(d.copy(keywords = it)) },
+                    onValueChange = { value -> onDraft { it.copy(keywords = value) } },
                     placeholder = { Text("夜景，跑步") },
                     singleLine = true,
                     clearable = true,
@@ -68,7 +68,7 @@ fun MetadataSheet(
             MetaRow("备注") {
                 TextField(
                     value = d.notes,
-                    onValueChange = { onDraft(d.copy(notes = it)) },
+                    onValueChange = { value -> onDraft { it.copy(notes = value) } },
                     placeholder = { Text("这条素材的说明") },
                     singleLine = true,
                     clearable = true,
@@ -78,7 +78,7 @@ fun MetadataSheet(
             MetaRow("好条") {
                 Switch(
                     checked = d.goodTake,
-                    onCheckedChange = { onDraft(d.copy(goodTake = it)) },
+                    onCheckedChange = { value -> onDraft { it.copy(goodTake = value) } },
                     modifier = Modifier.semantics { contentDescription = "好条：标记为可用的一条".localized() },
                 )
                 Text("标记为可用的一条", style = PrismType.caption, color = PicoTheme.colorScheme.labelTertiary)

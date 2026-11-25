@@ -32,6 +32,7 @@ import com.pico.spatial.ui.design.ChipsDefaults
 import com.pico.spatial.ui.design.PicoTheme
 import com.pico.spatial.ui.design.SliderDefaults
 import com.example.prismstudio.p40b43a88.ui.components.Text
+import com.example.prismstudio.p40b43a88.ui.components.TimelineMediaDrop
 import com.example.prismstudio.p40b43a88.ui.components.ToggleableChip
 
 /**
@@ -81,6 +82,7 @@ fun TimelinePanel(
     curves: CurvesUi? = null,
     onCurveMode: (Boolean) -> Unit = {},
     onCurve: (EditEvent) -> Unit = {},
+    mediaDrop: TimelineMediaDrop? = null,
 ) {
     Column(modifier, verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
@@ -167,6 +169,7 @@ fun TimelinePanel(
                     selectedFadeHandles = true,
                     markersEditable = true,
                     laneScroll = laneScroll,
+                    mediaDrop = mediaDrop,
                 )
             }
         }
